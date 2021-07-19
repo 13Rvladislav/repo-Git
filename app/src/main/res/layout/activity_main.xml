@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon_itog_3"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonstart"
+        android:layout_width="425dp"
+        android:layout_height="267dp"
+        android:layout_marginTop="160dp"
+        android:background="@android:color/transparent"
+        android:text="@string/string"
+        android:textColor="#90e2f0"
+        android:textSize="20sp"
+        app:iconTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

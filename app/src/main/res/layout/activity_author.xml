@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fonitog_"
+    tools:context=".ActivityAuthor">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="410dp"
+        android:background="@drawable/autorback"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466">>
+        <ImageView
+            android:id="@+id/author"
+            android:layout_width="250dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/todo1"
+            app:srcCompat="@drawable/autoriz"
+            android:layout_marginStart="23dp" />
+
+        <EditText
+                android:id="@+id/login"
+                android:layout_width="266dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#1794E0"
+                android:ems="10"
+                android:hint="@string/u8"
+                android:inputType="textEmailAddress"
+                android:text=""
+            android:textColor="#90DDF3"
+                android:textColorHint="#90DDF3"
+            android:layout_marginStart="15dp"
+            android:autofillHints="" />
+
+        <EditText
+                android:id="@+id/Password"
+                android:layout_width="266dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#1794E0"
+                android:ems="10"
+                android:hint="@string/f"
+                android:inputType="textPassword"
+                android:text=""
+            android:textColor="#7ACFEF"
+                android:textColorHint="#90DDF3"
+            android:autofillHints=""
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:id="@+id/misspassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="70dp"
+            android:text="@string/zabps"
+            android:textColor="#1794e0"
+            android:textSize="18sp"
+            android:layout_marginStart="70dp" />
+
+        <Button
+            android:id="@+id/buttoncoming"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="24dp"
+            android:backgroundTint="#FF8800"
+            android:text="@string/come"
+            android:textColor="#000326"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nohaveacc"
+            android:layout_marginStart="24dp" />
+
+        <TextView
+            android:id="@+id/nohaveacc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/netakk"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="70dp"
+            android:textColor="#1794e0"
+            android:textSize="18sp"
+            android:layout_marginStart="70dp" />
+
+        <Button
+            android:id="@+id/buttonReg"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FF8800"
+            android:text="@string/register"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="24dp"
+            android:textColor="#000326"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.0"
+            tools:targetApi="lollipop"
+            android:layout_marginStart="24dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

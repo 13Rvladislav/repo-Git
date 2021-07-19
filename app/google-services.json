@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "943985544539",
+    "project_id": "itcity-b416d",
+    "storage_bucket": "itcity-b416d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943985544539:android:04d256b9d8372cb239de7e",
+        "android_client_info": {
+          "package_name": "com.example.itcity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943985544539-i0115mufjl8pa7tsndmqq3542lfofitc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.itcity",
+            "certificate_hash": "e458eb2807c48e0e7768021d7f2f61aabac58e5c"
+          }
+        },
+        {
+          "client_id": "943985544539-sbcc7vkglcjh2qpl4897j8cbdmneip6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1BMJbOpqvyXYQhAkLPs4EHX36Y-m7xCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943985544539-sbcc7vkglcjh2qpl4897j8cbdmneip6o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
