@@ -37,9 +37,9 @@ public class ActivityAuthor extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
 
         buttonreggistration = (Button) findViewById(R.id.buttonReg);
-        buttonautirisation = (Button) findViewById(R.id.buttoncoming);
+        buttonautirisation = (Button) findViewById(R.id.buttonVosstanov);
 
-        email = (EditText) findViewById(R.id.login);
+        email = (EditText) findViewById(R.id.emai);
         password = (EditText) findViewById(R.id.Password);
 
         auth = FirebaseAuth.getInstance();
@@ -57,7 +57,7 @@ public class ActivityAuthor extends AppCompatActivity {
                         startActivity(intent);
                         break;
 
-                    case R.id.buttoncoming:
+                    case R.id.buttonVosstanov:
                         if (TextUtils.isEmpty(email.getText().toString())) {
                             Toast toast = Toast.makeText(ActivityAuthor.this, "Поле 'email' не заполнено", Toast.LENGTH_SHORT);
                             toast.show();

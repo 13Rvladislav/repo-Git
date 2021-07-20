@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fonitog_"
+    tools:context=".ActivityAuthor">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="410dp"
+        android:background="@drawable/autorback"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466">>
+
+        <ImageView
+            android:id="@+id/voss"
+            android:layout_width="259dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/todo1"
+            app:srcCompat="@drawable/_abc" />
+
+        <EditText
+            android:id="@+id/emai"
+            android:layout_width="266dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:backgroundTint="#1794E0"
+            android:ems="10"
+            android:hint="@string/u8"
+            android:inputType="textEmailAddress"
+            android:text="Email"
+            android:textColor="#90DDF3"
+            android:textColorHint="#90DDF3" />
+
+        <EditText
+            android:id="@+id/CodeSlovo"
+            android:layout_width="267dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:backgroundTint="#1794E0"
+            android:inputType="textEmailAddress"
+            android:text="Кодовое слово"
+            android:textColor="#90DDF3"
+            android:textColorHint="#90DDF3"/>
+
+        <EditText
+            android:id="@+id/NewRassword"
+            android:layout_width="267dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#1794E0"
+            android:ems="10"
+            android:inputType="textPassword|textPostalAddress"
+            android:text="Новый пароль"
+            android:textColor="#90DDF3"
+            android:textColorHint="#90DDF3"
+            tools:text="Новый пароль" />
+
+        <EditText
+            android:id="@+id/PovtorPar"
+            android:layout_width="267dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#1794E0"
+            android:ems="10"
+            android:inputType="textPassword|textPostalAddress"
+            android:text="Повторите пароль"
+            android:textColor="#90DDF3"
+            android:textColorHint="#90DDF3"
+            tools:text="Повторите пароль" />
+
+        <Button
+            android:id="@+id/buttonVosstanov"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FF8800"
+            android:text="ВОССТАНОВИТЬ"
+            android:textColor="#000326"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nohaveacc" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
