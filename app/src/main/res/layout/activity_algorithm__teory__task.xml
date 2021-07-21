@@ -8,7 +8,7 @@
     tools:context=".Algorithm_Teory_Task">
 
     <Button
-        android:id="@+id/buttonClean"
+        android:id="@+id/bottomCanle"
         android:layout_width="76dp"
         android:layout_height="62dp"
         android:layout_marginStart="16dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/HomeB1"
         android:layout_width="157dp"
         android:layout_height="157dp"
         android:layout_marginStart="28dp"
@@ -28,75 +28,75 @@
         android:background="#00FFFFFF"
         android:drawableBottom="@drawable/_11"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView100" />
+        app:layout_constraintTop_toBottomOf="@+id/cifra1" />
 
     <Button
-        android:id="@+id/button99"
+        android:id="@+id/HomeB2"
         android:layout_width="170dp"
         android:layout_height="157dp"
         android:background="#00FFFFFF"
         android:drawableBottom="@drawable/_11"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button8"
-        app:layout_constraintTop_toBottomOf="@+id/imageView99" />
+        app:layout_constraintStart_toEndOf="@+id/HomeB1"
+        app:layout_constraintTop_toBottomOf="@+id/cifra2" />
 
     <Button
-        android:id="@+id/button98"
+        android:id="@+id/HomeB3"
         android:layout_width="157dp"
         android:layout_height="157dp"
         android:background="#00FFFFFF"
         android:drawableBottom="@drawable/_11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView98" />
+        app:layout_constraintTop_toBottomOf="@+id/cifra3" />
 
     <ImageView
-        android:id="@+id/imageView100"
+        android:id="@+id/cifra1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
         android:layout_marginLeft="92dp"
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonClean"
+        app:layout_constraintTop_toBottomOf="@+id/bottomCanle"
         app:srcCompat="@drawable/_" />
 
     <ImageView
-        android:id="@+id/imageView99"
+        android:id="@+id/cifra2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.631"
-        app:layout_constraintStart_toEndOf="@+id/imageView100"
-        app:layout_constraintTop_toBottomOf="@+id/buttonClean"
+        app:layout_constraintStart_toEndOf="@+id/cifra1"
+        app:layout_constraintTop_toBottomOf="@+id/bottomCanle"
         app:srcCompat="@drawable/_2" />
 
     <ImageView
-        android:id="@+id/imageView98"
+        android:id="@+id/cifra3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/HomeB1"
         app:srcCompat="@drawable/_3" />
 
     <ImageView
-        android:id="@+id/imageView95"
+        android:id="@+id/HomeK1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView97"
+        app:layout_constraintTop_toBottomOf="@+id/cifra4"
         app:layout_constraintVertical_bias="0.111"
         app:srcCompat="@drawable/_20" />
 
     <Button
-        android:id="@+id/button97"
+        android:id="@+id/Close1"
         android:layout_width="134dp"
         android:layout_height="107dp"
         android:layout_marginStart="40dp"
@@ -104,53 +104,53 @@
         android:layout_marginTop="16dp"
         android:background="#00FFFFFF"
         android:drawableBottom="@drawable/_21"
-        app:layout_constraintEnd_toEndOf="@+id/imageView95"
+        app:layout_constraintEnd_toEndOf="@+id/HomeK1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView95" />
+        app:layout_constraintTop_toTopOf="@+id/HomeK1" />
 
     <ImageView
-        android:id="@+id/imageView97"
+        android:id="@+id/cifra4"
         android:layout_width="29dp"
         android:layout_height="40dp"
         android:layout_marginStart="92dp"
         android:layout_marginLeft="92dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button98"
+        app:layout_constraintTop_toBottomOf="@+id/HomeB3"
 
         app:srcCompat="@drawable/_4" />
 
     <ImageView
-        android:id="@+id/imageView93"
+        android:id="@+id/HomeK2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.535"
-        app:layout_constraintStart_toEndOf="@+id/imageView95"
+        app:layout_constraintStart_toEndOf="@+id/HomeK1"
         app:srcCompat="@drawable/_20" />
 
     <Button
-        android:id="@+id/button96"
+        android:id="@+id/Close2"
         android:layout_width="136dp"
         android:layout_height="108dp"
         android:background="#00FFFFFF"
         android:drawableBottom="@drawable/_21"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView93"
-        app:layout_constraintEnd_toEndOf="@+id/imageView93"
+        app:layout_constraintBottom_toBottomOf="@+id/HomeK2"
+        app:layout_constraintEnd_toEndOf="@+id/HomeK2"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView93"
-        app:layout_constraintTop_toTopOf="@+id/imageView93"
+        app:layout_constraintStart_toStartOf="@+id/HomeK2"
+        app:layout_constraintTop_toTopOf="@+id/HomeK2"
         app:layout_constraintVertical_bias="0.638" />
 
     <ImageView
-        android:id="@+id/imageView96"
+        android:id="@+id/cifra5"
         android:layout_width="29dp"
         android:layout_height="40dp"
         android:layout_marginEnd="96dp"
         android:layout_marginRight="96dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button98"
+        app:layout_constraintTop_toBottomOf="@+id/HomeB3"
         app:srcCompat="@drawable/_5" />
 
 

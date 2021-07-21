@@ -8,7 +8,7 @@
     tools:context=".Computer_Teory_Task">
 
     <Button
-        android:id="@+id/buttonClean"
+        android:id="@+id/CanleJ"
         android:layout_width="76dp"
         android:layout_height="62dp"
         android:layout_marginStart="16dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/HomeBJ"
         android:layout_width="157dp"
         android:layout_height="157dp"
         android:layout_marginStart="28dp"
@@ -28,76 +28,76 @@
         android:background="#00FFFFFF"
         android:drawableBottom="@drawable/_j11"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView100" />
+        app:layout_constraintTop_toBottomOf="@+id/cifraJ1" />
 
     <Button
-        android:id="@+id/button99"
+        android:id="@+id/HomeBJ2"
         android:layout_width="170dp"
         android:layout_height="157dp"
         android:background="#00FFFFFF"
         android:drawableBottom="@drawable/_j11"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button8"
-        app:layout_constraintTop_toBottomOf="@+id/imageView99" />
+        app:layout_constraintStart_toEndOf="@+id/HomeBJ"
+        app:layout_constraintTop_toBottomOf="@+id/cifraJ2" />
 
     <Button
-        android:id="@+id/button98"
+        android:id="@+id/HomeBJ3"
         android:layout_width="157dp"
         android:layout_height="157dp"
         android:background="#00FFFFFF"
         android:drawableBottom="@drawable/_j11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView98" />
+        app:layout_constraintTop_toBottomOf="@+id/cifraJ3" />
 
     <ImageView
-        android:id="@+id/imageView100"
+        android:id="@+id/cifraJ1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
         android:layout_marginLeft="92dp"
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonClean"
+        app:layout_constraintTop_toBottomOf="@+id/CanleJ"
         app:srcCompat="@drawable/_d"
         app:tint="#A83806" />
 
     <ImageView
-        android:id="@+id/imageView99"
+        android:id="@+id/cifraJ2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.631"
-        app:layout_constraintStart_toEndOf="@+id/imageView100"
-        app:layout_constraintTop_toBottomOf="@+id/buttonClean"
+        app:layout_constraintStart_toEndOf="@+id/cifraJ1"
+        app:layout_constraintTop_toBottomOf="@+id/CanleJ"
         app:srcCompat="@drawable/_2d" />
 
     <ImageView
-        android:id="@+id/imageView98"
+        android:id="@+id/cifraJ3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/HomeBJ"
         app:srcCompat="@drawable/_3d" />
 
     <ImageView
-        android:id="@+id/imageView95"
+        android:id="@+id/HomeKJ1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView97"
+        app:layout_constraintTop_toBottomOf="@+id/cifraJ4"
         app:layout_constraintVertical_bias="0.111"
         app:srcCompat="@drawable/_j11" />
 
     <Button
-        android:id="@+id/button97"
+        android:id="@+id/CloseJ1"
         android:layout_width="134dp"
         android:layout_height="107dp"
         android:layout_marginStart="40dp"
@@ -105,53 +105,54 @@
         android:layout_marginTop="16dp"
         android:background="#00FFFFFF"
         android:drawableBottom="@drawable/_21"
-        app:layout_constraintEnd_toEndOf="@+id/imageView95"
+        app:layout_constraintEnd_toEndOf="@+id/HomeK1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView95" />
+        app:layout_constraintTop_toTopOf="@+id/HomeKJ1" />
 
     <ImageView
-        android:id="@+id/imageView97"
+        android:id="@+id/cifraJ4"
         android:layout_width="29dp"
         android:layout_height="40dp"
         android:layout_marginStart="92dp"
         android:layout_marginLeft="92dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button98"
+        app:layout_constraintTop_toBottomOf="@+id/HomeBJ3"
 
         app:srcCompat="@drawable/_4d" />
 
     <ImageView
-        android:id="@+id/imageView93"
+        android:id="@+id/HomeKJ2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.535"
-        app:layout_constraintStart_toEndOf="@+id/imageView95"
+        app:layout_constraintStart_toEndOf="@+id/HomeKJ1"
+        app:layout_constraintTop_toBottomOf="@+id/cifraJ5"
         app:srcCompat="@drawable/_j11" />
 
     <Button
-        android:id="@+id/button96"
+        android:id="@+id/CloseJ2"
         android:layout_width="136dp"
         android:layout_height="108dp"
         android:background="#00FFFFFF"
         android:drawableBottom="@drawable/_21"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView93"
-        app:layout_constraintEnd_toEndOf="@+id/imageView93"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView93"
-        app:layout_constraintTop_toTopOf="@+id/imageView93"
-        app:layout_constraintVertical_bias="0.638" />
+        app:layout_constraintBottom_toBottomOf="@+id/HomeKJ2"
+        app:layout_constraintEnd_toEndOf="@+id/HomeKJ2"
+        app:layout_constraintStart_toStartOf="@+id/HomeKJ2"
+        app:layout_constraintTop_toTopOf="@+id/HomeKJ2" />
 
     <ImageView
-        android:id="@+id/imageView96"
+        android:id="@+id/cifraJ5"
         android:layout_width="29dp"
         android:layout_height="40dp"
         android:layout_marginEnd="96dp"
         android:layout_marginRight="96dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button98"
+        app:layout_constraintHorizontal_bias="0.963"
+        app:layout_constraintStart_toEndOf="@+id/cifraJ4"
+        app:layout_constraintTop_toBottomOf="@+id/HomeBJ3"
         app:srcCompat="@drawable/_5d" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
