@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/algoritm_fon"
+    android:background="@drawable/progrmmirovanie"
     tools:context=".Algorithm_Teory_Task">
 
     <Button
-        android:id="@+id/CanleK"
+        android:id="@+id/bottomCK"
         android:layout_width="76dp"
         android:layout_height="62dp"
         android:layout_marginStart="16dp"
@@ -21,140 +21,210 @@
 
     <Button
         android:id="@+id/HomeBK1"
-        android:layout_width="157dp"
-        android:layout_height="157dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
+        android:layout_width="111dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="56dp"
         android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/homek"
+        app:backgroundTint="#00FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cifraK1" />
+        app:layout_constraintTop_toBottomOf="@+id/bottomCK" />
 
     <Button
         android:id="@+id/HomeBK2"
-        android:layout_width="170dp"
-        android:layout_height="157dp"
+        android:layout_width="111dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="56dp"
         android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/homek"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/HomeBK1"
-        app:layout_constraintTop_toBottomOf="@+id/cifraK2" />
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toEndOf="@+id/HomeKK5"
+        app:layout_constraintTop_toBottomOf="@+id/bottomCK" />
 
     <Button
         android:id="@+id/HomeBK3"
-        android:layout_width="157dp"
-        android:layout_height="157dp"
+        android:layout_width="111dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
         android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/homek"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cifraK3" />
-
-    <ImageView
-        android:id="@+id/cifraK1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
-        android:layout_marginLeft="92dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CanleK"
-        app:srcCompat="@drawable/_" />
-
-    <ImageView
-        android:id="@+id/cifraK2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.631"
-        app:layout_constraintStart_toEndOf="@+id/cifraK1"
-        app:layout_constraintTop_toBottomOf="@+id/CanleK"
-        app:srcCompat="@drawable/_2" />
-
-    <ImageView
-        android:id="@+id/cifraK3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HomeBK1"
-        app:srcCompat="@drawable/_3" />
+        app:layout_constraintTop_toBottomOf="@+id/HomeBK1" />
 
     <ImageView
         android:id="@+id/HomeKK1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cifraK4"
-        app:layout_constraintVertical_bias="0.111"
-        app:srcCompat="@drawable/homek" />
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toEndOf="@+id/HomeBK3"
+        app:layout_constraintTop_toBottomOf="@+id/HomeBK2"
+        app:srcCompat="@drawable/hk5" />
 
     <Button
         android:id="@+id/CloseK1"
-        android:layout_width="134dp"
-        android:layout_height="107dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="90dp"
+        android:layout_height="95dp"
         android:background="#00FFFFFF"
         android:drawableBottom="@drawable/_21"
+        app:layout_constraintBottom_toBottomOf="@+id/HomeKK1"
         app:layout_constraintEnd_toEndOf="@+id/HomeKK1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/HomeKK1" />
-
-    <ImageView
-        android:id="@+id/cifraK4"
-        android:layout_width="29dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginLeft="92dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HomeBK3"
-
-        app:srcCompat="@drawable/_4" />
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="@+id/HomeKK1"
+        app:layout_constraintTop_toTopOf="@+id/HomeKK1"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/HomeKK2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginBottom="292dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toEndOf="@+id/HomeKK1"
-        app:layout_constraintTop_toBottomOf="@+id/cifraK5"
-        app:srcCompat="@drawable/homek" />
+        app:layout_constraintTop_toBottomOf="@+id/HomeBK4"
+        app:layout_constraintVertical_bias="0.982"
+        app:srcCompat="@drawable/hk6" />
 
     <Button
         android:id="@+id/CloseK2"
-        android:layout_width="136dp"
-        android:layout_height="108dp"
+        android:layout_width="90dp"
+        android:layout_height="95dp"
         android:background="#00FFFFFF"
         android:drawableBottom="@drawable/_21"
         app:layout_constraintBottom_toBottomOf="@+id/HomeKK2"
         app:layout_constraintEnd_toEndOf="@+id/HomeKK2"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/HomeKK2"
         app:layout_constraintTop_toTopOf="@+id/HomeKK2"
-        app:layout_constraintVertical_bias="0.638" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
-        android:id="@+id/cifraK5"
-        android:layout_width="29dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginRight="96dp"
+        android:id="@+id/HomeKK5"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HomeBK1"
+        app:layout_constraintEnd_toEndOf="@+id/HomeBK1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/HomeBK1"
+        app:srcCompat="@drawable/hk1" />
+
+    <ImageView
+        android:id="@+id/HomeKK6"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HomeBK2"
+        app:layout_constraintEnd_toEndOf="@+id/HomeBK2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/HomeBK2"
+        app:layout_constraintTop_toTopOf="@+id/HomeBK2"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/hk2" />
+
+    <ImageView
+        android:id="@+id/HomeKK7"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HomeBK4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.963"
-        app:layout_constraintStart_toEndOf="@+id/cifraK4"
-        app:layout_constraintTop_toBottomOf="@+id/HomeBK3"
-        app:srcCompat="@drawable/_5" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/HomeBK4"
+        app:layout_constraintTop_toTopOf="@+id/HomeBK4"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/hk3" />
+
+    <Button
+        android:id="@+id/HomeBK4"
+        android:layout_width="111dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="60dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/HomeBK2"
+        app:layout_constraintTop_toBottomOf="@+id/bottomCK" />
+
+    <ImageView
+        android:id="@+id/HomeKK8"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HomeBK3"
+        app:layout_constraintEnd_toEndOf="@+id/HomeBK3"
+        app:layout_constraintStart_toStartOf="@+id/HomeBK3"
+        app:layout_constraintTop_toTopOf="@+id/HomeBK3"
+        app:srcCompat="@drawable/hk4" />
+
+    <ImageView
+        android:id="@+id/HomeKK9"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HomeBK5"
+        app:layout_constraintEnd_toEndOf="@+id/HomeBK5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/HomeBK5"
+        app:layout_constraintTop_toTopOf="@+id/HomeBK5"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/hk7" />
+
+    <ImageView
+        android:id="@+id/HomeKK10"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HomeBK6"
+        app:layout_constraintEnd_toEndOf="@+id/HomeBK6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/HomeBK6"
+        app:layout_constraintTop_toTopOf="@+id/HomeBK6"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/hk8" />
+
+    <ImageView
+        android:id="@+id/HomeKK11"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HomeBK7"
+        app:layout_constraintEnd_toEndOf="@+id/HomeBK7"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/HomeBK7"
+        app:layout_constraintTop_toTopOf="@+id/HomeBK7"
+        app:layout_constraintVertical_bias="0.395"
+        app:srcCompat="@drawable/hk9" />
+
+    <Button
+        android:id="@+id/HomeBK5"
+        android:layout_width="111dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomeBK3" />
+
+    <Button
+        android:id="@+id/HomeBK6"
+        android:layout_width="111dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/HomeKK9"
+        app:layout_constraintTop_toBottomOf="@+id/HomeKK1" />
+
+    <Button
+        android:id="@+id/HomeBK7"
+        android:layout_width="111dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/HomeKK10"
+        app:layout_constraintTop_toBottomOf="@+id/HomeKK2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
