@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/comp_fon"
-    tools:context=".Computer_Teory_Task">
+    tools:context=".Algorithm_Teory_Task">
 
     <Button
-        android:id="@+id/CanleJ"
+        android:id="@+id/bottomC"
         android:layout_width="76dp"
         android:layout_height="62dp"
         android:layout_marginStart="16dp"
@@ -20,139 +20,211 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/HomeBJ"
-        android:layout_width="157dp"
-        android:layout_height="157dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
+        android:id="@+id/HomeBJ1"
+        android:layout_width="111dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="56dp"
         android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_j11"
+        app:backgroundTint="#00FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cifraJ1" />
+        app:layout_constraintTop_toBottomOf="@+id/bottomC" />
 
     <Button
         android:id="@+id/HomeBJ2"
-        android:layout_width="170dp"
-        android:layout_height="157dp"
+        android:layout_width="111dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="56dp"
         android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_j11"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/HomeBJ"
-        app:layout_constraintTop_toBottomOf="@+id/cifraJ2" />
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toEndOf="@+id/HomeKJ3"
+        app:layout_constraintTop_toBottomOf="@+id/bottomC" />
 
     <Button
         android:id="@+id/HomeBJ3"
-        android:layout_width="157dp"
-        android:layout_height="157dp"
+        android:layout_width="111dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
         android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_j11"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cifraJ3" />
-
-    <ImageView
-        android:id="@+id/cifraJ1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
-        android:layout_marginLeft="92dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CanleJ"
-        app:srcCompat="@drawable/_d"
-        app:tint="#A83806" />
-
-    <ImageView
-        android:id="@+id/cifraJ2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.631"
-        app:layout_constraintStart_toEndOf="@+id/cifraJ1"
-        app:layout_constraintTop_toBottomOf="@+id/CanleJ"
-        app:srcCompat="@drawable/_2d" />
-
-    <ImageView
-        android:id="@+id/cifraJ3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HomeBJ"
-        app:srcCompat="@drawable/_3d" />
+        app:layout_constraintTop_toBottomOf="@+id/HomeBJ1" />
 
     <ImageView
         android:id="@+id/HomeKJ1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cifraJ4"
-        app:layout_constraintVertical_bias="0.111"
-        app:srcCompat="@drawable/_j11" />
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toEndOf="@+id/HomeBJ3"
+        app:layout_constraintTop_toBottomOf="@+id/HomeBJ2"
+        app:srcCompat="@drawable/jc5" />
 
     <Button
-        android:id="@+id/CloseJ1"
-        android:layout_width="134dp"
-        android:layout_height="107dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/Closej1"
+        android:layout_width="90dp"
+        android:layout_height="95dp"
         android:background="#00FFFFFF"
         android:drawableBottom="@drawable/_21"
-        app:layout_constraintEnd_toEndOf="@+id/HomeK1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/HomeKJ1" />
-
-    <ImageView
-        android:id="@+id/cifraJ4"
-        android:layout_width="29dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginLeft="92dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HomeBJ3"
-
-        app:srcCompat="@drawable/_4d" />
+        app:layout_constraintBottom_toBottomOf="@+id/HomeKJ1"
+        app:layout_constraintEnd_toEndOf="@+id/HomeKJ1"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="@+id/HomeKJ1"
+        app:layout_constraintTop_toTopOf="@+id/HomeKJ1"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/HomeKJ2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginBottom="292dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toEndOf="@+id/HomeKJ1"
-        app:layout_constraintTop_toBottomOf="@+id/cifraJ5"
-        app:srcCompat="@drawable/_j11" />
+        app:layout_constraintTop_toBottomOf="@+id/HomeBJ10"
+        app:layout_constraintVertical_bias="0.982"
+        app:srcCompat="@drawable/jc6" />
 
     <Button
         android:id="@+id/CloseJ2"
-        android:layout_width="136dp"
-        android:layout_height="108dp"
+        android:layout_width="90dp"
+        android:layout_height="95dp"
         android:background="#00FFFFFF"
         android:drawableBottom="@drawable/_21"
         app:layout_constraintBottom_toBottomOf="@+id/HomeKJ2"
         app:layout_constraintEnd_toEndOf="@+id/HomeKJ2"
         app:layout_constraintStart_toStartOf="@+id/HomeKJ2"
-        app:layout_constraintTop_toTopOf="@+id/HomeKJ2" />
+        app:layout_constraintTop_toTopOf="@+id/HomeKJ2"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
-        android:id="@+id/cifraJ5"
-        android:layout_width="29dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginRight="96dp"
+        android:id="@+id/HomeKJ3"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HomeBJ1"
+        app:layout_constraintEnd_toEndOf="@+id/HomeBJ1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/HomeBJ1"
+        app:srcCompat="@drawable/jc1" />
+
+    <ImageView
+        android:id="@+id/HomeKJ4"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HomeBJ2"
+        app:layout_constraintEnd_toEndOf="@+id/HomeBJ2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/HomeBJ2"
+        app:layout_constraintTop_toTopOf="@+id/HomeBJ2"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/jc2" />
+
+    <ImageView
+        android:id="@+id/HomeKJ5"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HomeBJ10"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.963"
-        app:layout_constraintStart_toEndOf="@+id/cifraJ4"
-        app:layout_constraintTop_toBottomOf="@+id/HomeBJ3"
-        app:srcCompat="@drawable/_5d" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/HomeBJ10"
+        app:layout_constraintTop_toTopOf="@+id/HomeBJ10"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/jc3" />
+
+    <Button
+        android:id="@+id/HomeBJ10"
+        android:layout_width="111dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="60dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/HomeBJ2"
+        app:layout_constraintTop_toBottomOf="@+id/bottomC" />
+
+    <ImageView
+        android:id="@+id/HomeKJ6"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HomeBJ3"
+        app:layout_constraintEnd_toEndOf="@+id/HomeBJ3"
+        app:layout_constraintStart_toStartOf="@+id/HomeBJ3"
+        app:layout_constraintTop_toTopOf="@+id/HomeBJ3"
+        app:srcCompat="@drawable/jc4" />
+
+    <ImageView
+        android:id="@+id/HomeKJ7"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HomeBJ4"
+        app:layout_constraintEnd_toEndOf="@+id/HomeBJ4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/HomeBJ4"
+        app:layout_constraintTop_toTopOf="@+id/HomeBJ4"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/jc7" />
+
+    <ImageView
+        android:id="@+id/HomeKJ8"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HomeBJ5"
+        app:layout_constraintEnd_toEndOf="@+id/HomeBJ5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/HomeBJ5"
+        app:layout_constraintTop_toTopOf="@+id/HomeBJ5"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/jc8" />
+
+    <ImageView
+        android:id="@+id/HomeKJ9"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HomeBJ6"
+        app:layout_constraintEnd_toEndOf="@+id/HomeBJ6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/HomeBJ6"
+        app:layout_constraintTop_toTopOf="@+id/HomeBJ6"
+        app:layout_constraintVertical_bias="0.395"
+        app:srcCompat="@drawable/jc9" />
+
+    <Button
+        android:id="@+id/HomeBJ4"
+        android:layout_width="111dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomeBJ3" />
+
+    <Button
+        android:id="@+id/HomeBJ5"
+        android:layout_width="111dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/HomeKJ6"
+        app:layout_constraintTop_toBottomOf="@+id/HomeKJ1" />
+
+    <Button
+        android:id="@+id/HomeBJ6"
+        android:layout_width="111dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/HomeKJ8"
+        app:layout_constraintTop_toBottomOf="@+id/HomeKJ2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
