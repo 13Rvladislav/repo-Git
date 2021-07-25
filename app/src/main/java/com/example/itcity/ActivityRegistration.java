@@ -32,6 +32,7 @@ public class ActivityRegistration extends AppCompatActivity {
     EditText name;
     EditText password1;
     EditText password2;
+    EditText codeword;
 
     //обработка нажатия клавиши зарегистрироваться
     @Override
@@ -43,6 +44,7 @@ public class ActivityRegistration extends AppCompatActivity {
         name = (EditText) findViewById(R.id.UserName);
         password1 = (EditText) findViewById(R.id.password1);
         password2 = (EditText) findViewById(R.id.password2);
+        codeword = (EditText) findViewById(R.id.codeword);
 
         auth = FirebaseAuth.getInstance();
         DB = FirebaseDatabase.getInstance();
@@ -53,6 +55,7 @@ public class ActivityRegistration extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
+                    //проверка заполнения полей
                     case R.id.REGISTRATION:
                         if (TextUtils.isEmpty(email.getText().toString())) {
                             Toast toast = Toast.makeText(ActivityRegistration.this, "Поле 'email' не заполнено", Toast.LENGTH_SHORT);
@@ -79,6 +82,11 @@ public class ActivityRegistration extends AppCompatActivity {
                             toast.show();
                             return;
                         }
+                        if (TextUtils.isEmpty(codeword.getText().toString())) {
+                            Toast toast = Toast.makeText(ActivityRegistration.this, "Поле 'Кодовое слово' не заполнено", Toast.LENGTH_SHORT);
+                            toast.show();
+                            return;
+                        }
                         String pass1 = password1.getText().toString();
                         String pass2 = password2.getText().toString();
                         boolean passcorrect = pass1.equalsIgnoreCase(pass2);
@@ -95,6 +103,7 @@ public class ActivityRegistration extends AppCompatActivity {
                                 user.setEmail(email.getText().toString());
                                 user.setName(name.getText().toString());
                                 String pass1 = password1.getText().toString();
+                                user.setcodeword(codeword.getText().toString());
                                 int pass3 = pass1.hashCode();
 
                                 user.setPass(pass3);

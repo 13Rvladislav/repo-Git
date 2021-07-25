@@ -22,7 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class ActivityAuthor extends AppCompatActivity {
     Button buttonreggistration;
     Button buttonautirisation;
-
+    Button misspassword;
     EditText email;
     EditText password;
 
@@ -35,7 +35,7 @@ public class ActivityAuthor extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_author);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
-
+        misspassword= (Button) findViewById(R.id.misspassword);
         buttonreggistration = (Button) findViewById(R.id.buttonReg);
         buttonautirisation = (Button) findViewById(R.id.buttonVosstanov);
 
@@ -52,9 +52,13 @@ public class ActivityAuthor extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.buttonReg:
-                        Intent intent = new Intent(ActivityAuthor.this, ActivityRegistration.class);
+                    case R.id.misspassword:
+                        Intent intent = new Intent(ActivityAuthor.this, EkranVosstanovleniyaActivity.class);
                         startActivity(intent);
+                        break;
+                    case R.id.buttonReg:
+                        Intent intent1 = new Intent(ActivityAuthor.this, ActivityRegistration.class);
+                        startActivity(intent1);
                         break;
 
                     case R.id.buttonVosstanov:
@@ -70,6 +74,7 @@ public class ActivityAuthor extends AppCompatActivity {
                             return;
 
                         }
+                        //авторизация
                         auth.signInWithEmailAndPassword(email.getText().toString(), password.getText().toString())
                                 .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                                     @Override
@@ -90,6 +95,7 @@ public class ActivityAuthor extends AppCompatActivity {
         };
         buttonautirisation.setOnClickListener(onClickListener);
         buttonreggistration.setOnClickListener(onClickListener);
+        misspassword.setOnClickListener(onClickListener);
 
     }
 }
