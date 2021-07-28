@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="300dp"
-        android:layout_height="380dp"
+        android:layout_height="410dp"
         android:background="@drawable/autorback"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -60,17 +60,16 @@
             android:autofillHints=""
             android:layout_marginStart="15dp" />
 
-        <Button
+        <TextView
             android:id="@+id/misspassword"
-            android:layout_width="212dp"
-            android:layout_height="37dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="-10dp"
-
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="70dp"
             android:text="@string/zabps"
             android:textColor="#1794e0"
-            android:textSize="15sp" />
+            android:textSize="18sp"
+            android:layout_marginStart="70dp" />
 
         <Button
             android:id="@+id/buttonVosstanov"
@@ -88,18 +87,16 @@
             app:layout_constraintTop_toBottomOf="@+id/nohaveacc"
             android:layout_marginStart="24dp" />
 
-        <Button
+        <TextView
             android:id="@+id/nohaveacc"
-            android:layout_width="212dp"
-            android:layout_height="37dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="-10dp"
-            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/netakk"
-
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="70dp"
             android:textColor="#1794e0"
-            android:textSize="15sp" />
+            android:textSize="18sp"
+            android:layout_marginStart="70dp" />
 
         <Button
             android:id="@+id/buttonReg"
