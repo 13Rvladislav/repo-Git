@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itcity">
-        <activity android:name=".EkranVosstanovleniyaActivity"></activity>
+        <activity android:name=".TeotyZelenyeActivity"></activity>
+        <activity android:name=".EkranVosstanovleniyaActivity" />
         <activity android:name=".Activity_Profile" />
         <activity
             android:name=".Computer_Teory_Task"
