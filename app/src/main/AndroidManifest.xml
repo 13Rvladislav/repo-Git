@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itcity">
-        <activity android:name=".Activity_Profile"></activity>
+        <activity android:name=".ZadanieProgrammingActivity"></activity>
+        <activity android:name=".Activity_Profile" />
         <activity
             android:name=".Computer_Teory_Task"
             android:label="@string/title_activity_computer__teory__task"
