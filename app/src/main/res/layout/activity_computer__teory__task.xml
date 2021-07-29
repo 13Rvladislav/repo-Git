@@ -37,6 +37,7 @@
         android:layout_height="130dp"
         android:layout_marginTop="56dp"
         android:background="#00FFFFFF"
+        android:drawableBottom="@drawable/_21"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintStart_toEndOf="@+id/HomeKJ3"
@@ -50,6 +51,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="52dp"
         android:background="#00FFFFFF"
+        android:drawableBottom="@drawable/_21"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/HomeBJ1" />
 
@@ -62,7 +64,7 @@
         android:layout_marginTop="60dp"
         app:layout_constraintStart_toEndOf="@+id/HomeBJ3"
         app:layout_constraintTop_toBottomOf="@+id/HomeBJ2"
-        app:srcCompat="@drawable/jc5" />
+        app:srcCompat="@drawable/bottonhomej5" />
 
     <Button
         android:id="@+id/Closej1"
@@ -88,7 +90,7 @@
         app:layout_constraintStart_toEndOf="@+id/HomeKJ1"
         app:layout_constraintTop_toBottomOf="@+id/HomeBJ10"
         app:layout_constraintVertical_bias="0.982"
-        app:srcCompat="@drawable/jc6" />
+        app:srcCompat="@drawable/bottonhomej6" />
 
     <Button
         android:id="@+id/CloseJ2"
@@ -123,7 +125,7 @@
         app:layout_constraintStart_toStartOf="@+id/HomeBJ2"
         app:layout_constraintTop_toTopOf="@+id/HomeBJ2"
         app:layout_constraintVertical_bias="0.25"
-        app:srcCompat="@drawable/jc2" />
+        app:srcCompat="@drawable/bottonhomej2" />
 
     <ImageView
         android:id="@+id/HomeKJ5"
@@ -135,14 +137,15 @@
         app:layout_constraintStart_toStartOf="@+id/HomeBJ10"
         app:layout_constraintTop_toTopOf="@+id/HomeBJ10"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/jc3" />
+        app:srcCompat="@drawable/bottonhomej3" />
 
     <Button
         android:id="@+id/HomeBJ10"
-        android:layout_width="111dp"
-        android:layout_height="130dp"
+        android:layout_width="114dp"
+        android:layout_height="125dp"
         android:layout_marginTop="60dp"
         android:background="#00FFFFFF"
+        android:drawableBottom="@drawable/_21"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/HomeBJ2"
         app:layout_constraintTop_toBottomOf="@+id/bottomC" />
@@ -155,7 +158,7 @@
         app:layout_constraintEnd_toEndOf="@+id/HomeBJ3"
         app:layout_constraintStart_toStartOf="@+id/HomeBJ3"
         app:layout_constraintTop_toTopOf="@+id/HomeBJ3"
-        app:srcCompat="@drawable/jc4" />
+        app:srcCompat="@drawable/bottonhomej4" />
 
     <ImageView
         android:id="@+id/HomeKJ7"
@@ -167,7 +170,7 @@
         app:layout_constraintStart_toStartOf="@+id/HomeBJ4"
         app:layout_constraintTop_toTopOf="@+id/HomeBJ4"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/jc7" />
+        app:srcCompat="@drawable/bottonhomej7" />
 
     <ImageView
         android:id="@+id/HomeKJ8"
@@ -179,7 +182,7 @@
         app:layout_constraintStart_toStartOf="@+id/HomeBJ5"
         app:layout_constraintTop_toTopOf="@+id/HomeBJ5"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/jc8" />
+        app:srcCompat="@drawable/bottonhomej8" />
 
     <ImageView
         android:id="@+id/HomeKJ9"
@@ -191,38 +194,41 @@
         app:layout_constraintStart_toStartOf="@+id/HomeBJ6"
         app:layout_constraintTop_toTopOf="@+id/HomeBJ6"
         app:layout_constraintVertical_bias="0.395"
-        app:srcCompat="@drawable/jc9" />
+        app:srcCompat="@drawable/bottonhomej9" />
 
     <Button
         android:id="@+id/HomeBJ4"
-        android:layout_width="111dp"
-        android:layout_height="130dp"
+        android:layout_width="105dp"
+        android:layout_height="122dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="48dp"
         android:background="#00FFFFFF"
+        android:drawableBottom="@drawable/_21"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/HomeBJ3" />
 
     <Button
         android:id="@+id/HomeBJ5"
-        android:layout_width="111dp"
-        android:layout_height="130dp"
+        android:layout_width="110dp"
+        android:layout_height="118dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="60dp"
         android:background="#00FFFFFF"
+        android:drawableBottom="@drawable/_21"
         app:layout_constraintStart_toEndOf="@+id/HomeKJ6"
         app:layout_constraintTop_toBottomOf="@+id/HomeKJ1" />
 
     <Button
         android:id="@+id/HomeBJ6"
-        android:layout_width="111dp"
-        android:layout_height="130dp"
+        android:layout_width="115dp"
+        android:layout_height="126dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="60dp"
         android:background="#00FFFFFF"
+        android:drawableBottom="@drawable/_21"
         app:layout_constraintStart_toEndOf="@+id/HomeKJ8"
         app:layout_constraintTop_toBottomOf="@+id/HomeKJ2" />
 
