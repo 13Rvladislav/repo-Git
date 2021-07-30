@@ -56,7 +56,7 @@ public class ActivityAuthor extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.buttonReg: {
-                        Intent intent = new Intent(ActivityAuthor.this, ActivityMap.class);
+                        Intent intent = new Intent(ActivityAuthor.this, ActivityRegistration.class);
                         startActivity(intent);
                         break;
                     }
