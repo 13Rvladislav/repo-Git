@@ -29,6 +29,7 @@ public class ActivityMap extends AppCompatActivity {
         buttonRait = (Button) findViewById(R.id.buttonRait);
         profile = (Button) findViewById(R.id.profile);
 
+
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
 

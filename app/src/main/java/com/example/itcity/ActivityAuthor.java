@@ -22,6 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class ActivityAuthor extends AppCompatActivity {
     Button buttonreggistration;
     Button buttonautirisation;
+    Button buttonmisspassword;
 
     EditText email;
     EditText password;
@@ -36,10 +37,12 @@ public class ActivityAuthor extends AppCompatActivity {
         setContentView(R.layout.activity_author);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
 
+        buttonmisspassword = (Button) findViewById(R.id.misspassword);
         buttonreggistration = (Button) findViewById(R.id.buttonReg);
         buttonautirisation = (Button) findViewById(R.id.buttonVosstanov);
 
-        email = (EditText) findViewById(R.id.emai);
+
+        email = (EditText) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.Password);
 
         auth = FirebaseAuth.getInstance();
@@ -52,10 +55,17 @@ public class ActivityAuthor extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.buttonReg:
-                        Intent intent = new Intent(ActivityAuthor.this, ActivityRegistration.class);
+                    case R.id.buttonReg: {
+                        Intent intent = new Intent(ActivityAuthor.this, ActivityMap.class);
                         startActivity(intent);
                         break;
+                    }
+
+                    case R.id.misspassword: {
+                        Intent intent = new Intent(ActivityAuthor.this, EkranVosstanovleniyaActivity.class);
+                        startActivity(intent);
+                        break;
+                    }
 
                     case R.id.buttonVosstanov:
                         if (TextUtils.isEmpty(email.getText().toString())) {
@@ -90,7 +100,7 @@ public class ActivityAuthor extends AppCompatActivity {
         };
         buttonautirisation.setOnClickListener(onClickListener);
         buttonreggistration.setOnClickListener(onClickListener);
-
+        buttonmisspassword.setOnClickListener(onClickListener);
     }
 }
 

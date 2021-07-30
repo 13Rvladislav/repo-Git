@@ -9,19 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itcity">
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <activity android:name=".TeoryProgrammirovanieActivity"></activity>
-        <activity android:name=".TeorySecurityActivity" />
-        <activity android:name=".TeotyZelenyeActivity" />
-        <activity android:name=".EkranVosstanovleniyaActivity" />
-=======
-        <activity android:name=".ZadaniyaComputerActivity"></activity>
->>>>>>> Dev_ARSLAN
-=======
-        <activity android:name=".ZadanieProgrammingActivity"></activity>
->>>>>>> Dev_ARSLAN
-        <activity android:name=".Activity_Profile" />
+        <activity android:name=".Activity_Profile"></activity>
         <activity
             android:name=".Computer_Teory_Task"
             android:label="@string/title_activity_computer__teory__task"
@@ -34,7 +22,9 @@
         <activity android:name=".ActivityMap" />
         <activity android:name=".ActivityRegistration" />
         <activity android:name=".ActivityAuthor" />
+	<activity android:name=".EkranVosstanovleniyaActivity" />
         <activity android:name=".MainActivity">
+ 	
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

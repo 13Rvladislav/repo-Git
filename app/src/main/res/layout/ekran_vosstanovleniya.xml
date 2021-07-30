@@ -30,7 +30,7 @@
             app:srcCompat="@drawable/_abc" />
 
         <EditText
-            android:id="@+id/emai"
+            android:id="@+id/email"
             android:layout_width="266dp"
             android:layout_height="57dp"
             android:layout_marginStart="15dp"

@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -87,6 +88,7 @@ public class ActivityRegistration extends AppCompatActivity {
                             toast.show();
                             return;
                         }
+
                         //регистрация пользователя
                         auth.createUserWithEmailAndPassword(email.getText().toString(), password1.getText().toString()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                             @Override
@@ -104,6 +106,7 @@ public class ActivityRegistration extends AppCompatActivity {
                                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                                             @Override
                                             public void onSuccess(Void aVoid) {
+
                                                 Toast toast = Toast.makeText(ActivityRegistration.this, "Пользователь успешно зарегистрирован!", Toast.LENGTH_SHORT);
                                                 toast.show();
                                                 Intent intent = new Intent(ActivityRegistration.this, ActivityAuthor.class);
