@@ -17,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.466">>
+        app:layout_constraintVertical_bias="0.457">>
 
         <ImageView
             android:id="@+id/voss"
@@ -44,50 +44,6 @@
             android:text="Email"
             android:textColor="#90DDF3"
             android:textColorHint="#90DDF3" />
-
-        <EditText
-            android:id="@+id/CodeSlovo"
-            android:layout_width="267dp"
-            android:layout_height="57dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:ems="10"
-            android:backgroundTint="#1794E0"
-            android:inputType="textEmailAddress"
-            android:text="Кодовое слово"
-            android:textColor="#90DDF3"
-            android:textColorHint="#90DDF3"/>
-
-        <EditText
-            android:id="@+id/NewRassword"
-            android:layout_width="267dp"
-            android:layout_height="57dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#1794E0"
-            android:ems="10"
-            android:inputType="textPassword|textPostalAddress"
-            android:text="Новый пароль"
-            android:textColor="#90DDF3"
-            android:textColorHint="#90DDF3"
-            tools:text="Новый пароль" />
-
-        <EditText
-            android:id="@+id/PovtorPar"
-            android:layout_width="267dp"
-            android:layout_height="57dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#1794E0"
-            android:ems="10"
-            android:inputType="textPassword|textPostalAddress"
-            android:text="Повторите пароль"
-            android:textColor="#90DDF3"
-            android:textColorHint="#90DDF3"
-            tools:text="Повторите пароль" />
 
         <Button
             android:id="@+id/buttonVosstanov"

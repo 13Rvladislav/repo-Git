@@ -62,7 +62,7 @@ public class ActivityAuthor extends AppCompatActivity {
                     }
 
                     case R.id.misspassword: {
-                        Intent intent = new Intent(ActivityAuthor.this, EkranVosstanovleniyaActivity.class);
+                        Intent intent = new Intent(ActivityAuthor.this, EkranVos.class);
                         startActivity(intent);
                         break;
                     }
