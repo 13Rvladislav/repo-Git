@@ -18,7 +18,6 @@
         <activity android:name=".Informatica_Teory_Task" />
         <activity android:name=".Programming_Teory_Task" />
         <activity android:name=".Algorithm_Teory_Task" />
-        <activity android:name=".ActivityAuthor$Algorithm_Teory_Task" />
         <activity android:name=".ActivityMap" />
         <activity android:name=".ActivityRegistration" />
         <activity android:name=".ActivityAuthor" />
