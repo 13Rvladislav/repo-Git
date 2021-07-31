@@ -11,11 +11,16 @@
         android:theme="@style/Theme.Itcity">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <activity android:name=".Activity_Profile"></activity>
 =======
         <activity android:name=".ZadanieSecurityActivity"></activity>
 =======
         <activity android:name=".ZadanieInformaticaActivity"></activity>
+=======
+        <activity android:name=".ZadanieAlgorithmActivity"></activity>
+        <activity android:name=".ZadanieInformaticaActivity" />
+>>>>>>> Dev_ARSLAN
         <activity android:name=".ZadanieSecurityActivity" />
 >>>>>>> Dev_ARSLAN
         <activity android:name=".ZadanieProgrammingActivity" />
