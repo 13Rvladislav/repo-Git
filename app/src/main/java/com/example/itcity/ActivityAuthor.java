@@ -84,8 +84,18 @@ public class ActivityAuthor extends AppCompatActivity {
                                 .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                                     @Override
                                     public void onSuccess(AuthResult authResult) {
-                                        Intent intent = new Intent(ActivityAuthor.this, ActivityMap.class);
-                                        startActivity(intent);
+                                        if (auth.getCurrentUser() != null) {
+                                            boolean isEmailVerified = auth.getCurrentUser().isEmailVerified();
+                                            if (isEmailVerified) {
+                                                Intent intent = new Intent(ActivityAuthor.this, ActivityMap.class);
+                                                startActivity(intent);
+                                            }
+                                            else
+                                            {
+                                                Toast toast = Toast.makeText(ActivityAuthor.this, "Верефицируйте ваш аккаунт!" , Toast.LENGTH_SHORT);
+                                                toast.show();
+                                            }
+                                        }
                                     }
                                 }).addOnFailureListener(new OnFailureListener() {
                             @Override

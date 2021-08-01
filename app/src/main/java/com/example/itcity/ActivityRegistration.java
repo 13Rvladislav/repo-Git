@@ -1,5 +1,6 @@
 package com.example.itcity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -11,9 +12,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.itcity.models.User;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -40,6 +44,9 @@ public class ActivityRegistration extends AppCompatActivity {
         password2 = (EditText) findViewById(R.id.password2);
 
         auth = FirebaseAuth.getInstance();
+        FirebaseUser user1 = auth.getCurrentUser();
+
+
         DB = FirebaseDatabase.getInstance();
         users = DB.getReference("Users");
         btnRegistration = (Button) findViewById(R.id.REGISTRATION);
@@ -94,6 +101,23 @@ public class ActivityRegistration extends AppCompatActivity {
                                 int pass3 = pass1.hashCode();
 
                                 user.setPass(pass3);
+
+                                user1.sendEmailVerification()
+                                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                            @Override
+                                            public void onComplete(@NonNull Task<Void> task) {
+                                                if (task.isSuccessful())
+                                                {
+                                                    Toast.makeText(ActivityRegistration.this,
+                                                            "письмо верификации отправлено на ваш email", Toast.LENGTH_LONG).show();
+                                                }
+                                                else
+                                                {
+                                                    Toast.makeText(ActivityRegistration.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+
+                                                }
+                                            }
+                                        });
 
                                 users.child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                         .setValue(user)
