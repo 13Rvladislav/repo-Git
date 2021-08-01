@@ -2,12 +2,16 @@ package com.example.itcity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.Animation;
 import android.widget.Button;
+
+import com.example.itcity.THEORY_TASK.algorithm.Algorithm_Teory_Task;
+import com.example.itcity.THEORY_TASK.computer_Device.Computer_Teory_Task;
+import com.example.itcity.THEORY_TASK.fundamental_of_informatics.Informatica_Teory_Task;
+import com.example.itcity.THEORY_TASK.programming.Programming_Teory_Task;
+import com.example.itcity.THEORY_TASK.security.Security_Teory_Task;
 
 public class ActivityMap extends AppCompatActivity {
     private Button buttonAlgoritm;

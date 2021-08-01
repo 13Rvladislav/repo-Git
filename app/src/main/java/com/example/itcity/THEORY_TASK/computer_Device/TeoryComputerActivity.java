@@ -1,14 +1,16 @@
-package com.example.itcity;
+package com.example.itcity.THEORY_TASK.computer_Device;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class TeorySecurityActivity extends AppCompatActivity {
+import com.example.itcity.R;
+
+public class TeoryComputerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teory_security);
+        setContentView(R.layout.teory_computer);
     }
 }

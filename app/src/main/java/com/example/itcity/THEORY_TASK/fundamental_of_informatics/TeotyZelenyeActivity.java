@@ -1,8 +1,10 @@
-package com.example.itcity;
+package com.example.itcity.THEORY_TASK.fundamental_of_informatics;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.itcity.R;
 
 public class TeotyZelenyeActivity extends AppCompatActivity {
 

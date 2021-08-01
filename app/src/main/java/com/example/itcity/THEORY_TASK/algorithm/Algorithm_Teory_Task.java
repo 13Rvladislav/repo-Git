@@ -1,8 +1,10 @@
-package com.example.itcity;
+package com.example.itcity.THEORY_TASK.algorithm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.itcity.R;
 
 public class Algorithm_Teory_Task extends AppCompatActivity {
 

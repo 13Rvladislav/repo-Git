@@ -1,14 +1,16 @@
-package com.example.itcity;
+package com.example.itcity.THEORY_TASK.algorithm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ZadanieAlgorithmActivity extends AppCompatActivity {
+import com.example.itcity.R;
+
+public class TeoryAlgoritmActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.zadanie_algorithm);
+        setContentView(R.layout.teory_algoritm);
     }
 }

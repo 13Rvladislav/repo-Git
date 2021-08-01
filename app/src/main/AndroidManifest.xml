@@ -12,24 +12,24 @@
 
         <activity android:name=".Activity_Profile"></activity>
 =======
-        <activity android:name=".ZadanieSecurityActivity"></activity>
+        <activity android:name=".THEORY_TASK.security.ZadanieSecurityActivity"></activity>
 =======
-        <activity android:name=".ZadanieInformaticaActivity"></activity>
+        <activity android:name=".THEORY_TASK.fundamental_of_informatics.ZadanieInformaticaActivity"></activity>
 =======
-        <activity android:name=".ZadanieAlgorithmActivity"></activity>
+        <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithmActivity"></activity>
 
 
 >>>>>>> Dev_ARSLAN
-        <activity android:name=".ZadanieProgrammingActivity" />
+        <activity android:name=".THEORY_TASK.programming.ZadanieProgrammingActivity" />
 >>>>>>> Dev_ARSLAN
         <activity
-            android:name=".Computer_Teory_Task"
+            android:name=".THEORY_TASK.computer_Device.Computer_Teory_Task"
             android:label="@string/title_activity_computer__teory__task"
             android:theme="@style/Theme.Itcity.NoActionBar" />
-        <activity android:name=".Security_Teory_Task" />
-        <activity android:name=".Informatica_Teory_Task" />
-        <activity android:name=".Programming_Teory_Task" />
-        <activity android:name=".Algorithm_Teory_Task" />
+        <activity android:name=".THEORY_TASK.security.Security_Teory_Task" />
+        <activity android:name=".THEORY_TASK.fundamental_of_informatics.Informatica_Teory_Task" />
+        <activity android:name=".THEORY_TASK.programming.Programming_Teory_Task" />
+        <activity android:name=".THEORY_TASK.algorithm.Algorithm_Teory_Task" />
         <activity android:name=".ActivityMap" />
         <activity android:name=".ActivityRegistration" />
         <activity android:name=".ActivityAuthor" />

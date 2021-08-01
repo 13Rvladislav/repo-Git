@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/zadanie_fon_inform"
-    tools:context=".ZadanieInformaticaActivity">
+    tools:context=".THEORY_TASK.fundamental_of_informatics.ZadanieInformaticaActivity">
 
     <ImageView
         android:id="@+id/imageView9"

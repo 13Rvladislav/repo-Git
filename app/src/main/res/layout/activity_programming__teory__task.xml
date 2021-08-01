@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/progrmmirovanie"
-    tools:context=".Algorithm_Teory_Task">
+    tools:context=".THEORY_TASK.algorithm.Algorithm_Teory_Task">
 
     <Button
         android:id="@+id/bottomCK"

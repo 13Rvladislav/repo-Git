@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/teoria_fioletovye"
-    tools:context=".TeoryAlgoritmActivity">
+    tools:context=".THEORY_TASK.algorithm.TeoryAlgoritmActivity">
 
     <Button
         android:id="@+id/bottomTeoryK"

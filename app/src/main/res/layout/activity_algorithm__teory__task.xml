@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/algoritm_fon"
-    tools:context=".Algorithm_Teory_Task">
+    tools:context=".THEORY_TASK.algorithm.Algorithm_Teory_Task">
 
     <Button
         android:id="@+id/bottomCanle"
@@ -124,7 +124,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/HomeB2"
         app:layout_constraintTop_toTopOf="@+id/HomeB2"
-        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/bottonhomef2" />
 
     <ImageView
