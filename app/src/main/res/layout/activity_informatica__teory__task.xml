@@ -113,7 +113,7 @@
         app:layout_constraintEnd_toEndOf="@+id/HomeBZ1"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/HomeBZ1"
-        app:srcCompat="@drawable/hz1" />
+        app:srcCompat="@drawable/bottonhomez1" />
 
     <ImageView
         android:id="@+id/HomeKZ4"
