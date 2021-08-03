@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/karta_itog3"
+    android:background="@drawable/karta_s_textom"
     android:hapticFeedbackEnabled="false"
     tools:context=".ActivityMap">
 
@@ -12,8 +12,8 @@
         android:id="@+id/buttonAlgorithms"
         android:layout_width="200dp"
         android:layout_height="160dp"
-        android:rotation="-32"
         android:background="@android:color/transparent"
+        android:rotation="-32"
         android:text=""
         app:backgroundTint="@color/purple_200"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,8 +27,8 @@
         android:id="@+id/buttonSecure"
         android:layout_width="200dp"
         android:layout_height="150dp"
-        android:rotation="65"
         android:background="@android:color/transparent"
+        android:rotation="65"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,8 +41,8 @@
         android:id="@+id/buttonComputer"
         android:layout_width="330dp"
         android:layout_height="147dp"
-        android:rotation="6"
         android:background="@android:color/transparent"
+        android:rotation="6"
         android:text=""
         app:backgroundTint="@color/ppblack"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -70,8 +70,8 @@
         android:id="@+id/buttonInforatica"
         android:layout_width="200dp"
         android:layout_height="120dp"
-        android:rotation="-50"
         android:background="@android:color/transparent"
+        android:rotation="-50"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,24 +99,24 @@
         android:layout_width="150dp"
         android:layout_height="45dp"
         android:layout_marginTop="24dp"
+        android:contentDescription="@string/todo23"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/podcl"
-        android:contentDescription="@string/todo23" />
+        app:srcCompat="@drawable/podcl" />
 
     <ImageView
         android:id="@+id/cup"
         android:layout_width="39dp"
         android:layout_height="46dp"
         android:layout_marginTop="20dp"
+        android:contentDescription="@string/todo33"
         app:layout_constraintEnd_toEndOf="@+id/backrait"
         app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="@+id/backrait"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cup"
-        android:contentDescription="@string/todo33" />
+        app:srcCompat="@drawable/cup" />
 
     <TextView
         android:id="@+id/raitTEXTVIEV"
