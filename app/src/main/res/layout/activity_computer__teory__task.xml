@@ -19,218 +19,106 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/HomeBJ1"
-        android:layout_width="111dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="56dp"
-        android:background="#00FFFFFF"
-        app:backgroundTint="#00FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bottomC" />
-
-    <Button
-        android:id="@+id/HomeBJ2"
-        android:layout_width="111dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="56dp"
-        android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_21"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.127"
-        app:layout_constraintStart_toEndOf="@+id/HomeKJ3"
-        app:layout_constraintTop_toBottomOf="@+id/bottomC" />
-
-    <Button
-        android:id="@+id/HomeBJ3"
-        android:layout_width="111dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="52dp"
-        android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_21"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HomeBJ1" />
-
     <ImageView
         android:id="@+id/HomeKJ1"
         android:layout_width="112dp"
         android:layout_height="114dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="60dp"
-        app:layout_constraintStart_toEndOf="@+id/HomeBJ3"
-        app:layout_constraintTop_toBottomOf="@+id/HomeBJ2"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toEndOf="@+id/HomeKJ6"
+        app:layout_constraintTop_toBottomOf="@+id/HomeKJ4"
         app:srcCompat="@drawable/bottonhomej5" />
-
-    <Button
-        android:id="@+id/Closej1"
-        android:layout_width="90dp"
-        android:layout_height="95dp"
-        android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_21"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeKJ1"
-        app:layout_constraintEnd_toEndOf="@+id/HomeKJ1"
-        app:layout_constraintHorizontal_bias="0.59"
-        app:layout_constraintStart_toStartOf="@+id/HomeKJ1"
-        app:layout_constraintTop_toTopOf="@+id/HomeKJ1"
-        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/HomeKJ2"
         android:layout_width="112dp"
         android:layout_height="114dp"
-        android:layout_marginBottom="292dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="52dp"
         app:layout_constraintStart_toEndOf="@+id/HomeKJ1"
-        app:layout_constraintTop_toBottomOf="@+id/HomeBJ10"
-        app:layout_constraintVertical_bias="0.982"
+        app:layout_constraintTop_toBottomOf="@+id/HomeKJ5"
         app:srcCompat="@drawable/bottonhomej6" />
-
-    <Button
-        android:id="@+id/CloseJ2"
-        android:layout_width="90dp"
-        android:layout_height="95dp"
-        android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_21"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeKJ2"
-        app:layout_constraintEnd_toEndOf="@+id/HomeKJ2"
-        app:layout_constraintStart_toStartOf="@+id/HomeKJ2"
-        app:layout_constraintTop_toTopOf="@+id/HomeKJ2"
-        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/HomeKJ3"
         android:layout_width="112dp"
         android:layout_height="114dp"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeBJ1"
-        app:layout_constraintEnd_toEndOf="@+id/HomeBJ1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/HomeBJ1"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomC"
         app:srcCompat="@drawable/bottonhomej1" />
 
     <ImageView
         android:id="@+id/HomeKJ4"
         android:layout_width="112dp"
         android:layout_height="114dp"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeBJ2"
-        app:layout_constraintEnd_toEndOf="@+id/HomeBJ2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/HomeBJ2"
-        app:layout_constraintTop_toTopOf="@+id/HomeBJ2"
-        app:layout_constraintVertical_bias="0.25"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toEndOf="@+id/HomeKJ3"
+        app:layout_constraintTop_toBottomOf="@+id/bottomC"
         app:srcCompat="@drawable/bottonhomej2" />
 
     <ImageView
         android:id="@+id/HomeKJ5"
         android:layout_width="112dp"
         android:layout_height="114dp"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeBJ10"
+        android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/HomeBJ10"
-        app:layout_constraintTop_toTopOf="@+id/HomeBJ10"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toEndOf="@+id/HomeKJ4"
+        app:layout_constraintTop_toBottomOf="@+id/bottomC"
         app:srcCompat="@drawable/bottonhomej3" />
-
-    <Button
-        android:id="@+id/HomeBJ10"
-        android:layout_width="114dp"
-        android:layout_height="125dp"
-        android:layout_marginTop="60dp"
-        android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_21"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/HomeBJ2"
-        app:layout_constraintTop_toBottomOf="@+id/bottomC" />
 
     <ImageView
         android:id="@+id/HomeKJ6"
         android:layout_width="112dp"
         android:layout_height="114dp"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeBJ3"
-        app:layout_constraintEnd_toEndOf="@+id/HomeBJ3"
-        app:layout_constraintStart_toStartOf="@+id/HomeBJ3"
-        app:layout_constraintTop_toTopOf="@+id/HomeBJ3"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomeKJ3"
         app:srcCompat="@drawable/bottonhomej4" />
 
     <ImageView
         android:id="@+id/HomeKJ7"
         android:layout_width="112dp"
         android:layout_height="114dp"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeBJ4"
-        app:layout_constraintEnd_toEndOf="@+id/HomeBJ4"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/HomeBJ4"
-        app:layout_constraintTop_toTopOf="@+id/HomeBJ4"
-        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomeKJ6"
+        app:layout_constraintVertical_bias="0.348"
         app:srcCompat="@drawable/bottonhomej7" />
 
     <ImageView
         android:id="@+id/HomeKJ8"
         android:layout_width="112dp"
         android:layout_height="114dp"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeBJ5"
-        app:layout_constraintEnd_toEndOf="@+id/HomeBJ5"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/HomeBJ5"
-        app:layout_constraintTop_toTopOf="@+id/HomeBJ5"
-        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/HomeKJ7"
+        app:layout_constraintTop_toBottomOf="@+id/HomeKJ1"
+        app:layout_constraintVertical_bias="0.348"
         app:srcCompat="@drawable/bottonhomej8" />
 
     <ImageView
         android:id="@+id/HomeKJ9"
         android:layout_width="112dp"
         android:layout_height="114dp"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeBJ6"
-        app:layout_constraintEnd_toEndOf="@+id/HomeBJ6"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/HomeBJ6"
-        app:layout_constraintTop_toTopOf="@+id/HomeBJ6"
-        app:layout_constraintVertical_bias="0.395"
-        app:srcCompat="@drawable/bottonhomej9" />
-
-    <Button
-        android:id="@+id/HomeBJ4"
-        android:layout_width="105dp"
-        android:layout_height="122dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="48dp"
-        android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_21"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HomeBJ3" />
-
-    <Button
-        android:id="@+id/HomeBJ5"
-        android:layout_width="110dp"
-        android:layout_height="118dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="60dp"
-        android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_21"
-        app:layout_constraintStart_toEndOf="@+id/HomeKJ6"
-        app:layout_constraintTop_toBottomOf="@+id/HomeKJ1" />
-
-    <Button
-        android:id="@+id/HomeBJ6"
-        android:layout_width="115dp"
-        android:layout_height="126dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="60dp"
-        android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_21"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="68dp"
         app:layout_constraintStart_toEndOf="@+id/HomeKJ8"
-        app:layout_constraintTop_toBottomOf="@+id/HomeKJ2" />
+        app:layout_constraintTop_toBottomOf="@+id/HomeKJ2"
+        app:srcCompat="@drawable/bottonhomej9" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
