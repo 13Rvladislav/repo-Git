@@ -7,6 +7,7 @@
     android:background="@drawable/algoritm_fon"
     tools:context=".THEORY_TASK.algorithm.TheoryAlgorithm1"
     android:paddingTop="-11dp"
+    android:layout_marginTop="-2dp"
     >
 
     <Button
@@ -25,9 +26,8 @@
     <ImageView
         android:id="@+id/imageView12"
         android:layout_width="match_parent"
-        android:layout_height="93dp"
-        android:layout_marginTop="-50dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="92dp"
+        android:padding="-1dp"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/_____2_2" />
 
@@ -76,7 +76,9 @@
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="111dp"
-                android:layout_marginTop="14dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:background="@drawable/ic_podlozhka_teoria_belaya"
                 android:orientation="vertical">
 
@@ -94,7 +96,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="230dp"
                 android:layout_marginTop="15dp"
-
+               
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:background="@drawable/ic_podlozhka_teoria_zheltaya"
                 android:orientation="vertical">
 
