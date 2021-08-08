@@ -31,12 +31,13 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="36dp"
         android:text="АЛГОРИТМЫ"
         android:textColor="#FDFDFD"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toEndOf="@+id/button5"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,26 +45,26 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="4dp"
         android:text="ЗАДАНИЕ 1"
         android:textColor="#3D0250"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView13" />
 
     <ImageView
         android:id="@+id/imageView14"
-        android:layout_width="378dp"
-        android:layout_height="383dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="400dp"
+        android:layout_height="420dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_podlozhka_text_zadania"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:srcCompat="@drawable/ipodlozhka_text_zadania"
         tools:ignore="VectorDrawableCompat" />
 
     <ImageView
