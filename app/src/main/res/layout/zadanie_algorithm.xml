@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/zadanie_fon_fioletovye"
-    tools:context=".THEORY_TASK.algorithm.ZadanieAlgorithmActivity">
+    tools:context=".THEORY_TASK.algorithm.ZadanieAlgorithm1">
 
     <ImageView
         android:id="@+id/imageView13"

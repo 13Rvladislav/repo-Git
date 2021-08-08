@@ -9,11 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itcity">
-        <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm"></activity>
+        <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm9"></activity>
+        <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm8" />
+        <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm7" />
+        <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm6" />
+        <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm5" />
+        <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm4" />
+        <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm3" />
+        <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm2" />
+        <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm1" />
         <activity android:name=".Activity_Profile" />
         <activity android:name=".THEORY_TASK.security.ZadanieSecurityActivity" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.ZadanieInformaticaActivity" />
-        <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithmActivity" />
+        <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm1" />
         <activity android:name=".THEORY_TASK.programming.ZadanieProgrammingActivity" />
         <activity
             android:name=".THEORY_TASK.computer_Device.Computer_Teory_Task"
@@ -22,7 +30,7 @@
         <activity android:name=".THEORY_TASK.security.Security_Teory_Task" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.Informatica_Teory_Task" />
         <activity android:name=".THEORY_TASK.programming.Programming_Teory_Task" />
-        <activity android:name=".THEORY_TASK.algorithm.Algorithm_Teory_Task" />
+        <activity android:name=".THEORY_TASK.algorithm.Algorithm_HOME" />
         <activity android:name=".ActivityMap" />
         <activity android:name=".ActivityRegistration" />
         <activity android:name=".ActivityAuthor" />

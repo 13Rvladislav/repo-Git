@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.itcity.R;
 
-public class ZadanieAlgorithmActivity extends AppCompatActivity {
+public class TheoryAlgorithm2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.zadanie_algorithm);
+        setContentView(R.layout.activity_theory_algorithm2);
     }
 }

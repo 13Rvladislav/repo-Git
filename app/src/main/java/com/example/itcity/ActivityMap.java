@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.itcity.THEORY_TASK.algorithm.Algorithm_Teory_Task;
+import com.example.itcity.THEORY_TASK.algorithm.Algorithm_HOME;
 import com.example.itcity.THEORY_TASK.computer_Device.Computer_Teory_Task;
 import com.example.itcity.THEORY_TASK.fundamental_of_informatics.Informatica_Teory_Task;
 import com.example.itcity.THEORY_TASK.programming.Programming_Teory_Task;
@@ -43,7 +43,7 @@ public class ActivityMap extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.buttonAlgorithms:
-                        Intent intent1 = new Intent(ActivityMap.this, Algorithm_Teory_Task.class);
+                        Intent intent1 = new Intent(ActivityMap.this, Algorithm_HOME.class);
                         startActivity(intent1);
                         break;
                     case R.id.buttonSecure:
