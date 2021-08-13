@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 import com.example.itcity.R;
 
@@ -17,7 +16,7 @@ public class TheoryAlgorithm1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_theory_algorithm1);
+        setContentView(R.layout.algtheory1);
         getSupportActionBar().hide();
         button8 = (Button) findViewById(R.id.button8);
         View.OnClickListener onClickListener = new View.OnClickListener() {

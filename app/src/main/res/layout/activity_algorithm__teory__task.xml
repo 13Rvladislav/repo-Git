@@ -4,20 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/algoritm_fon"
+    android:background="@drawable/zadanie_fon_fioletovye"
     tools:context=".THEORY_TASK.algorithm.Algorithm_HOME">
 
-    <Button
-        android:id="@+id/bottomCanle"
-        android:layout_width="76dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/_16"
-        app:backgroundTint="#3D0250"
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/ALGBUTTONBACK"
+            android:layout_width="76dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/algbuttonback"
+            app:backgroundTint="@color/ppblack" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="400dp"
@@ -26,7 +35,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bottomCanle">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -35,15 +44,15 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/AlgButton1"
-                android:layout_width="wrap_content"
+                android:id="@+id/ALGButton1"
+                android:layout_width="93dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@null"
                 app:srcCompat="@drawable/algoffhome1" />
 
             <ImageButton
-                android:id="@+id/AlgButton2"
+                android:id="@+id/ALGButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -51,7 +60,7 @@
                 app:srcCompat="@drawable/algclosehome2" />
 
             <ImageButton
-                android:id="@+id/AlgButton3"
+                android:id="@+id/ALGButton3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -67,7 +76,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/AlgButton4"
+                android:id="@+id/ALGButton4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -75,7 +84,7 @@
                 app:srcCompat="@drawable/algclosehome4" />
 
             <ImageButton
-                android:id="@+id/AlgButton5"
+                android:id="@+id/ALGButton5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -83,13 +92,12 @@
                 app:srcCompat="@drawable/algclosehome5" />
 
             <ImageButton
-                android:id="@+id/AlgButton6"
+                android:id="@+id/ALGButton6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@null"
                 app:srcCompat="@drawable/algclosehome6" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -99,7 +107,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/AlgButton7"
+                android:id="@+id/ALGButton7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -107,7 +115,7 @@
                 app:srcCompat="@drawable/algclosehome7" />
 
             <ImageButton
-                android:id="@+id/AlgButton8"
+                android:id="@+id/ALGButton8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -115,13 +123,12 @@
                 app:srcCompat="@drawable/algclosehome8" />
 
             <ImageButton
-                android:id="@+id/AlgButton9"
+                android:id="@+id/ALGButton9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@null"
                 app:srcCompat="@drawable/algclosehome9" />
-
         </LinearLayout>
 
     </LinearLayout>

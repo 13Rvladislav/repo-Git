@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itcity">
-        <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm9"></activity>
+        <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm9"></activity>
+        <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm8" />
+        <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm7" />
+        <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm6" />
+        <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm5" />
+        <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm4" />
+        <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm3" />
+        <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm2" />
+        <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm9" />
         <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm8" />
         <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm7" />
         <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm6" />

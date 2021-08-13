@@ -4,233 +4,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/zelenye_fon"
+    android:background="@drawable/zadanie_fon_inform"
     tools:context=".THEORY_TASK.algorithm.Algorithm_HOME">
 
-    <Button
-        android:id="@+id/bottomCZ"
-        android:layout_width="76dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/_16"
-        app:backgroundTint="#183802"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/HomeBZ1"
-        android:layout_width="111dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="56dp"
-        android:background="#00FFFFFF"
-        app:backgroundTint="#00FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bottomCZ" />
-
-    <Button
-        android:id="@+id/HomeBZ2"
-        android:layout_width="111dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="56dp"
-        android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_21"
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.127"
-        app:layout_constraintStart_toEndOf="@+id/HomeKZ3"
-        app:layout_constraintTop_toBottomOf="@+id/bottomCZ" />
-
-    <Button
-        android:id="@+id/HomeBZ3"
-        android:layout_width="111dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="52dp"
-        android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_21"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HomeBZ1" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/HomeKZ1"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="60dp"
-        app:layout_constraintStart_toEndOf="@+id/HomeBZ3"
-        app:layout_constraintTop_toBottomOf="@+id/HomeBZ2"
-        app:srcCompat="@drawable/bottonhomez5" />
+        <Button
+            android:id="@+id/INFBUTTONBACK"
+            android:layout_width="76dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/infback"
+            app:backgroundTint="@color/ppblack" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/Closez1"
-        android:layout_width="90dp"
-        android:layout_height="95dp"
-        android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_21"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeKZ1"
-        app:layout_constraintEnd_toEndOf="@+id/HomeKZ1"
-        app:layout_constraintHorizontal_bias="0.59"
-        app:layout_constraintStart_toStartOf="@+id/HomeKZ1"
-        app:layout_constraintTop_toTopOf="@+id/HomeKZ1"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageView
-        android:id="@+id/HomeKZ2"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        android:layout_marginBottom="292dp"
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="617dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toEndOf="@+id/HomeKZ1"
-        app:layout_constraintTop_toBottomOf="@+id/HomeBZ10"
-        app:layout_constraintVertical_bias="0.982"
-        app:srcCompat="@drawable/bottonhomez6" />
-
-    <Button
-        android:id="@+id/CloseZ2"
-        android:layout_width="90dp"
-        android:layout_height="95dp"
-        android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_21"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeKZ2"
-        app:layout_constraintEnd_toEndOf="@+id/HomeKZ2"
-        app:layout_constraintStart_toStartOf="@+id/HomeKZ2"
-        app:layout_constraintTop_toTopOf="@+id/HomeKZ2"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageView
-        android:id="@+id/HomeKZ3"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeBZ1"
-        app:layout_constraintEnd_toEndOf="@+id/HomeBZ1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/HomeBZ1"
-        app:srcCompat="@drawable/bottonhomez1" />
-
-    <ImageView
-        android:id="@+id/HomeKZ4"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeBZ2"
-        app:layout_constraintEnd_toEndOf="@+id/HomeBZ2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/HomeBZ2"
-        app:layout_constraintTop_toTopOf="@+id/HomeBZ2"
-        app:layout_constraintVertical_bias="0.25"
-        app:srcCompat="@drawable/bottonhomez2" />
-
-    <ImageView
-        android:id="@+id/HomeKZ5"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeBZ10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/HomeBZ10"
-        app:layout_constraintTop_toTopOf="@+id/HomeBZ10"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/bottonhomez3" />
-
-    <Button
-        android:id="@+id/HomeBZ10"
-        android:layout_width="122dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="60dp"
-        android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_21"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/HomeBZ2"
-        app:layout_constraintTop_toBottomOf="@+id/bottomCZ" />
-
-    <ImageView
-        android:id="@+id/HomeKZ6"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeBZ3"
-        app:layout_constraintEnd_toEndOf="@+id/HomeBZ3"
-        app:layout_constraintStart_toStartOf="@+id/HomeBZ3"
-        app:layout_constraintTop_toTopOf="@+id/HomeBZ3"
-        app:srcCompat="@drawable/bottonhomez4" />
-
-    <ImageView
-        android:id="@+id/HomeKZ7"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeBZ4"
-        app:layout_constraintEnd_toEndOf="@+id/HomeBZ4"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/HomeBZ4"
-        app:layout_constraintTop_toTopOf="@+id/HomeBZ4"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/bottonhomez7" />
-
-    <ImageView
-        android:id="@+id/HomeKZ8"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeBZ5"
-        app:layout_constraintEnd_toEndOf="@+id/HomeBZ5"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/HomeBZ5"
-        app:layout_constraintTop_toTopOf="@+id/HomeBZ5"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/bottonhomez8" />
-
-    <ImageView
-        android:id="@+id/HomeKZ9"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        app:layout_constraintBottom_toBottomOf="@+id/HomeBZ6"
-        app:layout_constraintEnd_toEndOf="@+id/HomeBZ6"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/HomeBZ6"
-        app:layout_constraintTop_toTopOf="@+id/HomeBZ6"
-        app:layout_constraintVertical_bias="0.395"
-        app:srcCompat="@drawable/bottonhomez9" />
-
-    <Button
-        android:id="@+id/HomeBZ4"
-        android:layout_width="110dp"
-        android:layout_height="122dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="48dp"
-        android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_21"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HomeBZ3" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-    <Button
-        android:id="@+id/HomeBZ5"
-        android:layout_width="110dp"
-        android:layout_height="126dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="60dp"
-        android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_21"
-        app:layout_constraintStart_toEndOf="@+id/HomeKZ6"
-        app:layout_constraintTop_toBottomOf="@+id/HomeKZ1" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/HomeBZ6"
-        android:layout_width="109dp"
-        android:layout_height="128dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="60dp"
-        android:background="#00FFFFFF"
-        android:drawableBottom="@drawable/_21"
-        app:layout_constraintStart_toEndOf="@+id/HomeKZ8"
-        app:layout_constraintTop_toBottomOf="@+id/HomeKZ2" />
+            <ImageView
+                android:id="@+id/INFBUTTON1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/infoffhome1" />
+
+            <ImageView
+                android:id="@+id/INFBUTTON2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/infclosehome2" />
+
+            <ImageView
+                android:id="@+id/INFBUTTON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/infclosehome3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/INFBUTTON4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/infclosehome4" />
+
+            <ImageView
+                android:id="@+id/INFBUTTON5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/infclosehome5" />
+
+            <ImageView
+                android:id="@+id/INFBUTTON6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/infclosehome6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/INFBUTTON7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/infclosehome7" />
+
+            <ImageView
+                android:id="@+id/INFBUTTON8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/infclosehome8" />
+
+            <ImageView
+                android:id="@+id/INFBUTTON9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/infclosehome9" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

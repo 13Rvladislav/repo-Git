@@ -11,6 +11,6 @@ public class TheoryAlgorithm3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_theory_algorithm3);
+        setContentView(R.layout.algtheory3);
     }
 }

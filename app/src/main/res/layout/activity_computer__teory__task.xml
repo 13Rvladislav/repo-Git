@@ -7,118 +7,122 @@
     android:background="@drawable/comp_fon"
     tools:context=".THEORY_TASK.algorithm.Algorithm_HOME">
 
-    <Button
-        android:id="@+id/bottomC"
-        android:layout_width="76dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/_16"
-        app:backgroundTint="#A83806"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/HomeKJ1"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="52dp"
-        app:layout_constraintStart_toEndOf="@+id/HomeKJ6"
-        app:layout_constraintTop_toBottomOf="@+id/HomeKJ4"
-        app:srcCompat="@drawable/bottonhomej5" />
-
-    <ImageView
-        android:id="@+id/HomeKJ2"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="52dp"
-        app:layout_constraintStart_toEndOf="@+id/HomeKJ1"
-        app:layout_constraintTop_toBottomOf="@+id/HomeKJ5"
-        app:srcCompat="@drawable/bottonhomej6" />
-
-    <ImageView
-        android:id="@+id/HomeKJ3"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="64dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bottomC"
-        app:srcCompat="@drawable/bottonhomej1" />
-
-    <ImageView
-        android:id="@+id/HomeKJ4"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="64dp"
-        app:layout_constraintStart_toEndOf="@+id/HomeKJ3"
-        app:layout_constraintTop_toBottomOf="@+id/bottomC"
-        app:srcCompat="@drawable/bottonhomej2" />
-
-    <ImageView
-        android:id="@+id/HomeKJ5"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        android:layout_marginTop="64dp"
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.589"
-        app:layout_constraintStart_toEndOf="@+id/HomeKJ4"
-        app:layout_constraintTop_toBottomOf="@+id/bottomC"
-        app:srcCompat="@drawable/bottonhomej3" />
-
-    <ImageView
-        android:id="@+id/HomeKJ6"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="52dp"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HomeKJ3"
-        app:srcCompat="@drawable/bottonhomej4" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/HomeKJ7"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        <Button
+            android:id="@+id/COMPBUTTONBACK"
+            android:layout_width="76dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/computerback"
+            app:backgroundTint="@color/ppblack" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="617dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HomeKJ6"
-        app:layout_constraintVertical_bias="0.348"
-        app:srcCompat="@drawable/bottonhomej7" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-    <ImageView
-        android:id="@+id/HomeKJ8"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/HomeKJ7"
-        app:layout_constraintTop_toBottomOf="@+id/HomeKJ1"
-        app:layout_constraintVertical_bias="0.348"
-        app:srcCompat="@drawable/bottonhomej8" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/HomeKJ9"
-        android:layout_width="112dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="68dp"
-        app:layout_constraintStart_toEndOf="@+id/HomeKJ8"
-        app:layout_constraintTop_toBottomOf="@+id/HomeKJ2"
-        app:srcCompat="@drawable/bottonhomej9" />
+            <ImageView
+                android:id="@+id/COMPBUTTON1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/compoffhome1" />
+
+            <ImageView
+                android:id="@+id/COMPBUTTON2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/compclosehome2" />
+
+            <ImageView
+                android:id="@+id/COMPBUTTON3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/compclosehome3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/COMPBUTTON4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/compclosehome4" />
+
+            <ImageView
+                android:id="@+id/COMPBUTTON5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/compclosehome5" />
+
+            <ImageView
+                android:id="@+id/COMPBUTTON6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/compclosehome6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/COMPBUTTON7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/compclosehome7" />
+
+            <ImageView
+                android:id="@+id/COMPBUTTON8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/compclosehome8" />
+
+            <ImageView
+                android:id="@+id/COMPBUTTON9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/compclosehome9" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

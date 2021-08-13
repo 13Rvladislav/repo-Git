@@ -11,6 +11,6 @@ public class ZadanieAlgorithm1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.zadanie_algorithm);
+        setContentView(R.layout.algtask1);
     }
 }
