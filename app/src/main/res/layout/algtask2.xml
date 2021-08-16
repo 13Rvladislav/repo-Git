@@ -41,7 +41,7 @@
                     android:textSize="17sp" />
 
                 <Button
-                    android:id="@+id/button11"
+                    android:id="@+id/algTask2Button1"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -64,7 +64,7 @@
                     android:textSize="17sp" />
 
                 <Button
-                    android:id="@+id/button12"
+                    android:id="@+id/algTask2Button2"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -87,7 +87,7 @@
                     android:textSize="17sp" />
 
                 <Button
-                    android:id="@+id/button13"
+                    android:id="@+id/algTask2Button3"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -110,7 +110,7 @@
                     android:textSize="17sp" />
 
                 <Button
-                    android:id="@+id/button9"
+                    android:id="@+id/algTask2Button4"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -134,7 +134,7 @@
                     android:textSize="17sp" />
 
                 <Button
-                    android:id="@+id/button10"
+                    android:id="@+id/algTask2Button5"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
