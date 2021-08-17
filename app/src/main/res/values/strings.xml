@@ -7,7 +7,7 @@
 <string-array name="choice_items">
     <item>Результативность</item>
     <item>Массовость</item>
-    <item>Дискретност</item>
+    <item>Дискретность</item>
     <item>Детерминированность</item>
 </string-array>
 
