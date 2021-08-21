@@ -104,32 +104,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/ALGButton7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@null"
-                app:srcCompat="@drawable/algclosehome7" />
-
-            <ImageButton
-                android:id="@+id/ALGButton8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@null"
-                app:srcCompat="@drawable/algclosehome8" />
-
-            <ImageButton
-                android:id="@+id/ALGButton9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@null"
-                app:srcCompat="@drawable/algclosehome9" />
-        </LinearLayout>
+            android:orientation="horizontal"/>
 
     </LinearLayout>
 

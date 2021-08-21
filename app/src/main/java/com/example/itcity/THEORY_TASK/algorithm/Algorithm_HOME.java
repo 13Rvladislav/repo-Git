@@ -16,9 +16,6 @@ public class Algorithm_HOME extends AppCompatActivity {
     ImageButton AlgButton4;
     ImageButton AlgButton5;
     ImageButton AlgButton6;
-    ImageButton AlgButton7;
-    ImageButton AlgButton8;
-    ImageButton AlgButton9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +28,7 @@ public class Algorithm_HOME extends AppCompatActivity {
         AlgButton4 = (ImageButton) findViewById(R.id.ALGButton4);
         AlgButton5 = (ImageButton) findViewById(R.id.ALGButton5);
         AlgButton6 = (ImageButton) findViewById(R.id.ALGButton6);
-        AlgButton7 = (ImageButton) findViewById(R.id.ALGButton7);
-        AlgButton8 = (ImageButton) findViewById(R.id.ALGButton8);
-        AlgButton9 = (ImageButton) findViewById(R.id.ALGButton9);
+
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
@@ -64,18 +59,6 @@ public class Algorithm_HOME extends AppCompatActivity {
                         Intent intent6 = new Intent(Algorithm_HOME.this, TheoryAlgorithm6.class);
                         startActivity(intent6);
                         break;
-                    case R.id.ALGButton7:
-                        Intent intent7 = new Intent(Algorithm_HOME.this, TheoryAlgorithm7.class);
-                        startActivity(intent7);
-                        break;
-                    case R.id.ALGButton8:
-                        Intent intent8 = new Intent(Algorithm_HOME.this, TheoryAlgorithm8.class);
-                        startActivity(intent8);
-                        break;
-                    case R.id.ALGButton9:
-                        Intent intent9 = new Intent(Algorithm_HOME.this, TheoryAlgorithm9.class);
-                        startActivity(intent9);
-                        break;
 
                     default:
                         break;
@@ -88,10 +71,5 @@ public class Algorithm_HOME extends AppCompatActivity {
         AlgButton4.setOnClickListener(onClickListener);
         AlgButton5.setOnClickListener(onClickListener);
         AlgButton6.setOnClickListener(onClickListener);
-        AlgButton7.setOnClickListener(onClickListener);
-        AlgButton8.setOnClickListener(onClickListener);
-        AlgButton9.setOnClickListener(onClickListener);
-
-
     }
 }

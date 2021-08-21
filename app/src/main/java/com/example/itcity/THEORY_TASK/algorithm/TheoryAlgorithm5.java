@@ -12,5 +12,6 @@ public class TheoryAlgorithm5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.algtheory5);
+        getSupportActionBar().hide();
     }
 }

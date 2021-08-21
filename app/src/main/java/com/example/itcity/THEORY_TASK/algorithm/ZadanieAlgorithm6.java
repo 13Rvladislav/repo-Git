@@ -12,5 +12,6 @@ public class ZadanieAlgorithm6 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.algtask6);
+        getSupportActionBar().hide();
     }
 }
