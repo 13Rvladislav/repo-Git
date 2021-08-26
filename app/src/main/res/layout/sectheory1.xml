@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".THEORY_TASK.security.TheorySecurity1"
+    android:background="@drawable/teoria_sinie"
+    android:paddingTop="-11dp"
+    android:layout_marginTop="-2dp"
+    >
+
+    <Button
+        android:id="@+id/bottomSecurityK"
+        app:backgroundTint="#FFFFFF"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="76dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/_16" />
+
+    <ImageView
+        android:id="@+id/podlSecurity"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:padding="-1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_____2__0png" />
+
+    <TextView
+        android:id="@+id/textsecurity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:text="БЕЗОПАСНОСТЬ"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/bottomSecurityK"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/continieSec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="ПРОДОЛЖИТЬ"
+        android:textSize="24sp"
+        app:backgroundTint="#1E1358"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        app:layout_constraintBottom_toTopOf="@+id/continieSec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/podlSecurity"
+        android:layout_width="405dp"
+        android:layout_height="545dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="111dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_podlozhka_teoria_belaya"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textSec5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="\t\t\tПривет! Сейчас ты узнаешь как безопасно пользоваться компьютером и серфить в интернете."
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/textSec6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="\t\t\tНачну с того, что, как и в реальной жизни, в интернете есть преступники. Они занимаются интернет-мошенничеством."
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginLeft="5dp"
+
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_podlozhka_teoria_zheltaya"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textsec4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\t\t\tИнтернет-мошенничество – это обман людей с целью выманить у них деньги. Интернет-мошенники не крадут данные, а путем обмана заставляют жертву добровольно предоставить их."
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textsec19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="\t\t\tВидов интернет-мошенничества довольно много: мошенничество с благотворительностью, с билетами, с подарочными картами или выигрышем в лотерее, фишинг, проверка реквизитов, бесплатный фриланс, просьба о помощи."
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_podlozhka_teoria_belaya"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textsec6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Давай проверим, смог ли ты уловить главную мысль."
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
