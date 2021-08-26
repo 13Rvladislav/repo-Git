@@ -3,15 +3,21 @@ package com.example.itcity.THEORY_TASK.algorithm;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.example.itcity.R;
 
 public class ZadanieAlgorithm2 extends AppCompatActivity implements SingleChoiceDialogFragment.SingleChoiceListener {
+    Dialog dialog;//диалоговое окно
     //кнопки выбрать для задания
     Button button1;
     Button button2;
@@ -106,8 +112,19 @@ public class ZadanieAlgorithm2 extends AppCompatActivity implements SingleChoice
                             mark += 20;
                         }
                         //вызов диалогового окна с показом количества баллов
-                        markSTR = Integer.toString(mark);
-                        check.setText(markSTR);
+
+                        dialog=new Dialog(ZadanieAlgorithm2.this);
+                        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
+                        dialog.setContentView(R.layout.markdialogwindow);//путь к макету диалогового окна
+                        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
+                        dialog.setCancelable(false);//не закрывается кнопкой назад
+                       //кнопки начало
+
+                        //кнопки конец
+                        TextView result=dialog.findViewById(R.id.mark_for_the_lvl);
+                         markSTR = Integer.toString(mark);
+                        result.setText(markSTR);
+                        dialog.show();//показ окна
                         break;
 
                 }
