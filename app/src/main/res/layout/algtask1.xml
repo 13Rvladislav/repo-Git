@@ -25,6 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
             android:text='Восстанови порядок  '
+            android:textColor="#3D0250"
             android:textSize="24sp" />
 
         <TextView
@@ -32,6 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="145dp"
+            android:textColor="#3D0250"
             android:text="алгоритма"
             android:textSize="24sp" />
 
@@ -39,6 +41,7 @@
             android:id="@+id/textView30"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#3D0250"
             android:layout_marginLeft="110dp"
             android:text='"открыть дверь"'
             android:textSize="24sp" />
@@ -66,14 +69,14 @@
                 android:layout_width="350dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/podkltaskpole" />
+                app:srcCompat="@drawable/algtak_1_left_1" />
 
             <ImageView
                 android:id="@+id/imageView55"
                 android:layout_width="350dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/podkltaskpole" />
+                app:srcCompat="@drawable/algtask1right" />
         </LinearLayout>
 
         <LinearLayout
@@ -87,14 +90,14 @@
                 android:layout_width="350dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/podkltaskpole" />
+                app:srcCompat="@drawable/algtak_1_left_2" />
 
             <ImageView
                 android:id="@+id/imageView57"
                 android:layout_width="350dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/podkltaskpole" />
+                app:srcCompat="@drawable/algtask1right" />
         </LinearLayout>
 
         <LinearLayout
@@ -108,14 +111,14 @@
                 android:layout_width="350dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/podkltaskpole" />
+                app:srcCompat="@drawable/algtak_1_left_3" />
 
             <ImageView
                 android:id="@+id/imageView59"
                 android:layout_width="350dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/podkltaskpole" />
+                app:srcCompat="@drawable/algtask1right" />
         </LinearLayout>
 
         <LinearLayout
@@ -129,14 +132,14 @@
                 android:layout_width="350dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/podkltaskpole" />
+                app:srcCompat="@drawable/algtak_1_left_4" />
 
             <ImageView
                 android:id="@+id/imageView51"
                 android:layout_width="350dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/podkltaskpole" />
+                app:srcCompat="@drawable/algtask1right" />
         </LinearLayout>
 
         <LinearLayout
@@ -151,14 +154,14 @@
                 android:layout_width="350dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/podkltaskpole" />
+                app:srcCompat="@drawable/algtak_1_left_5" />
 
             <ImageView
                 android:id="@+id/imageView52"
                 android:layout_width="350dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/podkltaskpole" />
+                app:srcCompat="@drawable/algtask1right" />
         </LinearLayout>
 
         <LinearLayout
@@ -172,14 +175,14 @@
                 android:layout_width="350dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/podkltaskpole" />
+                app:srcCompat="@drawable/algtak_1_left_6" />
 
             <ImageView
                 android:id="@+id/imageView53"
                 android:layout_width="350dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/podkltaskpole" />
+                app:srcCompat="@drawable/algtask1right" />
         </LinearLayout>
     </LinearLayout>
 
