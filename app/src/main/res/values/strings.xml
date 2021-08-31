@@ -60,4 +60,5 @@
     <string name="title_activity_computer__teory__task">Computer_Teory_Task</string>
     <string name="title_activity__profile">Activity_Profile</string>
     <string name="title_activity_security__teory__task">Security_Teory_Task</string>
+    <string name="_3_n_n_10_if_x_10_n_min_n_max_n"><![CDATA[3. Начало\nВвести данные\nЕсли переменная меньше 10 или if(x < 10)\nВывести «Min»\nИначе вывести «Max»\nКонец]]></string>
 </resources>

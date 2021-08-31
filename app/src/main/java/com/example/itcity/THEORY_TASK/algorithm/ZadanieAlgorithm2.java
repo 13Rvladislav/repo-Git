@@ -4,14 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
 import android.app.Dialog;
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.itcity.R;
@@ -115,7 +113,7 @@ public class ZadanieAlgorithm2 extends AppCompatActivity implements SingleChoice
 
                         dialog=new Dialog(ZadanieAlgorithm2.this);
                         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
-                        dialog.setContentView(R.layout.markdialogwindow);//путь к макету диалогового окна
+                        dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
                         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
                         dialog.setCancelable(false);//не закрывается кнопкой назад
                        //кнопки начало

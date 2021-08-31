@@ -10,4 +10,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="green">#139547</color>
     <color name="ppblack"></color>
+    <color name="white_white"> #BA55D3</color>
 </resources>
