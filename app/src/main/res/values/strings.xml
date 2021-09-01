@@ -13,9 +13,15 @@
 
     <string-array name="choice_items3">
         <item>Словесно-формульная </item>
-        <item>Графическая  </item>
+        <item>Графическая</item>
         <item>Псевдокод</item>
         <item>Программа</item>
+    </string-array>
+
+    <string-array name="choice_items5">
+        <item>Линейная</item>
+        <item>Ветвящаяся</item>
+        <item>Циклическая</item>
 
     </string-array>
 
