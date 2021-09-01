@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -14,7 +15,7 @@ import android.widget.TextView;
 
 import com.example.itcity.R;
 
-public class ZadanieAlgorithm2 extends AppCompatActivity implements SingleChoiceDialogFragment.SingleChoiceListener {
+public class ZadanieAlgorithm2 extends AppCompatActivity implements Algtask2SingleChoiceDialog.SingleChoiceListener {
     Dialog dialog;//диалоговое окно
     //кнопки выбрать для задания
     Button button1;
@@ -22,6 +23,7 @@ public class ZadanieAlgorithm2 extends AppCompatActivity implements SingleChoice
     Button button3;
     Button button4;
     Button button5;
+
     //кнопка продолжить
     Button check;
     //пременная ,где будут храниться баллы и пердавться в следющее активити для просмтора результат и после записываться в firebase
@@ -50,7 +52,7 @@ public class ZadanieAlgorithm2 extends AppCompatActivity implements SingleChoice
         button4 = (Button) findViewById(R.id.algTask2Button4);
         button5 = (Button) findViewById(R.id.algTask2Button5);
 
-        check = (Button) findViewById(R.id.algCheck2);
+        check = (Button) findViewById(R.id.algCheck);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
@@ -58,35 +60,36 @@ public class ZadanieAlgorithm2 extends AppCompatActivity implements SingleChoice
                 switch (view.getId()) {
                     case R.id.algTask2Button1:
                         bt1 = true;
-                        DialogFragment singleChoiseDialog1 = new SingleChoiceDialogFragment();
+                        DialogFragment singleChoiseDialog1 = new Algtask2SingleChoiceDialog();
                         singleChoiseDialog1.setCancelable(false);
                         singleChoiseDialog1.show(getSupportFragmentManager(), "Single choice Dialog");
                         break;
                     case R.id.algTask2Button2:
                         bt2 = true;
-                        DialogFragment singleChoiseDialog2 = new SingleChoiceDialogFragment();
+                        DialogFragment singleChoiseDialog2 = new Algtask2SingleChoiceDialog();
                         singleChoiseDialog2.setCancelable(false);
                         singleChoiseDialog2.show(getSupportFragmentManager(), "Single choice Dialog");
                         break;
                     case R.id.algTask2Button3:
                         bt3 = true;
-                        DialogFragment singleChoiseDialog3 = new SingleChoiceDialogFragment();
+                        DialogFragment singleChoiseDialog3 = new Algtask2SingleChoiceDialog();
                         singleChoiseDialog3.setCancelable(false);
                         singleChoiseDialog3.show(getSupportFragmentManager(), "Single choice Dialog");
                         break;
                     case R.id.algTask2Button4:
                         bt4 = true;
-                        DialogFragment singleChoiseDialog4 = new SingleChoiceDialogFragment();
+                        DialogFragment singleChoiseDialog4 = new Algtask2SingleChoiceDialog();
                         singleChoiseDialog4.setCancelable(false);
                         singleChoiseDialog4.show(getSupportFragmentManager(), "Single choice Dialog");
                         break;
                     case R.id.algTask2Button5:
                         bt5 = true;
-                        DialogFragment singleChoiseDialog5 = new SingleChoiceDialogFragment();
+                        DialogFragment singleChoiseDialog5 = new Algtask2SingleChoiceDialog();
                         singleChoiseDialog5.setCancelable(false);
                         singleChoiseDialog5.show(getSupportFragmentManager(), "Single choice Dialog");
                         break;
-                    case R.id.algCheck2:
+                    case R.id.algCheck:
+                        // проверка на заполнение полей с ответами
                         String markSTR;
                         if (answer1.equalsIgnoreCase("Результативность")) {
                             //если ответ в поле 1 совпал с правильным ответом то делаем +20 баллов
@@ -110,20 +113,55 @@ public class ZadanieAlgorithm2 extends AppCompatActivity implements SingleChoice
                             mark += 20;
                         }
                         //вызов диалогового окна с показом количества баллов
+                        if (mark>50) {
+                            dialog = new Dialog(ZadanieAlgorithm2.this);
+                            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
+                            dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
+                            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
+                            dialog.setCancelable(false);//не закрывается кнопкой назад
+                            //кнопки начало
 
-                        dialog=new Dialog(ZadanieAlgorithm2.this);
-                        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
-                        dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
-                        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
-                        dialog.setCancelable(false);//не закрывается кнопкой назад
-                       //кнопки начало
+                            //кнопки конец
+                            TextView result = dialog.findViewById(R.id.mark_for_the_lvl);
+                            markSTR = Integer.toString(mark);
+                            result.setText(markSTR);
+                            dialog.show();//показ окна
 
-                        //кнопки конец
-                        TextView result=dialog.findViewById(R.id.mark_for_the_lvl);
-                         markSTR = Integer.toString(mark);
-                        result.setText(markSTR);
-                        dialog.show();//показ окна
-                        break;
+                            Button back_to_houses= dialog.findViewById(R.id.button10);
+                             back_to_houses.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    Intent intent = new Intent(ZadanieAlgorithm2.this, Algorithm_HOME.class);
+                                    startActivity(intent);
+                                }
+                            });
+                            //ЕСЛИ БЫЛ ЗАПУЩЕН ЭТОТ БЛОК КОДА МЕНЯЕМ КОЛИЧЕСТВО БАЛЛОВ В FIREBASE  И В ПЕРЕМЕННУЮ В КОТОРОЙ НАШ УРОВЕНЬ ДЕЛАЕМ +1;
+                            break;
+                        }
+                        if (mark<50) {
+                            dialog = new Dialog(ZadanieAlgorithm2.this);
+                            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
+                            dialog.setContentView(R.layout.markbaddialogwindow);//путь к макету диалогового окна
+                            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
+                            dialog.setCancelable(false);//не закрывается кнопкой назад
+                            //кнопки начало
+
+                            //кнопки конец
+                            TextView result = dialog.findViewById(R.id.mark_for_the_lvl);
+                            markSTR = Integer.toString(mark);
+                            result.setText(markSTR);
+                            dialog.show();//показ окна
+                            Button back_to_houses= dialog.findViewById(R.id.button10);
+                            back_to_houses.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    Intent intent = new Intent(ZadanieAlgorithm2.this, Algorithm_HOME.class);
+                                    startActivity(intent);
+                                }
+                            });
+                            break;
+                            //ЕСЛИ БЫЛ ЗАПУЩЕН ЭТОТ БЛОК КОДА НЕ МЕНЯЕМ КОЛИЧЕСТВО БАЛЛОВ В FIREBASE  И В ПЕРЕМЕННУЮ В КОТОРОЙ УРОВЕНЬ НЕ МЕНЯЕМ;
+                        }
 
                 }
             }

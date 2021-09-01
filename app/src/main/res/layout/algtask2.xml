@@ -12,7 +12,7 @@
         android:layout_width="380dp"
         android:layout_height="484dp"
         android:layout_marginTop="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/algCheck2"
+        app:layout_constraintBottom_toTopOf="@+id/algCheck"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="140dp"
                 android:background="@drawable/podkltaskpole"
                 android:layout_marginTop="2dp"
                 android:orientation="vertical">
@@ -43,15 +43,15 @@
 
                 <Button
                     android:id="@+id/algTask2Button1"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
                     android:text="выбрать" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="98dp"
+                android:layout_height="100dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/podkltaskpole"
                 android:orientation="vertical">
@@ -67,8 +67,8 @@
 
                 <Button
                     android:id="@+id/algTask2Button2"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
                     android:text="выбрать" />
             </LinearLayout>
@@ -91,15 +91,15 @@
 
                 <Button
                     android:id="@+id/algTask2Button3"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
                     android:text="выбрать" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="73dp"
+                android:layout_height="83dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/podkltaskpole"
                 android:orientation="vertical">
@@ -115,8 +115,8 @@
 
                 <Button
                     android:id="@+id/algTask2Button4"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
                     android:text="выбрать" />
             </LinearLayout>
@@ -140,8 +140,8 @@
 
                 <Button
                     android:id="@+id/algTask2Button5"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
                     android:text="выбрать" />
             </LinearLayout>
@@ -184,7 +184,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/algCheck2"
+        android:id="@+id/algCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -201,7 +201,8 @@
         android:layout_width="380dp"
         android:layout_height="48dp"
         android:background="@drawable/podklpereetyag"
-        android:text=" Игрок должен сопоставить  пример с определением. Выбрав правильный ответ."
+        android:textColor="#3D0250"
+        android:text=" Сопоставить  пример с определением. Выбрав правильный ответ."
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

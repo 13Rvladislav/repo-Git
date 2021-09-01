@@ -4,12 +4,20 @@
     <string name="tap_to_continue">tap to continu</string>
     <string name="button2">Button</string>
     >
-<string-array name="choice_items">
+<string-array name="choice_items2">
     <item>Результативность</item>
     <item>Массовость</item>
     <item>Дискретность</item>
     <item>Детерминированность</item>
 </string-array>
+
+    <string-array name="choice_items3">
+        <item>Словесно-формульная </item>
+        <item>Графическая  </item>
+        <item>Псевдокод</item>
+        <item>Программа</item>
+
+    </string-array>
 
     //кнопки в меню
     <string name="action_item1">кнопка 1</string>

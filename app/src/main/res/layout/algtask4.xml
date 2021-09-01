@@ -52,7 +52,7 @@
         android:layout_width="412dp"
         android:layout_height="409dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/algCheck2"
+        app:layout_constraintBottom_toTopOf="@+id/algCheck"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
@@ -234,7 +234,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/algCheck2"
+        android:id="@+id/algCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"

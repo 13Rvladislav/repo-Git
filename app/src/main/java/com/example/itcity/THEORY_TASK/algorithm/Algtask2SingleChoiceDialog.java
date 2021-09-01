@@ -12,7 +12,7 @@ import androidx.fragment.app.FragmentActivity;
 
 import com.example.itcity.R;
 
-public class SingleChoiceDialogFragment extends DialogFragment {
+public class Algtask2SingleChoiceDialog extends DialogFragment {
     int position = -1;//default
 
     public interface SingleChoiceListener {
@@ -38,7 +38,7 @@ public class SingleChoiceDialogFragment extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
-        String[] list = getActivity().getResources().getStringArray(R.array.choice_items);
+        String[] list = getActivity().getResources().getStringArray(R.array.choice_items2);
         builder.setTitle("selest your choice")
                 .setSingleChoiceItems(list, position, new DialogInterface.OnClickListener() {
                     @Override
