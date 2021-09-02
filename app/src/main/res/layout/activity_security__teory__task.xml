@@ -43,25 +43,28 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/SECBUTTON1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 app:srcCompat="@drawable/secoffhome1" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/SECBUTTON2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 app:srcCompat="@drawable/secclosehome2" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/SECBUTTON3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 app:srcCompat="@drawable/secclosehome3" />
         </LinearLayout>
 
@@ -71,25 +74,28 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/SECBUTTON4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 app:srcCompat="@drawable/secclosehome4" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/SECBUTTON5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 app:srcCompat="@drawable/secclosehome5" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/SECBUTTON6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 app:srcCompat="@drawable/secclosehome6" />
         </LinearLayout>
 
@@ -99,25 +105,28 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/SECBUTTON7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 app:srcCompat="@drawable/secclosehome7" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/SECBUTTON8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 app:srcCompat="@drawable/secclosehome8" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/SECBUTTON9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 app:srcCompat="@drawable/secclosehome9" />
         </LinearLayout>
 

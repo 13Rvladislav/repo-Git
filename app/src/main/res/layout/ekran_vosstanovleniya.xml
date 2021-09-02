@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="300dp"
-        android:layout_height="410dp"
+        android:layout_height="250dp"
         android:background="@drawable/autorback"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,9 +39,9 @@
             android:autofillHints=""
             android:backgroundTint="#1794E0"
             android:ems="10"
-            android:hint="@string/u8"
+            android:hint="Email"
             android:inputType="textEmailAddress"
-            android:text="Email"
+
             android:textColor="#90DDF3"
             android:textColorHint="#90DDF3" />
 
@@ -51,7 +51,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
             android:layout_marginLeft="24dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:backgroundTint="#FF8800"
             android:text="ВОССТАНОВИТЬ"
             android:textColor="#000326"

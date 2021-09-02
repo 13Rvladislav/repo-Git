@@ -11,7 +11,7 @@ import com.example.itcity.THEORY_TASK.algorithm.Algorithm_HOME;
 import com.example.itcity.THEORY_TASK.computer_Device.Computer_Teory_Task;
 import com.example.itcity.THEORY_TASK.fundamental_of_informatics.Informatica_Teory_Task;
 import com.example.itcity.THEORY_TASK.programming.Programming_Teory_Task;
-import com.example.itcity.THEORY_TASK.security.Security_Teory_Task;
+import com.example.itcity.THEORY_TASK.security.Security_HOME;
 
 public class ActivityMap extends AppCompatActivity {
     private Button buttonAlgoritm;
@@ -47,7 +47,7 @@ public class ActivityMap extends AppCompatActivity {
                         startActivity(intent1);
                         break;
                     case R.id.buttonSecure:
-                        Intent intent2 = new Intent(ActivityMap.this, Security_Teory_Task.class);
+                        Intent intent2 = new Intent(ActivityMap.this, Security_HOME.class);
                         startActivity(intent2);
                         break;
                     case R.id.buttonProgramming:

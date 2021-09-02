@@ -8,11 +8,14 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.itcity.ActivityRegistration;
 import com.example.itcity.R;
 
 public class ZadanieAlgorithm2 extends AppCompatActivity implements Algtask2SingleChoiceDialog.SingleChoiceListener {
@@ -90,6 +93,34 @@ public class ZadanieAlgorithm2 extends AppCompatActivity implements Algtask2Sing
                         break;
                     case R.id.algCheck:
                         // проверка на заполнение полей с ответами
+                        if (TextUtils.isEmpty(answer1)) {
+                            Toast toast = Toast.makeText(ZadanieAlgorithm2.this, "вы не дали ответ в  поле 1", Toast.LENGTH_SHORT);
+                            toast.show();
+                            return;
+                        }
+
+                        if (TextUtils.isEmpty(answer2)) {
+                            Toast toast = Toast.makeText(ZadanieAlgorithm2.this, "вы не дали ответ в  поле 2", Toast.LENGTH_SHORT);
+                            toast.show();
+                            return;
+                        }
+                        if (TextUtils.isEmpty(answer3)) {
+                            Toast toast = Toast.makeText(ZadanieAlgorithm2.this, "вы не дали ответ в  поле 3", Toast.LENGTH_SHORT);
+                            toast.show();
+                            return;
+                        }
+                        if (TextUtils.isEmpty(answer4)) {
+                            Toast toast = Toast.makeText(ZadanieAlgorithm2.this, "вы не дали ответ в  поле 4", Toast.LENGTH_SHORT);
+                            toast.show();
+                            return;
+                        }
+                        if (TextUtils.isEmpty(answer5)) {
+                            Toast toast = Toast.makeText(ZadanieAlgorithm2.this, "вы не дали ответ в  поле 5", Toast.LENGTH_SHORT);
+                            toast.show();
+                            return;
+                        }
+
+
                         String markSTR;
                         if (answer1.equalsIgnoreCase("Результативность")) {
                             //если ответ в поле 1 совпал с правильным ответом то делаем +20 баллов

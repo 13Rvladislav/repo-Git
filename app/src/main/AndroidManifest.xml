@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itcity">
+        <activity android:name=".THEORY_TASK.security.TheorySecurity1"></activity>
         <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm6" />
         <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm5" />
         <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm4" />
@@ -29,7 +30,7 @@
             android:name=".THEORY_TASK.computer_Device.Computer_Teory_Task"
             android:label="@string/title_activity_computer__teory__task"
             android:theme="@style/Theme.Itcity.NoActionBar" />
-        <activity android:name=".THEORY_TASK.security.Security_Teory_Task" />
+        <activity android:name=".THEORY_TASK.security.Security_HOME" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.Informatica_Teory_Task" />
         <activity android:name=".THEORY_TASK.programming.Programming_Teory_Task" />
         <activity android:name=".THEORY_TASK.algorithm.Algorithm_HOME" />
