@@ -11,19 +11,27 @@ import com.example.itcity.R;
 
 public class Security_HOME extends AppCompatActivity {
     ImageButton Secbutton1;
-    ImageButton SECBUTTON2;
-    ImageButton SECBUTTON3;
-    ImageButton SECBUTTON4;
-    ImageButton SECBUTTON5;
-    ImageButton SECBUTTON6;
-    ImageButton SECBUTTON7;
-    ImageButton SECBUTTON8;
+    ImageButton Secbutton2;
+    ImageButton Secbutton3;
+    ImageButton Secbutton4;
+    ImageButton Secbutton5;
+    ImageButton Secbutton6;
+    ImageButton Secbutton7;
+    ImageButton Secbutton8;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_security__teory__task);
 
         Secbutton1 = (ImageButton) findViewById(R.id.SECBUTTON1);
+        Secbutton2 = (ImageButton) findViewById(R.id.SECBUTTON2);
+        Secbutton3 = (ImageButton) findViewById(R.id.SECBUTTON3);
+        Secbutton4 = (ImageButton) findViewById(R.id.SECBUTTON4);
+        Secbutton5 = (ImageButton) findViewById(R.id.SECBUTTON5);
+        Secbutton6 = (ImageButton) findViewById(R.id.SECBUTTON6);
+        Secbutton7 = (ImageButton) findViewById(R.id.SECBUTTON7);
+        Secbutton8 = (ImageButton) findViewById(R.id.SECBUTTON8);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
@@ -34,7 +42,7 @@ public class Security_HOME extends AppCompatActivity {
                         Intent intent = new Intent(Security_HOME.this, TheorySecurity1.class);
                         startActivity(intent);
                         break;
-                        /*
+
                     case R.id.SECBUTTON2:
                         Intent intent2 = new Intent(Security_HOME.this, TheorySecurity2.class);
                         startActivity(intent2);
@@ -66,22 +74,21 @@ public class Security_HOME extends AppCompatActivity {
 
                     default:
                         break;
-                         */
+
                 }
 
 
             }
         };
         Secbutton1.setOnClickListener(onClickListener);
-        /*
-        SECBUTTON2.setOnClickListener(onClickListener);
-        SECBUTTON3.setOnClickListener(onClickListener);
-        SECBUTTON4.setOnClickListener(onClickListener);
-        SECBUTTON5.setOnClickListener(onClickListener);
-        SECBUTTON6.setOnClickListener(onClickListener);
-        SECBUTTON7.setOnClickListener(onClickListener);
-        SECBUTTON8.setOnClickListener(onClickListener);
-        */
+        Secbutton2.setOnClickListener(onClickListener);
+        Secbutton3.setOnClickListener(onClickListener);
+        Secbutton4.setOnClickListener(onClickListener);
+        Secbutton5.setOnClickListener(onClickListener);
+        Secbutton6.setOnClickListener(onClickListener);
+        Secbutton7.setOnClickListener(onClickListener);
+        Secbutton8.setOnClickListener(onClickListener);
+
 
     }
 }

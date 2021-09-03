@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itcity">
-        <activity android:name=".THEORY_TASK.security.TheorySecurity1"></activity>
+        <activity android:name=".THEORY_TASK.security.TheorySecurity8"></activity>
+        <activity android:name=".THEORY_TASK.security.TheorySecurity7" />
+        <activity android:name=".THEORY_TASK.security.TheorySecurity6" />
+        <activity android:name=".THEORY_TASK.security.TheorySecurity5" />
+        <activity android:name=".THEORY_TASK.security.TheorySecurity4" />
+        <activity android:name=".THEORY_TASK.security.TheorySecurity3" />
+        <activity android:name=".THEORY_TASK.security.TheorySecurity2" />
+        <activity android:name=".THEORY_TASK.security.TheorySecurity1" />
         <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm6" />
         <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm5" />
         <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm4" />
