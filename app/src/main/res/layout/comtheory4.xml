@@ -118,6 +118,12 @@
                         android:text="Видеокарта – это графический процессор, который производит вычисления в графических приложениях и играх. Она может быть встроена в материнскую плату. Но в этом случае ее производительности хватит лишь на работу с простыми программами"
                         android:textColor="@color/black" />
 
+                    <ImageView
+                        android:id="@+id/imageView65"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/teorycomp7" />
+
                     <TextView
                         android:id="@+id/textView16"
                         android:layout_width="match_parent"
@@ -125,12 +131,24 @@
                         android:text="Жесткий диск – это хранилище данных в компьютере. Именно на нем находятся все документы, фотографии, видео файлы и другая информация. Ёмкость диска измеряется в гигабайтах и терабайтах."
                         android:textColor="#000000" />
 
+                    <ImageView
+                        android:id="@+id/imageView66"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/teorycomp8" />
+
                     <TextView
                         android:id="@+id/textView41"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="CD/DVD/BD-ROM – это устройства, читающие и записывающие диски. CD-ROM читает CD диски. CD/RW помимо чтения позволяет записывать информацию. Такие приводы уже устарели и вышли с производства. В основном они использовались на старых компьютерах. "
                         android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/imageView67"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/teorycomp9" />
 
                 </LinearLayout>
 

@@ -43,26 +43,28 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/COMPBUTTON1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-           
-                app:srcCompat="@drawable/compoffhome1" />
+                android:background="#00FFFFFF"
+                app:srcCompat="@drawable/compclosehome2" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/COMPBUTTON2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FFFFFF"
                 app:srcCompat="@drawable/compclosehome2" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/COMPBUTTON3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FFFFFF"
                 app:srcCompat="@drawable/compclosehome3" />
         </LinearLayout>
 
@@ -72,25 +74,28 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/COMPBUTTON4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FFFFFF"
                 app:srcCompat="@drawable/compclosehome4" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/COMPBUTTON5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FFFFFF"
                 app:srcCompat="@drawable/compclosehome5" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/COMPBUTTON6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FFFFFF"
                 app:srcCompat="@drawable/compclosehome6" />
         </LinearLayout>
 
@@ -100,25 +105,28 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/COMPBUTTON7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FFFFFF"
                 app:srcCompat="@drawable/compclosehome7" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/COMPBUTTON8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FFFFFF"
                 app:srcCompat="@drawable/compclosehome8" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/COMPBUTTON9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#00FFFFFF"
                 app:srcCompat="@drawable/compclosehome9" />
 
         </LinearLayout>
