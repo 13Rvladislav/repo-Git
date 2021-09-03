@@ -125,12 +125,24 @@
                         android:text="Монитор – экран компьютера. Отображает результат вычислений процессора и видеокарты в визуальном виде."
                         android:textColor="@color/black" />
 
+                    <ImageView
+                        android:id="@+id/imageView68"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/teotycomp10" />
+
                     <TextView
                         android:id="@+id/textView16"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Клавиатура – устройство ввода данных. С помощью клавиатуры мы печатаем тексты и производим всевозможные действия на компьютере. Может подключаться к компьютеру с помощью проводного и беспроводного интерфейса."
                         android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/imageView69"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/teorycomp11" />
 
                     <TextView
                         android:id="@+id/textView41"
@@ -139,12 +151,24 @@
                         android:text="Компьютерная мышь. С помощью нее мы перемещаем курсор по экрану, запускаем приложения и работаем в них. Может подключаться по проводному и беспроводному интерфейсу."
                         android:textColor="#000000" />
 
+                    <ImageView
+                        android:id="@+id/imageView70"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/teorycomp12" />
+
                     <TextView
                         android:id="@+id/textView43"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Звуковые колонки. В них воспроизводится звук который поступает  со звуковой карты. Чаще всего встречаются обычные офисные колонки."
                         android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/imageView71"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/teorycomp13" />
 
                     <TextView
                         android:id="@+id/textView44"
@@ -153,12 +177,24 @@
                         android:text="Микрофон. Подключается к звуковой карте и нужен для голосового общения. При помощи него общаются по интернету в Скайпе, Одноклассниках, других сервисах."
                         android:textColor="#000000" />
 
+                    <ImageView
+                        android:id="@+id/imageView72"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/teorycomp14" />
+
                     <TextView
                         android:id="@+id/textView45"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Веб-камера. Позволяет совершать видео звонки по интернету. "
                         android:textColor="#020000" />
+
+                    <ImageView
+                        android:id="@+id/imageView73"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/teorycomp15" />
 
                     <TextView
                         android:id="@+id/textView46"
@@ -167,12 +203,24 @@
                         android:text="USB накопители. К ним относятся флешки и картридеры. Флешки – это портативные устройства, на которых хранится информация.  "
                         android:textColor="#000000" />
 
+                    <ImageView
+                        android:id="@+id/imageView74"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/teorycomp16" />
+
                     <TextView
                         android:id="@+id/textView47"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Картридеры – устройства, которые считывают информацию с SD-карт. Такие карты используются в телефонах и фотоаппаратах."
                         android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/imageView75"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/teorycomp17" />
 
                 </LinearLayout>
 

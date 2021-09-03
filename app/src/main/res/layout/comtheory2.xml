@@ -96,7 +96,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="230dp"
+                android:layout_height="250dp"
                 android:layout_marginLeft="5dp"
 
                 android:layout_marginTop="15dp"
@@ -118,6 +118,12 @@
                         android:text="\t\t\tКорпус – это железный короб, в который устанавливаются все необходимые комплектующие."
                         android:textColor="@color/black" />
 
+                    <ImageView
+                        android:id="@+id/imageView60"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/teorycomp2" />
+
                     <TextView
                         android:id="@+id/textView16"
                         android:layout_width="match_parent"
@@ -125,12 +131,24 @@
                         android:text="\t\t\tБлок питания – отвечает за питание всех комплектующих"
                         android:textColor="#000000" />
 
+                    <ImageView
+                        android:id="@+id/imageView61"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/teorycomp3" />
+
                     <TextView
                         android:id="@+id/textView40"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="\t\t\tМатеринская плата – это печатная плата, на которую устанавливаются все комплектующие: процессор, оперативная память, видеокарта, жесткие диски и другие. Потому ее и назвали материнская, так как она питает все эти компоненты."
                         android:textColor="#020000" />
+
+                    <ImageView
+                        android:id="@+id/imageView62"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/teorycomp4" />
 
                 </LinearLayout>
 

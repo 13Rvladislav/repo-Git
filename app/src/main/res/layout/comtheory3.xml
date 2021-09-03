@@ -118,12 +118,24 @@
                         android:text="Процессор – это сердце компьютера. Он обрабатывает весь входящий поток информации, распределяя его между остальными комплектующими. Состоит из текстолита, на который крепятся микроконтроллеры и установлен кристалл – в нем и происходят все вычисления."
                         android:textColor="@color/black" />
 
+                    <ImageView
+                        android:id="@+id/imageView63"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/teorycomp5" />
+
                     <TextView
                         android:id="@+id/textView16"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Оперативная память – это память, в которую программы помещают свои данные для быстрой обработки процессором. Все вычисления в ней проходят в несколько раз быстрее, чем на жестком диске. После произведенных вычислений память автоматически очищается для новой обработки данных. У оперативной памяти свой стандарт – DDR. На сегодняшний день это DDR4. Объем и производительность рассчитывается количеством гигабайт и частотой в мегагерцах. "
                         android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/imageView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/teorycomp6" />
 
                 </LinearLayout>
 
