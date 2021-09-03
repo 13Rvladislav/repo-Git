@@ -12,5 +12,6 @@ public class Computer_Teory_Task extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_computer__teory__task);
+
     }
 }
