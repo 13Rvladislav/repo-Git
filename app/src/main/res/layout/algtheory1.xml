@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/algoritm_fon"
-    tools:context=".THEORY_TASK.algorithm.TheoryAlgorithm1"
-    android:paddingTop="-11dp"
     android:layout_marginTop="-2dp"
-    >
+    android:background="@drawable/algoritm_fon"
+    android:paddingTop="-11dp"
+    tools:context=".THEORY_TASK.algorithm.TheoryAlgorithm1">
 
     <Button
         android:id="@+id/bottomTeoryK"
@@ -76,8 +75,8 @@
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="111dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/ic_podlozhka_teoria_belaya"
                 android:orientation="vertical">
@@ -85,9 +84,9 @@
                 <TextView
                     android:id="@+id/textView5"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:layout_height="wrap_content"
                     android:text="Здравствуй! Сегодня ты начнешь изучать раздел “Алгоритмы ”. Алгоритмом называется последовательность действий, направленных на решение поставленной задачи"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -95,9 +94,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="230dp"
-                android:layout_marginTop="15dp"
-
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/ic_podlozhka_teoria_zheltaya"
                 android:orientation="vertical">
@@ -188,12 +186,12 @@
 
                 <TextView
                     android:id="@+id/textView6"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:text="Ну а теперь проверь, что ты понял." />
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Ну а теперь проверь, что ты понял."
+                    android:textColor="@color/black" />
             </LinearLayout>
 
         </LinearLayout>

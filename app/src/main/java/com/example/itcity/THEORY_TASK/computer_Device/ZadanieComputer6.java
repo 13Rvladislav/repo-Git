@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.itcity.R;
 
-public class TheoryComputer3 extends AppCompatActivity {
+public class ZadanieComputer6 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.comtheory3);
+        setContentView(R.layout.comptask6);
     }
 }

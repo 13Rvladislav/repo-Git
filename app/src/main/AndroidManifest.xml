@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itcity">
-        <activity android:name=".THEORY_TASK.security.TheorySecurity8"></activity>
+        <activity android:name=".THEORY_TASK.computer_Device.ZadanieComputer6"></activity>
+        <activity android:name=".THEORY_TASK.computer_Device.TheoryComputer6" />
+        <activity android:name=".THEORY_TASK.computer_Device.TheoryComputer5" />
+        <activity android:name=".THEORY_TASK.computer_Device.TheoryComputer4" />
+        <activity android:name=".THEORY_TASK.computer_Device.TheoryComputer3" />
+        <activity android:name=".THEORY_TASK.computer_Device.TheoryComputer2" />
+        <activity android:name=".THEORY_TASK.computer_Device.TheoryComputer1" />
+        <activity android:name=".THEORY_TASK.security.TheorySecurity8" />
         <activity android:name=".THEORY_TASK.security.TheorySecurity7" />
         <activity android:name=".THEORY_TASK.security.TheorySecurity6" />
         <activity android:name=".THEORY_TASK.security.TheorySecurity5" />

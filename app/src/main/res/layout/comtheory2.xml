@@ -76,7 +76,7 @@
             <LinearLayout
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
-                android:layout_height="111dp"
+                android:layout_height="60dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
@@ -96,62 +96,82 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_podlozhka_teoria_zheltaya"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textCompDev4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Корпус – это железный короб, в который устанавливаются все необходимые комплектующие."
+                    android:textColor="#3D0250" />
+
+                <ImageView
+                    android:id="@+id/imageView60"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/teorycomp2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_marginLeft="5dp"
-
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/ic_podlozhka_teoria_zheltaya"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/textView16"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:orientation="vertical">
+                    android:text="Блок питания – отвечает за питание всех комплектующих"
+                    android:textColor="#3D0250" />
 
-                    <TextView
-                        android:id="@+id/textCompDev4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="\t\t\tКорпус – это железный короб, в который устанавливаются все необходимые комплектующие."
-                        android:textColor="@color/black" />
+                <ImageView
+                    android:id="@+id/imageView61"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/teorycomp3" />
+            </LinearLayout>
 
-                    <ImageView
-                        android:id="@+id/imageView60"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/teorycomp2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_podlozhka_teoria_zheltaya"
+                android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/textView16"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="\t\t\tБлок питания – отвечает за питание всех комплектующих"
-                        android:textColor="#000000" />
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Материнская плата – это печатная плата, на которую устанавливаются все комплектующие: процессор, оперативная память, видеокарта, жесткие диски и другие. Потому ее и назвали материнская, так как она питает все эти компоненты."
+                    android:textColor="#3D0250" />
 
-                    <ImageView
-                        android:id="@+id/imageView61"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/teorycomp3" />
-
-                    <TextView
-                        android:id="@+id/textView40"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="\t\t\tМатеринская плата – это печатная плата, на которую устанавливаются все комплектующие: процессор, оперативная память, видеокарта, жесткие диски и другие. Потому ее и назвали материнская, так как она питает все эти компоненты."
-                        android:textColor="#020000" />
-
-                    <ImageView
-                        android:id="@+id/imageView62"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/teorycomp4" />
-
-                </LinearLayout>
-
+                <ImageView
+                    android:id="@+id/imageView62"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/teorycomp4" />
             </LinearLayout>
 
             <LinearLayout
@@ -159,6 +179,7 @@
                 android:layout_height="50dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/ic_podlozhka_teoria_belaya"
                 android:orientation="vertical">

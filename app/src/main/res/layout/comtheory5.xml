@@ -89,21 +89,198 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:text="\t\t\tПриветствую тебя в новом разделе ’’Периферийные устройства’’."
-                    android:textColor="@color/black" />
+                    android:text="Приветствую тебя в новом разделе ’’Периферийные устройства’’."
+                    android:textColor="#3D0250"/>
 
                 <TextView
                     android:id="@+id/textView42"
                     android:layout_width="376dp"
                     android:layout_height="wrap_content"
-                    android:text="\t\t\tЗдесь ты узнаешь что такое монитор, клавиатура, компьютерная мышь, вэб камера , микрофон ,звуковые колонки,USB накопители."
-                    android:textColor="#000000" />
+                    android:layout_marginLeft="10dp"
+                    android:text="Здесь ты узнаешь что такое монитор, клавиатура, компьютерная мышь, вэб камера , микрофон ,звуковые колонки,USB накопители."
+                    android:textColor="#3D0250"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="470dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_podlozhka_teoria_zheltaya"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textCompDev4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Монитор – экран компьютера. Отображает результат вычислений процессора и видеокарты в визуальном виде."
+                    android:textColor="#3D0250" />
+
+                <ImageView
+                    android:id="@+id/imageView68"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/teotycomp10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_podlozhka_teoria_zheltaya"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Компьютерная мышь. С помощью нее мы перемещаем курсор по экрану, запускаем приложения и работаем в них. Может подключаться по проводному и беспроводному интерфейсу."
+                    android:textColor="#3D0250" />
+
+                <ImageView
+                    android:id="@+id/imageView70"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/teorycomp12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_podlozhka_teoria_zheltaya"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Звуковые колонки. В них воспроизводится звук который поступает  со звуковой карты. Чаще всего встречаются обычные офисные колонки."
+                    android:textColor="#3D0250" />
+
+                <ImageView
+                    android:id="@+id/imageView71"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/teorycomp13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_podlozhka_teoria_zheltaya"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Микрофон. Подключается к звуковой карте и нужен для голосового общения. При помощи него общаются по интернету в Скайпе, Одноклассниках, других сервисах."
+                    android:textColor="#3D0250" />
+
+                <ImageView
+                    android:id="@+id/imageView72"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/teorycomp14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_podlozhka_teoria_zheltaya"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Веб-камера. Позволяет совершать видео звонки по интернету. "
+                    android:textColor="#3D0250" />
+
+                <ImageView
+                    android:id="@+id/imageView73"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/teorycomp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_podlozhka_teoria_zheltaya"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="USB накопители. К ним относятся флешки и картридеры. Флешки – это портативные устройства, на которых хранится информация.  "
+                    android:textColor="#3D0250" />
+
+                <ImageView
+                    android:id="@+id/imageView74"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/teorycomp16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_podlozhka_teoria_zheltaya"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Картридеры – устройства, которые считывают информацию с SD-карт. Такие карты используются в телефонах и фотоаппаратах."
+                    android:textColor="#3D0250" />
+
+                <ImageView
+                    android:id="@+id/imageView75"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/teorycomp17" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
                 android:layout_marginLeft="5dp"
 
                 android:layout_marginTop="15dp"
@@ -111,119 +288,20 @@
                 android:background="@drawable/ic_podlozhka_teoria_zheltaya"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/textView16"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:orientation="vertical">
+                    android:text="Клавиатура – устройство ввода данных. С помощью клавиатуры мы печатаем тексты и производим всевозможные действия на компьютере. Может подключаться к компьютеру с помощью проводного и беспроводного интерфейса."
+                    android:textColor="#3D0250" />
 
-                    <TextView
-                        android:id="@+id/textCompDev4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Монитор – экран компьютера. Отображает результат вычислений процессора и видеокарты в визуальном виде."
-                        android:textColor="@color/black" />
-
-                    <ImageView
-                        android:id="@+id/imageView68"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/teotycomp10" />
-
-                    <TextView
-                        android:id="@+id/textView16"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Клавиатура – устройство ввода данных. С помощью клавиатуры мы печатаем тексты и производим всевозможные действия на компьютере. Может подключаться к компьютеру с помощью проводного и беспроводного интерфейса."
-                        android:textColor="#000000" />
-
-                    <ImageView
-                        android:id="@+id/imageView69"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/teorycomp11" />
-
-                    <TextView
-                        android:id="@+id/textView41"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Компьютерная мышь. С помощью нее мы перемещаем курсор по экрану, запускаем приложения и работаем в них. Может подключаться по проводному и беспроводному интерфейсу."
-                        android:textColor="#000000" />
-
-                    <ImageView
-                        android:id="@+id/imageView70"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/teorycomp12" />
-
-                    <TextView
-                        android:id="@+id/textView43"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Звуковые колонки. В них воспроизводится звук который поступает  со звуковой карты. Чаще всего встречаются обычные офисные колонки."
-                        android:textColor="#000000" />
-
-                    <ImageView
-                        android:id="@+id/imageView71"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/teorycomp13" />
-
-                    <TextView
-                        android:id="@+id/textView44"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Микрофон. Подключается к звуковой карте и нужен для голосового общения. При помощи него общаются по интернету в Скайпе, Одноклассниках, других сервисах."
-                        android:textColor="#000000" />
-
-                    <ImageView
-                        android:id="@+id/imageView72"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/teorycomp14" />
-
-                    <TextView
-                        android:id="@+id/textView45"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Веб-камера. Позволяет совершать видео звонки по интернету. "
-                        android:textColor="#020000" />
-
-                    <ImageView
-                        android:id="@+id/imageView73"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/teorycomp15" />
-
-                    <TextView
-                        android:id="@+id/textView46"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="USB накопители. К ним относятся флешки и картридеры. Флешки – это портативные устройства, на которых хранится информация.  "
-                        android:textColor="#000000" />
-
-                    <ImageView
-                        android:id="@+id/imageView74"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/teorycomp16" />
-
-                    <TextView
-                        android:id="@+id/textView47"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Картридеры – устройства, которые считывают информацию с SD-карт. Такие карты используются в телефонах и фотоаппаратах."
-                        android:textColor="#000000" />
-
-                    <ImageView
-                        android:id="@+id/imageView75"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/teorycomp17" />
-
-                </LinearLayout>
-
+                <ImageView
+                    android:id="@+id/imageView69"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    app:srcCompat="@drawable/teorycomp11" />
             </LinearLayout>
 
             <LinearLayout
@@ -240,9 +318,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
                     android:text="Ну и в завершении темы, давай по тренируемся на заданиях."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>
