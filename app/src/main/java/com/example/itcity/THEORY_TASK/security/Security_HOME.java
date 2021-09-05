@@ -23,7 +23,6 @@ public class Security_HOME extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_security__teory__task);
-
         Secbutton1 = (ImageButton) findViewById(R.id.SECBUTTON1);
         Secbutton2 = (ImageButton) findViewById(R.id.SECBUTTON2);
         Secbutton3 = (ImageButton) findViewById(R.id.SECBUTTON3);
@@ -88,7 +87,5 @@ public class Security_HOME extends AppCompatActivity {
         Secbutton6.setOnClickListener(onClickListener);
         Secbutton7.setOnClickListener(onClickListener);
         Secbutton8.setOnClickListener(onClickListener);
-
-
     }
 }
