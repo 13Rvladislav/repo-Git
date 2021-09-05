@@ -1,6 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/teoria_sinie"
+    android:paddingTop="-11dp"
+    android:layout_marginTop="-2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="380dp"
+        android:layout_height="484dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/algCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:layout_constraintVertical_bias="0.865">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@drawable/podkltaskpole"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="1)пришло письмо от неизвестного лица со ссылкой на сайт для прохождения анонимного опроса."
+                    android:textColor="#3D0250"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/algTask2Button1"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="выбрать" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/podkltaskpole"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="2)появилось сообщение от знакомого с просьбой перейти по ссылке и посмотреть сайт новой игры."
+                    android:textColor="#3D0250"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/algTask2Button2"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="выбрать" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/podkltaskpole"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="3)пришло письмо от представителя мобильного оператора со ссылкой на сайт, где можно посмотреть новые услуги."
+                    android:textColor="#3D0250"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/algTask2Button3"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="выбрать" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <ImageView
+    android:id="@+id/podlSecurity"
+    android:layout_width="match_parent"
+    android:layout_height="93dp"
+    android:padding="-1dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/_____2__0png" />
+
+    <TextView
+        android:id="@+id/textsecurity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:text="БЕЗОПАСНОСТЬ"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/bottomSecurityK"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="76dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/zadaniya"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/algCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="ПРОДОЛЖИТЬ"
+        android:textSize="24sp"
+        app:backgroundTint="#3D0250"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:background="@drawable/podklpereetyag"
+        android:textColor="#3D0250"
+        android:text=" Сопоставьте ситуации и способы действия в них."
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:layout_constraintVertical_bias="0.666"
+        android:textSize="17sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -76,7 +76,7 @@
             <LinearLayout
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
-                android:layout_height="111dp"
+                android:layout_height="70dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
@@ -115,7 +115,7 @@
                         android:id="@+id/textCompDev4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Системный блок – это блок, внутри которого находятся основные комплектующие компьютера. Он состоит из корпуса, блока питания, материнской платы, процессора, оперативной памяти, видеокарты, жесткого диска, опционально дивидирома (DVD-ROM)"
+                        android:text="Системный блок – это блок, внутри которого находятся основные комплектующие компьютера. Он состоит из корпуса, блока питания, материнской платы, процессора, оперативной памяти, видеокарты, жесткого диска."
                         android:textColor="@color/black" />
 
                     <ImageView
