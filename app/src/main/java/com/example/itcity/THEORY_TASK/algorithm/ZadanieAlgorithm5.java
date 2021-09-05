@@ -29,6 +29,7 @@ public class ZadanieAlgorithm5 extends AppCompatActivity implements Algtask5Sing
     String answer1;
 
 
+
     //переменная для проверки выбранной кнопки
     Boolean bt1 = false;
 
@@ -39,6 +40,7 @@ public class ZadanieAlgorithm5 extends AppCompatActivity implements Algtask5Sing
         setContentView(R.layout.algtask5);
         getSupportActionBar().hide();
         button1 = (Button) findViewById(R.id.algTask5Button1);
+
 
 
         check = (Button) findViewById(R.id.algCheck);
@@ -62,7 +64,7 @@ public class ZadanieAlgorithm5 extends AppCompatActivity implements Algtask5Sing
                             return;
                         }
 
-                       
+
                         String markSTR;
                         if (answer1.equalsIgnoreCase("Ветвящаяся")) {
                             //если ответ в поле 1 совпал с правильным ответом то делаем +20 баллов

@@ -11,12 +11,14 @@ import com.example.itcity.R;
 
 public class TheoryAlgorithm2 extends AppCompatActivity {
     Button button7;
+    Button bottomTeoryK2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.algtheory2);
         getSupportActionBar().hide();
         button7 = (Button) findViewById(R.id.button7);
+        bottomTeoryK2 = (Button) findViewById(R.id.bottomTeoryK2);
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
@@ -26,11 +28,16 @@ public class TheoryAlgorithm2 extends AppCompatActivity {
                         Intent intent1 = new Intent(TheoryAlgorithm2.this, ZadanieAlgorithm2.class);
                         startActivity(intent1);
                         break;
+                    case R.id.bottomTeoryK2:
+                        Intent intent2 = new Intent(TheoryAlgorithm2.this, Algorithm_HOME.class);
+                        startActivity(intent2);
+                        break;
 
 
                 }
             }
         };
         button7.setOnClickListener(onClickListener);
+        bottomTeoryK2.setOnClickListener(onClickListener);
     }
 }

@@ -7,11 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.itcity.ActivityMap;
 import com.example.itcity.R;
 
 public class TheoryAlgorithm4 extends AppCompatActivity {
 
     Button button7;
+    Button bottomTeoryK4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +31,16 @@ public class TheoryAlgorithm4 extends AppCompatActivity {
                         Intent intent1 = new Intent(TheoryAlgorithm4.this, ZadanieAlgorithm4.class);
                         startActivity(intent1);
                         break;
+                    case R.id.bottomTeoryK4:
+                        Intent intent2 = new Intent(TheoryAlgorithm4.this, Algorithm_HOME.class);
+                        startActivity(intent2);
+                        break;
 
 
                 }
             }
         };
         button7.setOnClickListener(onClickListener);
+        bottomTeoryK4.setOnClickListener(onClickListener);
     }
 }

@@ -2,8 +2,11 @@ package com.example.itcity.THEORY_TASK.computer_Device;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.itcity.ActivityMap;
 import com.example.itcity.R;
 
 public class Computer_Teory_Task extends AppCompatActivity {
@@ -16,6 +19,7 @@ public class Computer_Teory_Task extends AppCompatActivity {
     ImageButton COMPBUTTON7;
     ImageButton COMPBUTTON8;
     ImageButton COMPBUTTON9;
+    Button COMPBUTTONBACK;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,7 @@ public class Computer_Teory_Task extends AppCompatActivity {
         COMPBUTTON7 = (ImageButton) findViewById(R.id.COMPBUTTON7);
         COMPBUTTON8 = (ImageButton) findViewById(R.id.COMPBUTTON8);
         COMPBUTTON9 = (ImageButton) findViewById(R.id.COMPBUTTON9);
+        COMPBUTTONBACK = (Button) findViewById(R.id.COMPBUTTONBACK);
 
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -59,6 +64,10 @@ public class Computer_Teory_Task extends AppCompatActivity {
                         Intent intent5 = new Intent(Computer_Teory_Task.this, TheoryComputer5.class);
                         startActivity(intent5);
                         break;
+                    case R.id.COMPBUTTONBACK:
+                        Intent intent6 = new Intent(Computer_Teory_Task.this, ActivityMap.class);
+                        startActivity(intent6);
+                        break;
 
                     default:
                         break;
@@ -71,6 +80,7 @@ public class Computer_Teory_Task extends AppCompatActivity {
         COMPBUTTON3.setOnClickListener(onClickListener);
         COMPBUTTON4.setOnClickListener(onClickListener);
         COMPBUTTON5.setOnClickListener(onClickListener);
+        COMPBUTTONBACK.setOnClickListener(onClickListener);
 
 
 

@@ -26,6 +26,7 @@ public class ZadanieAlgorithm3 extends AppCompatActivity implements Algtask3Sing
     Button button4;
 
 
+
     //кнопка продолжить
     Button check;
     //пременная ,где будут храниться баллы и пердавться в следющее активити для просмтора результат и после записываться в firebase

@@ -11,6 +11,7 @@ import com.example.itcity.R;
 
 public class TheoryAlgorithm3 extends AppCompatActivity {
     Button button7;
+    Button bottomTeoryK3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class TheoryAlgorithm3 extends AppCompatActivity {
         setContentView(R.layout.algtheory3);
         getSupportActionBar().hide();
         button7 = (Button) findViewById(R.id.button7);
+        bottomTeoryK3 = (Button) findViewById(R.id.bottomTeoryK3);
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
@@ -28,11 +30,16 @@ public class TheoryAlgorithm3 extends AppCompatActivity {
                         Intent intent1 = new Intent(TheoryAlgorithm3.this, ZadanieAlgorithm3.class);
                         startActivity(intent1);
                         break;
+                    case R.id.bottomTeoryK3:
+                        Intent intent2 = new Intent(TheoryAlgorithm3.this, Algorithm_HOME.class);
+                        startActivity(intent2);
+                        break;
 
 
                 }
             }
         };
         button7.setOnClickListener(onClickListener);
+        bottomTeoryK3.setOnClickListener(onClickListener);
     }
 }

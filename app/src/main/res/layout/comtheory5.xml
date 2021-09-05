@@ -10,7 +10,7 @@
     tools:context=".THEORY_TASK.security.TheorySecurity1">
 
     <Button
-        android:id="@+id/bottomCompDevK"
+        android:id="@+id/bottomCompDevK5"
         android:layout_width="76dp"
         android:layout_height="62dp"
         android:layout_marginStart="16dp"
@@ -44,7 +44,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/bottomCompDevK"
+        app:layout_constraintStart_toEndOf="@+id/bottomCompDevK5"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button

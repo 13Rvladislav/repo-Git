@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.example.itcity.ActivityMap;
 import com.example.itcity.R;
 
 public class Algorithm_HOME extends AppCompatActivity {
@@ -16,6 +18,7 @@ public class Algorithm_HOME extends AppCompatActivity {
     ImageButton AlgButton4;
     ImageButton AlgButton5;
     ImageButton AlgButton6;
+    Button ALGBUTTONBACK;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,7 @@ public class Algorithm_HOME extends AppCompatActivity {
         AlgButton4 = (ImageButton) findViewById(R.id.ALGButton4);
         AlgButton5 = (ImageButton) findViewById(R.id.ALGButton5);
         AlgButton6 = (ImageButton) findViewById(R.id.ALGButton6);
+        ALGBUTTONBACK = (Button) findViewById(R.id.ALGBUTTONBACK);
 
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -59,6 +63,10 @@ public class Algorithm_HOME extends AppCompatActivity {
                         Intent intent6 = new Intent(Algorithm_HOME.this, TheoryAlgorithm6.class);
                         startActivity(intent6);
                         break;
+                    case R.id.ALGBUTTONBACK:
+                        Intent intent7 = new Intent(Algorithm_HOME.this, ActivityMap.class);
+                        startActivity(intent7);
+                        break;
 
                     default:
                         break;
@@ -71,5 +79,6 @@ public class Algorithm_HOME extends AppCompatActivity {
         AlgButton4.setOnClickListener(onClickListener);
         AlgButton5.setOnClickListener(onClickListener);
         AlgButton6.setOnClickListener(onClickListener);
+        ALGBUTTONBACK.setOnClickListener(onClickListener);
     }
 }

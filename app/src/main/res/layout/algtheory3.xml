@@ -10,7 +10,7 @@
     tools:context=".THEORY_TASK.algorithm.TheoryAlgorithm3">
 
     <Button
-        android:id="@+id/bottomTeoryK"
+        android:id="@+id/bottomTeoryK3"
         android:layout_width="76dp"
         android:layout_height="62dp"
         android:layout_marginStart="16dp"
@@ -42,7 +42,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bottomTeory"
+        app:layout_constraintStart_toEndOf="@+id/bottomTeoryK3"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
