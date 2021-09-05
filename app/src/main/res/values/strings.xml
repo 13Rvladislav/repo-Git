@@ -22,6 +22,26 @@
         <item>Линейная</item>
         <item>Ветвящаяся</item>
         <item>Циклическая</item>
+    </string-array>
+
+    <string-array name="secchoice_items1">
+        <item>Бесплатный фриланс</item>
+        <item>Сообщения на почту о благотворительности,выигрыше</item>
+        <item>Покупка билетов онлайн</item>
+        <item>Во всех перечисленных</item>
+        <item>Не в каких из вышеперечисленных</item>
+    </string-array>
+
+    <string-array name="secchoice_items2">
+        <item>Проверить, существует ли такая организация, и, если да, то перевести деньги на указанный счет</item>
+        <item>Перевести деньги на лечение ребенка</item>
+        <item>Проигнорировать данное сообщение</item>
+    </string-array>
+
+    <string-array name="secchoice_items3">
+        <item>Переслать реквизиты.</item>
+        <item>Позвонить в банк и узнать о состоянии карты</item>
+        <item>Покупка билетов онлайн</item>
 
     </string-array>
 
