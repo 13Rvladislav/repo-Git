@@ -18,7 +18,7 @@ public class Algorithm_HOME extends AppCompatActivity {
     ImageButton AlgButton4;
     ImageButton AlgButton5;
     ImageButton AlgButton6;
-    Button ALGBUTTONBACK;
+    Button BACK;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class Algorithm_HOME extends AppCompatActivity {
         AlgButton4 = (ImageButton) findViewById(R.id.ALGButton4);
         AlgButton5 = (ImageButton) findViewById(R.id.ALGButton5);
         AlgButton6 = (ImageButton) findViewById(R.id.ALGButton6);
-        ALGBUTTONBACK = (Button) findViewById(R.id.ALGBUTTONBACK);
+        BACK = (Button) findViewById(R.id.ALGBUTTONBACK);
 
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -79,6 +79,6 @@ public class Algorithm_HOME extends AppCompatActivity {
         AlgButton4.setOnClickListener(onClickListener);
         AlgButton5.setOnClickListener(onClickListener);
         AlgButton6.setOnClickListener(onClickListener);
-        ALGBUTTONBACK.setOnClickListener(onClickListener);
+        BACK.setOnClickListener(onClickListener);
     }
 }

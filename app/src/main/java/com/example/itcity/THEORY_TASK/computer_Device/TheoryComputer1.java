@@ -26,7 +26,7 @@ public class TheoryComputer1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.continieSec:
+                    case R.id.continueSec:
                         Intent intent1 = new Intent(TheoryComputer1.this, ZadanieComputer1.class);
                         startActivity(intent1);
                         break;

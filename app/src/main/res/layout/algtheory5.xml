@@ -7,7 +7,7 @@
     android:background="@drawable/algoritm_fon"
     android:paddingTop="-11dp"
     android:layout_marginTop="-2dp"
-    tools:context=".THEORY_TASK.algorithm.TheoryAlgorithm5">
+    tools:context=".THEORY_TASK.algorithm.TheoryAlgorithm4">
 
     <Button
         android:id="@+id/bottomTeoryK5"

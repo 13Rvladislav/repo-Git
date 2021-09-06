@@ -39,10 +39,14 @@
     </string-array>
 
     <string-array name="secchoice_items3">
-        <item>Переслать реквизиты.</item>
+        <item>Переслать реквизиты</item>
         <item>Позвонить в банк и узнать о состоянии карты</item>
         <item>Покупка билетов онлайн</item>
-
+    </string-array>
+    <string-array name="secchoice_items5">
+        <item>Проверить, не является ли ссылка фальшивой</item>
+        <item>Позвонить отправителю и спросить, была ли им отправлена эта ссылка</item>
+        <item>Проигнорировать сообщение</item>
     </string-array>
 
     //кнопки в меню

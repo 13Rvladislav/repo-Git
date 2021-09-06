@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itcity">
-        <activity android:name=".THEORY_TASK.security.ZadanieSecurity3"></activity>
+        <activity android:name=".THEORY_TASK.security.ZadSec5"></activity>
+        <activity android:name=".THEORY_TASK.security.TheorySecurity5" />
+        <activity android:name=".THEORY_TASK.security.MainActivityffff" />
+        <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm5" />
+        <activity android:name=".THEORY_TASK.algorithm.MainActivityFf" />
+        <activity android:name=".THEORY_TASK.algorithm.MainActivityffffffffffff" />
+        <activity android:name=".THEORY_TASK.security.ZadanieSecurity3" />
         <activity android:name=".THEORY_TASK.security.ZadanieSecurity2" />
         <activity android:name=".THEORY_TASK.security.ZadanieSecurity1" />
         <activity android:name=".THEORY_TASK.computer_Device.ZadanieComputer6" />
@@ -22,7 +28,6 @@
         <activity android:name=".THEORY_TASK.security.TheorySecurity8" />
         <activity android:name=".THEORY_TASK.security.TheorySecurity7" />
         <activity android:name=".THEORY_TASK.security.TheorySecurity6" />
-        <activity android:name=".THEORY_TASK.security.TheorySecurity5" />
         <activity android:name=".THEORY_TASK.security.TheorySecurity4" />
         <activity android:name=".THEORY_TASK.security.TheorySecurity3" />
         <activity android:name=".THEORY_TASK.security.TheorySecurity2" />
@@ -33,7 +38,6 @@
         <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm3" />
         <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm2" />
         <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm6" />
-        <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm5" />
         <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm4" />
         <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm3" />
         <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm2" />
