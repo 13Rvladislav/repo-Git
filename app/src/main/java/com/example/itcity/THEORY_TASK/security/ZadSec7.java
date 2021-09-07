@@ -12,51 +12,51 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.itcity.ActivityAuthor;
 import com.example.itcity.R;
 
-public class Zadsec6 extends AppCompatActivity {
-    Button check;
-    EditText answer1;
-    EditText answer2;
-    EditText answer3;
-
-    //пременная ,где будут храниться баллы и пердавться в следющее активити для просмтора результат и после записываться в firebase
-    int mark;
+public class ZadSec7 extends AppCompatActivity {
     Dialog dialog;//диалоговое окно
+    Button check;//кнопка продолжить
+    Button enterword;
+    int mark;//пременная ,где будут храниться баллы и пердавться в следющее активити для просмтора результат и после записываться в firebase
+    String all = "вирусчервьхакертроянпрограммахакер";
+    EditText answered;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sectask6);
+        setContentView(R.layout.sectask7);
         check = findViewById(R.id.continueSec);
-        getSupportActionBar().hide();
-        answer1 = (EditText) findViewById(R.id.Sec6_1);
-        answer2 = (EditText) findViewById(R.id.Sec6_2);
-        answer3 = (EditText) findViewById(R.id.Sec6_3);
+        answered = findViewById(R.id.answer);
+        enterword = findViewById(R.id.enter_a_word);
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
+                    case R.id.enter_a_word:
+                        String ans = answered.getText().toString();
+                        ans= ans.toLowerCase();
+                        int indexM = all.indexOf(ans);
+                        if (indexM != -1) {
+                            mark += 20;
+                            all = all.replace(ans, "");
+                            Toast toast = Toast.makeText(ZadSec7.this, "Поздравляем!!! одно из слов было найдено", Toast.LENGTH_SHORT);
+                            toast.show();
+                        } else {
+                            Toast toast = Toast.makeText(ZadSec7.this, "Не верное слово!", Toast.LENGTH_SHORT);
+                            toast.show();
+                        }
+                        answered.setText("");
+                        break;
                     case R.id.continueSec:
-                        String ans1 = answer1.getText().toString();
-                        String ans2 = answer2.getText().toString();
-                        String ans3 = answer3.getText().toString();
-                        if ((ans1.equalsIgnoreCase("взломали")) || (ans1.equalsIgnoreCase("Взломали"))) {
-                            mark+=33;
-                        }
-                        if ((ans2.equalsIgnoreCase("техподдержку")) || (ans2.equalsIgnoreCase("Техподдержку"))) {
-                            mark+=33;
-                        }
-                        if ((ans3.equalsIgnoreCase("вирусов")) || (ans3.equalsIgnoreCase("Вирусов"))) {
-                            mark+=33;
-                        }
-                        if (mark==99)
-                            mark+=1;
                         String markSTR;
                         //вызов диалогового окна с показом количества баллов
-                        if (mark>50) {
-                            dialog = new Dialog(Zadsec6.this);
+                        if (mark>=20) {
+                            dialog = new Dialog(ZadSec7.this);
                             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
                             dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
                             dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
@@ -73,15 +73,15 @@ public class Zadsec6 extends AppCompatActivity {
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadsec6.this, Security_HOME.class);
+                                    Intent intent = new Intent(ZadSec7.this, Security_HOME.class);
                                     startActivity(intent);
                                 }
                             });
                             //ЕСЛИ БЫЛ ЗАПУЩЕН ЭТОТ БЛОК КОДА МЕНЯЕМ КОЛИЧЕСТВО БАЛЛОВ В FIREBASE  И В ПЕРЕМЕННУЮ В КОТОРОЙ НАШ УРОВЕНЬ ДЕЛАЕМ +1;
                             break;
                         }
-                        if (mark<50) {
-                            dialog = new Dialog(Zadsec6.this);
+                        if (mark<20) {
+                            dialog = new Dialog(ZadSec7.this);
                             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
                             dialog.setContentView(R.layout.markbaddialogwindow);//путь к макету диалогового окна
                             dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
@@ -97,7 +97,7 @@ public class Zadsec6 extends AppCompatActivity {
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadsec6.this, Security_HOME.class);
+                                    Intent intent = new Intent(ZadSec7.this, Security_HOME.class);
                                     startActivity(intent);
                                 }
                             });
@@ -108,6 +108,7 @@ public class Zadsec6 extends AppCompatActivity {
                 }
             }
         };
+        enterword.setOnClickListener(onClickListener);
         check.setOnClickListener(onClickListener);
     }
 }

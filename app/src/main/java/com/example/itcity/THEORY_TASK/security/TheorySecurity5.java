@@ -16,6 +16,7 @@ public class TheorySecurity5 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectheory5);
         next = findViewById(R.id.continieSec5);
+        getSupportActionBar().hide();
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override

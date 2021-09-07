@@ -9,14 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itcity">
-        <activity android:name=".THEORY_TASK.security.Zadsec6"></activity>
+        <activity
+            android:name=".THEORY_TASK.security.ZadSec7"
+            android:windowSoftInputMode="adjustNothing"></activity>
+        <activity
+            android:name=".THEORY_TASK.security.Zadsec6"
+            android:windowSoftInputMode="adjustNothing"></activity>
         <activity android:name=".THEORY_TASK.security.ZadSec4" />
         <activity android:name=".THEORY_TASK.security.ZadSec5" />
         <activity android:name=".THEORY_TASK.security.TheorySecurity5" />
-        <activity android:name=".THEORY_TASK.security.MainActivityffff" />
         <activity android:name=".THEORY_TASK.algorithm.TheoryAlgorithm5" />
-        <activity android:name=".THEORY_TASK.algorithm.MainActivityFf" />
-        <activity android:name=".THEORY_TASK.algorithm.MainActivityffffffffffff" />
         <activity android:name=".THEORY_TASK.security.ZadanieSecurity3" />
         <activity android:name=".THEORY_TASK.security.ZadanieSecurity2" />
         <activity android:name=".THEORY_TASK.security.ZadanieSecurity1" />

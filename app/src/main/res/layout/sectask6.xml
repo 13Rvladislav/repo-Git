@@ -119,7 +119,7 @@
                         android:text="1)" />
 
                     <EditText
-                        android:id="@+id/editTextTextEmailAddress3"
+                        android:id="@+id/Sec6_1"
                         android:layout_width="266dp"
                         android:layout_height="40dp"
                         android:layout_marginTop="10dp"
@@ -147,7 +147,7 @@
                         android:text="2)" />
 
                     <EditText
-                        android:id="@+id/editTextTextEmailAddress2"
+                        android:id="@+id/Sec6_2"
                         android:layout_width="266dp"
                         android:layout_height="40dp"
                         android:layout_marginTop="10dp"
@@ -176,7 +176,7 @@
                         android:text="3)" />
 
                     <EditText
-                        android:id="@+id/editTextTextEmailAddress"
+                        android:id="@+id/Sec6_3"
                         android:layout_width="266dp"
                         android:layout_height="40dp"
                         android:layout_marginTop="10dp"

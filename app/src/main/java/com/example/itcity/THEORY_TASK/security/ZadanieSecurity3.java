@@ -35,8 +35,10 @@ public class ZadanieSecurity3 extends AppCompatActivity  implements Sectask3Sing
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectask3);
+        getSupportActionBar().hide();
         button1 = (Button) findViewById(R.id.button6);
         check = (Button) findViewById(R.id.continueSec);
+
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
