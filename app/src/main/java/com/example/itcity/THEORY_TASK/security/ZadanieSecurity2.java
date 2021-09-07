@@ -35,6 +35,7 @@ public class ZadanieSecurity2 extends AppCompatActivity implements Sectask2Singl
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectask2);
+        getSupportActionBar().hide();
         button1 = (Button) findViewById(R.id.button6);
         check = (Button) findViewById(R.id.continueSec);
         View.OnClickListener onClickListener = new View.OnClickListener() {

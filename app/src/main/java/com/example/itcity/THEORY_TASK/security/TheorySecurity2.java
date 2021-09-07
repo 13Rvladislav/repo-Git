@@ -16,6 +16,7 @@ public class TheorySecurity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectheory2);
+        getSupportActionBar().hide();
         next = findViewById(R.id.continieSec2);
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
