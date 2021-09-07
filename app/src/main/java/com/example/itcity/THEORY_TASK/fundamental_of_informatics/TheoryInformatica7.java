@@ -12,6 +12,7 @@ public class TheoryInformatica7 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.inftheory7);
         button8=findViewById(R.id.button8);
         View.OnClickListener onClickListener = new View.OnClickListener() {
