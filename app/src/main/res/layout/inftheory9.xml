@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-2dp"
+    android:background="@drawable/zadanie_fon_inform"
+    android:paddingTop="-11dp"
+    tools:context=".THEORY_TASK.security.TheorySecurity1">
+
+    <Button
+        android:id="@+id/bottomCompDevK2"
+        android:layout_width="76dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/_16"
+        app:backgroundTint="#FFFFFF"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/podlComputer"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:padding="-1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/podl_inform"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textdevice"
+        android:layout_width="249dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="16dp"
+        android:text="ОСНОВЫ ИНФОРМАТИКИ"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/bottomCompDevK2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="ПРОДОЛЖИТЬ"
+        android:textSize="24sp"
+        app:backgroundTint="#183802"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="405dp"
+        android:layout_height="545dp"
+        app:layout_constraintBottom_toTopOf="@+id/continieCompDev"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/podlComputer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_podlozhka_teoria_belaya"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textCompDev5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Вот и отдохнули. Сейчас я расскажу, какие логические операции применяются в алгебре логики."
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_podlozhka_teoria_zheltaya"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:id="@+id/textinf4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Основными логическими операциями являются операции: конъюнкция (логическое умножение, логическое И), отрицание (инверсия, логическое НЕ), дизъюнкция (логическое сложение, логическое ИЛИ), импликации, строгая (исключающая) дизъюнкция, эквивалентность (равнозначность)."
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/ic_podlozhka_teoria_belaya"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textCompDev600"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Давай начнем с первых трех."
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_podlozhka_teoria_zheltaya"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="При выполнении операции отрицания новое высказывание получает значение противоположное значению исходного высказывания."
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/imageView80"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/inflogica1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_podlozhka_teoria_zheltaya"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="При выполнении конъюнкции высказывание истинно, если истины оба исходных высказывания.\n\n"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/imageView62"
+                    android:layout_width="288dp"
+                    android:layout_height="203dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-10dp"
+                    app:srcCompat="@drawable/inflogica2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_podlozhka_teoria_zheltaya"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="При выполнении дизъюнкции высказывание истинно, если хоть одно из исходных высказываний истинно. \n"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/imageView78"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/inflogica3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/ic_podlozhka_teoria_belaya"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textCompDev6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Теперь мы проверим, как хорошо усвоилась эта информация."
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
