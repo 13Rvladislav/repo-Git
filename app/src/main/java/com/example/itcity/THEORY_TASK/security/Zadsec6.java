@@ -1,13 +1,16 @@
 package com.example.itcity.THEORY_TASK.security;
-import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
 import com.example.itcity.R;
 
-public class ZadanieSecurity6 extends AppCompatActivity {
+public class Zadsec6 extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectask6);
-        getSupportActionBar().hide();
     }
 }
