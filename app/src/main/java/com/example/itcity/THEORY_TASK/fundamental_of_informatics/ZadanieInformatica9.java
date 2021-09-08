@@ -7,6 +7,7 @@ public class ZadanieInformatica9 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.inftask9);
         getSupportActionBar().hide();
     }

@@ -12,10 +12,12 @@ import com.example.itcity.R;
 
 public class TheorySecurity7 extends AppCompatActivity {
     Button next;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectheory7);
+        getSupportActionBar().hide();
         next = findViewById(R.id.continieSec7);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -31,5 +33,7 @@ public class TheorySecurity7 extends AppCompatActivity {
             }
         };
         next.setOnClickListener(onClickListener);
+
+
     }
 }

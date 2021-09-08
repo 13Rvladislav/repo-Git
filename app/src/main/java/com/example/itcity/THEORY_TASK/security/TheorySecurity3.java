@@ -15,6 +15,7 @@ Button next;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectheory3);
+        getSupportActionBar().hide();
         next = findViewById(R.id.continieSec3);
         View.OnClickListener onClickListener = new View.OnClickListener() {
 

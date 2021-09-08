@@ -12,5 +12,6 @@ public class ZadanieComputer6 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.comptask6);
+        getSupportActionBar().hide();
     }
 }
