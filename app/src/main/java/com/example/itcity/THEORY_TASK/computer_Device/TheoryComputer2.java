@@ -11,7 +11,7 @@ import com.example.itcity.R;
 
 public class TheoryComputer2 extends AppCompatActivity {
 
-    Button continieCompDev;
+    Button continuee;
     Button bottomCompDevK2;
 
 
@@ -21,7 +21,7 @@ public class TheoryComputer2 extends AppCompatActivity {
         setContentView(R.layout.comtheory2);
 
         getSupportActionBar().hide();
-        continieCompDev = (Button) findViewById(R.id.continieCompDev);
+        continuee = (Button) findViewById(R.id.continieCompDev);
         bottomCompDevK2 = (Button) findViewById(R.id.bottomCompDevK2);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -29,12 +29,12 @@ public class TheoryComputer2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.continueSec:
-                        Intent intent1 = new Intent(TheoryComputer2.this, ZadanieComputer2.class);
+                    case R.id.continieCompDev:
+                        Intent intent1 = new Intent(TheoryComputer2.this, Zadcomp2.class);
                         startActivity(intent1);
                         break;
                     case R.id.bottomCompDevK2:
-                        Intent intent2 = new Intent(TheoryComputer2.this, Computer_Teory_Task.class);
+                        Intent intent2 = new Intent(TheoryComputer2.this, Computer_Home.class);
                         startActivity(intent2);
                         break;
 
@@ -42,7 +42,7 @@ public class TheoryComputer2 extends AppCompatActivity {
                 }
             }
         };
-        continieCompDev.setOnClickListener(onClickListener);
+        continuee.setOnClickListener(onClickListener);
         bottomCompDevK2.setOnClickListener(onClickListener);
 
     }

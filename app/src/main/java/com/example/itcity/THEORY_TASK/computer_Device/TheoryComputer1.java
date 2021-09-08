@@ -16,7 +16,6 @@ public class TheoryComputer1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.comtheory1);
-
         getSupportActionBar().hide();
         continieCompDev = (Button) findViewById(R.id.continieCompDev);
         bottomCompDevK1 = (Button) findViewById(R.id.bottomCompDevK1);
@@ -26,12 +25,12 @@ public class TheoryComputer1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.continueSec:
-                        Intent intent1 = new Intent(TheoryComputer1.this, ZadanieComputer1.class);
+                    case R.id.continieCompDev:
+                        Intent intent1 = new Intent(TheoryComputer1.this, ZadComp1.class);
                         startActivity(intent1);
                         break;
                     case R.id.bottomCompDevK1:
-                        Intent intent2 = new Intent(TheoryComputer1.this, Computer_Teory_Task.class);
+                        Intent intent2 = new Intent(TheoryComputer1.this, Computer_Home.class);
                         startActivity(intent2);
                         break;
 

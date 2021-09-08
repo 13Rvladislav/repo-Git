@@ -39,8 +39,7 @@ public class ZadSec4 extends AppCompatActivity {
 
         checkcont = findViewById(R.id.continueSec);
 
-if(checkbox1.isChecked())
-check1=true;
+
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
