@@ -1,6 +1,274 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-2dp"
+    android:background="@drawable/teoria_zheltye"
+    android:paddingTop="-11dp">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="380dp"
+        android:layout_height="484dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/algCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:layout_constraintVertical_bias="0.865">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/podkltaskpole"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView83"
+                    android:layout_width="match_parent"
+                    android:layout_height="157dp"
+                    app:srcCompat="@drawable/teotycomp10" />
+
+                <Button
+                    android:id="@+id/algTask2Button1"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="выбрать"
+                    app:backgroundTint="#A83806" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/podkltaskpole"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView84"
+                    android:layout_width="match_parent"
+                    android:layout_height="87dp"
+                    app:srcCompat="@drawable/teorycomp11" />
+
+                <Button
+                    android:id="@+id/algTask2Button2"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="выбрать"
+                    app:backgroundTint="#A83806" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/podkltaskpole"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView85"
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    app:srcCompat="@drawable/teorycomp12" />
+
+                <Button
+                    android:id="@+id/algTask2Button3"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="выбрать"
+                    app:backgroundTint="#A83806" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/podkltaskpole"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView831"
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    app:srcCompat="@drawable/teorycomp13" />
+
+                <Button
+                    android:id="@+id/algTask2Button11"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="выбрать"
+                    app:backgroundTint="#A83806" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/podkltaskpole"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView832"
+                    android:layout_width="match_parent"
+                    android:layout_height="157dp"
+                    app:srcCompat="@drawable/teorycomp14" />
+
+                <Button
+                    android:id="@+id/algTask2Button12"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="выбрать"
+                    app:backgroundTint="#A83806" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/podkltaskpole"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView833"
+                    android:layout_width="match_parent"
+                    android:layout_height="157dp"
+                    app:srcCompat="@drawable/teorycomp15" />
+
+                <Button
+                    android:id="@+id/algTask2Button13"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="выбрать"
+                    app:backgroundTint="#A83806" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/podkltaskpole"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView834"
+                    android:layout_width="match_parent"
+                    android:layout_height="157dp"
+                    app:srcCompat="@drawable/teorycomp16" />
+
+                <Button
+                    android:id="@+id/algTask2Button14"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="выбрать"
+                    app:backgroundTint="#A83806" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/podkltaskpole"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView835"
+                    android:layout_width="match_parent"
+                    android:layout_height="157dp"
+                    app:srcCompat="@drawable/teorycomp17" />
+
+                <Button
+                    android:id="@+id/algTask2Button15"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="выбрать"
+                    app:backgroundTint="#A83806" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/podlSecurity"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:padding="-1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_____2_1" />
+
+    <TextView
+        android:id="@+id/textsecurity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:text="БЕЗОПАСНОСТЬ"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/bottomSecurityK"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="76dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/zadaniya"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/algCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="ПРОДОЛЖИТЬ"
+        android:textSize="24sp"
+        app:backgroundTint="#A83806"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/podklpereetyag"
+        android:text=" Сопоставьте ситуации и способы действия в них."
+        android:textColor="#3D0250"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:layout_constraintVertical_bias="0.666" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
