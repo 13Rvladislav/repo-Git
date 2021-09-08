@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.itcity.ActivityMap;
 import com.example.itcity.R;
 
-public class Computer_Teory_Task extends AppCompatActivity {
+public class Computer_Home extends AppCompatActivity {
     ImageButton COMPBUTTON1;
     ImageButton COMPBUTTON2;
     ImageButton COMPBUTTON3;
@@ -45,27 +45,27 @@ public class Computer_Teory_Task extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.COMPBUTTON1:
-                        Intent intent1 = new Intent(Computer_Teory_Task.this, TheoryComputer1.class);
+                        Intent intent1 = new Intent(Computer_Home.this, TheoryComputer1.class);
                         startActivity(intent1);
                         break;
                     case R.id.COMPBUTTON2:
-                        Intent intent2 = new Intent(Computer_Teory_Task.this, TheoryComputer2.class);
+                        Intent intent2 = new Intent(Computer_Home.this, TheoryComputer2.class);
                         startActivity(intent2);
                         break;
                     case R.id.COMPBUTTON3:
-                        Intent intent3 = new Intent(Computer_Teory_Task.this, TheoryComputer3.class);
+                        Intent intent3 = new Intent(Computer_Home.this, TheoryComputer3.class);
                         startActivity(intent3);
                         break;
                     case R.id.COMPBUTTON4:
-                        Intent intent4 = new Intent(Computer_Teory_Task.this, TheoryComputer4.class);
+                        Intent intent4 = new Intent(Computer_Home.this, TheoryComputer4.class);
                         startActivity(intent4);
                         break;
                     case R.id.COMPBUTTON5:
-                        Intent intent5 = new Intent(Computer_Teory_Task.this, TheoryComputer5.class);
+                        Intent intent5 = new Intent(Computer_Home.this, TheoryComputer5.class);
                         startActivity(intent5);
                         break;
                     case R.id.COMPBUTTONBACK:
-                        Intent intent6 = new Intent(Computer_Teory_Task.this, ActivityMap.class);
+                        Intent intent6 = new Intent(Computer_Home.this, ActivityMap.class);
                         startActivity(intent6);
                         break;
 

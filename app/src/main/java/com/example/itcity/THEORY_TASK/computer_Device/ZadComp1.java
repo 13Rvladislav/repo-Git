@@ -6,11 +6,12 @@ import android.os.Bundle;
 
 import com.example.itcity.R;
 
-public class TeoryComputerActivity extends AppCompatActivity {
+public class ZadComp1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teory_computer);
+        setContentView(R.layout.comtask1);
+        getSupportActionBar().hide();
     }
 }
