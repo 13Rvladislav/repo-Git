@@ -83,8 +83,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
-                    android:text="Вписать в определение недостающее слово (несколько слов)."
-                    android:textColor="#3D0250" />
+                    android:text="Вписать в определение недостающее слово "
+                    android:textColor="@color/black" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -206,7 +207,7 @@
                         android:textSize="18sp" />
 
                     <EditText
-                        android:id="@+id/Sec6_3000"
+                        android:id="@+id/Sec6_4"
                         android:layout_width="266dp"
                         android:layout_height="40dp"
                         android:layout_marginTop="10dp"

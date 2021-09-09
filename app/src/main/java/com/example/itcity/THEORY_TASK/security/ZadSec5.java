@@ -30,6 +30,7 @@ public class ZadSec5 extends AppCompatActivity  implements Sectask5SingleChoiceD
 
     //кнопка продолжить
     Button check;
+    Button back;
     //пременная ,где будут храниться баллы и пердавться в следющее активити для просмтора результат и после записываться в firebase
     int mark;
     // переменные где будут храниться ответы из выбранных полей
@@ -52,11 +53,15 @@ public class ZadSec5 extends AppCompatActivity  implements Sectask5SingleChoiceD
         button2 = (Button) findViewById(R.id.algTask2Button2);
         button3 = (Button) findViewById(R.id.algTask2Button3);
         check = (Button) findViewById(R.id.algCheck);
-
+        back= (Button) findViewById(R.id.button5);
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
+                    case R.id.button5:
+                        Intent intent = new Intent(ZadSec5.this, TheorySecurity5.class);
+                        startActivity(intent);
+                        break;
                     case R.id.algTask2Button1:
                         bt1 = true;
                         DialogFragment singleChoiseDialog1 = new Sectask5SingleChoiceDialog();
@@ -169,7 +174,7 @@ public class ZadSec5 extends AppCompatActivity  implements Sectask5SingleChoiceD
         button1.setOnClickListener(onClickListener);
         button2.setOnClickListener(onClickListener);
         button3.setOnClickListener(onClickListener);
-
+        back.setOnClickListener(onClickListener);
         check.setOnClickListener(onClickListener);
     }
 

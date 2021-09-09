@@ -11,24 +11,31 @@ import com.example.itcity.R;
 
 public class TheorySecurity4 extends AppCompatActivity {
     Button next;
+    Button back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectheory4);
         getSupportActionBar().hide();
         next = findViewById(R.id.continieSec4);
+        back=findViewById(R.id.bottomSecurityK);
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.continieSec4:
-                        Intent intent = new Intent(TheorySecurity4.this, ZadSec4.class);
-                        startActivity(intent);
+                        Intent intent1 = new Intent(TheorySecurity4.this, ZadSec4.class);
+                        startActivity(intent1);
+                        break;
+                    case R.id.bottomSecurityK:
+                        Intent intent2 = new Intent(TheorySecurity4.this, Security_HOME.class);
+                        startActivity(intent2);
                         break;
                 }
             }
         };
         next.setOnClickListener(onClickListener);
+        back.setOnClickListener(onClickListener);
     }
 }

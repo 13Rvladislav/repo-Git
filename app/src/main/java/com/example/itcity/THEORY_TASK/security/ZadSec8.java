@@ -9,33 +9,27 @@ import android.widget.Button;
 
 import com.example.itcity.R;
 
-public class TheorySecurity2 extends AppCompatActivity {
-    Button next;
+public class ZadSec8 extends AppCompatActivity {
     Button back;
+    Button next;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sectheory2);
-        getSupportActionBar().hide();
-        next = findViewById(R.id.continieSec2);
-        back = findViewById(R.id.bottomSecurityK);
+        setContentView(R.layout.sectask8);
+        back = (Button) findViewById(R.id.bottomSecurityK);
         View.OnClickListener onClickListener = new View.OnClickListener() {
-
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.continieSec2:
-                        Intent intent1 = new Intent(TheorySecurity2.this, ZadanieSecurity2.class);
-                        startActivity(intent1);
-                        break;
                     case R.id.bottomSecurityK:
-                        Intent intent2 = new Intent(TheorySecurity2.this, Security_HOME.class);
-                        startActivity(intent2);
+                        Intent intent = new Intent(ZadSec8.this, TheorySecurity8.class);
+                        startActivity(intent);
                         break;
                 }
+
             }
         };
-        next.setOnClickListener(onClickListener);
         back.setOnClickListener(onClickListener);
     }
 }

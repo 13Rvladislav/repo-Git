@@ -11,25 +11,31 @@ import com.example.itcity.R;
 
 public class TheorySecurity5 extends AppCompatActivity {
     Button next;
+    Button back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectheory5);
         getSupportActionBar().hide();
         next = findViewById(R.id.continieSec5);
-        getSupportActionBar().hide();
+        back=findViewById(R.id.bottomSecurityK);
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.continieSec5:
-                        Intent intent = new Intent(TheorySecurity5.this, ZadSec5.class);
-                        startActivity(intent);
+                        Intent intent1 = new Intent(TheorySecurity5.this, ZadSec5.class);
+                        startActivity(intent1);
+                        break;
+                    case R.id.bottomSecurityK:
+                        Intent intent2 = new Intent(TheorySecurity5.this, Security_HOME.class);
+                        startActivity(intent2);
                         break;
                 }
             }
         };
         next.setOnClickListener(onClickListener);
+        back.setOnClickListener(onClickListener);
     }
 }

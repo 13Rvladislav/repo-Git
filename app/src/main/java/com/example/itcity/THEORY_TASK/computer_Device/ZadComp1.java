@@ -52,7 +52,7 @@ public class ZadComp1 extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.bottomCompDevK1:
-                        Intent intent = new Intent(ZadComp1.this, Computer_Home.class);
+                        Intent intent = new Intent(ZadComp1.this, TheoryComputer1.class);
                         startActivity(intent);
                         break;
                     case R.id.checkBox1:

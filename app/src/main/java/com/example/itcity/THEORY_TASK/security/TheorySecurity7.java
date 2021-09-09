@@ -12,6 +12,7 @@ import com.example.itcity.R;
 
 public class TheorySecurity7 extends AppCompatActivity {
     Button next;
+    Button back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +20,7 @@ public class TheorySecurity7 extends AppCompatActivity {
         setContentView(R.layout.sectheory7);
         getSupportActionBar().hide();
         next = findViewById(R.id.continieSec7);
-
+        back=findViewById(R.id.bottomSecurityK);
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
@@ -29,11 +30,14 @@ public class TheorySecurity7 extends AppCompatActivity {
                         Intent intent = new Intent(TheorySecurity7.this, ZadSec7.class);
                         startActivity(intent);
                         break;
+                    case R.id.bottomSecurityK:
+                        Intent intent2 = new Intent(TheorySecurity7.this, Security_HOME.class);
+                        startActivity(intent2);
+                        break;
                 }
             }
         };
         next.setOnClickListener(onClickListener);
-
-
+        back.setOnClickListener(onClickListener);
     }
 }

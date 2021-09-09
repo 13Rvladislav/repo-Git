@@ -1,9 +1,11 @@
 package com.example.itcity.THEORY_TASK.computer_Device;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.itcity.ActivityMap;
@@ -33,9 +35,6 @@ public class Computer_Home extends AppCompatActivity {
         COMPBUTTON4 = (ImageButton) findViewById(R.id.COMPBUTTON4);
         COMPBUTTON5 = (ImageButton) findViewById(R.id.COMPBUTTON5);
         COMPBUTTON6 = (ImageButton) findViewById(R.id.COMPBUTTON6);
-        COMPBUTTON7 = (ImageButton) findViewById(R.id.COMPBUTTON7);
-        COMPBUTTON8 = (ImageButton) findViewById(R.id.COMPBUTTON8);
-        COMPBUTTON9 = (ImageButton) findViewById(R.id.COMPBUTTON9);
         COMPBUTTONBACK = (Button) findViewById(R.id.COMPBUTTONBACK);
 
 
@@ -64,9 +63,13 @@ public class Computer_Home extends AppCompatActivity {
                         Intent intent5 = new Intent(Computer_Home.this, TheoryComputer5.class);
                         startActivity(intent5);
                         break;
-                    case R.id.COMPBUTTONBACK:
-                        Intent intent6 = new Intent(Computer_Home.this, ActivityMap.class);
+                    case R.id.COMPBUTTON6:
+                        Intent intent6 = new Intent(Computer_Home.this, TheoryComputer6.class);
                         startActivity(intent6);
+                        break;
+                    case R.id.COMPBUTTONBACK:
+                        Intent intent7 = new Intent(Computer_Home.this, ActivityMap.class);
+                        startActivity(intent7);
                         break;
 
                     default:
@@ -80,6 +83,7 @@ public class Computer_Home extends AppCompatActivity {
         COMPBUTTON3.setOnClickListener(onClickListener);
         COMPBUTTON4.setOnClickListener(onClickListener);
         COMPBUTTON5.setOnClickListener(onClickListener);
+        COMPBUTTON6.setOnClickListener(onClickListener);
         COMPBUTTONBACK.setOnClickListener(onClickListener);
 
 

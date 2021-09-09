@@ -17,6 +17,7 @@ import com.example.itcity.R;
 
 public class Zadsec6 extends AppCompatActivity {
     Button check;
+    Button back;
     EditText answer1;
     EditText answer2;
     EditText answer3;
@@ -33,11 +34,16 @@ public class Zadsec6 extends AppCompatActivity {
         answer1 = (EditText) findViewById(R.id.Sec6_1);
         answer2 = (EditText) findViewById(R.id.Sec6_2);
         answer3 = (EditText) findViewById(R.id.Sec6_3);
+        back= (Button) findViewById(R.id.bottomSecurityK);
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
+                    case R.id.bottomSecurityK:
+                        Intent intent = new Intent(Zadsec6.this, TheorySecurity6.class);
+                        startActivity(intent);
+                        break;
                     case R.id.continueSec:
                         String ans1 = answer1.getText().toString();
                         String ans2 = answer2.getText().toString();
@@ -109,5 +115,6 @@ public class Zadsec6 extends AppCompatActivity {
             }
         };
         check.setOnClickListener(onClickListener);
+        back.setOnClickListener(onClickListener);
     }
 }

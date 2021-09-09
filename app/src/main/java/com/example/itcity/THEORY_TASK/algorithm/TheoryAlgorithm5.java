@@ -9,8 +9,11 @@ import android.widget.Button;
 
 import com.example.itcity.R;
 
+import java.io.BufferedReader;
+
 public class TheoryAlgorithm5 extends AppCompatActivity {
     Button button7;
+    Button back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +21,7 @@ public class TheoryAlgorithm5 extends AppCompatActivity {
 
         getSupportActionBar().hide();
         button7 = (Button) findViewById(R.id.button7);
-
+        back = (Button) findViewById(R.id.bottomTeoryK5);
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
@@ -28,11 +31,17 @@ public class TheoryAlgorithm5 extends AppCompatActivity {
                         Intent intent1 = new Intent(TheoryAlgorithm5.this, ZadanieAlgorithm5.class);
                         startActivity(intent1);
                         break;
+                    case R.id.bottomTeoryK5:
+                        Intent intent2 = new Intent(TheoryAlgorithm5.this, Algorithm_HOME.class);
+                        startActivity(intent2);
+                        break;
+
 
 
                 }
             }
         };
         button7.setOnClickListener(onClickListener);
+        back.setOnClickListener(onClickListener);
     }
 }

@@ -103,33 +103,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/COMPBUTTON7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#00FFFFFF"
-                app:srcCompat="@drawable/compclosehome7" />
-
-            <ImageButton
-                android:id="@+id/COMPBUTTON8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#00FFFFFF"
-                app:srcCompat="@drawable/compclosehome8" />
-
-            <ImageButton
-                android:id="@+id/COMPBUTTON9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#00FFFFFF"
-                app:srcCompat="@drawable/compclosehome9" />
-
-        </LinearLayout>
+            android:orientation="horizontal"/>
 
     </LinearLayout>
 

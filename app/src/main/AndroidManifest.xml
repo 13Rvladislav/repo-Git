@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itcity">
-        <activity android:name=".THEORY_TASK.computer_Device.Zadcomp2"></activity>
+        <activity android:name=".THEORY_TASK.computer_Device.Zadcomp6"></activity>
+        <activity android:name=".THEORY_TASK.security.ZadSec8" />
+        <activity android:name=".THEORY_TASK.computer_Device.Zadcomp5" />
+        <activity android:name=".THEORY_TASK.computer_Device.Zadcomp4" />
+        <activity android:name=".THEORY_TASK.computer_Device.Zadcomp3" />
+        <activity android:name=".THEORY_TASK.computer_Device.Zadcomp2" />
         <activity android:name=".THEORY_TASK.computer_Device.ZadComp1" />
         <activity
             android:name=".THEORY_TASK.security.ZadSec7"
@@ -24,7 +29,6 @@
         <activity android:name=".THEORY_TASK.security.ZadanieSecurity3" />
         <activity android:name=".THEORY_TASK.security.ZadanieSecurity2" />
         <activity android:name=".THEORY_TASK.security.ZadanieSecurity1" />
-        <activity android:name=".THEORY_TASK.computer_Device.ZadanieComputer6" />
         <activity android:name=".THEORY_TASK.computer_Device.TheoryComputer6" />
         <activity android:name=".THEORY_TASK.computer_Device.TheoryComputer5" />
         <activity android:name=".THEORY_TASK.computer_Device.TheoryComputer4" />

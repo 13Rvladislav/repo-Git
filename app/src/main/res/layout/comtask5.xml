@@ -150,7 +150,7 @@
                     app:srcCompat="@drawable/teorycomp15" />
 
                 <Button
-                    android:id="@+id/algTask2Button13"
+                    android:id="@+id/algTask2Button6"
                     android:layout_width="165dp"
                     android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
@@ -172,7 +172,7 @@
                     app:srcCompat="@drawable/teorycomp16" />
 
                 <Button
-                    android:id="@+id/algTask2Button14"
+                    android:id="@+id/algTask2Button7"
                     android:layout_width="165dp"
                     android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
@@ -194,7 +194,7 @@
                     app:srcCompat="@drawable/teorycomp17" />
 
                 <Button
-                    android:id="@+id/algTask2Button15"
+                    android:id="@+id/algTask2Button8"
                     android:layout_width="165dp"
                     android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
@@ -258,7 +258,7 @@
         android:layout_height="48dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/podklpereetyag"
-        android:text=" Сопоставьте ситуации и способы действия в них."
+        android:text="Сопоставьте устройство на изображении и его название"
         android:textColor="#3D0250"
         android:textSize="17sp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
