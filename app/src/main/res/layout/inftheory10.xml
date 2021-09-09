@@ -90,7 +90,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Очередное задание выполнено! Давай расскажу про остальные операции."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
 
             </LinearLayout>
 
@@ -111,7 +111,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:text="Импликация – это логическая операция, которая принимает значение «ложь» только если первое высказывание истинно, а второе ложно."
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <ImageView
                     android:id="@+id/imageView81"
@@ -138,14 +138,14 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Импликацию можно заменить выражением АБ = А + Б"
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView69"
                     android:layout_width="419dp"
                     android:layout_height="47dp"
                     android:text="Строгая дизъюнкция принимает значение «истина», если оба исходных высказывания различны по значению."
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <ImageView
                     android:id="@+id/imageView80"
@@ -171,21 +171,21 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Строгую дизъюнкцию можно заменить выражением "
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView70"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="А  Б = А  Б + А  Б"
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView71"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Эквивалентность принимает значение «истина», если оба исходных высказывания одинаковы по значению.\n"
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <ImageView
                     android:id="@+id/imageView82"
@@ -198,7 +198,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Эквивалентность можно заменить выражением\nАБ = А  Б + А  Б"
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
             </LinearLayout>
 
@@ -221,7 +221,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="А теперь небольшое задание."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

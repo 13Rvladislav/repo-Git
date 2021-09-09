@@ -84,7 +84,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Ответить на поставленные вопросы. (вписать название устройства о котором ведется речь)"
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -101,7 +101,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="1. Устройство, которое производит вычисления в графических приложениях и играх\n2. Хранилище данных в компьютере\n3. устройства, читающие и записывающие диски"
-                    android:textColor="#040404" />
+                    android:textColor="#3D0250" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -114,7 +114,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:text="1)"
-                        android:textColor="#000000"
+                        android:textColor="#3D0250"
                         android:textSize="18sp" />
 
                     <EditText
@@ -127,8 +127,8 @@
                         android:ems="10"
                         android:hint="Введите слово"
                         android:inputType="textEmailAddress"
-                        android:textColor="@color/black"
-                        android:textColorHint="@color/black"
+                        android:textColor="#3D0250"
+                        android:textColorHint="#3D0250"
                         android:textSize="14sp" />
                 </LinearLayout>
 
@@ -143,7 +143,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:text="2)"
-                        android:textColor="#000000"
+                        android:textColor="#3D0250"
                         android:textSize="18sp" />
 
                     <EditText
@@ -157,7 +157,7 @@
                         android:hint="Введите слово"
                         android:inputType="textEmailAddress"
                         android:textColor="@color/black"
-                        android:textColorHint="@color/black"
+                        android:textColorHint="#3D0250"
                         android:textSize="14sp" />
 
                 </LinearLayout>
@@ -173,7 +173,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:text="3)"
-                        android:textColor="#040404"
+                        android:textColor="#3D0250"
                         android:textSize="18sp" />
 
                     <EditText
@@ -186,8 +186,8 @@
                         android:ems="10"
                         android:hint="Введите слово"
                         android:inputType="textEmailAddress"
-                        android:textColor="@color/black"
-                        android:textColorHint="@color/black"
+                        android:textColor="#3D0250"
+                        android:textColorHint="#3D0250"
                         android:textSize="14sp" />
                 </LinearLayout>
 

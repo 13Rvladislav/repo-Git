@@ -90,7 +90,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Чтобы ты смог лучше понять, как «работают» круги Эйлера, познакомься с примером."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
 
             </LinearLayout>
 
@@ -111,7 +111,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:text="Для обозначения логической операции «ИЛИ» используют символ «|», для логической операции «И» - символ «and»."
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <ImageView
                     android:id="@+id/imageView79"
@@ -144,21 +144,21 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Пример решения задачи с помощью кругов Эйлера"
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView56"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="\tСколько страниц (в тысячах) выдаст поисковик по запросу «Крейсер и линкор»?"
-                    android:textColor="#020202" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView57"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Условия задачи таковы: приведенная таблица показывает, сколько страниц было найдено в Интернете по конкретным запросам:"
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <ImageView
                     android:id="@+id/imageView80"
@@ -184,7 +184,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="\tС помощью кругов Эйлера изображаются условия задачи, а цифрами «1», «2» и «3» обозначаются полученные в результате сегменты:"
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <ImageView
                     android:id="@+id/imageView62"
@@ -211,49 +211,49 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="\tУчитывая условия задачи, составляем уравнения:"
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView59"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="\t•Крейсер/линкор: 1+2+3 = 7 000;\n•Крейсер: 1+2 = 4 800;\n•Линкор: 2+3 = 4 500 "
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView60"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="\tЧтобы определить количество запросов «Крейсер и линкор», подставим в уравнение 1 уравнение 2 и получим:"
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView64"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="\t4 800 + 3 = 7 000, а значит, что 3 = 2 200."
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView63"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="\tДалее полученный результат подставляем в уравнение 3 и получаем:"
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView62"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="\t2 + 2 200 = 4 500, а это означает, что 2 = 2 300."
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView61"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="\tОтвет: по запросу «Крейсер и линкор» будет найдено 2 300 страниц."
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
             </LinearLayout>
 
@@ -274,7 +274,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="А теперь давай проверим как ты усвоил эту тему."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

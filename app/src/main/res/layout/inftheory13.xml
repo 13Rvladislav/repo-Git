@@ -86,7 +86,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Давай я расскажу, как с помощью графов находить число всевозможных маршрутов на примере нескольких задач."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -110,14 +110,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Пример:"
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView800"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Найдите число маршрутов из пункта А в пункт Е. По каждой дороге можно двигаться только в одном направлении, указанном стрелкой."
-                        android:textColor="#0C0C0C" />
+                        android:textColor="#3D0250" />
 
                     <ImageView
                         android:id="@+id/imageView77"
@@ -130,63 +130,63 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Для решения этой задачи мы будем считать вес каждой вершины. Сейчас объясню, что это значит. Вес равен числу вариантов вхождения в вершину графа разными путями. В качестве исключения присваиваем отравной точке А вес 1. Далее присвоим вес точке Б, т.к. в нее входит стрелка из вершины А, а ее вес известен."
-                        android:textColor="#000000" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView80"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Б=А=1 "
-                        android:textColor="#070707" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView81"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Теперь найдем вес вершины В. Ее вес вычисляется, как сумма веса вершин, стрелки от которых входят в вершину В. "
-                        android:textColor="#020202" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView82"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="В=А+Б=2"
-                        android:textColor="#040404" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView83"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="По аналогии находим вес других вершин, пока не найдем вес вершины Е."
-                        android:textColor="#000000" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView86"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Д=В+Б=3"
-                        android:textColor="#020202" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView87"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Г=А+Б=2"
-                        android:textColor="#000000" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView85"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Е=Г+Д=5"
-                        android:textColor="#000000" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView84"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Ответ: 5."
-                        android:textColor="#000000" />
+                        android:textColor="#3D0250" />
 
                 </LinearLayout>
 
@@ -208,7 +208,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Теперь попробуй сам решить подобную задачку."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

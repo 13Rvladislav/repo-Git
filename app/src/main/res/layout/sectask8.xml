@@ -87,7 +87,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Соберите картинку."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -105,13 +105,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:text="1) Бесплатный фриланс  \n2) Сообщения на почту о благотворительности, выигрыше, подарке  \n3) Покупка билетов онлайн \n4) Во всех перечисленных  \n5) Не в каких из вышеперечисленных" />
+                    android:text="1) Бесплатный фриланс  \n2) Сообщения на почту о благотворительности, выигрыше, подарке  \n3) Покупка билетов онлайн \n4) Во всех перечисленных  \n5) Не в каких из вышеперечисленных"
+                    android:textColor="#3D0250" />
 
                 <Button
                     android:id="@+id/button6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Button" />
+                    android:background="#1E1358"
+                    android:text="Выбрать"
+                    app:backgroundTint="#1E1358" />
             </LinearLayout>
 
         </LinearLayout>

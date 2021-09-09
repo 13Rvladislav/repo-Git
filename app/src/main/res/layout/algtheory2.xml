@@ -88,7 +88,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Привет! А сейчас я расскажу тебе о свойствах алгоритмов. Их у нас 4. Детерминированность, результативность, массовость, дискретность."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -113,28 +113,28 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="1. Результативность - применение алгоритма обязательно приводит к конечному результату за конечное число шагов."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView20"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="2. Массовость – алгоритм должен применяться многократно при использовании различных исходных данных."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView21"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="3. Дискретность – алгоритм должен представлять процесс задачи как последовательное выполнение простых шагов."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView22"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="4. Детерминированность (определенность) – каждое правило алгоритма должно быть четким, однозначным и не оставлять места для произвола."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                 </LinearLayout>
 
@@ -155,8 +155,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
-                    android:textColor="@color/black"
-                    android:text="Удачи с заданием!" />
+                    android:text="Удачи с заданием!"
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

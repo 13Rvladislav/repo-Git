@@ -86,7 +86,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Давай изучим шестнадцатеричную систему счисления."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -110,28 +110,28 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="В шестнадцатеричной системе только десять цифр из шестнадцати имеют общепринятое обозначение 0,..., 9. Для записи цифр с десятичными количественными эквивалентами 10, 11, 12, 13, 14, 15 обычно используются первые пять букв латинского алфавита."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView58"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Алфавит: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, А, В, С, D, Е, F."
-                        android:textColor="#000000" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView65"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Давай переведём число 3AF16 в десятичную систему. Нам нужно разбить число и умножить каждое слагаемое на 16 в степени равной порядковому номеру переводимого числа (степени расставляются справа налево, начиная с нуля). "
-                        android:textColor="#000000" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView66"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="3AF16 = 3 • 162 + 10 • 161 + 15 • 160 = 768 + 160 + 15 = 94310."
-                        android:textColor="#000000" />
+                        android:textColor="#3D0250" />
 
                 </LinearLayout>
 
@@ -153,7 +153,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Проверь себя!"
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

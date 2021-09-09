@@ -86,7 +86,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Вот я и научил тебя искать маршруты с помощью графов. Надеюсь, что для тебя наш урок был понятным и увлекательным! В конце держи подарочек!"
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
 

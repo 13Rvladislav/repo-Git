@@ -91,7 +91,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Да тебя не так просто провести. Раз урок усвоен, то давай изучать виды мошенничества дальше. "
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -115,13 +115,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Мошенничество с поверкой реквизитов. "
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
+
                     <TextView
                         android:id="@+id/textsec19"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="В последнее время нередко встречаются случаи, когда мошенники представляются сотрудниками банка и просят прислать реквизиты карты. Никогда не стоит говорить им данные вашей банковской карты. Запомните! Ваша информация в безопасности до тех пор, пока вы сами не передадите ее другому человеку. "
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
 
                 </LinearLayout>
@@ -144,7 +145,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Время проверки знаний!"
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

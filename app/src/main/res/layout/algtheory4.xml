@@ -88,7 +88,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Ну вот теперь мы разберем с тобой блок-схемы. Наибольшее распространение благодаря своей наглядности получило графическое представление алгоритма."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -113,7 +113,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Блок-схемой называется последовательности геометрических фигур, в которых записываются команды. Элементы блок-схемы между собой соединяются линиями и стрелками, которые показывают ход выполнения алгоритма. Для построения блок-схемы используют определенные фигуры."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <ImageView
                         android:id="@+id/imageView14"
@@ -142,7 +142,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="А теперь опять проверка. Уверены, что ты справишься."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

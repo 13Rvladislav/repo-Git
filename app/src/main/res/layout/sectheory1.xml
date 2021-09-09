@@ -90,7 +90,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="\t\t\tПривет! Сейчас ты узнаешь как безопасно пользоваться компьютером и серфить в интернете."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
+
                 <TextView
                     android:id="@+id/textSec6"
                     android:layout_width="match_parent"
@@ -98,7 +99,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="\t\t\tНачну с того, что, как и в реальной жизни, в интернете есть преступники. Они занимаются интернет-мошенничеством."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -123,14 +124,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="\t\t\tИнтернет-мошенничество – это обман людей с целью выманить у них деньги. Интернет-мошенники не крадут данные, а путем обмана заставляют жертву добровольно предоставить их."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textsec19"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="\t\t\tВидов интернет-мошенничества довольно много: мошенничество с благотворительностью, с билетами, с подарочными картами или выигрышем в лотерее, фишинг, проверка реквизитов, бесплатный фриланс, просьба о помощи."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                 </LinearLayout>
 
@@ -152,7 +153,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Давай проверим, смог ли ты уловить главную мысль."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

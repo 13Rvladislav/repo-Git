@@ -89,7 +89,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:text="Поздравляем с успешным прохождением раздела «Алгоритмы». Ты получил основные знания о алгоритмах и их построении. "
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -110,7 +110,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="15dp"
                     android:text="Желаю успеха в прохождении следующих разделов. А теперь тебе доступен бонусный дом. "
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

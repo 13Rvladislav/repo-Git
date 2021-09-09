@@ -88,7 +88,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Здравствуй! Сегодня ты начнешь изучать раздел “Алгоритмы ”. Алгоритмом называется последовательность действий, направленных на решение поставленной задачи"
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -113,63 +113,63 @@
                         android:layout_height="wrap_content"
                         android:text="Рассмотрим задачу «вскипяти чайник» как последовательность действий, наш алгоритм будет выглядеть так:
           "
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView19"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="1. взять чайник;"
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView20"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="2. открыть крышку;"
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView21"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="3. налить воды;"
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView22"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="4. закрыть крышку;"
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView23"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="5. включить плиту;"
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView24"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="6. поставить чайник на плиту;"
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView25"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="7. дождаться, пока чайник закипит;"
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView26"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="8. выключить плиту."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                 </LinearLayout>
 
@@ -191,7 +191,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Ну а теперь проверь, что ты понял."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

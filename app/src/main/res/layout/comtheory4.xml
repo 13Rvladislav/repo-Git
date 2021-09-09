@@ -90,7 +90,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Здорово! А теперь давай разберемся что такое видеокарта, жесткий диск и CD/DVD приводы"
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
 
             </LinearLayout>
 

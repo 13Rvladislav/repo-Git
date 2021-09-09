@@ -88,7 +88,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Ну вот и подходит к концу наш раздел.Осталась последняя тема “Виды алгоритмов”. При всем многообразии алгоритмов решения задач в них можно выделить три основных вида :"
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView7"
@@ -99,7 +99,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="3dp"
                     android:text="· Линейный;"
-                    android:textColor="@color/black"/>
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView14"
@@ -108,7 +108,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="3dp"
                     android:text="· Ветвящийся;"
-                    android:textColor="@color/black"/>
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView15"
@@ -117,7 +117,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="3dp"
                     android:text="· Циклический;"
-                    android:textColor="@color/black"/>
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -141,7 +141,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Линейным называется такой вычислительный процесс, при котором все этапы решения задачи выполняются в естественном порядке следования записи этих этапов."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <ImageView
                         android:id="@+id/imageView14"
@@ -174,7 +174,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Ветвящимся называется такой вычислительный процесс, в котором выбор направления обработки информации зависит от исходных или промежуточных данных (от результатов проверки выполнения какого-либо логического условия)."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <ImageView
                         android:id="@+id/imageView15"
@@ -207,7 +207,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Циклом называется многократно повторяемый участок вычислений. По количеству выполнения циклы делятся на циклы с определенным (заранее заданным) числом повторений и циклы с неопределенным числом повторений. "
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <ImageView
                         android:id="@+id/imageView16"
@@ -235,7 +235,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="А теперь опять проверка. Уверены, что ты справишься."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

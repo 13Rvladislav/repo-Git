@@ -86,7 +86,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Отлично сработано! Но нас ждет последняя задачка. "
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -110,7 +110,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Существуют также задачи более сложного характера. В них надо посчитать маршруты, которые не проходят через указанную в условии вершину. В таком случае мы сразу считаем вес данной вершины равным нулю, что позволяет найти нужное число маршрутов."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                 </LinearLayout>
 
@@ -132,7 +132,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Попробуй решить сам. "
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

@@ -86,7 +86,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Сейчас я расскажу тебе о переводе из десятичной системы в двоичную."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -110,7 +110,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Чтобы перевести десятичное число нам необходимо делить число на 2 до тех пор, пока это число не станет равно нулю. После нужно выписать остатки от деления в направлении, указанном стрелкой."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <ImageView
                         android:id="@+id/imageView77"
@@ -123,7 +123,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Получим: 1110 = 10112."
-                        android:textColor="#000000" />
+                        android:textColor="#3D0250" />
 
                 </LinearLayout>
 
@@ -145,7 +145,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Давай решим пример."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

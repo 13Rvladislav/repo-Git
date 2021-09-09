@@ -90,7 +90,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Ого, я смотрю у тебя неплохо получается! Давай продолжим в том же духе. "
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
 
             </LinearLayout>
 
@@ -162,7 +162,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Проверим как ты понял что такое процессор и оперативная память."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

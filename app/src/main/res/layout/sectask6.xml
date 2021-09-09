@@ -87,7 +87,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Впишите недостающие слова."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -103,7 +103,8 @@
                     android:id="@+id/textView49"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Вы заметили, что от вашей странички в соцсети были совершены действия, которые вы не делали, то скорее всего вас взломали. Далее следует обратиться в техподдержку для получения помощи. Вы в это время можете проверить компьютер на наличие компьютерных вирусов" />
+                    android:text="Вы заметили, что от вашей странички в соцсети были совершены действия, которые вы не делали, то скорее всего вас взломали. Далее следует обратиться в техподдержку для получения помощи. Вы в это время можете проверить компьютер на наличие компьютерных вирусов"
+                    android:textColor="#3D0250" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -115,8 +116,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
-                        android:textSize="18sp"
-                        android:text="1)" />
+                        android:text="1)"
+                        android:textColor="#3D0250"
+                        android:textSize="18sp" />
 
                     <EditText
                         android:id="@+id/Sec6_1"
@@ -126,11 +128,11 @@
                         android:autofillHints=""
                         android:backgroundTint="#1794E0"
                         android:ems="10"
-                        android:hint="@string/email1"
+                        android:hint="Введите ответ"
                         android:inputType="textEmailAddress"
-                        android:textColor="#90DDF3"
-                        android:textColorHint="#90DDF3"
-                        android:textSize="18sp" />
+                        android:textColor="#3D0250"
+                        android:textColorHint="#1E1358"
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -143,8 +145,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
-                        android:textSize="18sp"
-                        android:text="2)" />
+                        android:text="2)"
+                        android:textColor="#3D0250"
+                        android:textSize="18sp" />
 
                     <EditText
                         android:id="@+id/Sec6_2"
@@ -154,11 +157,11 @@
                         android:autofillHints=""
                         android:backgroundTint="#1794E0"
                         android:ems="10"
-                        android:hint="@string/email1"
+                        android:hint="Введите ответ"
                         android:inputType="textEmailAddress"
-                        android:textColor="#90DDF3"
-                        android:textColorHint="#90DDF3"
-                        android:textSize="18sp" />
+                        android:textColor="#1E1358"
+                        android:textColorHint="#1E1358"
+                        android:textSize="14sp" />
 
                 </LinearLayout>
 
@@ -172,8 +175,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
-                        android:textSize="18sp"
-                        android:text="3)" />
+                        android:text="3)"
+                        android:textColor="#3D0250"
+                        android:textSize="18sp" />
 
                     <EditText
                         android:id="@+id/Sec6_3"
@@ -183,11 +187,11 @@
                         android:autofillHints=""
                         android:backgroundTint="#1794E0"
                         android:ems="10"
-                        android:hint="@string/email1"
+                        android:hint="Введите ответ"
                         android:inputType="textEmailAddress"
-                        android:textColor="#90DDF3"
-                        android:textColorHint="#90DDF3"
-                        android:textSize="18sp" />
+                        android:textColor="#1E1358"
+                        android:textColorHint="#1E1358"
+                        android:textSize="14sp" />
                 </LinearLayout>
 
             </LinearLayout>

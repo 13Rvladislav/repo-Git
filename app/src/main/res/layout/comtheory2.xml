@@ -90,7 +90,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="И так, а сейчас я расскажу тебе что такое корпус, блок питания и материнская плата."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
 
             </LinearLayout>
 
@@ -191,7 +191,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Давай закрепим полученную информацию."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

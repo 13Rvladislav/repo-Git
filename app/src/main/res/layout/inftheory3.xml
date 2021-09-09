@@ -86,7 +86,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Здравствуй!! Сейчас ты будешь изучать раздел ’’ Системы счисления’’ после изучения теории перейдем к практике. Удачи!"
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -110,28 +110,28 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Система счисления — это знаковая система, в которой приняты определённые правила записи чисел. Знаки, при помощи которых записываются числа называются цифрами, а их совокупность — алфавитом системы счисления. Алфавит десятичной системы составляют цифры 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. "
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView51"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Перевод из двоичной системы счисления в десятичную."
-                        android:textColor="#050505" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView54"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Двоичной системой счисления называется система счисления с основанием 2. Для записи чисел в используются только две цифры: 0 и 1. Чтобы перевести число из двоичной системы в десятичную, необходимо вычислить сумму степеней двойки, соответствующих единицам в свёрнутой форме записи двоичного числа."
-                        android:textColor="#000000" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView55"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="100112 = 1 • 24 + 0 • 23 + 0 • 22 + 1 • 21 + 1 • 20 = 24 + 21 + 20 = 1910."
-                        android:textColor="#000000" />
+                        android:textColor="#3D0250" />
 
                 </LinearLayout>
 
@@ -153,7 +153,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Давай попробуем перевести число."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

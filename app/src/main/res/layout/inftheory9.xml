@@ -90,7 +90,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Вот и отдохнули. Сейчас я расскажу, какие логические операции применяются в алгебре логики."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
 
             </LinearLayout>
 
@@ -111,7 +111,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:text="Основными логическими операциями являются операции: конъюнкция (логическое умножение, логическое И), отрицание (инверсия, логическое НЕ), дизъюнкция (логическое сложение, логическое ИЛИ), импликации, строгая (исключающая) дизъюнкция, эквивалентность (равнозначность)."
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
             </LinearLayout>
 
@@ -132,7 +132,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Давай начнем с первых трех."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -151,7 +151,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="При выполнении операции отрицания новое высказывание получает значение противоположное значению исходного высказывания."
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <ImageView
                     android:id="@+id/imageView80"
@@ -177,7 +177,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="При выполнении конъюнкции высказывание истинно, если истины оба исходных высказывания.\n\n"
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <ImageView
                     android:id="@+id/imageView62"
@@ -204,7 +204,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="При выполнении дизъюнкции высказывание истинно, если хоть одно из исходных высказываний истинно. \n"
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <ImageView
                     android:id="@+id/imageView78"
@@ -231,7 +231,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Теперь мы проверим, как хорошо усвоилась эта информация."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

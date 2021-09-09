@@ -91,7 +91,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Снова успех? Тогда двигаемся к следующей теме."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -115,14 +115,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Мошенничество с покупками в интернете."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textsec19"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Мошенники могут обманывать людей и с помощью фальшивых объявлений. Обычно преступники заманивают покупателей низкими ценами и хорошими предложениями и просят перечисления предоплаты на онлайн-кошелек. Следует изучить объявление, посмотреть информацию о продавце. Посмотрите другие предложения, оцените среднюю цену. Слишком низкая цена должна вас насторожить. Не забывайте, что при перечислении денег незнакомцам через анонимные платежи, вы не застрахованы от обмана и невозврата средств. "
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                 </LinearLayout>
 
@@ -144,7 +144,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Настало время покупок!"
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

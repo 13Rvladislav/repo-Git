@@ -86,7 +86,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Вот мы и добрались до графов. Давай сначала разберемся, что же такое граф."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -110,14 +110,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Граф — абстрактный математический объект, который представляет собой множество вершин графа и набор рёбер, соединяющих вершины. При этом каждое ребро представляет собой отношение двух вершин. "
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView800"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Примеры графов"
-                        android:textColor="#0C0C0C" />
+                        android:textColor="#3D0250" />
 
                     <ImageView
                         android:id="@+id/imageView77"
@@ -130,7 +130,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="С помощью графов можно планировать оптимальные транспортные маршруты, упростить решение математических задач и многое другое. "
-                        android:textColor="#000000" />
+                        android:textColor="#3D0250" />
 
                 </LinearLayout>
 

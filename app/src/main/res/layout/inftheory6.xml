@@ -86,7 +86,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Ты отлично справляешься! Сейчас я расскажу тебе о переводе числа из десятичной системы счисления в шестнадцатеричную систему."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -110,7 +110,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Чтобы перевести число нам необходимо делить его на 16 до тех пор, пока не получим частное равное нулю, а после записать ответ в направлении, указанной стрелки. "
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <ImageView
                         android:id="@+id/imageView77"
@@ -122,7 +122,7 @@
                         android:id="@+id/textView58"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="15410 = 9А16"
+                        android:text="#3D0250"
                         android:textColor="#000000" />
 
                 </LinearLayout>
@@ -145,7 +145,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="А теперь время практики. Будь внимателен."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

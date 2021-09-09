@@ -86,7 +86,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Молодец! Давай теперь разберемся, как и с помощью чего происходит работа с составными высказываниями."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -110,14 +110,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Для упрощения работы с составными высказываниями используются логические переменные. Логические переменные – это переменные, которые обозначают любое высказывание и могут принимать логические значения «истина» или «ложь». Для логических значений принято использовать обозначения: И — Л, true — false, да — нет, 1 — 0."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView67"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Для описания логических операций используются таблицы истинности. Благодаря таблицам можно определить истинность высказывания при всех комбинациях значений элементарных высказываний."
-                        android:textColor="#000000" />
+                        android:textColor="#3D0250" />
 
                 </LinearLayout>
 
@@ -139,7 +139,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Мы уже много усвоили. Давай сделаем небольшой перерыв и найдем знакомые слова в таблице."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

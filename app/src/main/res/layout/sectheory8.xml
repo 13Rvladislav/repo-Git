@@ -91,7 +91,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Хорошо передохнули! Теперь давай узнаем, как же противостоять атакам вредоносных программ."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -115,7 +115,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Бороться с вредоносными программами нужно с помощью программ-антивирусов. Сейчас существует множество как бесплатных, так и платных антивирусов для обнаружения вредоносных программ и их удаления. Рекомендуем обязательно защищать свой компьютер с помощью антивирусных программ и регулярно сканировать компьютер на наличие вредителей. Если же вирус успел нанесли сильный ущерб компьютеру, то обратитесь к специалисту."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
 
                 </LinearLayout>
@@ -138,7 +138,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Поздравляю, теперь ты готов встретить мошенников во все оружии и противостоять любым вирусам! Держи от меня подарок!"
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

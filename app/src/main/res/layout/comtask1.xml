@@ -52,7 +52,7 @@
         android:layout_marginBottom="40dp"
         android:text="ПРОДОЛЖИТЬ"
         android:textSize="24sp"
-        app:backgroundTint="#1E1358"
+        app:backgroundTint="#A83806"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -88,7 +88,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Выбрать комплектующие, которые не входят в состав системного блока."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -109,13 +109,15 @@
                         android:id="@+id/checkBox1"
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:text="Корпус" />
+                        android:text="Корпус"
+                        android:textColor="#3D0250" />
 
                     <CheckBox
                         android:id="@+id/checkBox2"
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:text="блок питания" />
+                        android:text="блок питания"
+                        android:textColor="#3D0250" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -127,14 +129,16 @@
                         android:id="@+id/checkBox3"
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:text="компьютерная мышь" />
+                        android:text="компьютерная мышь"
+                        android:textColor="#3D0250" />
 
                     <CheckBox
 
                         android:id="@+id/checkBox4"
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:text="материнская плата" />
+                        android:text="материнская плата"
+                        android:textColor="#3D0250" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -147,14 +151,16 @@
                         android:layout_width="204dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="звуковые колонки" />
+                        android:text="звуковые колонки"
+                        android:textColor="#3D0250" />
 
                     <CheckBox
                         android:id="@+id/checkBox6"
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="принтер" />
+                        android:text="принтер"
+                        android:textColor="#3D0250" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -167,14 +173,16 @@
                         android:layout_width="204dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="процессор" />
+                        android:text="процессор"
+                        android:textColor="#3D0250" />
 
                     <CheckBox
                         android:id="@+id/checkBox8"
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="оперативная память" />
+                        android:text="оперативная память"
+                        android:textColor="#3D0250" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -187,14 +195,16 @@
                         android:layout_width="194dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="микрофон" />
+                        android:text="микрофон"
+                        android:textColor="#3D0250" />
 
                     <CheckBox
                         android:id="@+id/checkBox10"
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="видеокарта" />
+                        android:text="видеокарта"
+                        android:textColor="#3D0250" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -207,14 +217,16 @@
                         android:layout_width="128dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Веб-камера" />
+                        android:text="Веб-камера"
+                        android:textColor="#3D0250" />
 
                     <CheckBox
                         android:id="@+id/checkBox12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="жесткий диск" />
+                        android:text="жесткий диск"
+                        android:textColor="#3D0250" />
                 </LinearLayout>
 
             </LinearLayout>

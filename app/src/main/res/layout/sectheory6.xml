@@ -91,7 +91,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Вот мы и добрались до одних из самых опасных преступников в интернете. Давай узнаем побольше про них."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -115,14 +115,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Хакерство и кража аккаунтов."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textsec19"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Сейчас все больше людей сталкиваются с тем, что их аккаунты взламывают хакеры. Они могут получать личные данные путем взлома баз данных сайтов или иными способами. Сейчас многие сервисы поддерживают функцию двухфакторной аутентификации. Для более надежной защиты следует привязать к аккаунту номер телефона или электронную почту, без доступа к ним хакер не сможет получить код для авторизации. Если ваш аккаунт был украден, то следует попробовать связаться с поддержкой сайта. Сами вы можете заморозить аккаунт на время ожидания ответа поддержки и проверить компьютер на наличие вирусов надежной антивирусной программой."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                 </LinearLayout>
 
@@ -144,7 +144,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Про хакеров мы узнали. Давай проверим свои знания."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

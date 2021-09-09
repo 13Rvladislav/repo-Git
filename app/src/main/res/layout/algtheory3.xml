@@ -88,7 +88,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Ого! Ты добрался до темы “Формы представления алгоритма”. Сейчас я тебе подробно об этом расскажу. Алгоритм должен быть представлен с помощью конкретных изобразительных средств. Так существует несколько форм представления алгоритма:"
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -113,31 +113,31 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="1. Словесно-формульная (алгоритм записывается в виде нумерованного текста. Текст должен быть понятен исполнителю),"
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView20"
-                        android:layout_marginTop="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
                         android:text="2. Графическая (алгоритм изображается с помощью блок-схемы),"
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView21"
-                        android:layout_marginTop="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
                         android:text="3. Псевдокод (описания алгоритмов на условном алгоритмическом языке, включающие в себя элементы языка программирования, фразы естественного языка, общепринятые математические обозначения)"
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView22"
-                        android:layout_marginTop="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
                         android:text="4. Программа (тексты на языках программирования)"
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                 </LinearLayout>
 
@@ -159,7 +159,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Ну а теперь закрепи полученные знания."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

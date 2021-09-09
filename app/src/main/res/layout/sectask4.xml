@@ -87,7 +87,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="В поисках нужного вам товара вы наткнулись на объявление, в котором в некий продавец продает нужную вещь по очень низкой цене. У продавца есть пара отзывов и все они положительные. Что нужно сделать?"
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -103,25 +103,29 @@
                     android:id="@+id/checkBox1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="1)	Радостно купить товар по низкой цене." />
+                    android:text="1)	Радостно купить товар по низкой цене."
+                    android:textColor="#3D0250" />
 
                 <CheckBox
                     android:id="@+id/checkBox2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="2)Проверить, не являются ли аккаунты пользователей, оставивших отзывы, фейками ." />
+                    android:text="2)Проверить, не являются ли аккаунты пользователей, оставивших отзывы, фейками ."
+                    android:textColor="#3D0250" />
 
                 <CheckBox
                     android:id="@+id/checkBox3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="3)	Связаться с продавцом и узнать, чем оправдана такая низкая цена." />
+                    android:text="3)	Связаться с продавцом и узнать, чем оправдана такая низкая цена."
+                    android:textColor="#3D0250" />
 
                 <CheckBox
                     android:id="@+id/checkBox4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="4)	Запросить у продавца фото товара или документы на товар. " />
+                    android:text="4)	Запросить у продавца фото товара или документы на товар. "
+                    android:textColor="#3D0250" />
 
             </LinearLayout>
 

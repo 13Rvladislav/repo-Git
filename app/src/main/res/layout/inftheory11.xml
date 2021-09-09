@@ -90,7 +90,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="А ты хорошо справляешься. Давай теперь поговорим о составных высказываниях и приоритетах операций в них."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
 
             </LinearLayout>
 
@@ -111,49 +111,49 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:text="Составное логическое высказывание представляется в виде логического выражения (формулы), которое содержит логические константы (0, 1), логические переменные, знаки логических операций и скобки. Примером логического выражение может послужить формула (Б + А)  Б  А."
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView74"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Все операции имеют определенны	 приоритет выполнения:"
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView75"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="1)	отрицание;"
-                    android:textColor="#020202" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView78"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="2)	конъюнкция;"
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView77"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="3) дизъюнкция, строгая дизъюнкция;"
-                    android:textColor="#020202" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView76"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="4) импликация, эквивалентность."
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView73"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Скобки влияют на последовательность вычислений также, как в арифметике."
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
             </LinearLayout>
 
@@ -174,14 +174,14 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Сколько решений имеет уравнение?\n(А + Б)  Б  В  Г = 0"
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView69"
                     android:layout_width="419dp"
                     android:layout_height="47dp"
                     android:text="Для решения задания составим таблицу истинности. Число строк с данными вычисляется по формуле 2n, где n – число различных переменных (А, Б, В, Г). В данном случае таблица будет состоять из 24=16 строк. В столбцах будут результаты операций. Для упрощения череду конъюнкций запишем в один столбик. Также заменим выражение  переменной Д = ((А + Б)  Б  В  Г)\n\n"
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
                 <ImageView
                     android:id="@+id/imageView80"
@@ -194,7 +194,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Посчитаем количество наборов, ответом в которых был 0 и запишем результат.\nОтвет: 10. "
-                    android:textColor="#000000" />
+                    android:textColor="#3D0250" />
 
             </LinearLayout>
 
@@ -219,7 +219,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Фух… Осталось немного. А теперь настало время тебе попробовать решить подобную задачку."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

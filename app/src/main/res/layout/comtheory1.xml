@@ -90,7 +90,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Привет ! Сегодня я помогу изучить тебе раздел “Устройство компьютера “.И так, для начала, давай разберем из чего состоит системный блок."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
 
             </LinearLayout>
 
@@ -116,7 +116,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Системный блок – это блок, внутри которого находятся основные комплектующие компьютера. Он состоит из корпуса, блока питания, материнской платы, процессора, оперативной памяти, видеокарты, жесткого диска."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <ImageView
                         android:id="@+id/imageView46"
@@ -149,7 +149,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Ну а теперь давай проверим что ты понял."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

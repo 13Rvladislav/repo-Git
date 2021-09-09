@@ -86,7 +86,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Итак, настало врем поговорить об алгебре логике. Давай сначала разберемся, что же это такое."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -110,21 +110,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Алгебра логики — это такой раздел математики, который изучает высказывания, определяет их истинность или ложность и производит логические операции над ними."
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView67"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Высказывание – это предложение, про которое можно точно сказать, истинно оно или ложно."
-                        android:textColor="#000000" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView68"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Если высказывание образовано из нескольких высказываний с помощью слов, «не», «и» «или», «тогда и только тогда», «если…то» и пр., то оно называется составным. Про истинность таких высказываний можно говорить, рассмотрев отдельные высказывания в их составе."
-                        android:textColor="#000000" />
+                        android:textColor="#3D0250" />
 
                 </LinearLayout>
 
@@ -146,7 +146,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="А теперь давай ты попробуешь определить, какие из предложений являются высказываниями."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>

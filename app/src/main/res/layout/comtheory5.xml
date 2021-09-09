@@ -65,8 +65,10 @@
         android:layout_height="545dp"
         app:layout_constraintBottom_toTopOf="@+id/continieCompDev"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/podlComputer">
+        app:layout_constraintTop_toBottomOf="@+id/podlComputer"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -90,7 +92,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Приветствую тебя в новом разделе ’’Периферийные устройства’’."
-                    android:textColor="#3D0250"/>
+                    android:textColor="#3D0250" />
 
                 <TextView
                     android:id="@+id/textView42"
@@ -98,7 +100,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:text="Здесь ты узнаешь что такое монитор, клавиатура, компьютерная мышь, вэб камера , микрофон ,звуковые колонки,USB накопители."
-                    android:textColor="#3D0250"/>
+                    android:textColor="#3D0250" />
 
             </LinearLayout>
 
@@ -149,8 +151,8 @@
                 <ImageView
                     android:id="@+id/imageView70"
                     android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
                     android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
                     app:srcCompat="@drawable/teorycomp12" />
             </LinearLayout>
 
@@ -175,8 +177,8 @@
                 <ImageView
                     android:id="@+id/imageView71"
                     android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
                     android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
                     app:srcCompat="@drawable/teorycomp13" />
             </LinearLayout>
 
@@ -201,8 +203,8 @@
                 <ImageView
                     android:id="@+id/imageView72"
                     android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
                     android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
                     app:srcCompat="@drawable/teorycomp14" />
             </LinearLayout>
 
@@ -227,8 +229,8 @@
                 <ImageView
                     android:id="@+id/imageView73"
                     android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
                     android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
                     app:srcCompat="@drawable/teorycomp15" />
             </LinearLayout>
 
@@ -278,8 +280,8 @@
                 <ImageView
                     android:id="@+id/imageView75"
                     android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
                     android:layout_height="130dp"
+                    android:layout_marginTop="10dp"
                     app:srcCompat="@drawable/teorycomp17" />
             </LinearLayout>
 

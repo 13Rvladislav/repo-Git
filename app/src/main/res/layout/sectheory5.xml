@@ -91,7 +91,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Теперь злостные продавцы-обманщики тебе не почем!"
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
+
                 <TextView
                     android:id="@+id/textSec6"
                     android:layout_width="match_parent"
@@ -99,7 +100,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="В интернете похитители данных бывают еще более хитрыми, чем те, с которыми мы уже знакомы. Давай изучим их способы обмана."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
@@ -123,14 +124,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Фишинговые ссылки и взлом аккаунтов"
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textsec19"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Фишинг – обман с целью получить ваши данные. Фишингом могут считаться те же письма с просьбами прислать личную информацию. Такие письма содержат ссылки на поддельные сайты, где вам надо зарегистрироваться или войти в аккаунт. Сейчас хакеры умеют создавать ссылки, при переходе на которые пользователю даже не нужно будет ничего делать, он просто потеряет все свои личные данные. Хакеры получат все, стоит вам только нажать на подозрительную ссылку.  "
-                        android:textColor="@color/black" />
+                        android:textColor="#3D0250" />
 
                 </LinearLayout>
 
@@ -152,7 +153,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:text="Ох, столько писем и сообщений… Давай решим, что с ними делать."
-                    android:textColor="@color/black" />
+                    android:textColor="#3D0250" />
             </LinearLayout>
 
         </LinearLayout>
