@@ -23,6 +23,7 @@ public class ZadanieSecurity3 extends AppCompatActivity  implements Sectask3Sing
     Button button1;
     //кнопка продолжить
     Button check;
+    Button back;
     //пременная ,где будут храниться баллы и пердавться в следющее активити для просмтора результат и после записываться в firebase
     int mark;
     // переменные где будут храниться ответы из выбранных полей
@@ -38,11 +39,15 @@ public class ZadanieSecurity3 extends AppCompatActivity  implements Sectask3Sing
         getSupportActionBar().hide();
         button1 = (Button) findViewById(R.id.button6);
         check = (Button) findViewById(R.id.continueSec);
-
+        back= (Button) findViewById(R.id.bottomSecurityK);
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
+                        case R.id.bottomSecurityK:
+                            Intent intent = new Intent(ZadanieSecurity3.this, TheorySecurity3.class);
+                            startActivity(intent);
+                            break;
                     case R.id.button6:
                         bt1 = true;
                         DialogFragment singleChoiseDialog1 = new Sectask3SingleChoiceDialog();
@@ -122,7 +127,7 @@ public class ZadanieSecurity3 extends AppCompatActivity  implements Sectask3Sing
             }
         };
         button1.setOnClickListener(onClickListener);
-
+        back.setOnClickListener(onClickListener);
         check.setOnClickListener(onClickListener);
     }
 

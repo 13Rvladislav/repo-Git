@@ -10,8 +10,8 @@ import android.widget.Button;
 import com.example.itcity.R;
 
 public class TheoryComputer5 extends AppCompatActivity {
-    Button continieCompDev;
-    Button bottomCompDevK5;
+    Button next;
+    Button back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,16 +20,16 @@ public class TheoryComputer5 extends AppCompatActivity {
         setContentView(R.layout.comtheory5);
         getSupportActionBar().hide();
 
-        continieCompDev = (Button) findViewById(R.id.continieCompDev);
-        bottomCompDevK5 = (Button) findViewById(R.id.bottomCompDevK5);
+        next = (Button) findViewById(R.id.continieCompDev);
+        back = (Button) findViewById(R.id.bottomCompDevK5);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.continueSec:
-                        Intent intent1 = new Intent(TheoryComputer5.this, ZadanieComputer4.class);
+                    case R.id.continieCompDev:
+                        Intent intent1 = new Intent(TheoryComputer5.this,Zadcomp5.class);
                         startActivity(intent1);
                         break;
                     case R.id.bottomCompDevK5:
@@ -41,7 +41,7 @@ public class TheoryComputer5 extends AppCompatActivity {
                 }
             }
         };
-        continieCompDev.setOnClickListener(onClickListener);
-        bottomCompDevK5.setOnClickListener(onClickListener);
+        next.setOnClickListener(onClickListener);
+        back.setOnClickListener(onClickListener);
     }
 }

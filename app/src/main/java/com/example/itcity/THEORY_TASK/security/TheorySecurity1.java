@@ -12,25 +12,31 @@ import com.example.itcity.THEORY_TASK.algorithm.ZadanieAlgorithm3;
 
 public class TheorySecurity1 extends AppCompatActivity {
     Button next;
-
+    Button back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectheory1);
         getSupportActionBar().hide();
         next=findViewById(R.id.continueSec);
+        back=findViewById(R.id.bottomSecurityK);
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.continueSec:
-                        Intent intent = new Intent(TheorySecurity1.this,ZadanieSecurity1.class);
-                        startActivity(intent);
+                        Intent intent1 = new Intent(TheorySecurity1.this,ZadanieSecurity1.class);
+                        startActivity(intent1);
+                        break;
+                    case R.id.bottomSecurityK:
+                        Intent intent2 = new Intent(TheorySecurity1.this,Security_HOME.class);
+                        startActivity(intent2);
                         break;
                 }
             }
         };
         next.setOnClickListener(onClickListener);
+        back.setOnClickListener(onClickListener);
     }
 }

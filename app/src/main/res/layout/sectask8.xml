@@ -68,14 +68,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/linearLayout"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
+                android:gravity="center"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/ic_podlozhka_teoria_belaya"
                 android:orientation="vertical">
@@ -84,34 +86,10 @@
                     android:id="@+id/textSec5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Соберите картинку."
-                    android:textColor="@color/black" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="5dp"
-                android:background="@drawable/ic_podlozhka_teoria_belaya"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView48"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:text="1) Бесплатный фриланс  \n2) Сообщения на почту о благотворительности, выигрыше, подарке  \n3) Покупка билетов онлайн \n4) Во всех перечисленных  \n5) Не в каких из вышеперечисленных" />
-
-                <Button
-                    android:id="@+id/button6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
+                    android:gravity="center"
+                    android:text="Собери пазл"
+                    android:textColor="#3D0250"
+                    android:textSize="17sp"/>
             </LinearLayout>
 
         </LinearLayout>

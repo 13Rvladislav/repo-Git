@@ -29,6 +29,7 @@ public class ZadanieAlgorithm3 extends AppCompatActivity implements Algtask3Sing
 
     //кнопка продолжить
     Button check;
+    Button back;
     //пременная ,где будут храниться баллы и пердавться в следющее активити для просмтора результат и после записываться в firebase
     int mark;
     // переменные где будут храниться ответы из выбранных полей
@@ -54,13 +55,17 @@ public class ZadanieAlgorithm3 extends AppCompatActivity implements Algtask3Sing
         button2 = (Button) findViewById(R.id.algTask3Button2);
         button3 = (Button) findViewById(R.id.algTask3Button3);
         button4 = (Button) findViewById(R.id.algTask3Button4);
-
+        back= (Button) findViewById(R.id.button5);
         check = (Button) findViewById(R.id.algCheck);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
+                    case R.id.button5:
+                        Intent intent = new Intent(ZadanieAlgorithm3.this, TheoryAlgorithm3.class);
+                        startActivity(intent);
+                        break;
                     case R.id.algTask3Button1:
                         bt1 = true;
                         DialogFragment singleChoiseDialog1 = new Algtask3SingleChoiceDialog();
@@ -173,7 +178,7 @@ public class ZadanieAlgorithm3 extends AppCompatActivity implements Algtask3Sing
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(ZadanieAlgorithm3.this, Algorithm_HOME.class);
+                                    Intent intent = new Intent(ZadanieAlgorithm3.this, TheoryAlgorithm3.class);
                                     startActivity(intent);
                                 }
                             });
@@ -188,6 +193,7 @@ public class ZadanieAlgorithm3 extends AppCompatActivity implements Algtask3Sing
         button2.setOnClickListener(onClickListener);
         button3.setOnClickListener(onClickListener);
         button4.setOnClickListener(onClickListener);
+        back.setOnClickListener(onClickListener);
         check.setOnClickListener(onClickListener);
     }
 

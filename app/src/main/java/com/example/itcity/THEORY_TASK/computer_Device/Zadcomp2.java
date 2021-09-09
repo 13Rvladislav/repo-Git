@@ -1,4 +1,5 @@
 package com.example.itcity.THEORY_TASK.computer_Device;
+
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -15,10 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
 import com.example.itcity.R;
-import com.example.itcity.THEORY_TASK.security.Sectask2SingleChoiceDialog;
-import com.example.itcity.THEORY_TASK.security.Sectask5SingleChoiceDialog;
-import com.example.itcity.THEORY_TASK.security.Security_HOME;
-import com.example.itcity.THEORY_TASK.security.ZadSec5;
 
 public class Zadcomp2 extends AppCompatActivity  implements Comptask2SingleChoiceDialog.SingleChoiceListener{
     Dialog dialog;//диалоговое окно
@@ -30,6 +27,7 @@ public class Zadcomp2 extends AppCompatActivity  implements Comptask2SingleChoic
 
     //кнопка продолжить
     Button check;
+    Button back;
     //пременная ,где будут храниться баллы и пердавться в следющее активити для просмтора результат и после записываться в firebase
     int mark;
     // переменные где будут храниться ответы из выбранных полей
@@ -52,10 +50,16 @@ public class Zadcomp2 extends AppCompatActivity  implements Comptask2SingleChoic
         button2 = (Button) findViewById(R.id.algTask2Button2);
         button3 = (Button) findViewById(R.id.algTask2Button3);
         check = (Button) findViewById(R.id.algCheck);
+        back = (Button) findViewById(R.id.button5);
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
+                    case R.id.button5:
+                        Intent intent = new Intent(Zadcomp2.this, TheoryComputer2.class);
+                        startActivity(intent);
+
+                        break;
                     case R.id.algTask2Button1:
                         bt1 = true;
                         DialogFragment singleChoiseDialog1 = new Comptask2SingleChoiceDialog();
@@ -170,7 +174,7 @@ public class Zadcomp2 extends AppCompatActivity  implements Comptask2SingleChoic
         button1.setOnClickListener(onClickListener);
         button2.setOnClickListener(onClickListener);
         button3.setOnClickListener(onClickListener);
-
+        back.setOnClickListener(onClickListener);
         check.setOnClickListener(onClickListener);
     }
 

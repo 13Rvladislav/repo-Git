@@ -107,27 +107,20 @@
 
             <ImageButton
                 android:id="@+id/SECBUTTON7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_marginLeft="10dp"
                 android:background="@null"
                 app:srcCompat="@drawable/secclosehome7" />
 
             <ImageButton
                 android:id="@+id/SECBUTTON8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_marginLeft="25dp"
                 android:background="@null"
                 app:srcCompat="@drawable/secclosehome8" />
 
-            <ImageButton
-                android:id="@+id/SECBUTTON9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@null"
-                app:srcCompat="@drawable/secclosehome9" />
         </LinearLayout>
 
     </LinearLayout>

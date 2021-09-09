@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.example.itcity.ActivityMap;
 import com.example.itcity.R;
 
 public class Security_HOME extends AppCompatActivity {
@@ -18,6 +20,7 @@ public class Security_HOME extends AppCompatActivity {
     ImageButton Secbutton6;
     ImageButton Secbutton7;
     ImageButton Secbutton8;
+    Button back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,15 +34,20 @@ public class Security_HOME extends AppCompatActivity {
         Secbutton6 = (ImageButton) findViewById(R.id.SECBUTTON6);
         Secbutton7 = (ImageButton) findViewById(R.id.SECBUTTON7);
         Secbutton8 = (ImageButton) findViewById(R.id.SECBUTTON8);
-
+        back = findViewById(R.id.SECBUTTONBACK);
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
+                    case R.id.SECBUTTONBACK:
+                        Intent intent0 = new Intent(Security_HOME.this, ActivityMap.class);
+                        startActivity(intent0);
+                        break;
+
                     case R.id.SECBUTTON1:
-                        Intent intent = new Intent(Security_HOME.this, TheorySecurity1.class);
-                        startActivity(intent);
+                        Intent intent1 = new Intent(Security_HOME.this, TheorySecurity1.class);
+                        startActivity(intent1);
                         break;
 
                     case R.id.SECBUTTON2:
@@ -87,5 +95,6 @@ public class Security_HOME extends AppCompatActivity {
         Secbutton6.setOnClickListener(onClickListener);
         Secbutton7.setOnClickListener(onClickListener);
         Secbutton8.setOnClickListener(onClickListener);
+        back.setOnClickListener(onClickListener);
     }
 }

@@ -48,11 +48,22 @@
         <item>Позвонить отправителю и спросить, была ли им отправлена эта ссылка</item>
         <item>Проигнорировать сообщение</item>
     </string-array>
+
     <string-array name="compchoice_items2">
         <item>Материнская плата</item>
         <item>Блок питания</item>
         <item>Корпус</item>
+    </string-array>
 
+    <string-array name="compchoice_items5">
+        <item>Кард-ридер</item>
+        <item>Флешка</item>
+        <item>Web-камера</item>
+        <item>Колонки</item>
+        <item>Монитор</item>
+        <item>Клавиатура</item>
+        <item>Микрофон</item>
+        <item>Мышь</item>
     </string-array>
     //кнопки в меню
     <string name="action_item1">кнопка 1</string>
@@ -104,4 +115,7 @@
     <string name="title_activity__profile">Activity_Profile</string>
     <string name="title_activity_security__teory__task">Security_Teory_Task</string>
     <string name="_3_n_n_10_if_x_10_n_min_n_max_n"><![CDATA[3. Начало\nВвести данные\nЕсли переменная меньше 10 или if(x < 10)\nВывести «Min»\nИначе вывести «Max»\nКонец]]></string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

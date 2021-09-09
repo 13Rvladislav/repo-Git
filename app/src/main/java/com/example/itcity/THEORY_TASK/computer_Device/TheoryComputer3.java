@@ -8,8 +8,8 @@ import com.example.itcity.R;
 
 public class TheoryComputer3 extends AppCompatActivity {
 
-    Button continieCompDev;
-    Button bottomCompDevK3;
+    Button next;
+    Button back;
 
 
     @Override
@@ -19,16 +19,16 @@ public class TheoryComputer3 extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
-        continieCompDev = (Button) findViewById(R.id.continieCompDev);
-        bottomCompDevK3 = (Button) findViewById(R.id.bottomCompDevK3);
+        next = (Button) findViewById(R.id.continieCompDev);
+        back = (Button) findViewById(R.id.bottomCompDevK3);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.continueSec:
-                        Intent intent1 = new Intent(TheoryComputer3.this, ZadanieComputer3.class);
+                    case R.id.continieCompDev:
+                        Intent intent1 = new Intent(TheoryComputer3.this, Zadcomp3.class);
                         startActivity(intent1);
                         break;
                     case R.id.bottomCompDevK3:
@@ -40,8 +40,8 @@ public class TheoryComputer3 extends AppCompatActivity {
                 }
             }
         };
-        continieCompDev.setOnClickListener(onClickListener);
-        bottomCompDevK3.setOnClickListener(onClickListener);
+        next.setOnClickListener(onClickListener);
+        back.setOnClickListener(onClickListener);
 
     }
 }

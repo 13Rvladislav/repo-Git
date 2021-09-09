@@ -12,7 +12,7 @@ import com.example.itcity.R;
 public class TheoryComputer2 extends AppCompatActivity {
 
     Button continuee;
-    Button bottomCompDevK2;
+    Button back;
 
 
     @Override
@@ -22,7 +22,7 @@ public class TheoryComputer2 extends AppCompatActivity {
 
         getSupportActionBar().hide();
         continuee = (Button) findViewById(R.id.continieCompDev);
-        bottomCompDevK2 = (Button) findViewById(R.id.bottomCompDevK2);
+        back = (Button) findViewById(R.id.bottomCompDevK2);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
@@ -43,7 +43,7 @@ public class TheoryComputer2 extends AppCompatActivity {
             }
         };
         continuee.setOnClickListener(onClickListener);
-        bottomCompDevK2.setOnClickListener(onClickListener);
+        back.setOnClickListener(onClickListener);
 
     }
 }

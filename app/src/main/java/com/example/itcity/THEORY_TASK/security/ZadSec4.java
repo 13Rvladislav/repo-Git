@@ -24,7 +24,8 @@ public class ZadSec4 extends AppCompatActivity {
     //
     CheckBox checkbox1, checkbox2, checkbox3, checkbox4;
 
-    Button checkcont;
+    Button check;
+    Button back;
     Boolean check1 = false, check2 = false, check3 = false, check4 = false;
 
     @Override
@@ -37,8 +38,8 @@ public class ZadSec4 extends AppCompatActivity {
         checkbox3 = findViewById(R.id.checkBox3);
         checkbox4 = findViewById(R.id.checkBox4);
 
-        checkcont = findViewById(R.id.continueSec);
-
+        check = findViewById(R.id.continueSec);
+        back= (Button) findViewById(R.id.bottomSecurityK);
 
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -46,6 +47,10 @@ public class ZadSec4 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
+                    case R.id.bottomSecurityK:
+                        Intent intent = new Intent(ZadSec4.this, TheorySecurity4.class);
+                        startActivity(intent);
+                        break;
                     case R.id.checkBox1:
                         if(checkbox1.isChecked())
                         check1=true;
@@ -140,7 +145,8 @@ public class ZadSec4 extends AppCompatActivity {
         checkbox2.setOnClickListener(onClickListener);
         checkbox3.setOnClickListener(onClickListener);
         checkbox4.setOnClickListener(onClickListener);
-        checkcont.setOnClickListener(onClickListener);
+        check.setOnClickListener(onClickListener);
+        back.setOnClickListener(onClickListener);
     }
 
 }

@@ -9,7 +9,7 @@ import com.example.itcity.R;
 public class TheoryComputer4 extends AppCompatActivity {
 
     Button continieCompDev;
-    Button bottomCompDevK4;
+    Button back;
 
 
     @Override
@@ -20,15 +20,15 @@ public class TheoryComputer4 extends AppCompatActivity {
         getSupportActionBar().hide();
 
         continieCompDev = (Button) findViewById(R.id.continieCompDev);
-        bottomCompDevK4 = (Button) findViewById(R.id.bottomCompDevK4);
+        back = (Button) findViewById(R.id.bottomCompDevK4);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.continueSec:
-                        Intent intent1 = new Intent(TheoryComputer4.this, ZadanieComputer4.class);
+                    case R.id.continieCompDev:
+                        Intent intent1 = new Intent(TheoryComputer4.this, Zadcomp4.class);
                         startActivity(intent1);
                         break;
                     case R.id.bottomCompDevK4:
@@ -41,7 +41,7 @@ public class TheoryComputer4 extends AppCompatActivity {
             }
         };
         continieCompDev.setOnClickListener(onClickListener);
-        bottomCompDevK4.setOnClickListener(onClickListener);
+        back.setOnClickListener(onClickListener);
 
     }
 }
