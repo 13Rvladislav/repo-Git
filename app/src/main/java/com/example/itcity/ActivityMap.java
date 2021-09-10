@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import com.example.itcity.THEORY_TASK.algorithm.Algorithm_HOME;
 import com.example.itcity.THEORY_TASK.computer_Device.Computer_Home;
-import com.example.itcity.THEORY_TASK.fundamental_of_informatics.Informatica_Teory_Task;
+import com.example.itcity.THEORY_TASK.fundamental_of_informatics.Informatica_HOME;
 import com.example.itcity.THEORY_TASK.programming.Programming_Teory_Task;
 import com.example.itcity.THEORY_TASK.security.Security_HOME;
 
@@ -55,7 +55,7 @@ public class ActivityMap extends AppCompatActivity {
                         startActivity(intent3);
                         break;
                     case R.id.buttonInforatica:
-                        Intent intent4 = new Intent(ActivityMap.this, Informatica_Teory_Task.class);
+                        Intent intent4 = new Intent(ActivityMap.this, Informatica_HOME.class);
                         startActivity(intent4);
                         break;
                     case R.id.buttonComputer:

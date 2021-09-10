@@ -7,14 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import com.example.itcity.R;
 
-public class TheoryInformatica4 extends AppCompatActivity {
+public class ThInf16 extends AppCompatActivity {
     Button button8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.inftheory4);
+        setContentView(R.layout.inftheory16);
         button8=findViewById(R.id.button8);
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
@@ -22,7 +22,7 @@ public class TheoryInformatica4 extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.button8:
-                        Intent intent = new Intent(TheoryInformatica4.this,ZadanieInformatica4.class);
+                        Intent intent = new Intent(ThInf16.this,ZadanieInformatica16.class);
                         startActivity(intent);
                         break;
                 }

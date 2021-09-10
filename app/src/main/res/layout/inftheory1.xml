@@ -85,7 +85,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:text="Привет!! Ты начнешь изучать новый раздел, школьная информатика. И сегодня мы разберем такую тему как ’’круги Эйлера’’ Удачи!!"
+                    android:text="Привет!! Ты начнешь изучать новый раздел, школьная информатика. И сегодня мы разберем такую тему, как ’’круги Эйлера’’ Удачи!!"
                     android:textColor="#3D0250" />
             </LinearLayout>
 
@@ -109,13 +109,15 @@
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Круги Эйлера представляют собой геометрическую схему, необходимую для поиска и более наглядного отображения логических связей между понятиями и явлениями. С помощью кругов Эйлера можно решать множество практических задач на пересечение или объединение множеств в математике, информатике. "
+                        android:layout_gravity="center"
+                        android:text="Круги Эйлера представляют собой  схему, необходимую для поиска и более наглядного отображения логических связей между понятиями и явлениями. С помощью кругов Эйлера можно решать множество практических задач на пересечение или объединение множеств в математике, информатике. "
                         android:textColor="#3D0250" />
 
                     <ImageView
                         android:id="@+id/imageView77"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         app:srcCompat="@drawable/krugieilera" />
 
                 </LinearLayout>
