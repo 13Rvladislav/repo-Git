@@ -1,8 +1,5 @@
 package com.example.itcity.THEORY_TASK.security;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -14,6 +11,9 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
 
 import com.example.itcity.R;
 
@@ -135,7 +135,12 @@ public class ZadanieSecurity2 extends AppCompatActivity implements Sectask2Singl
     @Override
     public void onPositiveButtonClicked(String[] list, int position) {
         if (bt1 == true) {
-            button1.setText(list[position]);
+            if (position == 0)
+                button1.setText("Вариант 1");
+            if (position == 1)
+                button1.setText("Вариант 2");
+            if (position == 2)
+                button1.setText("Вариант 3");
             answer1 = list[position];
             bt1 = false;
         }
@@ -146,6 +151,6 @@ public class ZadanieSecurity2 extends AppCompatActivity implements Sectask2Singl
 
     @Override
     public void onNegativeButtonClicked() {
-        button1.setText("Dialog");
+
     }
 }

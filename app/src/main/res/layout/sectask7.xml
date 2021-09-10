@@ -107,16 +107,26 @@
 
                 <EditText
                     android:id="@+id/answer"
-                    android:layout_width="382dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="266dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:autofillHints=""
+                    android:backgroundTint="#1794E0"
                     android:ems="10"
-                    android:inputType="textEmailAddress" />
+                    android:layout_gravity="center"
+                    android:hint="Введите ответ"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#1E1358"
+                    android:textColorHint="#1E1358"
+                    android:textSize="14sp"  />
 
                 <Button
                     android:id="@+id/enter_a_word"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Button" />
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center"
+                    android:text="ввод слова"
+                    app:backgroundTint="#1E1358" />
             </LinearLayout>
 
         </LinearLayout>

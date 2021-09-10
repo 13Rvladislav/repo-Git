@@ -1,8 +1,5 @@
 package com.example.itcity.THEORY_TASK.security;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -15,10 +12,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
+
 import com.example.itcity.R;
-import com.example.itcity.THEORY_TASK.algorithm.Algorithm_HOME;
-import com.example.itcity.THEORY_TASK.algorithm.Algtask5SingleChoiceDialog;
-import com.example.itcity.THEORY_TASK.algorithm.ZadanieAlgorithm5;
 
 public class ZadanieSecurity1 extends AppCompatActivity implements Sectask1SingleChoiceDialog.SingleChoiceListener {
     Dialog dialog;//диалоговое окно
@@ -139,7 +136,16 @@ public class ZadanieSecurity1 extends AppCompatActivity implements Sectask1Singl
     @Override
     public void onPositiveButtonClicked(String[] list, int position) {
         if (bt1 == true) {
-            button1.setText(list[position]);
+            if (position == 0)
+                button1.setText("Вариант 1");
+            if (position == 1)
+                button1.setText("Вариант 2");
+            if (position == 2)
+                button1.setText("Вариант 3");
+            if (position == 3)
+                button1.setText("Вариант 4");
+            if (position == 4)
+                button1.setText("Вариант 5");
             answer1 = list[position];
             bt1 = false;
         }
@@ -148,6 +154,6 @@ public class ZadanieSecurity1 extends AppCompatActivity implements Sectask1Singl
 
     @Override
     public void onNegativeButtonClicked() {
-        button1.setText("Dialog");
+
     }
 }

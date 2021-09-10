@@ -16,9 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
 import com.example.itcity.R;
-import com.example.itcity.THEORY_TASK.algorithm.Algorithm_HOME;
-import com.example.itcity.THEORY_TASK.algorithm.Algtask2SingleChoiceDialog;
-import com.example.itcity.THEORY_TASK.algorithm.ZadanieAlgorithm2;
 
 public class ZadSec5 extends AppCompatActivity  implements Sectask5SingleChoiceDialog.SingleChoiceListener {
     Dialog dialog;//диалоговое окно
@@ -103,20 +100,21 @@ public class ZadSec5 extends AppCompatActivity  implements Sectask5SingleChoiceD
 
 
                         String markSTR;
-                        if (answer1.equalsIgnoreCase("Результативность")) {
+                        if (answer1.equalsIgnoreCase("Проигнорировать сообщение")) {
                             //если ответ в поле 1 совпал с правильным ответом то делаем +20 баллов
-                            mark += 20;
+                            mark += 33;
 
                         }
-                        if (answer2.equalsIgnoreCase("Дискретность")) {
+                        if (answer2.equalsIgnoreCase("Позвонить отправителю и спросить, была ли им отправлена эта ссылка")) {
                             //если ответ в поле 2 совпал с правильным ответом то делаем +20 баллов
-                            mark += 20;
+                            mark += 33;
                         }
-                        if (answer3.equalsIgnoreCase("Детерминированность")) {
+                        if (answer3.equalsIgnoreCase("Проверить, не является ли ссылка фальшивой")) {
                             //если ответ в поле 3 совпал с правильным ответом то делаем +20 баллов
-                            mark += 20;
+                            mark += 33;
                         }
-
+                        if (mark == 99)
+                            mark++;
                         //вызов диалогового окна с показом количества баллов
                         if (mark>50) {
                             dialog = new Dialog(ZadSec5.this);
@@ -181,17 +179,32 @@ public class ZadSec5 extends AppCompatActivity  implements Sectask5SingleChoiceD
     @Override
     public void onPositiveButtonClicked(String[] list, int position) {
         if (bt1 == true) {
-            button1.setText(list[position]);
+            if (position == 0)
+                button1.setText("Вариант 1");
+            if (position == 1)
+                button1.setText("Вариант 2");
+            if (position == 2)
+                button1.setText("Вариант 3");
             answer1 = list[position];
             bt1 = false;
         }
         if (bt2 == true) {
-            button2.setText(list[position]);
+            if (position == 0)
+                button2.setText("Вариант 1");
+            if (position == 1)
+                button2.setText("Вариант 2");
+            if (position == 2)
+                button2.setText("Вариант 3");
             answer2 = list[position];
             bt2 = false;
         }
         if (bt3 == true) {
-            button3.setText(list[position]);
+            if (position == 0)
+                button3.setText("Вариант 1");
+            if (position == 1)
+                button3.setText("Вариант 2");
+            if (position == 2)
+                button3.setText("Вариант 3");
             answer3 = list[position];
             bt3 = false;
         }
@@ -199,8 +212,6 @@ public class ZadSec5 extends AppCompatActivity  implements Sectask5SingleChoiceD
 
     @Override
     public void onNegativeButtonClicked() {
-        button1.setText("Dialog");
+
     }
-
-
 }

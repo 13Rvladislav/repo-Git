@@ -110,9 +110,10 @@
 
                 <Button
                     android:id="@+id/button6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Выбрать"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="выбрать"
                     app:backgroundTint="#1E1358" />
 
             </LinearLayout>
