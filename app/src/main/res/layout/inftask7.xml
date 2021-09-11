@@ -48,7 +48,7 @@
         android:layout_marginBottom="40dp"
         android:text="ПРОДОЛЖИТЬ"
         android:textSize="24sp"
-        app:backgroundTint="#3D0250"
+        app:backgroundTint="#183802"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"

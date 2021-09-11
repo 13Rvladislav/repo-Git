@@ -1,6 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/zadanie_fon_inform"
+    tools:context=".THEORY_TASK.algorithm.ZadanieAlgorithm3">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="380dp"
+        android:layout_height="484dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/algCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:layout_constraintVertical_bias="0.865">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/podkltaskpole"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/inflogica1k" />
+
+                <Button
+                    android:id="@+id/algTask3Button1"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="выбрать" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="258dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/podkltaskpole"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="7dp"
+                        android:text="2."
+                        android:textColor="#3D0250"
+                        android:textSize="17sp" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="180dp"
+                        android:layout_height="190dp"
+                        app:srcCompat="@drawable/inflogica2k" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/algTask3Button2"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="выбрать" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/podkltaskpole"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="7dp"
+                        android:text="3."
+                        android:textColor="#3D0250"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView33"
+                        android:layout_width="300dp"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/inflogica3k" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/algTask3Button4"
+                    android:layout_width="165dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="выбрать" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/podl_inform"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="76dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/zadaniya"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="232dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:text="ОСНОВЫ ИНФОРМАТИКИ"
+        android:textColor="#FDFDFD"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/algCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="ПРОДОЛЖИТЬ"
+        android:textSize="24sp"
+        app:backgroundTint="#183802"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:background="@drawable/podklpereetyag"
+        android:text="По примерам определить,форму представления алгоритма."
+        android:textColor="#3D0250"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:layout_constraintVertical_bias="0.666" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
