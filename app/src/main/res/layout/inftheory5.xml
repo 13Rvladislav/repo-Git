@@ -130,7 +130,7 @@
                         android:id="@+id/textView66"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="3AF16 = 3 • 162 + 10 • 161 + 15 • 160 = 768 + 160 + 15 = 94310."
+                        android:text="3AF16 = 3 • 16^2 + 10 • 16^1 + 15 • 16^0 = 768 + 160 + 15 = 94310."
                         android:textColor="#3D0250" />
 
                 </LinearLayout>

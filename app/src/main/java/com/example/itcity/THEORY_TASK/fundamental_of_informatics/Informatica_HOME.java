@@ -69,11 +69,11 @@ public class Informatica_HOME extends AppCompatActivity {
                         startActivity(intent4);
                         break;
                     case R.id.SECBUTTON5:
-                        Intent intent5 = new Intent(Informatica_HOME.this, ThInf5.class);
+                        Intent intent5 = new Intent(Informatica_HOME.this, TheoInf5.class);
                         startActivity(intent5);
                         break;
                     case R.id.SECBUTTON6:
-                        Intent intent6 = new Intent(Informatica_HOME.this, ThInf6.class);
+                        Intent intent6 = new Intent(Informatica_HOME.this, TheoInf6.class);
                         startActivity(intent6);
                         break;
                     case R.id.SECBUTTON7:
