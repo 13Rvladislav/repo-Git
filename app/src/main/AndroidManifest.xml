@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itcity">
-        <activity android:name=".THEORY_TASK.fundamental_of_informatics.ZadInf7"></activity>
+        <activity android:name=".THEORY_TASK.fundamental_of_informatics.ZadInf10"></activity>
+        <activity android:name=".THEORY_TASK.fundamental_of_informatics.ZadInf9" />
+        <activity
+            android:name=".THEORY_TASK.fundamental_of_informatics.ZadInf8"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".THEORY_TASK.fundamental_of_informatics.ZadInf7"
+            android:windowSoftInputMode="adjustNothing" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.ZadInf6" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.TheoInf6" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.ZadInf5" />

@@ -23,6 +23,15 @@ public class Informatica_HOME extends AppCompatActivity {
     ImageButton INFBUTTON7;
     ImageButton INFBUTTON8;
     ImageButton INFBUTTON9;
+    ImageButton INFBUTTON10;
+    ImageButton INFBUTTON11;
+    ImageButton INFBUTTON12;
+    ImageButton INFBUTTON13;
+    ImageButton INFBUTTON14;
+    ImageButton INFBUTTON15;
+    ImageButton INFBUTTON16;
+
+
     Button INFBUTTONBACK;
 
 
@@ -39,14 +48,14 @@ public class Informatica_HOME extends AppCompatActivity {
         INFBUTTON7 = (ImageButton) findViewById(R.id.SECBUTTON7);
         INFBUTTON8 = (ImageButton) findViewById(R.id.SECBUTTON8);
         INFBUTTON9 = (ImageButton) findViewById(R.id.SECBUTTON9);
-        //   home10=findViewById(R.id);
-        //  home11=findViewById(R.id);
-        //  home12=findViewById(R.id);
-        //  home13=findViewById(R.id);
-        //  home14=findViewById(R.id);
-        // home15=findViewById(R.id);
-        //  home16=findViewById(R.id);
-        //home17=findViewById(R.id);
+        INFBUTTON10 = (ImageButton) findViewById(R.id.SECBUTTON10);
+        INFBUTTON11 = (ImageButton) findViewById(R.id.SECBUTTON11);
+        INFBUTTON12 = (ImageButton) findViewById(R.id.SECBUTTON12);
+        INFBUTTON13 = (ImageButton) findViewById(R.id.SECBUTTON13);
+        INFBUTTON14 =(ImageButton) findViewById(R.id.SECBUTTON14);
+        INFBUTTON15 = (ImageButton) findViewById(R.id.SECBUTTON15);
+
+
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
@@ -88,10 +97,33 @@ public class Informatica_HOME extends AppCompatActivity {
                         Intent intent9 = new Intent(Informatica_HOME.this, ThInf9.class);
                         startActivity(intent9);
                         break;
-
-                    case R.id.COMPBUTTONBACK:
-                        Intent intent10 = new Intent(Informatica_HOME.this, ActivityMap.class);
+                    case R.id.SECBUTTON10:
+                        Intent intent10 = new Intent(Informatica_HOME.this, ThInf10.class);
                         startActivity(intent10);
+                        break;
+                    case R.id.SECBUTTON11:
+                        Intent intent11 = new Intent(Informatica_HOME.this, ThInf11.class);
+                        startActivity(intent11);
+                        break;
+                    case R.id.SECBUTTON12:
+                        Intent intent12 = new Intent(Informatica_HOME.this, ThInf12.class);
+                        startActivity(intent12);
+                        break;
+                    case R.id.SECBUTTON13:
+                        Intent intent13 = new Intent(Informatica_HOME.this, ThInf13.class);
+                        startActivity(intent13);
+                        break;
+                    case R.id.SECBUTTON14:
+                        Intent intent14 = new Intent(Informatica_HOME.this, ThInf14.class);
+                        startActivity(intent14);
+                        break;
+                    case R.id.SECBUTTON15:
+                        Intent intent15 = new Intent(Informatica_HOME.this, ThInf15.class);
+                        startActivity(intent15);
+                        break;
+                    case R.id.COMPBUTTONBACK:
+                        Intent intent = new Intent(Informatica_HOME.this, ActivityMap.class);
+                        startActivity(intent);
                         break;
 
                     default:
@@ -109,6 +141,12 @@ public class Informatica_HOME extends AppCompatActivity {
         INFBUTTON7.setOnClickListener(onClickListener);
         INFBUTTON8.setOnClickListener(onClickListener);
         INFBUTTON9.setOnClickListener(onClickListener);
+        INFBUTTON10.setOnClickListener(onClickListener);
+        INFBUTTON11.setOnClickListener(onClickListener);
+        INFBUTTON12.setOnClickListener(onClickListener);
+        INFBUTTON13.setOnClickListener(onClickListener);
+        INFBUTTON14.setOnClickListener(onClickListener);
+        INFBUTTON15.setOnClickListener(onClickListener);
         // COMPBUTTONBACK.setOnClickListener(onClickListener);
 
 

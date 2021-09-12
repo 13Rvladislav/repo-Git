@@ -28,114 +28,191 @@
             app:backgroundTint="@color/ppblack" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="400dp"
-        android:layout_height="617dp"
-        android:orientation="vertical"
+    <ScrollView
+        android:layout_width="416dp"
+        android:layout_height="593dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/SECBUTTON1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@null"
-                app:srcCompat="@drawable/infoffhome1" />
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="617dp"
+                android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/SECBUTTON2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@null"
-                app:srcCompat="@drawable/infclosehome2" />
+                <LinearLayout
+                    android:layout_width="412dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/SECBUTTON3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@null"
-                app:srcCompat="@drawable/infclosehome3" />
+                    <ImageButton
+                        android:id="@+id/SECBUTTON1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        app:srcCompat="@drawable/infoffhome1" />
+
+                    <ImageButton
+                        android:id="@+id/SECBUTTON2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        app:srcCompat="@drawable/infclosehome2" />
+
+                    <ImageButton
+                        android:id="@+id/SECBUTTON3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        app:srcCompat="@drawable/infclosehome3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/SECBUTTON4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        app:srcCompat="@drawable/infclosehome4" />
+
+                    <ImageButton
+                        android:id="@+id/SECBUTTON5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        app:srcCompat="@drawable/infclosehome5" />
+
+                    <ImageButton
+                        android:id="@+id/SECBUTTON6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        app:srcCompat="@drawable/infclosehome6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/SECBUTTON7"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        app:srcCompat="@drawable/infclosehome7" />
+
+                    <ImageButton
+                        android:id="@+id/SECBUTTON8"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        app:srcCompat="@drawable/infclosehome8" />
+
+                    <ImageButton
+                        android:id="@+id/SECBUTTON9"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        app:srcCompat="@drawable/infclosehome9" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/SECBUTTON10"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        app:srcCompat="@drawable/infclosehome7" />
+
+                    <ImageButton
+                        android:id="@+id/SECBUTTON11"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        app:srcCompat="@drawable/infclosehome8" />
+
+                    <ImageButton
+                        android:id="@+id/SECBUTTON12"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        app:srcCompat="@drawable/infclosehome9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/SECBUTTON13"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        app:srcCompat="@drawable/infclosehome7" />
+
+                    <ImageButton
+                        android:id="@+id/SECBUTTON14"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        app:srcCompat="@drawable/infclosehome8" />
+
+                    <ImageButton
+                        android:id="@+id/SECBUTTON15"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        app:srcCompat="@drawable/infclosehome9" />
+                </LinearLayout>
+
+            </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/SECBUTTON4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@null"
-                app:srcCompat="@drawable/infclosehome4" />
-
-            <ImageButton
-                android:id="@+id/SECBUTTON5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@null"
-                app:srcCompat="@drawable/infclosehome5" />
-
-            <ImageButton
-                android:id="@+id/SECBUTTON6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@null"
-                app:srcCompat="@drawable/infclosehome6" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/SECBUTTON7"
-                android:layout_width="112dp"
-                android:layout_height="112dp"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dp"
-                android:background="@null"
-                app:srcCompat="@drawable/infclosehome7" />
-
-            <ImageButton
-                android:id="@+id/SECBUTTON8"
-                android:layout_width="112dp"
-                android:layout_height="112dp"
-                android:layout_weight="1"
-                android:layout_marginLeft="25dp"
-                android:background="@null"
-                app:srcCompat="@drawable/infclosehome8" />
-            <ImageButton
-                android:id="@+id/SECBUTTON9"
-                android:layout_width="112dp"
-                android:layout_height="112dp"
-                android:layout_weight="1"
-                android:layout_marginLeft="25dp"
-                android:background="@null"
-                app:srcCompat="@drawable/infclosehome9" />
-
-
-        </LinearLayout>
-
-    </LinearLayout>
-
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

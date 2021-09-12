@@ -65,6 +65,16 @@
         <item>Микрофон</item>
         <item>Мышь</item>
     </string-array>
+    <string-array name="infchoice_items10">
+        <item>Эквивалентность</item>
+        <item>Строгая дизъюнкция</item>
+        <item>Импликация</item>
+    </string-array>
+    <string-array name="infchoice_items9">
+        <item>Конъюнкция</item>
+        <item>Дизъюнкция</item>
+        <item>Отрицание</item>
+    </string-array>
     //кнопки в меню
     <string name="action_item1">кнопка 1</string>
     <string name="action_item2">кнопка 2</string>

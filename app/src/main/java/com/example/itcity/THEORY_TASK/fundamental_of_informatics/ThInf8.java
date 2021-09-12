@@ -21,7 +21,7 @@ public class ThInf8 extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.button8:
-                        Intent intent = new Intent(ThInf8.this,ZadanieInformatica8.class);
+                        Intent intent = new Intent(ThInf8.this,ZadInf8.class);
                         startActivity(intent);
                         break;
                 }
