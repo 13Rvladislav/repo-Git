@@ -123,12 +123,14 @@
                         android:id="@+id/imageView77"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="-80dp"
                         app:srcCompat="@drawable/graf1" />
 
                     <TextView
                         android:id="@+id/textView810"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="-80dp"
                         android:text="С помощью графов можно планировать оптимальные транспортные маршруты, упростить решение математических задач и многое другое. "
                         android:textColor="#3D0250" />
 

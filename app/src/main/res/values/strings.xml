@@ -75,6 +75,11 @@
         <item>Дизъюнкция</item>
         <item>Отрицание</item>
     </string-array>
+    <string-array name="infchoice_items12">
+        <item>Взвешенный</item>
+        <item>Неориентированный|невзвешенный</item>
+        <item>Ориентированный</item>
+    </string-array>
     //кнопки в меню
     <string name="action_item1">кнопка 1</string>
     <string name="action_item2">кнопка 2</string>

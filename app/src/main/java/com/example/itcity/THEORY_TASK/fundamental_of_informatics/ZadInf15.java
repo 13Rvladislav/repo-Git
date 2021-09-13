@@ -3,12 +3,12 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.itcity.R;
 
-public class ZadanieInformatica12 extends AppCompatActivity {
+public class ZadInf15 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.inftask12);
+        setContentView(R.layout.inftask16);
         getSupportActionBar().hide();
     }
 }

@@ -157,14 +157,14 @@
                         android:layout_marginLeft="10dp"
                         android:layout_weight="1"
                         android:background="@null"
-                        tools:srcCompat="@drawable/infclosehome10" />
+                        app:srcCompat="@drawable/infclosehome10" />
 
                     <ImageButton
                         android:id="@+id/SECBUTTON11"
                         android:layout_width="112dp"
                         android:layout_height="112dp"
                         android:layout_marginLeft="25dp"
-                        android:layout_weight="1"
+
                         android:background="@null"
                         app:srcCompat="@drawable/infclosehome11" />
 
@@ -173,7 +173,7 @@
                         android:layout_width="112dp"
                         android:layout_height="112dp"
                         android:layout_marginLeft="25dp"
-                        android:layout_weight="1"
+
                         android:background="@null"
                         app:srcCompat="@drawable/infclosehome12" />
                 </LinearLayout>

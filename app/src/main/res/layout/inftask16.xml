@@ -70,66 +70,21 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:id="@+id/linearLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="5dp"
-                android:background="@drawable/ic_podlozhka_teoria_belaya"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textSec5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Найдите число маршрутов из пункта А в пункт З, не проходящих через вершину Г и походящие через вершину Ж. По каждой дороге можно двигаться только в одном направлении, указанном стрелкой."
-                    android:textColor="#3D0250" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="310dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="5dp"
-                android:background="@drawable/ic_podlozhka_teoria_belaya"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imageView76"
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    app:srcCompat="@drawable/infdom16" />
-
-                <EditText
-                    android:id="@+id/answer"
-                    android:layout_width="266dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:autofillHints=""
-                    android:backgroundTint="#1794E0"
-                    android:ems="10"
-                    android:hint="Введите ответ"
-                    android:inputType="textEmailAddress"
-                    android:textColor="#1E1358"
-                    android:textColorHint="#1E1358"
-                    android:textSize="14sp" />
-
-                <Button
-                    android:id="@+id/enter_a_word"
-                    android:layout_width="165dp"
-                    android:layout_height="54dp"
-                    android:layout_gravity="center"
-                    android:text="Ввод ответа"
-                    app:backgroundTint="#183802" />
-            </LinearLayout>
-
+            <TextView
+                android:id="@+id/textView91"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/podklpereetyag"
+                android:text="Собери пазл"
+                android:textColor="#3D0250"
+                android:textSize="17sp"
+                app:layout_constraintTop_toBottomOf="@+id/imageView13"
+                app:layout_constraintVertical_bias="0.666" />
         </LinearLayout>
+
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

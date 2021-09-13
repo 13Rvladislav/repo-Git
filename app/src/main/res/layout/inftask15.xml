@@ -120,13 +120,6 @@
                     android:textColorHint="#1E1358"
                     android:textSize="14sp" />
 
-                <Button
-                    android:id="@+id/enter_a_word"
-                    android:layout_width="165dp"
-                    android:layout_height="54dp"
-                    android:layout_gravity="center"
-                    android:text="Ввод ответа"
-                    app:backgroundTint="#183802" />
             </LinearLayout>
 
         </LinearLayout>

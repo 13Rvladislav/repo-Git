@@ -22,7 +22,7 @@ public class ThInf14 extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.button8:
-                        Intent intent = new Intent(ThInf14.this,ZadanieInformatica14.class);
+                        Intent intent = new Intent(ThInf14.this,ZadInf14.class);
                         startActivity(intent);
                         break;
                 }

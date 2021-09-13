@@ -14,7 +14,7 @@ public class ThInf15 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.inftheory15);
+        setContentView(R.layout.inftheory16);
         button8=findViewById(R.id.button8);
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
@@ -22,7 +22,7 @@ public class ThInf15 extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.button8:
-                        Intent intent = new Intent(ThInf15.this,ZadanieInformatica15.class);
+                        Intent intent = new Intent(ThInf15.this,ZadInf15.class);
                         startActivity(intent);
                         break;
                 }
