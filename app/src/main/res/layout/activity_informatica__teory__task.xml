@@ -78,7 +78,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="412dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
                     android:orientation="horizontal">
@@ -149,6 +149,7 @@
                     android:layout_height="50dp"
                     android:layout_weight="1"
                     android:orientation="horizontal">
+
                     <ImageButton
                         android:id="@+id/SECBUTTON10"
                         android:layout_width="112dp"
@@ -156,7 +157,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_weight="1"
                         android:background="@null"
-                        app:srcCompat="@drawable/infclosehome7" />
+                        tools:srcCompat="@drawable/infclosehome10" />
 
                     <ImageButton
                         android:id="@+id/SECBUTTON11"
@@ -165,7 +166,7 @@
                         android:layout_marginLeft="25dp"
                         android:layout_weight="1"
                         android:background="@null"
-                        app:srcCompat="@drawable/infclosehome8" />
+                        app:srcCompat="@drawable/infclosehome11" />
 
                     <ImageButton
                         android:id="@+id/SECBUTTON12"
@@ -174,7 +175,7 @@
                         android:layout_marginLeft="25dp"
                         android:layout_weight="1"
                         android:background="@null"
-                        app:srcCompat="@drawable/infclosehome9" />
+                        app:srcCompat="@drawable/infclosehome12" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -182,6 +183,7 @@
                     android:layout_height="50dp"
                     android:layout_weight="1"
                     android:orientation="horizontal">
+
                     <ImageButton
                         android:id="@+id/SECBUTTON13"
                         android:layout_width="112dp"
@@ -189,7 +191,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_weight="1"
                         android:background="@null"
-                        app:srcCompat="@drawable/infclosehome7" />
+                        app:srcCompat="@drawable/infclosehome13" />
 
                     <ImageButton
                         android:id="@+id/SECBUTTON14"
@@ -198,7 +200,7 @@
                         android:layout_marginLeft="25dp"
                         android:layout_weight="1"
                         android:background="@null"
-                        app:srcCompat="@drawable/infclosehome8" />
+                        app:srcCompat="@drawable/infclosehome14" />
 
                     <ImageButton
                         android:id="@+id/SECBUTTON15"
@@ -207,7 +209,7 @@
                         android:layout_marginLeft="25dp"
                         android:layout_weight="1"
                         android:background="@null"
-                        app:srcCompat="@drawable/infclosehome9" />
+                        app:srcCompat="@drawable/infclosehome15" />
                 </LinearLayout>
 
             </LinearLayout>
