@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="-2dp"
+    android:paddingTop="-11dp"
     android:background="@drawable/zadanie_fon_inform"
     tools:context=".THEORY_TASK.algorithm.ZadanieAlgorithm3">
 

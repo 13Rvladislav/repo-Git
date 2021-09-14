@@ -36,7 +36,7 @@ public class ActivityAuthor extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_author);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
-
+        getSupportActionBar().hide();
         buttonmisspassword = (Button) findViewById(R.id.misspassword);
         buttonreggistration = (Button) findViewById(R.id.buttonReg);
         buttonautirisation = (Button) findViewById(R.id.buttonVosstanov);

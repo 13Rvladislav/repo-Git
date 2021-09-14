@@ -17,6 +17,7 @@ public class ZadSec8 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectask8);
+        getSupportActionBar().hide();
         back = (Button) findViewById(R.id.bottomSecurityK);
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override

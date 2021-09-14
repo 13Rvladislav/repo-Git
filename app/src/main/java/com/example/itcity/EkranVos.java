@@ -25,7 +25,7 @@ public class EkranVos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ekran_vosstanovleniya);
-
+        getSupportActionBar().hide();
         userEmail = (EditText) findViewById(R.id.email);
         btnvost = (Button) findViewById(R.id.buttonVosstanov);
 

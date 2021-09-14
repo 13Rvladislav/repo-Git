@@ -32,7 +32,7 @@ public class TheoryComputer4 extends AppCompatActivity {
                         startActivity(intent1);
                         break;
                     case R.id.bottomCompDevK4:
-                        Intent intent2 = new Intent(TheoryComputer4.this, Computer_Home.class);
+                        Intent intent2 = new Intent(TheoryComputer4.this, Comp_Home.class);
                         startActivity(intent2);
                         break;
 

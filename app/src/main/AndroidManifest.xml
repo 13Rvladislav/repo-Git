@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itcity">
-        <activity android:name=".THEORY_TASK.fundamental_of_informatics.ZadInf15"></activity>
+        <activity android:name=".THEORY_TASK.computer_Device.Comp_Home"></activity>
+        <activity android:name=".THEORY_TASK.fundamental_of_informatics.ThInf6" />
+        <activity android:name=".THEORY_TASK.fundamental_of_informatics.ZadInf15" />
         <activity
             android:name=".THEORY_TASK.fundamental_of_informatics.ZadInf14"
             android:windowSoftInputMode="adjustNothing" />
@@ -27,7 +29,6 @@
             android:name=".THEORY_TASK.fundamental_of_informatics.ZadInf7"
             android:windowSoftInputMode="adjustNothing" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.ZadInf6" />
-        <activity android:name=".THEORY_TASK.fundamental_of_informatics.TheoInf6" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.ZadInf5" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.TheoInf5" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.Tinf" />
@@ -97,10 +98,6 @@
         <activity android:name=".Activity_Profile" />
         <activity android:name=".THEORY_TASK.algorithm.ZadanieAlgorithm1" />
         <activity android:name=".THEORY_TASK.programming.ZadanieProgrammingActivity" />
-        <activity
-            android:name=".THEORY_TASK.computer_Device.Computer_Home"
-            android:label="@string/title_activity_computer__teory__task"
-            android:theme="@style/Theme.Itcity.NoActionBar" />
         <activity android:name=".THEORY_TASK.security.Security_HOME" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.Informatica_HOME" />
         <activity android:name=".THEORY_TASK.programming.Programming_Teory_Task" />

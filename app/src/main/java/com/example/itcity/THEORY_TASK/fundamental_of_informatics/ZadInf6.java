@@ -34,7 +34,7 @@ public class ZadInf6 extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.bottomTeoryK1:
-                        Intent intent1 = new Intent(ZadInf6.this, TheoInf6.class);
+                        Intent intent1 = new Intent(ZadInf6.this, ThInf6.class);
                         startActivity(intent1);
                         break;
                     case R.id.algCheck:

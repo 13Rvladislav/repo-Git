@@ -9,18 +9,23 @@ import com.example.itcity.R;
 
 public class ThInf16 extends AppCompatActivity {
     Button button8;
-
+    Button back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.inftheory16);
         button8=findViewById(R.id.button8);
+        back = findViewById(R.id.bottomTeoryK1);
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
+                    case R.id.bottomTeoryK1:
+                        Intent intent1 = new Intent(ThInf16.this,Informatica_HOME.class);
+                        startActivity(intent1);
+                        break;
                     case R.id.button8:
                         Intent intent = new Intent(ThInf16.this,ZadInf15.class);
                         startActivity(intent);
@@ -29,5 +34,6 @@ public class ThInf16 extends AppCompatActivity {
             }
         };
         button8.setOnClickListener(onClickListener);
+        back.setOnClickListener(onClickListener);
     }
 }

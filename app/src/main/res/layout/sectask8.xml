@@ -84,7 +84,7 @@
 
                 <TextView
                     android:id="@+id/textSec5"
-                    android:layout_width="213dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Соберите пазл."

@@ -37,6 +37,7 @@ public class ActivityRegistration extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
+        getSupportActionBar().hide();
         //поля ввода
         email = (EditText) findViewById(R.id.email);
         name = (EditText) findViewById(R.id.UserName);

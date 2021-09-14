@@ -27,6 +27,7 @@ public class Zadcomp4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.comtask4);
+        getSupportActionBar().hide();
         check = findViewById(R.id.continueSec);
         answer1 = (EditText) findViewById(R.id.Sec6_1);
         answer2 = (EditText) findViewById(R.id.Sec6_2);
@@ -84,7 +85,7 @@ public class Zadcomp4 extends AppCompatActivity {
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadcomp4.this, Computer_Home.class);
+                                    Intent intent = new Intent(Zadcomp4.this, Comp_Home.class);
                                     startActivity(intent);
                                 }
                             });
@@ -108,7 +109,7 @@ public class Zadcomp4 extends AppCompatActivity {
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadcomp4.this, Computer_Home.class);
+                                    Intent intent = new Intent(Zadcomp4.this, Comp_Home.class);
                                     startActivity(intent);
                                 }
                             });

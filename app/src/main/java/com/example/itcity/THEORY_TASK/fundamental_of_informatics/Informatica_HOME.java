@@ -32,13 +32,14 @@ public class Informatica_HOME extends AppCompatActivity {
     ImageButton INFBUTTON16;
 
 
-    Button INFBUTTONBACK;
+    Button BACK;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_informatica__teory__task);
+        getSupportActionBar().hide();
         INFBUTTON1 = (ImageButton) findViewById(R.id.SECBUTTON1);
         INFBUTTON2 = (ImageButton) findViewById(R.id.SECBUTTON2);
         INFBUTTON3 = (ImageButton) findViewById(R.id.SECBUTTON3);
@@ -52,15 +53,19 @@ public class Informatica_HOME extends AppCompatActivity {
         INFBUTTON11 = (ImageButton) findViewById(R.id.SECBUTTON11);
         INFBUTTON12 = (ImageButton) findViewById(R.id.SECBUTTON12);
         INFBUTTON13 = (ImageButton) findViewById(R.id.SECBUTTON13);
-        INFBUTTON14 =(ImageButton) findViewById(R.id.SECBUTTON14);
+        INFBUTTON14 = (ImageButton) findViewById(R.id.SECBUTTON14);
         INFBUTTON15 = (ImageButton) findViewById(R.id.SECBUTTON15);
-
+        BACK = findViewById(R.id.SECBUTTONBACK);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
+                    case R.id.SECBUTTONBACK:
+                        Intent intent0 = new Intent(Informatica_HOME.this, ActivityMap.class);
+                        startActivity(intent0);
+                        break;
                     case R.id.SECBUTTON1:
                         Intent intent1 = new Intent(Informatica_HOME.this, ThInf1.class);
                         startActivity(intent1);
@@ -82,7 +87,7 @@ public class Informatica_HOME extends AppCompatActivity {
                         startActivity(intent5);
                         break;
                     case R.id.SECBUTTON6:
-                        Intent intent6 = new Intent(Informatica_HOME.this, TheoInf6.class);
+                        Intent intent6 = new Intent(Informatica_HOME.this, ThInf6.class);
                         startActivity(intent6);
                         break;
                     case R.id.SECBUTTON7:
@@ -147,7 +152,7 @@ public class Informatica_HOME extends AppCompatActivity {
         INFBUTTON13.setOnClickListener(onClickListener);
         INFBUTTON14.setOnClickListener(onClickListener);
         INFBUTTON15.setOnClickListener(onClickListener);
-        // COMPBUTTONBACK.setOnClickListener(onClickListener);
+        BACK.setOnClickListener(onClickListener);
 
 
     }

@@ -13,9 +13,6 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.example.itcity.R;
-import com.example.itcity.THEORY_TASK.computer_Device.Computer_Home;
-import com.example.itcity.THEORY_TASK.computer_Device.TheoryComputer1;
-import com.example.itcity.THEORY_TASK.computer_Device.ZadComp1;
 
 public class ZadInf7 extends AppCompatActivity {
     Button button8;

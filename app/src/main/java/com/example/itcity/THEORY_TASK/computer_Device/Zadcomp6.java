@@ -16,6 +16,7 @@ public class Zadcomp6 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.comptask6);
+        getSupportActionBar().hide();
         back = (Button) findViewById(R.id.bottomCompDevK1);
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override

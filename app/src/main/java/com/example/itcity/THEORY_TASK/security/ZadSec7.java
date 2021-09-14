@@ -30,6 +30,7 @@ public class ZadSec7 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectask7);
+        getSupportActionBar().hide();
         check = findViewById(R.id.continueSec);
         answered = findViewById(R.id.answer);
         enterword = findViewById(R.id.enter_a_word);

@@ -157,13 +157,12 @@
         android:layout_width="380dp"
         android:layout_height="48dp"
         android:background="@drawable/podklpereetyag"
-        android:textColor="#3D0250"
         android:text=" Сопоставьте ситуации и способы действия в них."
+        android:textColor="#3D0250"
+        android:textSize="17sp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13"
-        app:layout_constraintVertical_bias="0.666"
-        android:textSize="17sp"/>
+        app:layout_constraintTop_toBottomOf="@+id/podlSecurity" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

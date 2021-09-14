@@ -24,7 +24,7 @@ public class Algorithm_HOME extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_algorithm__teory__task);
-
+        getSupportActionBar().hide();
         AlgButton1 = (ImageButton) findViewById(R.id.ALGButton1);
         AlgButton2 = (ImageButton) findViewById(R.id.ALGButton2);
         AlgButton3 = (ImageButton) findViewById(R.id.ALGButton3);

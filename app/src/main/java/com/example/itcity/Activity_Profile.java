@@ -10,5 +10,6 @@ public class Activity_Profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__profile);
+        getSupportActionBar().hide();
     }
 }

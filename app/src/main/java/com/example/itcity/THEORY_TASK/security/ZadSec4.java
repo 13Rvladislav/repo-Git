@@ -32,7 +32,7 @@ public class ZadSec4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectask4);
-
+        getSupportActionBar().hide();
         checkbox1 = findViewById(R.id.checkBox1);
         checkbox2 = findViewById(R.id.checkBox2);
         checkbox3 = findViewById(R.id.checkBox3);

@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/zadanie_fon_inform"
+    android:layout_marginTop="-2dp"
+    android:paddingTop="-11dp"
     tools:context=".THEORY_TASK.algorithm.ZadanieAlgorithm3">
 
     <ScrollView

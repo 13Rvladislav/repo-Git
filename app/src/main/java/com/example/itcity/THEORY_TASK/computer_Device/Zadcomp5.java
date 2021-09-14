@@ -225,7 +225,7 @@ public class Zadcomp5 extends AppCompatActivity implements Comptask5SingleChoice
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadcomp5.this, Computer_Home.class);
+                                    Intent intent = new Intent(Zadcomp5.this, Comp_Home.class);
                                     startActivity(intent);
                                 }
                             });
@@ -249,7 +249,7 @@ public class Zadcomp5 extends AppCompatActivity implements Comptask5SingleChoice
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadcomp5.this, Computer_Home.class);
+                                    Intent intent = new Intent(Zadcomp5.this, Comp_Home.class);
                                     startActivity(intent);
                                 }
                             });

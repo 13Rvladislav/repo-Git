@@ -14,8 +14,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.itcity.R;
-import com.example.itcity.THEORY_TASK.computer_Device.Computer_Home;
-import com.example.itcity.THEORY_TASK.computer_Device.Zadcomp4;
 
 public class ZadInf2 extends AppCompatActivity {
     Button next;

@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
-
+        getSupportActionBar().hide();
         a = (Button) findViewById(R.id.buttonstart);
 
         a = findViewById(R.id.buttonstart);
