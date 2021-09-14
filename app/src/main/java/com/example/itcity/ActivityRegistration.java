@@ -96,12 +96,8 @@ public class ActivityRegistration extends AppCompatActivity {
                             @Override
                             public void onSuccess(AuthResult authResult) {
                                 User user = new User();
-                                user.setEmail(email.getText().toString());
                                 user.setName(name.getText().toString());
-                                String pass1 = password1.getText().toString();
-                                int pass3 = pass1.hashCode();
 
-                                user.setPass(pass3);
 
                                 user1.sendEmailVerification()
                                         .addOnCompleteListener(new OnCompleteListener<Void>() {
