@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import com.example.itcity.R;
 
-public class Thprog1 extends AppCompatActivity {
+public class Thprog4 extends AppCompatActivity {
 
     Button continueSec;
 
@@ -14,7 +14,7 @@ public class Thprog1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.progtheory1);
+        setContentView(R.layout.progtheory4);
         getSupportActionBar().hide();
         continueSec = (Button) findViewById(R.id.continueSec);
 
@@ -24,7 +24,7 @@ public class Thprog1 extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.continueSec:
-                        Intent intent1 = new Intent(Thprog1.this, Zadprog1.class);
+                        Intent intent1 = new Intent(Thprog4.this, Zadprog4.class);
                         startActivity(intent1);
                         break;
                 }
