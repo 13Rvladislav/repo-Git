@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itcity">
-        <activity android:name=".THEORY_TASK.computer_Device.Comp_Home"></activity>
+        <activity android:name=".THEORY_TASK.programming.Zadprog1"></activity>
+        <activity android:name=".THEORY_TASK.programming.Thprog1" />
+        <activity android:name=".THEORY_TASK.computer_Device.Comp_Home" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.ThInf6" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.ZadInf15" />
         <activity
