@@ -3,6 +3,7 @@ package com.example.itcity.THEORY_TASK.security;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,6 +18,7 @@ public class TheorySecurity8 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectheory8);
         getSupportActionBar().hide();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         next =findViewById(R.id.continieSec8);
         back=findViewById(R.id.bottomSecurityK);
         View.OnClickListener onClickListener = new View.OnClickListener() {

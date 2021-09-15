@@ -1,6 +1,7 @@
 package com.example.itcity.THEORY_TASK.fundamental_of_informatics;
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -44,7 +45,7 @@ public class ZadInf12 extends AppCompatActivity implements Inftask12SingleChoice
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.inftask12);
-        getSupportActionBar().hide();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         button1 = (Button) findViewById(R.id.algTask3Button1);
         button2 = (Button) findViewById(R.id.algTask3Button2);
         button3 = (Button) findViewById(R.id.algTask3Button4);

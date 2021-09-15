@@ -5,6 +5,7 @@ import androidx.fragment.app.DialogFragment;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -49,6 +50,7 @@ public class ZadanieAlgorithm2 extends AppCompatActivity implements Algtask2Sing
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.algtask2);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         getSupportActionBar().hide();
         button1 = (Button) findViewById(R.id.algTask2Button1);
         button2 = (Button) findViewById(R.id.algTask2Button2);

@@ -5,6 +5,7 @@ import androidx.fragment.app.DialogFragment;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -33,6 +34,7 @@ public class ZadSec4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectask4);
         getSupportActionBar().hide();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         checkbox1 = findViewById(R.id.checkBox1);
         checkbox2 = findViewById(R.id.checkBox2);
         checkbox3 = findViewById(R.id.checkBox3);

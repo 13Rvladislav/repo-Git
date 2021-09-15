@@ -5,6 +5,7 @@ import androidx.fragment.app.DialogFragment;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -50,7 +51,7 @@ public class ZadanieAlgorithm3 extends AppCompatActivity implements Algtask3Sing
         super.onCreate(savedInstanceState);
         setContentView(R.layout.algtask3);
         getSupportActionBar().hide();
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         button1 = (Button) findViewById(R.id.algTask3Button1);
         button2 = (Button) findViewById(R.id.algTask3Button2);
         button3 = (Button) findViewById(R.id.algTask3Button3);

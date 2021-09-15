@@ -3,6 +3,7 @@ package com.example.itcity.THEORY_TASK.algorithm;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,7 +17,7 @@ public class TheoryAlgorithm4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.algtheory4);
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         getSupportActionBar().hide();
         button7 = (Button) findViewById(R.id.button7);
         back = (Button) findViewById(R.id.bottomTeoryK4);

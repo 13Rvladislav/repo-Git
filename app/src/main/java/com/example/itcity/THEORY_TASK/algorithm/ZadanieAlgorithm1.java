@@ -3,6 +3,7 @@ package com.example.itcity.THEORY_TASK.algorithm;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,7 +19,7 @@ public class ZadanieAlgorithm1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.algtask1);
         getSupportActionBar().hide();
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         button5 = (Button) findViewById(R.id.button5);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {

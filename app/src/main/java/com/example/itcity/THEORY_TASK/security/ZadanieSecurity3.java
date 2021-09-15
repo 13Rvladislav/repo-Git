@@ -5,6 +5,7 @@ import androidx.fragment.app.DialogFragment;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -37,6 +38,7 @@ public class ZadanieSecurity3 extends AppCompatActivity  implements Sectask3Sing
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectask3);
         getSupportActionBar().hide();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         button1 = (Button) findViewById(R.id.button6);
         check = (Button) findViewById(R.id.continueSec);
         back= (Button) findViewById(R.id.bottomSecurityK);

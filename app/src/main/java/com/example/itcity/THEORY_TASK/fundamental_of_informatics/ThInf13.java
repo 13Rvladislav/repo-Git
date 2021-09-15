@@ -2,6 +2,7 @@ package com.example.itcity.THEORY_TASK.fundamental_of_informatics;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +15,7 @@ public class ThInf13 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         setContentView(R.layout.inftheory13);
         button8=findViewById(R.id.button8);
         back = findViewById(R.id.bottomTeoryK1);

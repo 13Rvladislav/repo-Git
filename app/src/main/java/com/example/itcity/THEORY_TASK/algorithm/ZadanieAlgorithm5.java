@@ -2,6 +2,7 @@ package com.example.itcity.THEORY_TASK.algorithm;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -42,7 +43,7 @@ public class ZadanieAlgorithm5 extends AppCompatActivity implements Algtask5Sing
         getSupportActionBar().hide();
         button1 = (Button) findViewById(R.id.algTask5Button1);
         back = (Button) findViewById(R.id.button5);
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
 
         check = (Button) findViewById(R.id.algCheck);
 

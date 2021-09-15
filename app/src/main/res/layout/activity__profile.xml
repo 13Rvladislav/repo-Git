@@ -7,12 +7,18 @@
     android:background="@drawable/ekran_polzovatelya_obsch_fon1"
     tools:context=".Activity_Profile" >
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="184dp"
         android:layout_height="166dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/_8" />
@@ -21,16 +27,18 @@
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
+        android:layout_marginBottom="484dp"
         android:ems="10"
-        android:gravity="center"
-        android:fontFamily="sans-serif"
 
+        android:fontFamily="sans-serif"
+        android:gravity="center"
         android:text="ИМЯ ПОЛЬЗОВАТЕЛЯ"
         android:textColor="#1E1358"
         android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button2"
@@ -60,12 +68,13 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
         android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
         android:text="РЕЙТИНГ"
         android:textColor="#1E1358"
         android:textSize="30sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />

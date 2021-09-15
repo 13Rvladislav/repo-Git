@@ -2,6 +2,7 @@ package com.example.itcity.THEORY_TASK.security;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -38,6 +39,7 @@ public class ZadanieSecurity1 extends AppCompatActivity implements Sectask1Singl
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectask1);
         getSupportActionBar().hide();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         button1 = (Button) findViewById(R.id.button6);
         check = (Button) findViewById(R.id.continueSec);
         back= (Button) findViewById(R.id.bottomSecurityK);

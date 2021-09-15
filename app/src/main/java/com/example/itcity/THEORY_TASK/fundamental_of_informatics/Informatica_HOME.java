@@ -1,6 +1,7 @@
 package com.example.itcity.THEORY_TASK.fundamental_of_informatics;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -40,6 +41,7 @@ public class Informatica_HOME extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_informatica__teory__task);
         getSupportActionBar().hide();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         INFBUTTON1 = (ImageButton) findViewById(R.id.SECBUTTON1);
         INFBUTTON2 = (ImageButton) findViewById(R.id.SECBUTTON2);
         INFBUTTON3 = (ImageButton) findViewById(R.id.SECBUTTON3);

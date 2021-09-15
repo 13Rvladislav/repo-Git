@@ -1,6 +1,7 @@
 package com.example.itcity.THEORY_TASK.fundamental_of_informatics;
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -43,6 +44,7 @@ public class ZadInf10 extends AppCompatActivity implements Inftask10SingleChoice
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         setContentView(R.layout.inftask10);
         getSupportActionBar().hide();
 

@@ -2,6 +2,7 @@ package com.example.itcity.THEORY_TASK.security;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -46,6 +47,7 @@ public class ZadSec5 extends AppCompatActivity  implements Sectask5SingleChoiceD
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sectask5);
         getSupportActionBar().hide();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         button1 = (Button) findViewById(R.id.algTask2Button1);
         button2 = (Button) findViewById(R.id.algTask2Button2);
         button3 = (Button) findViewById(R.id.algTask2Button3);

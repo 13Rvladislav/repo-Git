@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -28,6 +29,7 @@ public class Zadcomp4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.comtask4);
         getSupportActionBar().hide();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         check = findViewById(R.id.continueSec);
         answer1 = (EditText) findViewById(R.id.Sec6_1);
         answer2 = (EditText) findViewById(R.id.Sec6_2);

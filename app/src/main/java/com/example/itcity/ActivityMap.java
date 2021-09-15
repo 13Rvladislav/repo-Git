@@ -3,6 +3,7 @@ package com.example.itcity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,6 +26,7 @@ public class ActivityMap extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         buttonAlgoritm = (Button) findViewById(R.id.buttonAlgorithms);
         buttonSeccure = (Button) findViewById(R.id.buttonSecure);
         buttonProgramming = (Button) findViewById(R.id.buttonProgramming);

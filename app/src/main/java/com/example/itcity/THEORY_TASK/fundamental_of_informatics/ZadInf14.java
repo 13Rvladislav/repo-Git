@@ -2,6 +2,7 @@ package com.example.itcity.THEORY_TASK.fundamental_of_informatics;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -27,7 +28,7 @@ public class ZadInf14 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.inftask15);
-        getSupportActionBar().hide();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         next = findViewById(R.id.continueSec);
         answer1 = (EditText) findViewById(R.id.answer);
         back = findViewById(R.id.bottomSecurityK);
