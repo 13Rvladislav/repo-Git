@@ -105,7 +105,8 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
 
                     <TextView
                         android:id="@+id/textsec4"
@@ -118,7 +119,7 @@
                         android:id="@+id/textsec19"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="#include <iostream>\nusing\nnamespace\nstd;\nint\nmain()\n{\nreturn 0;\n}"
+                        android:text="@string/include_iostream_nusing_nnamespace_nstd_nint_nmain_n_nreturn_0_n"
                         android:textColor="#3D0250" />
 
                     <TextView

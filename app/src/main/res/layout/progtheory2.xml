@@ -92,7 +92,7 @@
                     android:id="@+id/textView92"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="\t\t\tТеперь я хочу рассказать тебе про ввод и вывод в языке С++, а также о том, как можно осуществлять переход на новую строку."
+                    android:text="@string/t_t_t"
                     android:textColor="#3D0250" />
 
             </LinearLayout>
@@ -118,21 +118,21 @@
                         android:id="@+id/textsec4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="В С++ разработана новая библиотека ввода-вывода iostream, #include – директива с помощью, которой подключаются заголовочные файлы и файлы библиотек. Библиотека iostream определяет два стандартных потока: "
+                        android:text="@string/iostream_include_iostream"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textsec19"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="1.	cin стандартный входной поток (stdin в С)"
+                        android:text="@string/_1_cin_stdin"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="2.	cout стандартный выходной поток (stdout в С)"
+                        android:text="@string/_2_cout_stdout"
                         android:textColor="#3D0250" />
 
                     <TextView
@@ -146,63 +146,63 @@
                         android:id="@+id/textView94"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="int a;"
+                        android:text="@string/int_a"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView95"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Ввод cin>> a; кладем введенное значение в переменную а;"
+                        android:text="@string/cin_a"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView96"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Вывод cout <<a; выводит значение из переменной а;"
+                        android:text="@string/cout_a"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView97"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Для их использования в Microsoft Visual Studio необходимо прописать строку: using namespace std;(подключение пространства имен, но с этим мы разберемся в следующих уроках)"
+                        android:text="@string/microsoft_visual_studio_using_namespace_std"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView98"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Существует два способа перейти на новую строку:"
+                        android:text="@string/g"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView99"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="1.	Первый способ — это использование манипулятора endl, который означает переход на новую строку."
+                        android:text="@string/_1_endl"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView100"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='Пример: cout  << "hello world" << endl;'
+                        android:text="@string/cout_hello_world_endl"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView101"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="2.	Второй способ — символ новой строки \n. При использовании одного выражения cout с тем количеством \n, которое необходимо, выведет множество строк текста."
+                        android:text="@string/_2_n_cout_n"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView102"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='Пример: cout  << "hello world! \n";'
+                        android:text="@string/cout_hello_world_n"
                         android:textColor="#3D0250" />
 
                 </LinearLayout>

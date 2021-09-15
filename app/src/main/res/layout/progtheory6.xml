@@ -111,53 +111,35 @@
                         android:id="@+id/textsec4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Встречаются ситуации, когда программе нужно выбрать, какую операцию ей выполнить, в зависимости от определенного условия. К примеру, мы вводим с клавиатуры целое число. Если это число больше десяти, то программа должна выполнить одно действие, иначе — другое. Реализуем этот алгоритм на C++ с помощью конструкции ветвления."
+                        android:text="@string/c"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textsec19"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="#include<iostream>\n
-using namespace std;\n
-int main(){\n
-setlocale(0, “”);\n
-double num;\n
-cout<<“Введите произвольное число:”;\n
-cin>>num;\n
-if(num<10){  // Если число меньше 10.\n
-cout<<“Это число меньше 10”<< endl;\n
-} else { //иначе\n
-cout<<“Это число больше либо равно 10.”<< endl;\n
-}\n
-return 0;"
+                        android:text="@string/include_iostream_n_using_namespace_std_n_int_main_n_setlocale_0_n_double_num_n_cout_n_cin_num_n_if_num_10_10_n_cout_10_endl_n_else_n_cout_10_endl_n_n_return_0"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Если вы запустите эту программу, то при вводе числа, меньшего десяти, будет выводиться соответствующее сообщение. Если введенное число окажется большим, либо равным десяти — отобразится другое сообщение."
+                        android:text="@string/hghhhh"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView104"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Оператор if\nОператор if служит для того, чтобы выполнить какую-либо операцию в том случае, когда условие является верным. Условная конструкция в С++ всегда записывается в круглых скобках после оператора if. Внутри фигурных скобок указывается тело условия. Если условие выполнится, то начнется выполнение всех команд, которые находятся между фигурными скобками. "
+                        android:text="@string/if_n_if_if"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView105"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Пример конструкции ветвления\n
-if(num<10){  // Если число меньше 10.\n
-cout<<“Это число меньше 10”<< endl;\n
-} else { //иначе\n
-cout<<“Это число больше либо равно 10.”<< endl;\n
-}\n
-Здесь говорится: «Если переменная num меньше 10 — вывести соответствующее сообщение."
+                        android:text="@string/n_if_num_10_10_n_cout_10_endl_n_else_n_cout_10_endl_n_n_num_10"
                         android:textColor="#3D0250" />
 
                 </LinearLayout>

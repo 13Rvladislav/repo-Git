@@ -25,7 +25,7 @@ public class Zadprog7 extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.button5:
-                        Intent intent1 = new Intent(Zadprog7.this, Thprog7.class);
+                        Intent intent1 = new Intent(Zadprog7.this, Thpr7.class);
                         startActivity(intent1);
                         break;
                     default:

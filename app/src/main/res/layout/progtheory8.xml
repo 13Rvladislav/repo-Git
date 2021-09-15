@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="ПРОГАММИРОВАНИЕ"
+        android:text="@string/xxxx"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -111,14 +111,14 @@
                         android:id="@+id/textsec4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Цикл FOR задаёт, определённое условие по которому программа будет работать до его выполнения, допустим нужно нам 5 (или n) раз зациклить программу, то это легко сделать с помощью данного цикла. У цикла FOR есть характерная черта - счетчик который обычно обозначается буквой i или j. Внешний вид цикла с параметром: "
+                        android:text="@string/for_5_n_for_i_j"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textsec19"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="for(выражение 1; выражение 2; выражение 3;) тело цикла "
+                        android:text="@string/for_1_2_3"
                         android:textColor="#3D0250" />
 
                 </LinearLayout>
@@ -140,7 +140,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
-                    android:text="Вот пришло время изучить цикл while с предусловием."
+                    android:text="вот пришло время изучить цикл while с предусловием."
                     android:textColor="#3D0250" />
             </LinearLayout>
 
@@ -172,7 +172,7 @@
                         android:id="@+id/textsec1900"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="while <условие> do\nbegin\n<тело цикла>\nend;"
+                        android:text="@string/while_do_nbegin_n_nend"
                         android:textColor="#3D0250" />
 
                     <TextView
@@ -203,7 +203,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
-                    android:text="Давай теперь разберем цикл do while с постусловием."
+                    android:text="@string/do_while"
                     android:textColor="#3D0250" />
             </LinearLayout>
 
@@ -228,17 +228,14 @@
                         android:id="@+id/textsec40000"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text='Цикл do while используют, когда требуется выполнять много одинаковых или похожих действий. Этот цикл работает до тех пор пока верно некоторое условие. Поэтому часто его называют "цикл до". Цикл do while можно составить так: '
+                        android:text="@string/do_while_do_while"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textsec19000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text=" do\n
-{\n
-<тело цикла>\n
-}while <условие>\n"
+                        android:text="@string/do_n_n_n_while_n"
                         android:textColor="#3D0250" />
 
                 </LinearLayout>

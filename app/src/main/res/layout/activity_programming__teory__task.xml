@@ -52,25 +52,28 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/PROGBUTTON1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@null"
                         app:srcCompat="@drawable/progoffhome1" />
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/PROGBUTTON2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@null"
                         app:srcCompat="@drawable/progclosehome2" />
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/PROGBUTTON3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@null"
                         app:srcCompat="@drawable/progclosehome3" />
                 </LinearLayout>
 
@@ -80,25 +83,28 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/PROGBUTTON4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@null"
                         app:srcCompat="@drawable/progclosehome4" />
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/PROGBUTTON5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@null"
                         app:srcCompat="@drawable/progclosehome5" />
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/PROGBUTTON6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@null"
                         app:srcCompat="@drawable/progclosehome6" />
                 </LinearLayout>
 
@@ -108,25 +114,28 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/PROGBUTTON7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@null"
                         app:srcCompat="@drawable/progclosehome7" />
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/PROGBUTTON8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@null"
                         app:srcCompat="@drawable/progclosehome8" />
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/PROGBUTTON9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@null"
                         app:srcCompat="@drawable/progclosehome9" />
 
                 </LinearLayout>
@@ -137,25 +146,28 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/PROGBUTTON10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@null"
                         app:srcCompat="@drawable/progclosehome10" />
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/PROGBUTTON11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@null"
                         app:srcCompat="@drawable/progclosehome11" />
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/PROGBUTTON12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@null"
                         app:srcCompat="@drawable/progclosehome12" />
                 </LinearLayout>
 
@@ -165,12 +177,13 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/PROGBUTTON13"
                         android:layout_width="373dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="262dp"
                         android:layout_weight="1"
+                        android:background="@null"
                         app:srcCompat="@drawable/progclosehome13" />
                 </LinearLayout>
 

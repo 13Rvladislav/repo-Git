@@ -105,7 +105,8 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
 
                     <TextView
                         android:id="@+id/textsec4"
@@ -118,19 +119,14 @@
                         android:id="@+id/textsec19"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Мы можем\n
-1.	сложить два числа 5+5\n
-2.	вычесть одно число из другого\n
-3.	разделить одно число на другое\n
-4.	умножить\n
-5.	получить остаток от деления\n"
+                        android:text="@string/n_1_5_5_n_2_n_3_n_4_n_5_n"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Пример:\n#include<iostream>\nusing namespace std;\nint main(){\nint a=5;\nint b=6;\nint c=a+b;\ncout <<c<<endl;\nreturn 0;\n}"
+                        android:text="@string/n_include_iostream_nusing_namespace_std_nint_main_nint_a_5_nint_b_6_nint_c_a_b_ncout_c_endl_nreturn_0_n"
                         android:textColor="#3D0250" />
 
                 </LinearLayout>

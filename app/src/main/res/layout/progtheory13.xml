@@ -111,40 +111,21 @@
                         android:id="@+id/textsec4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Функции – это именованный фрагмент кода, который повторяется в программе 2 или больше раз. Когда мы пишем функцию, необходимо указать тип и дать ей имя и в дальнейшем, чтобы её вызвать в программе (из main() или из другой функции), надо обратиться к ней по этому имени. Функция может возвращать значения, если это функция не типа void."
+                        android:text="@string/_2_main_void"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textsec19"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="#Реализация без функции\n
-#include <iostream>\n
-using namespace std;\n
-int main() {\n
-    cout << 'Функция очень хороший инструмент в программировании';\n
-    cout << 'С помощью его можно улучшить свой уровень программирования';\n
-system ('pause')\n
-return 0;\n
-}"
+                        android:text="@string/n_include_iostream_n_using_namespace_std_n_int_main_n_cout_n_cout_n_system_pause_n_return_0_n"
                         android:textColor="#3D0250" />
 
                     <TextView
                         android:id="@+id/textView11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="А вот если бы мы использовали функции, то у нас получилось бы так:\n
-#include <iostream>\n
-using namespace std;\n
-void func () {  // функция\n
-cout << 'Функция очень хороший инструмент в программировании';\n
-cout << 'С помощью его можно улучшить свой уровень программирования';\n
-}\n
-int main() {\n
-  func();  // вызов функции\n
-system ('pause')\n
-return 0;\n
-}"
+                        android:text="@string/n_include_iostream_n_using_namespace_std_n_void_func_n_cout_n_cout_n_n_int_main_n_func_n_system_pause_n_return_0_n"
                         android:textColor="#3D0250" />
 
                 </LinearLayout>

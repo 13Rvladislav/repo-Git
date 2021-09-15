@@ -4,33 +4,39 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.itcity.ActivityMap;
 import com.example.itcity.R;
 
-public class Thprog12 extends AppCompatActivity {
+public class Thpr5 extends AppCompatActivity {
 
     Button continueSec;
-
+    Button back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.progtheory12);
+        setContentView(R.layout.progtheory5);
         getSupportActionBar().hide();
         continueSec = (Button) findViewById(R.id.continueSec);
-
+        back = (Button) findViewById(R.id.bottomSecurityK);
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
+                    case R.id.bottomSecurityK:
+                        Intent intent2 = new Intent(Thpr5.this, Programming_Teory_Task.class);
+                        startActivity(intent2);
+                        break;
                     case R.id.continueSec:
-                        Intent intent1 = new Intent(Thprog12.this, Zadprog12.class);
+                        Intent intent1 = new Intent(Thpr5.this, Zadprog5.class);
                         startActivity(intent1);
                         break;
                 }
             }
         };
         continueSec.setOnClickListener(onClickListener);
-
+        back.setOnClickListener(onClickListener);
     }
 }
