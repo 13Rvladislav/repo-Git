@@ -1,6 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-2dp"
+    android:background="@drawable/teoria_krasnye1"
+    android:paddingTop="-11dp">
+
+    <Button
+        android:id="@+id/bottomSecurityK"
+        android:layout_width="76dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/_16"
+        app:backgroundTint="#FFFFFF"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/podlSecurity"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:padding="-1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_____2_4" />
+
+    <TextView
+        android:id="@+id/textsecurity"
+        android:layout_width="263dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:text="ПРОГРАММИРОВАНИЕ"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/podlSecurity"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toEndOf="@+id/bottomSecurityK"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/continueSec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="ПРОДОЛЖИТЬ"
+        android:textSize="24sp"
+        app:backgroundTint="#3D0250"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="405dp"
+        android:layout_height="545dp"
+        app:layout_constraintBottom_toTopOf="@+id/continueSec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/podlSecurity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_podlozhka_teoria_belaya"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textSec5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="В каком из вариантов ответов неправильно объявляется указатель?"
+                    android:textColor="#3D0250"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_podlozhka_teoria_belaya"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="double *dPtr;"
+                    android:textColor="#3D0250"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="int* iPtr3, iPtr4;"
+                    android:textColor="#3D0250"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="int *ptr = 7;"
+                    android:textColor="#3D0250"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="double *dPtr = 0x0012FF7C;"
+                    android:textColor="#3D0250"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
