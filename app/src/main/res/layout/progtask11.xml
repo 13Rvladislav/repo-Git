@@ -33,7 +33,7 @@
         android:layout_width="263dp"
         android:layout_height="32dp"
         android:layout_marginTop="32dp"
-        android:text="ПРОГРАММИРОВАНИЕ"
+        android:text="@string/j"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -47,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
-        android:text="ПРОДОЛЖИТЬ"
+        android:text="@string/h"
         android:textSize="24sp"
         app:backgroundTint="#3D0250"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
-                    android:text="В каком из вариантов ответов неправильно объявляется указатель?"
+                    android:text="@string/gog"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -103,7 +103,7 @@
                     android:id="@+id/checkBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="double *dPtr;"
+                    android:text="@string/fof"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -111,7 +111,7 @@
                     android:id="@+id/checkBox13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="int* iPtr3, iPtr4;"
+                    android:text="@string/d"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -119,7 +119,7 @@
                     android:id="@+id/checkBox14"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="int *ptr = 7;"
+                    android:text="@string/s"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -127,7 +127,7 @@
                     android:id="@+id/checkBox15"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="double *dPtr = 0x0012FF7C;"
+                    android:text="@string/a"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
             </LinearLayout>

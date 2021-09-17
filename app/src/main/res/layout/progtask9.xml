@@ -33,7 +33,7 @@
         android:layout_width="263dp"
         android:layout_height="32dp"
         android:layout_marginTop="32dp"
-        android:text="ПРОГРАММИРОВАНИЕ"
+        android:text="@string/cv"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -47,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
-        android:text="ПРОДОЛЖИТЬ"
+        android:text="@string/xc"
         android:textSize="24sp"
         app:backgroundTint="#3D0250"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
-                    android:text="Впиши правильный знак если а меньше или равно 100 и b больше или равно 100."
+                    android:text="@string/zx"
                     android:textColor="#3D0250" />
 
             </LinearLayout>
@@ -102,7 +102,7 @@
                     android:id="@+id/textView49"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="#include<iostream>"
+                    android:text="@string/kl"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -110,7 +110,7 @@
                     android:id="@+id/textView112"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="using namespace std;"
+                    android:text="@string/kll"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -118,7 +118,7 @@
                     android:id="@+id/textView113"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="int main(){"
+                    android:text="@string/jk"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -126,7 +126,7 @@
                     android:id="@+id/textView114"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="int a,b;"
+                    android:text="@string/hj"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -134,7 +134,7 @@
                     android:id="@+id/textView115"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="cin >> a;"
+                    android:text="@string/gh"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -142,7 +142,7 @@
                     android:id="@+id/textView132"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="cin >> b;"
+                    android:text="@string/fg"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -156,13 +156,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:layout_gravity="bottom"
-                        android:text="if (a <= 100"
+                        android:text="@string/dfo"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
 
                     <EditText
-                        android:id="@+id/editTextTextEmailAddress2"
-                        android:layout_width="25dp"
+                        android:id="@+id/editTextTextEmailAddress4"
+                        android:layout_width="58dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
@@ -173,7 +173,7 @@
                         android:layout_width="165dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="b >=100)"
+                        android:text="@string/sd"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
 
@@ -183,7 +183,7 @@
                     android:id="@+id/textView125"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="{"
+                    android:text="@string/as"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -191,7 +191,7 @@
                     android:id="@+id/textView126"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text='cout<<"YES"<<endl;'
+                    android:text="@string/op"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -199,7 +199,7 @@
                     android:id="@+id/textView128"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="}"
+                    android:text="@string/io"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -207,7 +207,7 @@
                     android:id="@+id/textView129"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="else {"
+                    android:text="@string/ui"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -215,7 +215,7 @@
                     android:id="@+id/textView130"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text='cout<<"NO"<<endl;'
+                    android:text="@string/yu"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -223,7 +223,7 @@
                     android:id="@+id/textView131"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="}"
+                    android:text="@string/ty"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -232,7 +232,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:text="return 0;"
+                    android:text="@string/rt"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -241,7 +241,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:text="\t}"
+                    android:text="@string/er"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 

@@ -33,7 +33,7 @@
         android:layout_width="263dp"
         android:layout_height="32dp"
         android:layout_marginTop="32dp"
-        android:text="ПРОГРАММИРОВАНИЕ"
+        android:text="@string/sos"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -47,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
-        android:text="ПРОДОЛЖИТЬ"
+        android:text="@string/kok"
         android:textSize="24sp"
         app:backgroundTint="#3D0250"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
-                    android:text="Вписать правильные стрелки."
+                    android:text="@string/aoa"
                     android:textColor="#3D0250" />
 
             </LinearLayout>
@@ -102,7 +102,7 @@
                     android:id="@+id/textView49"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="#include<iostream>"
+                    android:text="@string/kek"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -110,7 +110,7 @@
                     android:id="@+id/textView112"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="using namespace std;"
+                    android:text="@string/m"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -118,7 +118,7 @@
                     android:id="@+id/textView113"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="int main(){"
+                    android:text="@string/n"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -126,7 +126,7 @@
                     android:id="@+id/textView114"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="int a=5;"
+                    android:text="@string/b"
                     android:textColor="#3D0250"
                     android:textSize="14sp" />
 
@@ -139,13 +139,13 @@
                         android:id="@+id/textView115"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="cin 1)"
+                        android:text="@string/v"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
 
                     <EditText
-                        android:id="@+id/editTextTextEmailAddress"
-                        android:layout_width="3dp"
+                        android:id="@+id/editTextTextEmailAddress6"
+                        android:layout_width="58dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
@@ -156,7 +156,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="a;"
+                        android:text="@string/coc"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -169,15 +169,15 @@
                     <TextView
                         android:id="@+id/textView53"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="37dp"
                         android:layout_gravity="bottom"
-                        android:text="cout 2) "
+                        android:text="@string/x"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
 
                     <EditText
-                        android:id="@+id/editTextTextEmailAddress2"
-                        android:layout_width="25dp"
+                        android:id="@+id/editTextTextEmailAddress5"
+                        android:layout_width="58dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
@@ -188,7 +188,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="a;"
+                        android:text="@string/z"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
 
@@ -204,7 +204,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
-                        android:text="return 0;"
+                        android:text="@string/p"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
 
@@ -215,7 +215,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:text="\t}"
+                    android:text="@string/o"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 

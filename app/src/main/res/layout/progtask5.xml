@@ -33,7 +33,7 @@
         android:layout_width="263dp"
         android:layout_height="32dp"
         android:layout_marginTop="32dp"
-        android:text="ПРОГРАММИРОВАНИЕ"
+        android:text="@string/grr"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -47,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
-        android:text="ПРОДОЛЖИТЬ"
+        android:text="@string/reererere"
         android:textSize="24sp"
         app:backgroundTint="#3D0250"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
-                    android:text="Закомментируй третью строчку кода, а также 6 и 7 одновременно."
+                    android:text="@string/rererer"
                     android:textColor="#3D0250" />
 
             </LinearLayout>
@@ -102,7 +102,7 @@
                     android:id="@+id/textView49"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="1. #include<iostream>"
+                    android:text="@string/reer"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -110,7 +110,7 @@
                     android:id="@+id/textView112"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="2. using namespace std;"
+                    android:text="@string/re"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -121,16 +121,17 @@
 
                     <TextView
                         android:id="@+id/textView124"
-                        android:layout_width="wrap_content"
+                        android:layout_width="24dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="3."
+                        android:text="@string/rer"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
 
+
                     <EditText
-                        android:id="@+id/editTextTextEmailAddress3"
-                        android:layout_width="253dp"
+                        android:id="@+id/editTextTextEmailAddress"
+                        android:layout_width="58dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
@@ -138,10 +139,10 @@
 
                     <TextView
                         android:id="@+id/textView123"
-                        android:layout_width="26dp"
+                        android:layout_width="332dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="int c;"
+                        android:text="@string/weeewe"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -150,7 +151,7 @@
                     android:id="@+id/textView114"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="4.int main() {"
+                    android:text="@string/wew"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -158,7 +159,7 @@
                     android:id="@+id/textView115"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="5.int a;"
+                    android:text="@string/wewe"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -172,13 +173,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
-                        android:text="6."
+                        android:text="@string/qeeqee"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
 
                     <EditText
-                        android:id="@+id/editTextTextEmailAddress2"
-                        android:layout_width="25dp"
+                        android:id="@+id/editTextTextEmailAddress1"
+                        android:layout_width="58dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
@@ -189,34 +190,34 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="int b;"
+                        android:text="@string/wewew"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView52"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:text="7.b = a*a;;"
-                    android:textColor="#3D0250"
-                    android:textSize="18sp" />
-
                 <EditText
-                    android:id="@+id/editTextTextEmailAddress5"
-                    android:layout_width="181dp"
+                    android:id="@+id/editTextTextEmailAddress2"
+                    android:layout_width="58dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textEmailAddress" />
 
                 <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="@string/qeqee"
+                    android:textColor="#3D0250"
+                    android:textSize="18sp" />
+
+                <TextView
                     android:id="@+id/textView127"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="rerturn 0;"
+                    android:text="@string/qeqe"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -225,7 +226,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:text="\t}"
+                    android:text="@string/qeq"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 

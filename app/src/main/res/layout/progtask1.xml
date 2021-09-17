@@ -29,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:background="@drawable/podkltaskpole"
+                android:background="@drawable/podklpereetyag"
                 android:orientation="vertical">
 
                 <TextView
@@ -37,7 +37,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="7dp"
-                    android:text="#include <iostream>"
+                    android:text="@string/i"
                     android:textColor="#3D0250"
                     android:textSize="17sp" />
 
@@ -45,7 +45,7 @@
                     android:id="@+id/textView106"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="using namespace std;"
+                    android:text="@string/u"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -53,7 +53,7 @@
                     android:id="@+id/textView108"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="int main"
+                    android:text="@string/y"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -61,7 +61,7 @@
                     android:id="@+id/textView109"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="{"
+                    android:text="@string/t"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -69,7 +69,7 @@
                     android:id="@+id/textView110"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="return 0;"
+                    android:text="@string/r"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -77,7 +77,7 @@
                     android:id="@+id/textView111"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="}"
+                    android:text="@string/e"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
@@ -86,7 +86,7 @@
                     android:layout_width="165dp"
                     android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
-                    android:text="выбрать" />
+                    android:text="@string/w" />
             </LinearLayout>
 
 
@@ -118,7 +118,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:text="ПРОГРАММИРОВАНИЕ"
+        android:text="@string/q"
         android:textColor="#FDFDFD"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -132,7 +132,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="ПРОДОЛЖИТЬ"
+        android:text="@string/l"
         android:textSize="24sp"
         app:backgroundTint="#3D0250"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -145,7 +145,7 @@
         android:layout_width="380dp"
         android:layout_height="48dp"
         android:background="@drawable/podklpereetyag"
-        android:text="Правильно ли построен шаблон программы?"
+        android:text="@string/k"
         android:textColor="#3D0250"
         android:textSize="17sp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"

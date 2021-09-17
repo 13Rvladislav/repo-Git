@@ -43,7 +43,7 @@
                     android:layout_width="165dp"
                     android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
-                    android:text="выбрать" />
+                    android:text="@string/we" />
             </LinearLayout>
 
             <LinearLayout
@@ -64,7 +64,7 @@
                     android:layout_width="165dp"
                     android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
-                    android:text="выбрать" />
+                    android:text="@string/qw" />
             </LinearLayout>
 
             <LinearLayout
@@ -85,7 +85,7 @@
                     android:layout_width="165dp"
                     android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
-                    android:text="выбрать" />
+                    android:text="@string/lol" />
             </LinearLayout>
 
 
@@ -117,7 +117,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:text="ПРОГРАММИРОВАНИЕ"
+        android:text="@string/lolo"
         android:textColor="#FDFDFD"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -131,7 +131,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="ПРОДОЛЖИТЬ"
+        android:text="@string/koko"
         android:textSize="24sp"
         app:backgroundTint="#3D0250"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -144,7 +144,7 @@
         android:layout_width="380dp"
         android:layout_height="48dp"
         android:background="@drawable/podklpereetyag"
-        android:text="Определи по блок-схемам, где какой находится цикл. (вписать)"
+        android:text="@string/jojo"
         android:textColor="#3D0250"
         android:textSize="17sp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
