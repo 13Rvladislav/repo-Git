@@ -189,7 +189,7 @@
         android:layout_marginBottom="48dp"
         android:text="ПРОДОЛЖИТЬ"
         android:textSize="24sp"
-        app:backgroundTint="#3D0250"
+        app:backgroundTint="#173602"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

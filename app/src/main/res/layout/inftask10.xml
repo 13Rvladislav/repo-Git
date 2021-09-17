@@ -61,7 +61,9 @@
                     android:layout_width="165dp"
                     android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
-                    android:text="выбрать" />
+                    android:text="выбрать"
+                    app:backgroundTint="#173602"
+                    app:iconTint="#173602" />
 
             </LinearLayout>
 
@@ -101,7 +103,8 @@
                     android:layout_width="165dp"
                     android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
-                    android:text="выбрать" />
+                    android:text="выбрать"
+                    app:backgroundTint="#173602" />
 
             </LinearLayout>
 
@@ -139,7 +142,8 @@
                     android:layout_width="165dp"
                     android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
-                    android:text="выбрать" />
+                    android:text="выбрать"
+                    app:backgroundTint="#173602" />
 
             </LinearLayout>
 

@@ -41,13 +41,15 @@
             android:layout_gravity="center"
             android:layout_height="330dp"
             app:srcCompat="@drawable/algphototask5_1" />
+
         <Button
             android:id="@+id/algTask5Button1"
             android:layout_width="185dp"
             android:layout_height="54dp"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
-            android:text="выбрать" />
+            android:text="выбрать"
+            app:backgroundTint="#3D0250" />
     </LinearLayout>
 
     <ImageView

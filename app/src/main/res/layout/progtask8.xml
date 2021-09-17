@@ -43,7 +43,8 @@
                     android:layout_width="165dp"
                     android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
-                    android:text="@string/we" />
+                    android:text="@string/we"
+                    app:backgroundTint="#660000" />
             </LinearLayout>
 
             <LinearLayout
@@ -64,7 +65,8 @@
                     android:layout_width="165dp"
                     android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
-                    android:text="@string/qw" />
+                    android:text="@string/qw"
+                    app:backgroundTint="#660000" />
             </LinearLayout>
 
             <LinearLayout
@@ -85,7 +87,8 @@
                     android:layout_width="165dp"
                     android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
-                    android:text="@string/lol" />
+                    android:text="@string/lol"
+                    app:backgroundTint="#660000" />
             </LinearLayout>
 
 
@@ -133,7 +136,7 @@
         android:layout_marginBottom="16dp"
         android:text="@string/koko"
         android:textSize="24sp"
-        app:backgroundTint="#3D0250"
+        app:backgroundTint="#660000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
