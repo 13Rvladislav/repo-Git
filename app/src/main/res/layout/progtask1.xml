@@ -45,6 +45,7 @@
                     android:id="@+id/textView106"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
                     android:text="@string/u"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
@@ -53,6 +54,7 @@
                     android:id="@+id/textView108"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
                     android:text="@string/y"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
@@ -61,6 +63,7 @@
                     android:id="@+id/textView109"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
                     android:text="@string/t"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
@@ -69,6 +72,7 @@
                     android:id="@+id/textView110"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
                     android:text="@string/r"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
@@ -77,12 +81,13 @@
                     android:id="@+id/textView111"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
                     android:text="@string/e"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
 
                 <Button
-                    android:id="@+id/algTask2Button1"
+                    android:id="@+id/progTask2Button1"
                     android:layout_width="165dp"
                     android:layout_height="54dp"
                     android:layout_marginLeft="10dp"
@@ -145,6 +150,7 @@
         android:id="@+id/textView34"
         android:layout_width="380dp"
         android:layout_height="48dp"
+        android:gravity="center"
         android:background="@drawable/podklpereetyag"
         android:text="@string/k"
         android:textColor="#3D0250"

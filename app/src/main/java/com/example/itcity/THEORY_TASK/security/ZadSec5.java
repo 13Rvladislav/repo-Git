@@ -48,7 +48,7 @@ public class ZadSec5 extends AppCompatActivity  implements Sectask5SingleChoiceD
         setContentView(R.layout.sectask5);
         getSupportActionBar().hide();
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
-        button1 = (Button) findViewById(R.id.algTask2Button1);
+        button1 = (Button) findViewById(R.id.progTask2Button1);
         button2 = (Button) findViewById(R.id.algTask2Button2);
         button3 = (Button) findViewById(R.id.algTask2Button3);
         check = (Button) findViewById(R.id.algCheck);
@@ -61,7 +61,7 @@ public class ZadSec5 extends AppCompatActivity  implements Sectask5SingleChoiceD
                         Intent intent = new Intent(ZadSec5.this, TheorySecurity5.class);
                         startActivity(intent);
                         break;
-                    case R.id.algTask2Button1:
+                    case R.id.progTask2Button1:
                         bt1 = true;
                         DialogFragment singleChoiseDialog1 = new Sectask5SingleChoiceDialog();
                         singleChoiseDialog1.setCancelable(false);

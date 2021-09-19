@@ -80,6 +80,21 @@
         <item>Неориентированный|невзвешенный</item>
         <item>Ориентированный</item>
     </string-array>
+
+    <string-array name="progchoice_items1">
+        <item>{}</item>
+        <item>()</item>
+        <item>;</item>
+        <item>Всё верно</item>
+    </string-array>
+
+    <string-array name="progchoice_items3">
+        <item>50</item>
+        <item>int</item>
+        <item>;</item>
+        <item>i</item>
+        <item>=</item>
+    </string-array>
     //кнопки в меню
     <string name="action_item1">кнопка 1</string>
     <string name="action_item2">кнопка 2</string>
@@ -176,7 +191,7 @@
     <string name="gog">В каком из вариантов ответов неправильно объявляется указатель?</string>
     <string name="h">ПРОДОЛЖИТЬ</string>
     <string name="j">ПРОГРАММИРОВАНИЕ</string>
-    <string name="k">Правильно ли построен шаблон программы?</string>
+    <string name="k">Чего не хвататет в  шаблоне программы?</string>
     <string name="l">ПРОДОЛЖИТЬ</string>
     <string name="q">ПРОГРАММИРОВАНИЕ</string>
     <string name="w">выбрать</string>
@@ -197,7 +212,7 @@
     <string name="m">using namespace std;</string>
     <string name="kek"><![CDATA[#include<iostream>]]></string>
     <string name="kok">ПРОДОЛЖИТЬ</string>
-    <string name="aoa">Вписать правильные стрелки.</string>
+    <string name="aoa">Вписать правильные операторы.</string>
     <string name="sos">ПРОГРАММИРОВАНИЕ</string>
     <string name="dod">ПРОДОЛЖИТЬ</string>
     <string name="fofo">АЛГОРИТМЫ</string>

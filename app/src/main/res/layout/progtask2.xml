@@ -82,8 +82,10 @@
                     android:id="@+id/textSec5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
                     android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
                     android:text="@string/aoa"
                     android:textColor="#3D0250" />
 
@@ -102,6 +104,7 @@
                     android:id="@+id/textView49"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:text="@string/kek"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
@@ -110,6 +113,7 @@
                     android:id="@+id/textView112"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:text="@string/m"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
@@ -118,6 +122,7 @@
                     android:id="@+id/textView113"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:text="@string/n"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />
@@ -126,28 +131,29 @@
                     android:id="@+id/textView114"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:text="@string/b"
                     android:textColor="#3D0250"
-                    android:textSize="14sp" />
+                    android:textSize="18sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="40dp"
                     android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/textView115"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
                         android:text="@string/v"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
 
                     <EditText
-                        android:id="@+id/editTextTextEmailAddress6"
-                        android:layout_width="58dp"
+                        android:id="@+id/prog2_1"
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textEmailAddress" />
 
@@ -155,7 +161,6 @@
                         android:id="@+id/textView116"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="@string/coc"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
@@ -163,7 +168,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_height="40dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -171,15 +176,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="37dp"
                         android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
                         android:text="@string/x"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
 
                     <EditText
-                        android:id="@+id/editTextTextEmailAddress5"
-                        android:layout_width="58dp"
+                        android:id="@+id/prog2_2"
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+
                         android:ems="10"
                         android:inputType="textEmailAddress" />
 
@@ -196,7 +202,8 @@
 
                 <LinearLayout
                     android:layout_width="263dp"
-                    android:layout_height="45dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="-10dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -204,6 +211,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
                         android:text="@string/p"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
@@ -215,6 +223,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
                     android:text="@string/o"
                     android:textColor="#3D0250"
                     android:textSize="18sp" />

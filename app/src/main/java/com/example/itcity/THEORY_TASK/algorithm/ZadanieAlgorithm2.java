@@ -16,7 +16,6 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.itcity.ActivityRegistration;
 import com.example.itcity.R;
 
 public class ZadanieAlgorithm2 extends AppCompatActivity implements Algtask2SingleChoiceDialog.SingleChoiceListener {
@@ -52,7 +51,7 @@ public class ZadanieAlgorithm2 extends AppCompatActivity implements Algtask2Sing
         setContentView(R.layout.algtask2);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         getSupportActionBar().hide();
-        button1 = (Button) findViewById(R.id.algTask2Button1);
+        button1 = (Button) findViewById(R.id.progTask2Button1);
         button2 = (Button) findViewById(R.id.algTask2Button2);
         button3 = (Button) findViewById(R.id.algTask2Button3);
         button4 = (Button) findViewById(R.id.algTask2Button4);
@@ -68,7 +67,7 @@ public class ZadanieAlgorithm2 extends AppCompatActivity implements Algtask2Sing
                         Intent intent = new Intent(ZadanieAlgorithm2.this, TheoryAlgorithm2.class);
                         startActivity(intent);
                         break;
-                    case R.id.algTask2Button1:
+                    case R.id.progTask2Button1:
                         bt1 = true;
                         DialogFragment singleChoiseDialog1 = new Algtask2SingleChoiceDialog();
                         singleChoiseDialog1.setCancelable(false);

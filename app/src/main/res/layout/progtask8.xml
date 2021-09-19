@@ -39,7 +39,7 @@
                     app:srcCompat="@drawable/progtask1" />
 
                 <Button
-                    android:id="@+id/algTask2Button1"
+                    android:id="@+id/progTask2Button1"
                     android:layout_width="165dp"
                     android:layout_height="54dp"
                     android:layout_marginLeft="10dp"

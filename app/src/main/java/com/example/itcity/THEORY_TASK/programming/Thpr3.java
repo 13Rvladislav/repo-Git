@@ -30,7 +30,7 @@ public class Thpr3 extends AppCompatActivity {
                     startActivity(intent2);
                     break;
                     case R.id.continueSec:
-                        Intent intent1 = new Intent(Thpr3.this, Zadprog3.class);
+                        Intent intent1 = new Intent(Thpr3.this, Zadp3.class);
                         startActivity(intent1);
                         break;
                 }

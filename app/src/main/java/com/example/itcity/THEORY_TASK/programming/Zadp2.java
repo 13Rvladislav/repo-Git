@@ -1,78 +1,68 @@
 package com.example.itcity.THEORY_TASK.programming;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.itcity.R;
+import com.example.itcity.THEORY_TASK.computer_Device.Comp_Home;
 
-public class Zadprog1 extends AppCompatActivity implements Progtask1SingleChoiceDialog.SingleChoiceListener {
+public class Zadp2 extends AppCompatActivity {
     Dialog dialog;//диалоговое окно
     //кнопки выбрать для задания
-    Button button1;
+
     //кнопка продолжить
     Button check;
     Button back;
     int mark;
-    // переменные где будут храниться ответы из выбранных полей
-    String answer1;
-    Boolean bt1 = false;
+    EditText answer1;
+    EditText answer2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.progtask1);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
+        setContentView(R.layout.progtask2);
         getSupportActionBar().hide();
-        button1 = (Button) findViewById(R.id.progTask2Button1);
-        check = (Button) findViewById(R.id.algCheck);
-        back = (Button) findViewById(R.id.button5);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
+        check = (Button) findViewById(R.id.continueSec);
+        back = (Button) findViewById(R.id.bottomSecurityK);
+        answer1 = (EditText) findViewById(R.id.prog2_1);
+        answer2 = (EditText) findViewById(R.id.prog2_2);
         View.OnClickListener onClickListener = new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.button5:
-                        Intent intent = new Intent(Zadprog1.this, Thprog1.class);
-                        startActivity(intent);
-
+                    case R.id.bottomSecurityK:
+                        Intent intent1 = new Intent(Zadp2.this, Thpr2.class);
+                        startActivity(intent1);
                         break;
-                    case R.id.progTask2Button1:
-                        bt1 = true;
-                        DialogFragment singleChoiseDialog1 = new Progtask1SingleChoiceDialog();
-                        singleChoiseDialog1.setCancelable(false);
-                        singleChoiseDialog1.show(getSupportFragmentManager(), "Single choice Dialog");
-                        break;
-
-                    case R.id.algCheck:
-                        // проверка на заполнение полей с ответами
-                        if (TextUtils.isEmpty(answer1)) {
-                            Toast toast = Toast.makeText(Zadprog1.this, "вы не дали ответ в  поле 1", Toast.LENGTH_SHORT);
-                            toast.show();
-                            return;
+                    case R.id.continueSec:
+                        String ans1 = answer1.getText().toString();
+                        String ans2 = answer2.getText().toString();
+                        ans1 = ans1.toLowerCase();
+                        ans2 = ans2.toLowerCase();
+                        if ((ans1.equalsIgnoreCase(">>"))) {
+                            mark += 50;
                         }
-
-
+                        if ((ans2.equalsIgnoreCase("<<"))) {
+                            mark += 50;
+                        }
 
                         String markSTR;
-                        if (answer1.equalsIgnoreCase("()")) {
-                            //если ответ в поле 1 совпал с правильным ответом то делаем +20 баллов
-                            mark += 100;
-
-                        }
                         //вызов диалогового окна с показом количества баллов
-                        if (mark>50) {
-                            dialog = new Dialog(Zadprog1.this);
+                        if (mark >= 50) {
+                            dialog = new Dialog(Zadp2.this);
                             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
                             dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
                             dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
@@ -85,19 +75,19 @@ public class Zadprog1 extends AppCompatActivity implements Progtask1SingleChoice
                             result.setText(markSTR);
                             dialog.show();//показ окна
 
-                            Button back_to_houses= dialog.findViewById(R.id.button10);
+                            Button back_to_houses = dialog.findViewById(R.id.button10);
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadprog1.this, Programming_Teory_Task.class);
+                                    Intent intent = new Intent(Zadp2.this, Programming_Teory_Task.class);
                                     startActivity(intent);
                                 }
                             });
                             //ЕСЛИ БЫЛ ЗАПУЩЕН ЭТОТ БЛОК КОДА МЕНЯЕМ КОЛИЧЕСТВО БАЛЛОВ В FIREBASE  И В ПЕРЕМЕННУЮ В КОТОРОЙ НАШ УРОВЕНЬ ДЕЛАЕМ +1;
                             break;
                         }
-                        if (mark<50) {
-                            dialog = new Dialog(Zadprog1.this);
+                        if (mark < 50) {
+                            dialog = new Dialog(Zadp2.this);
                             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
                             dialog.setContentView(R.layout.markbaddialogwindow);//путь к макету диалогового окна
                             dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
@@ -109,11 +99,11 @@ public class Zadprog1 extends AppCompatActivity implements Progtask1SingleChoice
                             markSTR = Integer.toString(mark);
                             result.setText(markSTR);
                             dialog.show();//показ окна
-                            Button back_to_houses= dialog.findViewById(R.id.button10);
+                            Button back_to_houses = dialog.findViewById(R.id.button10);
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadprog1.this, Programming_Teory_Task.class);
+                                    Intent intent = new Intent(Zadp2.this, Programming_Teory_Task.class);
                                     startActivity(intent);
                                 }
                             });
@@ -124,23 +114,7 @@ public class Zadprog1 extends AppCompatActivity implements Progtask1SingleChoice
                 }
             }
         };
-        button1.setOnClickListener(onClickListener);
-        back.setOnClickListener(onClickListener);
         check.setOnClickListener(onClickListener);
-    }
-
-    @Override
-    public void onPositiveButtonClicked(String[] list, int position) {
-        if (bt1 == true) {
-            button1.setText(list[position]);
-            answer1 = list[position];
-            bt1 = false;
-        }
-
-    }
-
-    @Override
-    public void onNegativeButtonClicked() {
-
+        back.setOnClickListener(onClickListener);
     }
 }

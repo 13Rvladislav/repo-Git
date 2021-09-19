@@ -59,7 +59,7 @@ public class Zadcomp5 extends AppCompatActivity implements Comptask5SingleChoice
         setContentView(R.layout.comtask5);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         getSupportActionBar().hide();
-        button1 = (Button) findViewById(R.id.algTask2Button1);
+        button1 = (Button) findViewById(R.id.progTask2Button1);
         button2 = (Button) findViewById(R.id.algTask2Button2);
         button3 = (Button) findViewById(R.id.algTask2Button3);
         button4 = (Button) findViewById(R.id.algTask2Button11);
@@ -77,7 +77,7 @@ public class Zadcomp5 extends AppCompatActivity implements Comptask5SingleChoice
                         Intent intent = new Intent(Zadcomp5.this, TheoryComputer5.class);
                         startActivity(intent);
                         break;
-                    case R.id.algTask2Button1:
+                    case R.id.progTask2Button1:
                         bt1 = true;
                         DialogFragment singleChoiseDialog1 = new Comptask5SingleChoiceDialog();
                         singleChoiseDialog1.setCancelable(false);
