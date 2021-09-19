@@ -9,10 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itcity">
-        <activity android:name=".THEORY_TASK.programming.Zadp3"></activity>
+        <activity
+            android:name=".THEORY_TASK.programming.Zadp6"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".THEORY_TASK.programming.Zadp5"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".THEORY_TASK.programming.Zadp4"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".THEORY_TASK.programming.Zadp3" />
         <activity
             android:name=".THEORY_TASK.programming.Zadp2"
-            android:windowSoftInputMode="adjustNothing"></activity>
+            android:windowSoftInputMode="adjustNothing" />
         <activity android:name=".THEORY_TASK.programming.Thpr13" />
         <activity android:name=".THEORY_TASK.programming.Thpr12" />
         <activity android:name=".THEORY_TASK.programming.Thpr11" />

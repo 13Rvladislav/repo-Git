@@ -283,7 +283,7 @@
     <string name="too">int main(){</string>
     <string name="tit">using namespace std;</string>
     <string name="ti"><![CDATA[#include<iostream>]]></string>
-    <string name="titi">Разделить a на b .</string>
+    <string name="titi">Разделить a на b . Ответ вводить без пробелов .</string>
     <string name="tiit">ПРОДОЛЖИТЬ</string>
     <string name="tititti">ПРОГРАММИРОВАНИЕ</string>
     <string name="wms">\t}</string>
