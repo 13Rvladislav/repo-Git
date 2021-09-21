@@ -7,7 +7,6 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.itcity.ActivityMap;
 import com.example.itcity.R;
 
 public class Thpr7 extends AppCompatActivity {
@@ -28,11 +27,11 @@ public class Thpr7 extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.bottomSecurityK:
-                        Intent intent2 = new Intent(Thpr7.this, Programming_Teory_Task.class);
+                        Intent intent2 = new Intent(Thpr7.this, Programming_Home.class);
                         startActivity(intent2);
                         break;
                     case R.id.continueSec:
-                        Intent intent1 = new Intent(Thpr7.this, Zadprog7.class);
+                        Intent intent1 = new Intent(Thpr7.this, Zadp7.class);
                         startActivity(intent1);
                         break;
                 }

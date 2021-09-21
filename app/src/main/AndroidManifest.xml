@@ -9,6 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itcity">
+        <activity android:name=".THEORY_TASK.programming.Zadp12"></activity>
+        <activity
+            android:name=".THEORY_TASK.programming.Zadp13"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".THEORY_TASK.programming.Zadp11" />
+        <activity android:name=".THEORY_TASK.programming.Zadp10" />
+        <activity
+            android:name=".THEORY_TASK.programming.Zadp9"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".THEORY_TASK.programming.Zadp8" />
+        <activity android:name=".THEORY_TASK.programming.Zadp7" />
         <activity
             android:name=".THEORY_TASK.programming.Zadp6"
             android:windowSoftInputMode="adjustNothing" />
@@ -127,7 +138,7 @@
         <activity android:name=".THEORY_TASK.programming.ZadanieProgrammingActivity" />
         <activity android:name=".THEORY_TASK.security.Security_HOME" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.Informatica_HOME" />
-        <activity android:name=".THEORY_TASK.programming.Programming_Teory_Task" />
+        <activity android:name=".THEORY_TASK.programming.Programming_Home" />
         <activity android:name=".THEORY_TASK.algorithm.Algorithm_HOME" />
         <activity android:name=".ActivityMap" />
         <activity android:name=".ActivityRegistration" />

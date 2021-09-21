@@ -95,6 +95,22 @@
         <item>i</item>
         <item>=</item>
     </string-array>
+    <string-array name="progchoice_items7">
+        <item>switch,case,break,default</item>
+        <item>switch,case,static,main</item>
+        <item>case,break,#include</item>
+        <item>нет правильного ответа</item>
+    </string-array>
+    <string-array name="progchoice_items8">
+        <item>Цикл с параметром </item>
+        <item>Цикл с предусловием</item>
+        <item>Цикл с постусловием </item>
+    </string-array>
+
+    <string-array name="progchoice_items12">
+        <item>Освободить память</item>
+        <item>Выделить память</item>
+    </string-array>
     //кнопки в меню
     <string name="action_item1">кнопка 1</string>
     <string name="action_item2">кнопка 2</string>
@@ -217,8 +233,8 @@
     <string name="dod">ПРОДОЛЖИТЬ</string>
     <string name="fofo">АЛГОРИТМЫ</string>
     <string name="gogo">выбрать</string>
-    <string name="hoho">Выберите те операторы, которые используются для построения конструкции множественного выбора switch.</string>
-    <string name="jojo">Определи по блок-схемам, где какой находится цикл. (вписать)</string>
+    <string name="hoho">Сопоставить оператор и его роль</string>
+    <string name="jojo">Определи по блок-схемам, виды  циклов.</string>
     <string name="koko">ПРОДОЛЖИТЬ</string>
     <string name="lolo">ПРОГРАММИРОВАНИЕ</string>
     <string name="lol">выбрать</string>
@@ -255,7 +271,7 @@
     <string name="gig">\t\t\t\t\t\t\t\tВыделить память</string>
     <string name="ge">\t\t\t\t\t\t\t\tОсвободить память</string>
     <string name="gege">Введите ответ</string>
-    <string name="sas">()function {}void</string>
+    <string name="sas">()function {}void;</string>
     <string name="sasa">Восстановить порядок объявления функции</string>
     <string name="sasaa">ПРОДОЛЖИТЬ</string>
     <string name="sasas">ПРОГРАММИРОВАНИЕ</string>

@@ -14,7 +14,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.itcity.ActivityMap;
 import com.example.itcity.R;
 
 public class Zadp4 extends AppCompatActivity {
@@ -74,7 +73,7 @@ public class Zadp4 extends AppCompatActivity {
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadp4.this, Programming_Teory_Task.class);
+                                    Intent intent = new Intent(Zadp4.this, Programming_Home.class);
                                     startActivity(intent);
                                 }
                             });
@@ -98,7 +97,7 @@ public class Zadp4 extends AppCompatActivity {
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadp4.this, Programming_Teory_Task.class);
+                                    Intent intent = new Intent(Zadp4.this, Programming_Home.class);
                                     startActivity(intent);
                                 }
                             });

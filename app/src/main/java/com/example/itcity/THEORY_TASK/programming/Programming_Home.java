@@ -11,21 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.itcity.ActivityMap;
 import com.example.itcity.R;
-import com.example.itcity.THEORY_TASK.fundamental_of_informatics.ThInf1;
-import com.example.itcity.THEORY_TASK.fundamental_of_informatics.ThInf10;
-import com.example.itcity.THEORY_TASK.fundamental_of_informatics.ThInf11;
-import com.example.itcity.THEORY_TASK.fundamental_of_informatics.ThInf12;
-import com.example.itcity.THEORY_TASK.fundamental_of_informatics.ThInf13;
-import com.example.itcity.THEORY_TASK.fundamental_of_informatics.ThInf2;
-import com.example.itcity.THEORY_TASK.fundamental_of_informatics.ThInf3;
-import com.example.itcity.THEORY_TASK.fundamental_of_informatics.ThInf6;
-import com.example.itcity.THEORY_TASK.fundamental_of_informatics.ThInf7;
-import com.example.itcity.THEORY_TASK.fundamental_of_informatics.ThInf8;
-import com.example.itcity.THEORY_TASK.fundamental_of_informatics.ThInf9;
-import com.example.itcity.THEORY_TASK.fundamental_of_informatics.TheoInf5;
-import com.example.itcity.THEORY_TASK.fundamental_of_informatics.Tinf4;
 
-public class Programming_Teory_Task extends AppCompatActivity {
+public class Programming_Home extends AppCompatActivity {
     ImageButton BUTTON1;
     ImageButton BUTTON2;
     ImageButton BUTTON3;
@@ -72,59 +59,59 @@ public class Programming_Teory_Task extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.PROGBUTTONBACK:
-                        Intent intent0 = new Intent(Programming_Teory_Task.this, ActivityMap.class);
+                        Intent intent0 = new Intent(Programming_Home.this, ActivityMap.class);
                         startActivity(intent0);
                         break;
                     case R.id.PROGBUTTON1:
-                        Intent intent1 = new Intent(Programming_Teory_Task.this, Thprog1.class);
+                        Intent intent1 = new Intent(Programming_Home.this, Thprog1.class);
                         startActivity(intent1);
                         break;
                     case R.id.PROGBUTTON2:
-                        Intent intent2 = new Intent(Programming_Teory_Task.this, Thpr2.class);
+                        Intent intent2 = new Intent(Programming_Home.this, Thpr2.class);
                         startActivity(intent2);
                         break;
                     case R.id.PROGBUTTON3:
-                        Intent intent3 = new Intent(Programming_Teory_Task.this, Thpr3.class);
+                        Intent intent3 = new Intent(Programming_Home.this, Thpr3.class);
                         startActivity(intent3);
                         break;
                     case R.id.PROGBUTTON4:
-                        Intent intent4 = new Intent(Programming_Teory_Task.this, Thpr4.class);
+                        Intent intent4 = new Intent(Programming_Home.this, Thpr4.class);
                         startActivity(intent4);
                         break;
                     case R.id.PROGBUTTON5:
-                        Intent intent5 = new Intent(Programming_Teory_Task.this, Thpr5.class);
+                        Intent intent5 = new Intent(Programming_Home.this, Thpr5.class);
                         startActivity(intent5);
                         break;
                     case R.id.PROGBUTTON6:
-                        Intent intent6 = new Intent(Programming_Teory_Task.this, Thpr6.class);
+                        Intent intent6 = new Intent(Programming_Home.this, Thpr6.class);
                         startActivity(intent6);
                         break;
                     case R.id.PROGBUTTON7:
-                        Intent intent7 = new Intent(Programming_Teory_Task.this, Thpr7.class);
+                        Intent intent7 = new Intent(Programming_Home.this, Thpr7.class);
                         startActivity(intent7);
                         break;
                     case R.id.PROGBUTTON8:
-                        Intent intent8 = new Intent(Programming_Teory_Task.this, Thpr8.class);
+                        Intent intent8 = new Intent(Programming_Home.this, Thpr8.class);
                         startActivity(intent8);
                         break;
                     case R.id.PROGBUTTON9:
-                        Intent intent9 = new Intent(Programming_Teory_Task.this, Thpr9.class);
+                        Intent intent9 = new Intent(Programming_Home.this, Thpr9.class);
                         startActivity(intent9);
                         break;
                     case R.id.PROGBUTTON10:
-                        Intent intent10 = new Intent(Programming_Teory_Task.this, Thpr10.class);
+                        Intent intent10 = new Intent(Programming_Home.this, Thpr10.class);
                         startActivity(intent10);
                         break;
                     case R.id.PROGBUTTON11:
-                        Intent intent11 = new Intent(Programming_Teory_Task.this, Thpr11.class);
+                        Intent intent11 = new Intent(Programming_Home.this, Thpr11.class);
                         startActivity(intent11);
                         break;
                     case R.id.PROGBUTTON12:
-                        Intent intent12 = new Intent(Programming_Teory_Task.this, Thpr12.class);
+                        Intent intent12 = new Intent(Programming_Home.this, Thpr12.class);
                         startActivity(intent12);
                         break;
                     case R.id.PROGBUTTON13:
-                        Intent intent13 = new Intent(Programming_Teory_Task.this, Thpr13.class);
+                        Intent intent13 = new Intent(Programming_Home.this, Thpr13.class);
                         startActivity(intent13);
                         break;
 

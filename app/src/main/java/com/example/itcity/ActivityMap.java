@@ -11,7 +11,7 @@ import android.widget.Button;
 import com.example.itcity.THEORY_TASK.algorithm.Algorithm_HOME;
 import com.example.itcity.THEORY_TASK.computer_Device.Comp_Home;
 import com.example.itcity.THEORY_TASK.fundamental_of_informatics.Informatica_HOME;
-import com.example.itcity.THEORY_TASK.programming.Programming_Teory_Task;
+import com.example.itcity.THEORY_TASK.programming.Programming_Home;
 import com.example.itcity.THEORY_TASK.security.Security_HOME;
 
 public class ActivityMap extends AppCompatActivity {
@@ -54,7 +54,7 @@ public class ActivityMap extends AppCompatActivity {
                         startActivity(intent2);
                         break;
                     case R.id.buttonProgramming:
-                        Intent intent3 = new Intent(ActivityMap.this, Programming_Teory_Task.class);
+                        Intent intent3 = new Intent(ActivityMap.this, Programming_Home.class);
                         startActivity(intent3);
                         break;
                     case R.id.buttonInforatica:

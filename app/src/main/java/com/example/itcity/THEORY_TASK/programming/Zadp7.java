@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 import com.example.itcity.R;
 
-public class Zadprog1 extends AppCompatActivity implements Progtask1SingleChoiceDialog.SingleChoiceListener {
+public class Zadp7 extends AppCompatActivity implements Progtask7SingleChoiceDialog.SingleChoiceListener {
     Dialog dialog;//диалоговое окно
     //кнопки выбрать для задания
     Button button1;
@@ -32,7 +32,7 @@ public class Zadprog1 extends AppCompatActivity implements Progtask1SingleChoice
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.progtask1);
+        setContentView(R.layout.progtask7);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         getSupportActionBar().hide();
         button1 = (Button) findViewById(R.id.progTask2Button1);
@@ -43,13 +43,13 @@ public class Zadprog1 extends AppCompatActivity implements Progtask1SingleChoice
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.button5:
-                        Intent intent = new Intent(Zadprog1.this, Thprog1.class);
+                        Intent intent = new Intent(Zadp7.this, Thpr7.class);
                         startActivity(intent);
 
                         break;
                     case R.id.progTask2Button1:
                         bt1 = true;
-                        DialogFragment singleChoiseDialog1 = new Progtask1SingleChoiceDialog();
+                        DialogFragment singleChoiseDialog1 = new Progtask7SingleChoiceDialog();
                         singleChoiseDialog1.setCancelable(false);
                         singleChoiseDialog1.show(getSupportFragmentManager(), "Single choice Dialog");
                         break;
@@ -57,7 +57,7 @@ public class Zadprog1 extends AppCompatActivity implements Progtask1SingleChoice
                     case R.id.algCheck:
                         // проверка на заполнение полей с ответами
                         if (TextUtils.isEmpty(answer1)) {
-                            Toast toast = Toast.makeText(Zadprog1.this, "вы не дали ответ в  поле 1", Toast.LENGTH_SHORT);
+                            Toast toast = Toast.makeText(Zadp7.this, "вы не дали ответ в  поле 1", Toast.LENGTH_SHORT);
                             toast.show();
                             return;
                         }
@@ -65,14 +65,14 @@ public class Zadprog1 extends AppCompatActivity implements Progtask1SingleChoice
 
 
                         String markSTR;
-                        if (answer1.equalsIgnoreCase("()")) {
+                        if (answer1.equalsIgnoreCase("switch,case,break,default")) {
                             //если ответ в поле 1 совпал с правильным ответом то делаем +20 баллов
                             mark += 100;
 
                         }
                         //вызов диалогового окна с показом количества баллов
                         if (mark>50) {
-                            dialog = new Dialog(Zadprog1.this);
+                            dialog = new Dialog(Zadp7.this);
                             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
                             dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
                             dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
@@ -89,7 +89,7 @@ public class Zadprog1 extends AppCompatActivity implements Progtask1SingleChoice
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadprog1.this, Programming_Home.class);
+                                    Intent intent = new Intent(Zadp7.this, Programming_Home.class);
                                     startActivity(intent);
                                 }
                             });
@@ -97,7 +97,7 @@ public class Zadprog1 extends AppCompatActivity implements Progtask1SingleChoice
                             break;
                         }
                         if (mark<50) {
-                            dialog = new Dialog(Zadprog1.this);
+                            dialog = new Dialog(Zadp7.this);
                             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
                             dialog.setContentView(R.layout.markbaddialogwindow);//путь к макету диалогового окна
                             dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
@@ -113,7 +113,7 @@ public class Zadprog1 extends AppCompatActivity implements Progtask1SingleChoice
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadprog1.this, Programming_Home.class);
+                                    Intent intent = new Intent(Zadp7.this, Programming_Home.class);
                                     startActivity(intent);
                                 }
                             });
@@ -132,8 +132,22 @@ public class Zadprog1 extends AppCompatActivity implements Progtask1SingleChoice
     @Override
     public void onPositiveButtonClicked(String[] list, int position) {
         if (bt1 == true) {
-            button1.setText(list[position]);
-            answer1 = list[position];
+            if (position == 0) {
+                button1.setText("Вариант1");
+                answer1 = list[position];
+            }
+            if (position == 1) {
+                button1.setText("Вариант2");
+                answer1 = list[position];
+            }
+            if (position == 2) {
+                button1.setText("Вариант3");
+                answer1 = list[position];
+            }
+            if (position == 3) {
+                button1.setText("Вариант4");
+                answer1 = list[position];
+            }
             bt1 = false;
         }
 

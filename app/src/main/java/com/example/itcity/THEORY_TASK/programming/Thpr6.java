@@ -24,7 +24,7 @@ public class Thpr6 extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.bottomSecurityK:
-                        Intent intent2 = new Intent(Thpr6.this, Programming_Teory_Task.class);
+                        Intent intent2 = new Intent(Thpr6.this, Programming_Home.class);
                         startActivity(intent2);
                         break;
                     case R.id.continueSec:

@@ -87,7 +87,7 @@ public class Zadp5 extends AppCompatActivity {
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadp5.this, Programming_Teory_Task.class);
+                                    Intent intent = new Intent(Zadp5.this, Programming_Home.class);
                                     startActivity(intent);
                                 }
                             });
@@ -111,7 +111,7 @@ public class Zadp5 extends AppCompatActivity {
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadp5.this, Programming_Teory_Task.class);
+                                    Intent intent = new Intent(Zadp5.this, Programming_Home.class);
                                     startActivity(intent);
                                 }
                             });

@@ -164,7 +164,7 @@ public class Zadp3 extends AppCompatActivity  implements Progtask3SingleChoiceDi
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadp3.this, Programming_Teory_Task.class);
+                                    Intent intent = new Intent(Zadp3.this, Programming_Home.class);
                                     startActivity(intent);
                                 }
                             });
@@ -188,7 +188,7 @@ public class Zadp3 extends AppCompatActivity  implements Progtask3SingleChoiceDi
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadp3.this, Programming_Teory_Task.class);
+                                    Intent intent = new Intent(Zadp3.this, Programming_Home.class);
                                     startActivity(intent);
                                 }
                             });

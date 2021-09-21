@@ -7,7 +7,6 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.itcity.ActivityMap;
 import com.example.itcity.R;
 
 public class Thpr12 extends AppCompatActivity {
@@ -18,7 +17,7 @@ public class Thpr12 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.progtheory7);
+        setContentView(R.layout.progtheory12);
         getSupportActionBar().hide();
         continueSec = (Button) findViewById(R.id.continueSec);
         back = (Button) findViewById(R.id.bottomSecurityK);
@@ -28,11 +27,11 @@ public class Thpr12 extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.bottomSecurityK:
-                        Intent intent2 = new Intent(Thpr12.this, Programming_Teory_Task.class);
+                        Intent intent2 = new Intent(Thpr12.this, Programming_Home.class);
                         startActivity(intent2);
                         break;
                     case R.id.continueSec:
-                        Intent intent1 = new Intent(Thpr12.this, Zadprog7.class);
+                        Intent intent1 = new Intent(Thpr12.this, Zadp12.class);
                         startActivity(intent1);
                         break;
                 }

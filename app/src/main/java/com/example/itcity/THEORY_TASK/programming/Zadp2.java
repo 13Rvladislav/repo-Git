@@ -15,7 +15,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.itcity.R;
-import com.example.itcity.THEORY_TASK.computer_Device.Comp_Home;
 
 public class Zadp2 extends AppCompatActivity {
     Dialog dialog;//диалоговое окно
@@ -79,7 +78,7 @@ public class Zadp2 extends AppCompatActivity {
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadp2.this, Programming_Teory_Task.class);
+                                    Intent intent = new Intent(Zadp2.this, Programming_Home.class);
                                     startActivity(intent);
                                 }
                             });
@@ -103,7 +102,7 @@ public class Zadp2 extends AppCompatActivity {
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Intent intent = new Intent(Zadp2.this, Programming_Teory_Task.class);
+                                    Intent intent = new Intent(Zadp2.this, Programming_Home.class);
                                     startActivity(intent);
                                 }
                             });
