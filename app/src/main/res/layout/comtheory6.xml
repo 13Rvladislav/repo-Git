@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/teoria_zheltye"
     android:layout_height="match_parent"
+    android:layout_marginTop="-2dp"
     tools:context=".THEORY_TASK.computer_Device.TheoryComputer6">
     <Button
         android:id="@+id/bottomCompDevK1"

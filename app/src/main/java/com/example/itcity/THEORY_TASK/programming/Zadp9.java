@@ -43,7 +43,7 @@ public class Zadp9 extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.bottomSecurityK:
-                        Intent intent1 = new Intent(Zadp9.this, Thpr2.class);
+                        Intent intent1 = new Intent(Zadp9.this, Thpr9.class);
                         startActivity(intent1);
                         break;
                     case R.id.continueSec:

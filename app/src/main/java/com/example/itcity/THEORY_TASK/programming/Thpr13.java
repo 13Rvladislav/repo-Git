@@ -1,6 +1,7 @@
 package com.example.itcity.THEORY_TASK.programming;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +20,7 @@ public class Thpr13 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.progtheory13);
         getSupportActionBar().hide();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         continueSec = (Button) findViewById(R.id.continueSec);
         back = (Button) findViewById(R.id.bottomSecurityK);
         View.OnClickListener onClickListener = new View.OnClickListener() {
