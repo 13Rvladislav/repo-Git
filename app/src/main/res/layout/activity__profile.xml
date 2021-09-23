@@ -4,13 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ekran_polzovatelya_obsch_fon1"
+    android:background="@drawable/prof"
     tools:context=".Activity_Profile" >
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"></LinearLayout>
 
     <ImageView
         android:id="@+id/imageView2"
@@ -25,20 +20,23 @@
 
     <TextView
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginBottom="484dp"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="428dp"
+        android:background="@drawable/podkl_name"
         android:ems="10"
-
         android:fontFamily="sans-serif"
+        android:foregroundGravity="center"
         android:gravity="center"
         android:text="ИМЯ ПОЛЬЗОВАТЕЛЯ"
         android:textColor="#1E1358"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.448" />
 
     <Button
         android:id="@+id/button2"
@@ -137,5 +135,19 @@
             android:textSize="34sp"
             android:textStyle="bold" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView136"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="it-город"
+        android:textColor="@color/light_blue_A200"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.825" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
