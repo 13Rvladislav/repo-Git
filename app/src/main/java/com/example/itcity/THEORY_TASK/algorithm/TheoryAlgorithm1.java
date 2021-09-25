@@ -25,6 +25,7 @@ public class TheoryAlgorithm1 extends AppCompatActivity {
     private TextView textView24;
     private TextView textView25;
     private TextView textView26;
+    Button button11111111;
     Button button8;
     TextView textView5;
     Button bottomTeoryK1;
@@ -37,6 +38,7 @@ public class TheoryAlgorithm1 extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         setContentView(R.layout.algtheory1);
         getSupportActionBar().hide();
+        button11111111 = (Button) findViewById(R.id.button11111111);
         textView5 = (TextView) findViewById(R.id.textView5);
         button8 = (Button) findViewById(R.id.button8);
         bottomTeoryK1 = (Button) findViewById(R.id.bottomTeoryK1);
@@ -65,6 +67,10 @@ public class TheoryAlgorithm1 extends AppCompatActivity {
                         Intent intent2 = new Intent(TheoryAlgorithm1.this, Algorithm_HOME.class);
                         startActivity(intent2);
                         break;
+                    case R.id.button11111111:
+                        Test test = new Test(mTextView, s, 0);
+                        break;
+
 
 
                 }
@@ -72,6 +78,7 @@ public class TheoryAlgorithm1 extends AppCompatActivity {
         };
         button8.setOnClickListener(onClickListener);
         bottomTeoryK1.setOnClickListener(onClickListener);
+        button11111111.setOnClickListener(onClickListener);
 
         // анимация появления текста
         c = AnimationUtils.loadAnimation(this, R.anim.textalgtheory1);
