@@ -1,5 +1,8 @@
 package com.example.itcity;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -7,11 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
-
-import com.example.itcity.models.Users;
+import com.example.itcity.models.ProfileU;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -26,25 +25,23 @@ public class Activity_Profile extends AppCompatActivity {
     FirebaseAuth auth;
     FirebaseDatabase DB;
     DatabaseReference users;
-    TextView Textview;
-String a;
+    String str;
+    ProfileU me = new ProfileU();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         setContentView(R.layout.activity__profile);
         TextView UserName = findViewById(R.id.editTextTextPersonName);
+        TextView mmrcount = findViewById(R.id.mark_for_the_lvl);
         getSupportActionBar().hide();
         back = findViewById(R.id.button2);
         Exit = findViewById(R.id.button3);
         auth = FirebaseAuth.getInstance();
-        Textview = findViewById(R.id.editTextTextPersonName);
-
         FirebaseUser user1 = auth.getCurrentUser();
-
         DB = FirebaseDatabase.getInstance();
-        DatabaseReference reference = DB.getReference("Users");
-
+        users = DB.getReference("Users");
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
@@ -52,12 +49,12 @@ String a;
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.button2:
-//кнопка назад
+                        //кнопка назад
                         Intent intent1 = new Intent(Activity_Profile.this, ActivityMap.class);
                         startActivity(intent1);
                         break;
                     case R.id.button3:
-//кнопка выхода
+                        //кнопка выхода
                         FirebaseAuth.getInstance().signOut();
                         Intent intent2 = new Intent(Activity_Profile.this, ActivityAuthor.class);
                         startActivity(intent2);
@@ -69,24 +66,19 @@ String a;
         };
         back.setOnClickListener(onClickListener);
         Exit.setOnClickListener(onClickListener);
-
-        reference.addValueEventListener(new ValueEventListener() {
+        String UID = user1.getUid();
+        users.child(UID).addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                String UID = user1.getUid();
-                for (DataSnapshot u : dataSnapshot.getChildren()) {
-
-                    a = u.toString();
-                    //  Textview.append(u.getValue(Users.class).toString() + '\n');
-                    Textview.setText("");
-
-                }
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                me = snapshot.getValue(ProfileU.class);
+                str = me.getName();
+                UserName.setText(str);
+                str = me.getMmr();
+                mmrcount.setText(str);
             }
+
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
+            public void onCancelled(@NonNull DatabaseError error) {}
         });
     }
-
 }
