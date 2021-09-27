@@ -1,21 +1,21 @@
 package com.example.itcity.THEORY_TASK.algorithm;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
-import com.example.itcity.Utlis.Test;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.itcity.R;
+import com.example.itcity.Utlis.Test;
 
 
 public class TheoryAlgorithm1 extends AppCompatActivity {
 
-    private Animation c;
+
     private TextView textView4;
     private TextView textView19;
     private TextView textView20;
@@ -38,7 +38,6 @@ public class TheoryAlgorithm1 extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         setContentView(R.layout.algtheory1);
         getSupportActionBar().hide();
-        button11111111 = (Button) findViewById(R.id.button11111111);
         textView5 = (TextView) findViewById(R.id.textView5);
         button8 = (Button) findViewById(R.id.button8);
         bottomTeoryK1 = (Button) findViewById(R.id.bottomTeoryK1);
@@ -51,8 +50,8 @@ public class TheoryAlgorithm1 extends AppCompatActivity {
         textView24 = (TextView) findViewById(R.id.textView24);
         textView25 = (TextView) findViewById(R.id.textView25);
         textView26 = (TextView) findViewById(R.id.textView26);
-        initView();
-        Test test = new Test(mTextView, s, 70);
+
+
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
@@ -67,65 +66,11 @@ public class TheoryAlgorithm1 extends AppCompatActivity {
                         Intent intent2 = new Intent(TheoryAlgorithm1.this, Algorithm_HOME.class);
                         startActivity(intent2);
                         break;
-                    case R.id.button11111111:
-                        Test test = new Test(mTextView, s, 0);
-                        break;
-
-
-
                 }
             }
         };
         button8.setOnClickListener(onClickListener);
         bottomTeoryK1.setOnClickListener(onClickListener);
         button11111111.setOnClickListener(onClickListener);
-
-        // анимация появления текста
-        c = AnimationUtils.loadAnimation(this, R.anim.textalgtheory1);
-        c.setDuration(600);
-        textView4.startAnimation(c);
-
-        c = AnimationUtils.loadAnimation(this, R.anim.textalgtheory1);
-        c.setDuration(600);
-        textView19.startAnimation(c);
-
-        c = AnimationUtils.loadAnimation(this, R.anim.textalgtheory1);
-        c.setDuration(600);
-        textView20.startAnimation(c);
-
-        c = AnimationUtils.loadAnimation(this, R.anim.textalgtheory1);
-        c.setDuration(600);
-        textView21.startAnimation(c);
-
-        c = AnimationUtils.loadAnimation(this, R.anim.textalgtheory1);
-        c.setDuration(600);
-        textView22.startAnimation(c);
-
-        c = AnimationUtils.loadAnimation(this, R.anim.textalgtheory1);
-        c.setDuration(600);
-        textView23.startAnimation(c);
-
-        c = AnimationUtils.loadAnimation(this, R.anim.textalgtheory1);
-        c.setDuration(600);
-        textView24.startAnimation(c);
-
-        c = AnimationUtils.loadAnimation(this, R.anim.textalgtheory1);
-        c.setDuration(600);
-        textView25.startAnimation(c);
-
-        c = AnimationUtils.loadAnimation(this, R.anim.textalgtheory1);
-        c.setDuration(600);
-        textView26.startAnimation(c);
-        // анимация появления текста
-
-    }
-
-    private void initView() {
-        mTextView = findViewById(R.id.textView5);
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
     }
 }

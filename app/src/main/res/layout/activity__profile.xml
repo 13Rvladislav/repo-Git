@@ -21,7 +21,7 @@
     <TextView
         android:id="@+id/editTextTextPersonName"
         android:layout_width="340dp"
-        android:layout_height="160dp"
+        android:layout_height="75dp"
         android:layout_marginBottom="428dp"
         android:background="@drawable/podkl_name"
         android:ems="10"

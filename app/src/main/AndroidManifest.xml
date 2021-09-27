@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itcity">
-        <activity android:name=".THEORY_TASK.programming.Zadp12"></activity>
+        <activity android:name=".rating_table"></activity>
+        <activity android:name=".THEORY_TASK.programming.Zadp12" />
         <activity
             android:name=".THEORY_TASK.programming.Zadp13"
             android:windowSoftInputMode="adjustNothing" />

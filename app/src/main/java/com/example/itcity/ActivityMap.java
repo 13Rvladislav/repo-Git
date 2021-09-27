@@ -27,6 +27,7 @@ public class ActivityMap extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
+        getSupportActionBar().hide();
         buttonAlgoritm = (Button) findViewById(R.id.buttonAlgorithms);
         buttonSeccure = (Button) findViewById(R.id.buttonSecure);
         buttonProgramming = (Button) findViewById(R.id.buttonProgramming);
@@ -34,7 +35,7 @@ public class ActivityMap extends AppCompatActivity {
         buttonPC = (Button) findViewById(R.id.buttonComputer);
         buttonRait = (Button) findViewById(R.id.buttonRait);
         profile = (Button) findViewById(R.id.profile);
-        getSupportActionBar().hide();
+
 
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -62,7 +63,7 @@ public class ActivityMap extends AppCompatActivity {
                         startActivity(intent5);
                         break;
                     case R.id.buttonRait:
-                        Intent intent6 = new Intent(ActivityMap.this, ActivityAuthor.class);
+                        Intent intent6 = new Intent(ActivityMap.this, rating_table.class);
                         startActivity(intent6);
                         break;
                     case R.id.profile:

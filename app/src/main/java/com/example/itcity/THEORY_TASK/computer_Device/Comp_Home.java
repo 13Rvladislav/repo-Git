@@ -78,33 +78,33 @@ public class Comp_Home extends AppCompatActivity {
                     if (i == access) {
                         switch (i) {
                             case 1:
-                                ButtonList.get(i-1).setImageResource(R.drawable.compoffhome1);
+                                ButtonList.get(i-1).setImageResource(R.drawable.componhome1);
                                 ButtonList.get(i).setImageResource(R.drawable.compoffhome2);
                                 break;
                             case 2:
-                                ButtonList.get(i-2).setImageResource(R.drawable.algonhome1);
-                                ButtonList.get(i-1).setImageResource(R.drawable.algonhome2);
+                                ButtonList.get(i-2).setImageResource(R.drawable.componhome1);
+                                ButtonList.get(i-1).setImageResource(R.drawable.componhome2);
                                 ButtonList.get(i).setImageResource(R.drawable.compoffhome3);
                                 break;
                             case 3:
-                                ButtonList.get(i-3).setImageResource(R.drawable.algonhome1);
-                                ButtonList.get(i-2).setImageResource(R.drawable.algonhome2);
-                                ButtonList.get(i-1).setImageResource(R.drawable.algonhome3);
+                                ButtonList.get(i-3).setImageResource(R.drawable.componhome1);
+                                ButtonList.get(i-2).setImageResource(R.drawable.componhome2);
+                                ButtonList.get(i-1).setImageResource(R.drawable.componhome3);
                                 ButtonList.get(i).setImageResource(R.drawable.compoffhome4);
                                 break;
                             case 4:
-                                ButtonList.get(i-4).setImageResource(R.drawable.algonhome1);
-                                ButtonList.get(i-3).setImageResource(R.drawable.algonhome2);
-                                ButtonList.get(i-2).setImageResource(R.drawable.algonhome3);
-                                ButtonList.get(i-1).setImageResource(R.drawable.algonhome4);
+                                ButtonList.get(i-4).setImageResource(R.drawable.componhome1);
+                                ButtonList.get(i-3).setImageResource(R.drawable.componhome2);
+                                ButtonList.get(i-2).setImageResource(R.drawable.componhome3);
+                                ButtonList.get(i-1).setImageResource(R.drawable.componhome4);
                                 ButtonList.get(i).setImageResource(R.drawable.compoffhome5);
                                 break;
                             case 5:
-                                ButtonList.get(i-5).setImageResource(R.drawable.algonhome1);
-                                ButtonList.get(i-4).setImageResource(R.drawable.algonhome2);
-                                ButtonList.get(i-3).setImageResource(R.drawable.algonhome3);
-                                ButtonList.get(i-2).setImageResource(R.drawable.algonhome4);
-                                ButtonList.get(i-1).setImageResource(R.drawable.algonhome5);
+                                ButtonList.get(i-5).setImageResource(R.drawable.componhome1);
+                                ButtonList.get(i-4).setImageResource(R.drawable.componhome2);
+                                ButtonList.get(i-3).setImageResource(R.drawable.componhome3);
+                                ButtonList.get(i-2).setImageResource(R.drawable.componhome4);
+                                ButtonList.get(i-1).setImageResource(R.drawable.componhome5);
                                 ButtonList.get(i).setImageResource(R.drawable.compoffhome6);
                                 break;
                             default:
