@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="-2dp"
     android:background="@drawable/zadanie_fon_inform"
-    android:paddingTop="-11dp">
+    android:paddingTop="-11dp"
+    android:layout_marginTop="-2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@drawable/podklpereetyag"
+        android:gravity="center"
+        android:text="Собери пазл"
+        android:textColor="#3D0250"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/infpuzzlecheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/podlSecurity"
+        app:layout_constraintVertical_bias="0.188" />
 
     <Button
-        android:id="@+id/bottomSecurityK"
+        android:id="@+id/backinfpuzzle"
         android:layout_width="76dp"
         android:layout_height="62dp"
         android:layout_marginStart="16dp"
@@ -18,7 +35,8 @@
         app:backgroundTint="#FFFFFF"
         app:iconTint="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/podlSecurity"
@@ -26,26 +44,24 @@
         android:layout_height="93dp"
         android:padding="-1dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/p2" />
+        app:srcCompat="@drawable/podl_inform" />
 
     <TextView
-        android:id="@+id/textsecurity"
-        android:layout_width="217dp"
-        android:layout_height="55dp"
+        android:id="@+id/textView12"
+        android:layout_width="237dp"
+        android:layout_height="58dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginRight="68dp"
         android:text="ОСНОВЫ ИНФОРМАТИКИ"
-        android:textColor="#FFFFFF"
+        android:textColor="#FDFDFD"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/bottomSecurityK"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toEndOf="@+id/backinfpuzzle"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/continueSec"
+        android:id="@+id/infpuzzlecheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
@@ -57,34 +73,16 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ScrollView
-        android:layout_width="405dp"
-        android:layout_height="545dp"
-        app:layout_constraintBottom_toTopOf="@+id/continueSec"
+    <RelativeLayout
+        android:id="@+id/Inflayout"
+        android:layout_width="360dp"
+        android:layout_height="450dp"
+        android:background="#20ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/infpuzzlecheck"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/podlSecurity">
+        app:layout_constraintTop_toBottomOf="@+id/textView34">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView91"
-                android:layout_width="250dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:background="@drawable/podklpereetyag"
-                android:text="Собери пазл"
-                android:textColor="#3D0250"
-                android:textSize="17sp"
-                app:layout_constraintTop_toBottomOf="@+id/imageView13"
-                app:layout_constraintVertical_bias="0.666" />
-        </LinearLayout>
-
-    </ScrollView>
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

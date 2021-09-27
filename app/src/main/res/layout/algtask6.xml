@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="-2dp"
     android:background="@drawable/zadanie_fon_fioletovye"
     tools:context=".THEORY_TASK.algorithm.ZadanieAlgorithm6">
 
@@ -18,7 +17,6 @@
         android:text="Собери пазл"
         android:textColor="#3D0250"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView13"
@@ -43,7 +41,8 @@
         android:background="@drawable/zadaniya"
         app:backgroundTint="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView12"
@@ -73,15 +72,14 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <RelativeLayout
-        android:id="@+id/layout"
-        android:layout_width="414dp"
-        android:layout_height="476dp"
+        android:id="@+id/Alayout"
+        android:layout_width="360dp"
+        android:layout_height="450dp"
+        android:background="#20ffffff"
         app:layout_constraintBottom_toTopOf="@+id/algCheck"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toBottomOf="@+id/textView34">
 
     </RelativeLayout>
 

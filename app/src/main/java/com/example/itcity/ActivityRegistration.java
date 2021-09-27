@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.itcity.models.User;
+import com.example.itcity.models.ProfileU;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -97,7 +97,7 @@ public class ActivityRegistration extends AppCompatActivity {
                         auth.createUserWithEmailAndPassword(email.getText().toString(), password1.getText().toString()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                             @Override
                             public void onSuccess(AuthResult authResult) {
-                                User user = new User();
+                                ProfileU user = new ProfileU();
                                 user.setName(name.getText().toString());
 
 

@@ -74,7 +74,6 @@
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.ZadInf4" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.ZadInf3" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.ZadInf2" />
-        <activity android:name=".THEORY_TASK.fundamental_of_informatics.ThInf16" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.ThInf15" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.ThInf14" />
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.ThInf13" />

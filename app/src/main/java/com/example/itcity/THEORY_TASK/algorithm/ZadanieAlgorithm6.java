@@ -4,25 +4,27 @@ import static java.lang.Math.sqrt;
 import static java.lang.Math.pow;
 import static java.lang.Math.abs;
 
+import android.app.Dialog;
 import android.content.Context;
+
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Matrix;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
+
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+
+import android.view.Window;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.example.itcity.R;
 
@@ -30,27 +32,70 @@ import java.util.ArrayList;
 
 public class ZadanieAlgorithm6 extends AppCompatActivity {
     ArrayList<PuzzlePiece> pieces;
+    int res;
+    Button button5;
+    String strres;
+    Dialog dialog;
+    Button Check;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.algtask6);
         getSupportActionBar().hide();
-        final RelativeLayout layout = findViewById(R.id.layout);
-//ImageView imageView = findViewById(R.id.imageView);
-
-// run image related code after the view was laid out
-// to have all dimensions calculated
-//imageView.post(new Runnable() {
-//public void run() {
+        button5 = findViewById(R.id.button5);
+        Check = findViewById(R.id.algCheck);
+        final RelativeLayout layout = findViewById(R.id.Alayout);
         pieces = splitImage();
         TouchListener touchListener = new TouchListener();
-        for(PuzzlePiece piece : pieces) {
+        for (PuzzlePiece piece : pieces) {
             piece.setOnTouchListener(touchListener);
             layout.addView(piece);
         }
-//}
-//});
+
+        View.OnClickListener onClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switch (view.getId()) {
+                    case R.id.button5:
+                        Intent intent = new Intent(ZadanieAlgorithm6.this, TheoryAlgorithm6.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.algCheck:
+                        for (int i = 0; i < pieces.size(); i++) {
+                            if (pieces.get(i).canMove == false ) {
+                                res += 11;
+                            }
+                        }
+                        if (res == 99) {res += 1;}
+                        dialog = new Dialog(ZadanieAlgorithm6.this);
+                        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
+                        dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
+                        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
+                        dialog.setCancelable(false);//не закрывается кнопкой назад
+                        //кнопки начало
+
+                        //кнопки конец
+                        TextView result = dialog.findViewById(R.id.mark_for_the_lvl);
+                        strres = Integer.toString(res);
+                        result.setText(strres);
+                        dialog.show();//показ окна
+
+                        Button back_to_houses= dialog.findViewById(R.id.button10);
+                        back_to_houses.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent intent = new Intent(ZadanieAlgorithm6.this, Algorithm_HOME.class);
+                                startActivity(intent);
+                            }
+                        });
+                        //ЕСЛИ БЫЛ ЗАПУЩЕН ЭТОТ БЛОК КОДА МЕНЯЕМ КОЛИЧЕСТВО БАЛЛОВ В FIREBASE  И В ПЕРЕМЕННУЮ В КОТОРОЙ НАШ УРОВЕНЬ ДЕЛАЕМ +1;
+                        break;
+                }
+            }
+        };
+        button5.setOnClickListener(onClickListener);
+        Check.setOnClickListener(onClickListener);
     }
 
     private ArrayList<PuzzlePiece> splitImage() {
@@ -61,15 +106,11 @@ public class ZadanieAlgorithm6 extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.imageView);
         ArrayList<PuzzlePiece> pieces = new ArrayList<>(piecesNumber);
 
-// Get the bitmap of the source image
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.bezpuzzle5);
-//Bitmap bitmap = drawable.getBitmap();
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.algpuzzle7);
 
-// Calculate the with and height of the pieces
         int pieceWidth = bitmap.getWidth()/cols;
         int pieceHeight = bitmap.getHeight()/rows;
 
-// Create each bitmap piece and add it to the resulting array
         int yCoord = 0;
         for (int row = 0; row < rows; row++) {
             int xCoord = 0;
@@ -133,9 +174,7 @@ public class ZadanieAlgorithm6 extends AppCompatActivity {
             return true;
         }
 
-        public void sendViewToBack(final View
-
-                                           child) {
+        public void sendViewToBack(final View child) {
             final ViewGroup parent = (ViewGroup)child.getParent();
             if (null != parent) {
                 parent.removeView(child);

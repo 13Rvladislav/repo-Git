@@ -4,9 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="-2dp"
     android:background="@drawable/teoria_zheltye"
     tools:context=".THEORY_TASK.computer_Device.Zadcomp6">
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@drawable/podklpereetyag"
+        android:gravity="center"
+        android:text="Собери пазл"
+        android:textColor="#3D0250"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/continieCompDev"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/podlComputer"
+        app:layout_constraintVertical_bias="0.038" />
+
     <Button
         android:id="@+id/bottomCompDevK1"
         android:layout_width="76dp"
@@ -18,7 +34,8 @@
         app:backgroundTint="#FFFFFF"
         app:iconTint="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/podlComputer"
@@ -58,43 +75,16 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ScrollView
-        android:layout_width="405dp"
-        android:layout_height="545dp"
+    <RelativeLayout
+        android:id="@+id/Clayout"
+        android:layout_width="360dp"
+        android:layout_height="450dp"
+        android:background="#20ffffff"
         app:layout_constraintBottom_toTopOf="@+id/continieCompDev"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/podlComputer">
+        app:layout_constraintTop_toBottomOf="@+id/textView34">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:id="@+id/linearLayout"
-                android:layout_width="250dp"
-                android:layout_height="48dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:gravity="center"
-                android:layout_marginRight="5dp"
-                android:background="@drawable/ic_podlozhka_teoria_belaya"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textCompDev5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Собери пазл"
-                    android:textColor="#3D0250"
-                    android:textSize="17sp" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-    </ScrollView>
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

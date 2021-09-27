@@ -7,10 +7,21 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.itcity.ActivityMap;
 import com.example.itcity.R;
+import com.example.itcity.models.ProfileU;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 
 public class Informatica_HOME extends AppCompatActivity {
@@ -30,11 +41,13 @@ public class Informatica_HOME extends AppCompatActivity {
     ImageButton INFBUTTON13;
     ImageButton INFBUTTON14;
     ImageButton INFBUTTON15;
-    ImageButton INFBUTTON16;
-
-
     Button BACK;
-
+    FirebaseAuth auth;
+    FirebaseDatabase db;
+    DatabaseReference users;
+    ProfileU DB = new ProfileU();
+    int access;
+    ArrayList<ImageButton> ButtonList = new ArrayList<>(15);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +71,198 @@ public class Informatica_HOME extends AppCompatActivity {
         INFBUTTON14 = (ImageButton) findViewById(R.id.SECBUTTON14);
         INFBUTTON15 = (ImageButton) findViewById(R.id.SECBUTTON15);
         BACK = findViewById(R.id.SECBUTTONBACK);
+
+        auth = FirebaseAuth.getInstance();
+        FirebaseUser user1 = auth.getCurrentUser();
+        db = FirebaseDatabase.getInstance();
+        users = db.getReference("Users");
+        String UID = user1.getUid();
+
+        ButtonList.add(INFBUTTON1);
+        ButtonList.add(INFBUTTON2);
+        ButtonList.add(INFBUTTON3);
+        ButtonList.add(INFBUTTON4);
+        ButtonList.add(INFBUTTON5);
+        ButtonList.add(INFBUTTON6);
+        ButtonList.add(INFBUTTON7);
+        ButtonList.add(INFBUTTON8);
+        ButtonList.add(INFBUTTON9);
+        ButtonList.add(INFBUTTON10);
+        ButtonList.add(INFBUTTON11);
+        ButtonList.add(INFBUTTON12);
+        ButtonList.add(INFBUTTON13);
+        ButtonList.add(INFBUTTON14);
+        ButtonList.add(INFBUTTON15);
+
+        users.child(UID).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                DB = snapshot.getValue(ProfileU.class);
+                access = DB.getInformatic();
+                for (int i = 0; i < ButtonList.size(); i++) {
+                    if (i > access) {
+                        ButtonList.get(i).setEnabled(false);
+                    }
+                    if (i == access) {
+                        switch (i) {
+                            case 1:
+                                ButtonList.get(i-1).setImageResource(R.drawable.infonhome1);
+                                ButtonList.get(i).setImageResource(R.drawable.infoffhome2);
+                                break;
+                            case 2:
+                                ButtonList.get(i-2).setImageResource(R.drawable.infonhome1);
+                                ButtonList.get(i-1).setImageResource(R.drawable.infonhome2);
+                                ButtonList.get(i).setImageResource(R.drawable.infoffhome3);
+                                break;
+                            case 3:
+                                ButtonList.get(i-3).setImageResource(R.drawable.infonhome1);
+                                ButtonList.get(i-2).setImageResource(R.drawable.infonhome2);
+                                ButtonList.get(i-1).setImageResource(R.drawable.infonhome3);
+                                ButtonList.get(i).setImageResource(R.drawable.infoffhome4);
+                                break;
+                            case 4:
+                                ButtonList.get(i-4).setImageResource(R.drawable.infonhome1);
+                                ButtonList.get(i-3).setImageResource(R.drawable.infonhome2);
+                                ButtonList.get(i-2).setImageResource(R.drawable.infonhome3);
+                                ButtonList.get(i-1).setImageResource(R.drawable.infonhome4);
+                                ButtonList.get(i).setImageResource(R.drawable.infoffhome5);
+                                break;
+                            case 5:
+                                ButtonList.get(i-5).setImageResource(R.drawable.infonhome1);
+                                ButtonList.get(i-4).setImageResource(R.drawable.infonhome2);
+                                ButtonList.get(i-3).setImageResource(R.drawable.infonhome3);
+                                ButtonList.get(i-2).setImageResource(R.drawable.infonhome4);
+                                ButtonList.get(i-1).setImageResource(R.drawable.infonhome5);
+                                ButtonList.get(i).setImageResource(R.drawable.infoffhome6);
+                                break;
+                            case 6:
+                                ButtonList.get(i-6).setImageResource(R.drawable.infonhome1);
+                                ButtonList.get(i-5).setImageResource(R.drawable.infonhome2);
+                                ButtonList.get(i-4).setImageResource(R.drawable.infonhome3);
+                                ButtonList.get(i-3).setImageResource(R.drawable.infonhome4);
+                                ButtonList.get(i-2).setImageResource(R.drawable.infonhome5);
+                                ButtonList.get(i-1).setImageResource(R.drawable.infonhome6);
+                                ButtonList.get(i).setImageResource(R.drawable.infoffhome7);
+                                break;
+                            case 7:
+                                ButtonList.get(i-7).setImageResource(R.drawable.infonhome1);
+                                ButtonList.get(i-6).setImageResource(R.drawable.infonhome2);
+                                ButtonList.get(i-5).setImageResource(R.drawable.infonhome3);
+                                ButtonList.get(i-4).setImageResource(R.drawable.infonhome4);
+                                ButtonList.get(i-3).setImageResource(R.drawable.infonhome5);
+                                ButtonList.get(i-2).setImageResource(R.drawable.infonhome6);
+                                ButtonList.get(i-1).setImageResource(R.drawable.infonhome7);
+                                ButtonList.get(i).setImageResource(R.drawable.infoffhome8);
+                                break;
+                            case 8:
+                                ButtonList.get(i-8).setImageResource(R.drawable.infonhome1);
+                                ButtonList.get(i-7).setImageResource(R.drawable.infonhome2);
+                                ButtonList.get(i-6).setImageResource(R.drawable.infonhome3);
+                                ButtonList.get(i-5).setImageResource(R.drawable.infonhome4);
+                                ButtonList.get(i-4).setImageResource(R.drawable.infonhome5);
+                                ButtonList.get(i-3).setImageResource(R.drawable.infonhome6);
+                                ButtonList.get(i-2).setImageResource(R.drawable.infonhome7);
+                                ButtonList.get(i-1).setImageResource(R.drawable.infonhome8);
+                                ButtonList.get(i).setImageResource(R.drawable.infoffhome9);
+                                break;
+                            case 9:
+                                ButtonList.get(i-9).setImageResource(R.drawable.infonhome1);
+                                ButtonList.get(i-8).setImageResource(R.drawable.infonhome2);
+                                ButtonList.get(i-7).setImageResource(R.drawable.infonhome3);
+                                ButtonList.get(i-6).setImageResource(R.drawable.infonhome4);
+                                ButtonList.get(i-5).setImageResource(R.drawable.infonhome5);
+                                ButtonList.get(i-4).setImageResource(R.drawable.infonhome6);
+                                ButtonList.get(i-3).setImageResource(R.drawable.infonhome7);
+                                ButtonList.get(i-2).setImageResource(R.drawable.infonhome8);
+                                ButtonList.get(i-1).setImageResource(R.drawable.infonhome9);
+                                ButtonList.get(i).setImageResource(R.drawable.infoffhome10);
+                                break;
+                            case 10:
+                                ButtonList.get(i-10).setImageResource(R.drawable.infonhome1);
+                                ButtonList.get(i-9).setImageResource(R.drawable.infonhome2);
+                                ButtonList.get(i-8).setImageResource(R.drawable.infonhome3);
+                                ButtonList.get(i-7).setImageResource(R.drawable.infonhome4);
+                                ButtonList.get(i-6).setImageResource(R.drawable.infonhome5);
+                                ButtonList.get(i-5).setImageResource(R.drawable.infonhome6);
+                                ButtonList.get(i-4).setImageResource(R.drawable.infonhome7);
+                                ButtonList.get(i-3).setImageResource(R.drawable.infonhome8);
+                                ButtonList.get(i-2).setImageResource(R.drawable.infonhome9);
+                                ButtonList.get(i-1).setImageResource(R.drawable.infonhome10);
+                                ButtonList.get(i).setImageResource(R.drawable.infoffhome11);
+                                break;
+                            case 11:
+                                ButtonList.get(i-11).setImageResource(R.drawable.infonhome1);
+                                ButtonList.get(i-10).setImageResource(R.drawable.infonhome2);
+                                ButtonList.get(i-9).setImageResource(R.drawable.infonhome3);
+                                ButtonList.get(i-8).setImageResource(R.drawable.infonhome4);
+                                ButtonList.get(i-7).setImageResource(R.drawable.infonhome5);
+                                ButtonList.get(i-6).setImageResource(R.drawable.infonhome6);
+                                ButtonList.get(i-5).setImageResource(R.drawable.infonhome7);
+                                ButtonList.get(i-4).setImageResource(R.drawable.infonhome8);
+                                ButtonList.get(i-3).setImageResource(R.drawable.infonhome9);
+                                ButtonList.get(i-2).setImageResource(R.drawable.infonhome10);
+                                ButtonList.get(i-1).setImageResource(R.drawable.infonhome11);
+                                ButtonList.get(i).setImageResource(R.drawable.infoffhome12);
+                                break;
+                            case 12:
+                                ButtonList.get(i-12).setImageResource(R.drawable.infonhome1);
+                                ButtonList.get(i-11).setImageResource(R.drawable.infonhome2);
+                                ButtonList.get(i-10).setImageResource(R.drawable.infonhome3);
+                                ButtonList.get(i-9).setImageResource(R.drawable.infonhome4);
+                                ButtonList.get(i-8).setImageResource(R.drawable.infonhome5);
+                                ButtonList.get(i-7).setImageResource(R.drawable.infonhome6);
+                                ButtonList.get(i-6).setImageResource(R.drawable.infonhome7);
+                                ButtonList.get(i-5).setImageResource(R.drawable.infonhome8);
+                                ButtonList.get(i-4).setImageResource(R.drawable.infonhome9);
+                                ButtonList.get(i-3).setImageResource(R.drawable.infonhome10);
+                                ButtonList.get(i-2).setImageResource(R.drawable.infonhome11);
+                                ButtonList.get(i-1).setImageResource(R.drawable.infonhome12);
+                                ButtonList.get(i).setImageResource(R.drawable.infoffhome13);
+                                break;
+                            case 13:
+                                ButtonList.get(i-13).setImageResource(R.drawable.infonhome1);
+                                ButtonList.get(i-12).setImageResource(R.drawable.infonhome2);
+                                ButtonList.get(i-11).setImageResource(R.drawable.infonhome3);
+                                ButtonList.get(i-10).setImageResource(R.drawable.infonhome4);
+                                ButtonList.get(i-9).setImageResource(R.drawable.infonhome5);
+                                ButtonList.get(i-8).setImageResource(R.drawable.infonhome6);
+                                ButtonList.get(i-7).setImageResource(R.drawable.infonhome7);
+                                ButtonList.get(i-6).setImageResource(R.drawable.infonhome8);
+                                ButtonList.get(i-5).setImageResource(R.drawable.infonhome9);
+                                ButtonList.get(i-4).setImageResource(R.drawable.infonhome10);
+                                ButtonList.get(i-3).setImageResource(R.drawable.infonhome11);
+                                ButtonList.get(i-2).setImageResource(R.drawable.infonhome12);
+                                ButtonList.get(i-1).setImageResource(R.drawable.infonhome13);
+                                ButtonList.get(i).setImageResource(R.drawable.infoffhome14);
+                                break;
+                            case 14:
+                                ButtonList.get(i-14).setImageResource(R.drawable.infonhome1);
+                                ButtonList.get(i-13).setImageResource(R.drawable.infonhome2);
+                                ButtonList.get(i-12).setImageResource(R.drawable.infonhome3);
+                                ButtonList.get(i-11).setImageResource(R.drawable.infonhome4);
+                                ButtonList.get(i-10).setImageResource(R.drawable.infonhome5);
+                                ButtonList.get(i-9).setImageResource(R.drawable.infonhome6);
+                                ButtonList.get(i-8).setImageResource(R.drawable.infonhome7);
+                                ButtonList.get(i-7).setImageResource(R.drawable.infonhome8);
+                                ButtonList.get(i-6).setImageResource(R.drawable.infonhome9);
+                                ButtonList.get(i-5).setImageResource(R.drawable.infonhome10);
+                                ButtonList.get(i-4).setImageResource(R.drawable.infonhome11);
+                                ButtonList.get(i-3).setImageResource(R.drawable.infonhome12);
+                                ButtonList.get(i-2).setImageResource(R.drawable.infonhome13);
+                                ButtonList.get(i-1).setImageResource(R.drawable.infonhome14);
+                                ButtonList.get(i).setImageResource(R.drawable.infoffhome15);
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
+        });
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
@@ -128,11 +333,6 @@ public class Informatica_HOME extends AppCompatActivity {
                         Intent intent15 = new Intent(Informatica_HOME.this, ThInf15.class);
                         startActivity(intent15);
                         break;
-                    case R.id.COMPBUTTONBACK:
-                        Intent intent = new Intent(Informatica_HOME.this, ActivityMap.class);
-                        startActivity(intent);
-                        break;
-
                     default:
                         break;
                 }
