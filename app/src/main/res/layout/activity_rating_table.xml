@@ -42,7 +42,8 @@
         android:background="@drawable/zadaniya"
         app:backgroundTint="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <LinearLayout
         android:layout_width="413dp"
@@ -102,23 +103,17 @@
             android:layout_width="350dp"
             android:layout_height="526dp"
             android:layout_gravity="center"
-            android:layout_marginRight="5dp"
             android:layout_marginLeft="-5dp"
+            android:layout_marginRight="5dp"
             android:background="@drawable/white_rait"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:ignore="SpeakableTextPresentCheck">
 
             <LinearLayout
+                android:id="@+id/mmrtable"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/textView139"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView"
-                    android:textSize="22sp" />
-            </LinearLayout>
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
 
 
         </ScrollView>

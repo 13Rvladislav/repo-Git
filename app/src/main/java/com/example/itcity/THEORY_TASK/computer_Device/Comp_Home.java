@@ -71,7 +71,17 @@ public class Comp_Home extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 DB = snapshot.getValue(ProfileU.class);
                 access = DB.getPc();
-                for (int i = 0; i < ButtonList.size(); i++) {
+                for (int j = 0; j <= access; j++) {
+                    int i = j - 1;
+                    if (j == 6) {
+                        ButtonList.get(i-5).setImageResource(R.drawable.componhome1);
+                        ButtonList.get(i-4).setImageResource(R.drawable.componhome2);
+                        ButtonList.get(i-3).setImageResource(R.drawable.componhome3);
+                        ButtonList.get(i-2).setImageResource(R.drawable.componhome4);
+                        ButtonList.get(i-1).setImageResource(R.drawable.componhome5);
+                        ButtonList.get(i).setImageResource(R.drawable.componhome6);
+                    }
+                    i = j;
                     if (i > access) {
                         ButtonList.get(i).setEnabled(false);
                     }

@@ -99,7 +99,26 @@ public class Informatica_HOME extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 DB = snapshot.getValue(ProfileU.class);
                 access = DB.getInformatic();
-                for (int i = 0; i < ButtonList.size(); i++) {
+                for (int j = 0; j <= access; j++) {
+                    int i = j - 1;
+                    if (j == 15) {
+                        ButtonList.get(i-14).setImageResource(R.drawable.infonhome1);
+                        ButtonList.get(i-13).setImageResource(R.drawable.infonhome2);
+                        ButtonList.get(i-12).setImageResource(R.drawable.infonhome3);
+                        ButtonList.get(i-11).setImageResource(R.drawable.infonhome4);
+                        ButtonList.get(i-10).setImageResource(R.drawable.infonhome5);
+                        ButtonList.get(i-9).setImageResource(R.drawable.infonhome6);
+                        ButtonList.get(i-8).setImageResource(R.drawable.infonhome7);
+                        ButtonList.get(i-7).setImageResource(R.drawable.infonhome8);
+                        ButtonList.get(i-6).setImageResource(R.drawable.infonhome9);
+                        ButtonList.get(i-5).setImageResource(R.drawable.infonhome10);
+                        ButtonList.get(i-4).setImageResource(R.drawable.infonhome11);
+                        ButtonList.get(i-3).setImageResource(R.drawable.infonhome12);
+                        ButtonList.get(i-2).setImageResource(R.drawable.infonhome13);
+                        ButtonList.get(i-1).setImageResource(R.drawable.infonhome14);
+                        ButtonList.get(i).setImageResource(R.drawable.infonhome15);
+                    }
+                    i = j;
                     if (i > access) {
                         ButtonList.get(i).setEnabled(false);
                     }

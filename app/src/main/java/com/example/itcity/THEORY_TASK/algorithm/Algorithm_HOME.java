@@ -70,7 +70,17 @@ public class Algorithm_HOME extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 DB = snapshot.getValue(ProfileU.class);
                 access = DB.getAlgorithm();
-                for (int i = 0; i < ButtonList.size(); i++) {
+                for (int j = 0; j <= access; j++) {
+                    int i = j - 1;
+                    if (j == 6) {
+                        ButtonList.get(i-5).setImageResource(R.drawable.algonhome1);
+                        ButtonList.get(i-4).setImageResource(R.drawable.algonhome2);
+                        ButtonList.get(i-3).setImageResource(R.drawable.algonhome3);
+                        ButtonList.get(i-2).setImageResource(R.drawable.algonhome4);
+                        ButtonList.get(i-1).setImageResource(R.drawable.algonhome5);
+                        ButtonList.get(i).setImageResource(R.drawable.algonhome6);
+                    }
+                    i = j;
                     if (i > access) {
                         ButtonList.get(i).setEnabled(false);
                     }

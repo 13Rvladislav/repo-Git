@@ -27,6 +27,7 @@ public class Activity_Profile extends AppCompatActivity {
     DatabaseReference users;
     String str;
     ProfileU me = new ProfileU();
+    int mmr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +74,8 @@ public class Activity_Profile extends AppCompatActivity {
                 me = snapshot.getValue(ProfileU.class);
                 str = me.getName();
                 UserName.setText(str);
-                str = me.getMmr();
+                mmr = me.getMmr();
+                str = Integer.toString(mmr);
                 mmrcount.setText(str);
             }
 

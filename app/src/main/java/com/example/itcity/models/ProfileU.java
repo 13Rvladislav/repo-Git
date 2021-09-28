@@ -2,12 +2,12 @@ package com.example.itcity.models;
 
 public class ProfileU {
     String Name;
-    String Mmr;
+    int Mmr;
     int algorithm, security, pc, programming, informatic;
 
     public ProfileU() {
         this.Name = Name;
-        this.Mmr = "0";
+        this.Mmr = 0;
         this.algorithm = 0;
         this.security = 0;
         this.pc = 0;
@@ -15,7 +15,7 @@ public class ProfileU {
         this.informatic = 0;
     }
 
-    public ProfileU(String name, String mmr, int algorithm, int security, int pc, int programming, int informatic) {
+    public ProfileU(String name, int mmr, int algorithm, int security, int pc, int programming, int informatic) {
         this.Name = name;
         this.Mmr = mmr;
         this.algorithm = algorithm;
@@ -31,10 +31,10 @@ public class ProfileU {
         this.Name = name;
     }
 
-    public String getMmr() {
+    public int getMmr() {
         return this.Mmr;
     }
-    public void setMmr(String mmr) {
+    public void setMmr(int mmr) {
         this.Mmr = mmr;
     }
 

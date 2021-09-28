@@ -91,7 +91,24 @@ public class Programming_Home extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 DB = snapshot.getValue(ProfileU.class);
                 access = DB.getProgramming();
-                for (int i = 0; i < ButtonList.size(); i++) {
+                for (int j = 0; j <= access; j++) {
+                    int i = j - 1;
+                    if (j == 13) {
+                        ButtonList.get(i - 12).setImageResource(R.drawable.progonhome1);
+                        ButtonList.get(i - 11).setImageResource(R.drawable.progonhome2);
+                        ButtonList.get(i - 10).setImageResource(R.drawable.progonhome3);
+                        ButtonList.get(i - 9).setImageResource(R.drawable.progonhome4);
+                        ButtonList.get(i - 8).setImageResource(R.drawable.progonhome5);
+                        ButtonList.get(i - 7).setImageResource(R.drawable.progonhome6);
+                        ButtonList.get(i - 6).setImageResource(R.drawable.progonhome7);
+                        ButtonList.get(i - 5).setImageResource(R.drawable.progonhome8);
+                        ButtonList.get(i - 4).setImageResource(R.drawable.progonhome9);
+                        ButtonList.get(i - 3).setImageResource(R.drawable.progonhome10);
+                        ButtonList.get(i - 2).setImageResource(R.drawable.progonhome11);
+                        ButtonList.get(i - 1).setImageResource(R.drawable.progonhome12);
+                        ButtonList.get(i).setImageResource(R.drawable.progonhome13);
+                    }
+                    i = j;
                     if (i > access) {
                         ButtonList.get(i).setEnabled(false);
                     }
