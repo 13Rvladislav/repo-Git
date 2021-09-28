@@ -92,10 +92,14 @@
         <activity android:name=".THEORY_TASK.fundamental_of_informatics.ThInf1" />
         <activity android:name=".THEORY_TASK.computer_Device.Zadcomp6" />
         <activity android:name=".THEORY_TASK.security.ZadSec8" />
-        <activity android:name=".THEORY_TASK.computer_Device.Zadcomp5" />
-        <activity android:name=".THEORY_TASK.computer_Device.Zadcomp4" />
-        <activity android:name=".THEORY_TASK.computer_Device.Zadcomp3" />
-        <activity android:name=".THEORY_TASK.computer_Device.Zadcomp2" />
+        <activity android:name=".THEORY_TASK.computer_Device.Zadcomp5"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".THEORY_TASK.computer_Device.Zadcomp4"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".THEORY_TASK.computer_Device.Zadcomp3"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".THEORY_TASK.computer_Device.Zadcomp2"
+            android:windowSoftInputMode="adjustNothing"/>
         <activity android:name=".THEORY_TASK.computer_Device.ZadComp1" />
         <activity
             android:name=".THEORY_TASK.security.ZadSec7"

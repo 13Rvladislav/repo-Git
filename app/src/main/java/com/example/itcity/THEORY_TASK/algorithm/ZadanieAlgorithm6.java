@@ -24,19 +24,35 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.itcity.R;
+import com.example.itcity.models.ProfileU;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
 public class ZadanieAlgorithm6 extends AppCompatActivity {
     ArrayList<PuzzlePiece> pieces;
-    int res;
+    int mark;
     Button button5;
     String strres;
     Dialog dialog;
     Button Check;
+
+    boolean testing=false;
+    FirebaseAuth auth;
+    FirebaseDatabase DB;
+    DatabaseReference users;
+    int str;
+    ProfileU me = new ProfileU();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +61,13 @@ public class ZadanieAlgorithm6 extends AppCompatActivity {
         getSupportActionBar().hide();
         button5 = findViewById(R.id.button5);
         Check = findViewById(R.id.algCheck);
+        //для записи  рейтинга и прогресса
+        auth = FirebaseAuth.getInstance();
+        FirebaseUser user1 = auth.getCurrentUser();
+        DB = FirebaseDatabase.getInstance();
+        users = DB.getReference("Users");
+        String UID = user1.getUid();
+        //
         final RelativeLayout layout = findViewById(R.id.Alayout);
         pieces = splitImage();
         TouchListener touchListener = new TouchListener();
@@ -64,10 +87,10 @@ public class ZadanieAlgorithm6 extends AppCompatActivity {
                     case R.id.algCheck:
                         for (int i = 0; i < pieces.size(); i++) {
                             if (pieces.get(i).canMove == false ) {
-                                res += 11;
+                                mark += 11;
                             }
                         }
-                        if (res == 99) {res += 1;}
+                        if (mark == 99) {mark += 1;}
                         dialog = new Dialog(ZadanieAlgorithm6.this);
                         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
                         dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
@@ -77,10 +100,28 @@ public class ZadanieAlgorithm6 extends AppCompatActivity {
 
                         //кнопки конец
                         TextView result = dialog.findViewById(R.id.mark_for_the_lvl);
-                        strres = Integer.toString(res);
+                        strres = Integer.toString(mark);
                         result.setText(strres);
                         dialog.show();//показ окна
+                        users.child(UID).addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                me = snapshot.getValue(ProfileU.class);
+                                str = me.getMmr();
+                                int a = me.getAlgorithm();
+                                if ((a < 6)&&(testing==false)) {
+                                    mark += str;
+                                    users.child(UID).child("mmr").setValue(mark);
+                                    testing=true;
+                                    a+=1;
+                                    users.child(UID).child("algorithm").setValue(a);
+                                }
+                            }
 
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+                            }
+                        });
                         Button back_to_houses= dialog.findViewById(R.id.button10);
                         back_to_houses.setOnClickListener(new View.OnClickListener() {
                             @Override

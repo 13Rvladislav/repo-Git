@@ -1,8 +1,5 @@
 package com.example.itcity.THEORY_TASK.algorithm;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -16,7 +13,19 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
+
 import com.example.itcity.R;
+import com.example.itcity.models.ProfileU;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class ZadanieAlgorithm2 extends AppCompatActivity implements Algtask2SingleChoiceDialog.SingleChoiceListener {
     Dialog dialog;//диалоговое окно
@@ -26,7 +35,7 @@ public class ZadanieAlgorithm2 extends AppCompatActivity implements Algtask2Sing
     Button button3;
     Button button4;
     Button button5;
-
+    String markSTR;
     //кнопка продолжить и назад
     Button check;
     Button back;
@@ -44,6 +53,12 @@ public class ZadanieAlgorithm2 extends AppCompatActivity implements Algtask2Sing
     Boolean bt3 = false;
     Boolean bt4 = false;
     Boolean bt5 = false;
+    boolean testing=false;
+    FirebaseAuth auth;
+    FirebaseDatabase DB;
+    DatabaseReference users;
+    int str;
+    ProfileU me = new ProfileU();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,9 +71,15 @@ public class ZadanieAlgorithm2 extends AppCompatActivity implements Algtask2Sing
         button3 = (Button) findViewById(R.id.algTask2Button3);
         button4 = (Button) findViewById(R.id.algTask2Button4);
         button5 = (Button) findViewById(R.id.algTask2Button5);
-        back= (Button) findViewById(R.id.button5);;
+        back = (Button) findViewById(R.id.button5);
         check = (Button) findViewById(R.id.algCheck);
-
+        //для записи  рейтинга и прогресса
+        auth = FirebaseAuth.getInstance();
+        FirebaseUser user1 = auth.getCurrentUser();
+        DB = FirebaseDatabase.getInstance();
+        users = DB.getReference("Users");
+        String UID = user1.getUid();
+        //
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -126,8 +147,6 @@ public class ZadanieAlgorithm2 extends AppCompatActivity implements Algtask2Sing
                             return;
                         }
 
-
-                        String markSTR;
                         if (answer1.equalsIgnoreCase("Результативность")) {
                             //если ответ в поле 1 совпал с правильным ответом то делаем +20 баллов
                             mark += 20;
@@ -155,6 +174,7 @@ public class ZadanieAlgorithm2 extends AppCompatActivity implements Algtask2Sing
                             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
                             dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
                             dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
+
                             dialog.setCancelable(false);//не закрывается кнопкой назад
                             //кнопки начало
 
@@ -164,14 +184,36 @@ public class ZadanieAlgorithm2 extends AppCompatActivity implements Algtask2Sing
                             result.setText(markSTR);
                             dialog.show();//показ окна
 
-                            Button back_to_houses= dialog.findViewById(R.id.button10);
-                             back_to_houses.setOnClickListener(new View.OnClickListener() {
+                            users.child(UID).addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                    me = snapshot.getValue(ProfileU.class);
+                                    str = me.getMmr();
+                                    int a = me.getAlgorithm();
+                                    if ((a < 2)&&(testing==false)) {
+                                        mark += str;
+                                        users.child(UID).child("mmr").setValue(mark);
+                                        testing=true;
+                                        a+=1;
+                                        users.child(UID).child("algorithm").setValue(a);
+                                    }
+                                }
+
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError error) {
+                                }
+                            });
+
+
+                            Button back_to_houses = dialog.findViewById(R.id.button10);
+                            back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
                                     Intent intent = new Intent(ZadanieAlgorithm2.this, Algorithm_HOME.class);
                                     startActivity(intent);
                                 }
                             });
+
                             //ЕСЛИ БЫЛ ЗАПУЩЕН ЭТОТ БЛОК КОДА МЕНЯЕМ КОЛИЧЕСТВО БАЛЛОВ В FIREBASE  И В ПЕРЕМЕННУЮ В КОТОРОЙ НАШ УРОВЕНЬ ДЕЛАЕМ +1;
                             break;
                         }

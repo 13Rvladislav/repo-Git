@@ -4,6 +4,7 @@ import static java.lang.Math.abs;
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
@@ -27,17 +28,29 @@ import android.widget.TextView;
 import com.example.itcity.R;
 import com.example.itcity.THEORY_TASK.algorithm.Algorithm_HOME;
 import com.example.itcity.THEORY_TASK.algorithm.TheoryAlgorithm6;
+import com.example.itcity.models.ProfileU;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
 public class ZadSec8 extends AppCompatActivity {
     ArrayList<PuzzlePiece> pieces;
-    int res;
+    int mark;
     Button button5;
     String strres;
     Dialog dialog;
     Button Check;
-
+    FirebaseAuth auth; boolean testing=false;
+    FirebaseDatabase DB;
+    DatabaseReference users;
+    int str;
+    ProfileU me = new ProfileU();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +58,11 @@ public class ZadSec8 extends AppCompatActivity {
         getSupportActionBar().hide();
         button5 = findViewById(R.id.bottomSecurityK);
         Check = findViewById(R.id.continueSec);
+        auth = FirebaseAuth.getInstance();
+        FirebaseUser user1 = auth.getCurrentUser();
+        DB = FirebaseDatabase.getInstance();
+        users = DB.getReference("Users");
+        String UID = user1.getUid();
         final RelativeLayout layout = findViewById(R.id.Blayout);
         pieces = splitImage();
         TouchListener touchListener = new TouchListener();
@@ -64,10 +82,10 @@ public class ZadSec8 extends AppCompatActivity {
                     case R.id.continueSec:
                         for (int i = 0; i < pieces.size(); i++) {
                             if (pieces.get(i).canMove == false ) {
-                                res += 11;
+                                mark += 11;
                             }
                         }
-                        if (res == 99) {res += 1;}
+                        if (mark == 99) {mark += 1;}
                         dialog = new Dialog(ZadSec8.this);
                         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
                         dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
@@ -77,10 +95,28 @@ public class ZadSec8 extends AppCompatActivity {
 
                         //кнопки конец
                         TextView result = dialog.findViewById(R.id.mark_for_the_lvl);
-                        strres = Integer.toString(res);
+                        strres = Integer.toString(mark);
                         result.setText(strres);
                         dialog.show();//показ окна
+                        users.child(UID).addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                me = snapshot.getValue(ProfileU.class);
+                                str = me.getMmr();
+                                int a = me.getSecurity();
+                                if ((a < 8)&&(testing==false)) {
+                                    mark += str;
+                                    users.child(UID).child("mmr").setValue(mark);
+                                    testing=true;
+                                    a+=1;
+                                    users.child(UID).child("security").setValue(a);
+                                }
+                            }
 
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+                            }
+                        });
                         Button back_to_houses= dialog.findViewById(R.id.button10);
                         back_to_houses.setOnClickListener(new View.OnClickListener() {
                             @Override
