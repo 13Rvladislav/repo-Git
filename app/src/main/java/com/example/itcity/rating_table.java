@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.pm.ActivityInfo;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
@@ -33,6 +34,7 @@ public class rating_table extends AppCompatActivity {
     String name, ratingstr, numberstr;
     int rating, number = 0;
     ArrayList<ProfileU> listdb = new ArrayList<>(), listout = new ArrayList<>();
+    Boolean update = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,31 +53,37 @@ public class rating_table extends AppCompatActivity {
         users.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                    DB = dataSnapshot.getValue(ProfileU.class);
-                    listdb.add(DB);
-                }
-                listout = arraysort(listdb);
-                for (int i = 0; i < listout.size(); i++) {
-                    number += 1;
-                    numberstr = Integer.toString(number);
-                    name = listout.get(i).getName();
-                    rating = listout.get(i).getMmr();
-                    ratingstr = Integer.toString(rating);
-                    TextView tabletext1 = new TextView(rating_table.this);
-                    TextView tabletext2 = new TextView(rating_table.this);
-                    TextView tabletext3 = new TextView(rating_table.this);
-                    tabletext1.setText(numberstr);
-                    tabletext2.setText(name);
-                    tabletext3.setText(ratingstr);
-                    tabletext1.setTextSize(24);
-                    tabletext2.setTextSize(24);
-                    tabletext3.setTextSize(24);
-                    TableRow newrow = new TableRow(rating_table.this);
-                    layout.addView(newrow);
-                    newrow.addView(tabletext1);
-                    newrow.addView(tabletext2);
-                    newrow.addView(tabletext3);
+                if (update) {
+                    for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                        DB = dataSnapshot.getValue(ProfileU.class);
+                        listdb.add(DB);
+                    }
+                    listout = arraysort(listdb);
+                    for (int i = 0; i < listout.size(); i++) {
+                        number += 1;
+                        numberstr = Integer.toString(number);
+                        name = listout.get(i).getName();
+                        rating = listout.get(i).getMmr();
+                        ratingstr = Integer.toString(rating);
+                        TextView tabletext1 = new TextView(rating_table.this);
+                        TextView tabletext2 = new TextView(rating_table.this);
+                        TextView tabletext3 = new TextView(rating_table.this);
+                        tabletext1.setText(numberstr);
+                        tabletext2.setText(name);
+                        tabletext3.setText(ratingstr);
+                        tabletext1.setTextSize(24);
+                        tabletext2.setTextSize(24);
+                        tabletext3.setTextSize(24);
+                        tabletext1.setTextColor(Color.parseColor("#000000"));
+                        tabletext2.setTextColor(Color.parseColor("#000000"));
+                        tabletext3.setTextColor(Color.parseColor("#000000"));
+                        TableRow newrow = new TableRow(rating_table.this);
+                        layout.addView(newrow);
+                        newrow.addView(tabletext1);
+                        newrow.addView(tabletext2);
+                        newrow.addView(tabletext3);
+                    }
+                    update = false;
                 }
             }
 
