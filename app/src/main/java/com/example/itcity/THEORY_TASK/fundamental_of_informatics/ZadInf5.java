@@ -34,6 +34,7 @@ public class ZadInf5 extends AppCompatActivity {
     DatabaseReference users;
     int str;
     ProfileU me = new ProfileU();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

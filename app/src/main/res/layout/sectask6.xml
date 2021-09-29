@@ -102,6 +102,7 @@
                 <TextView
                     android:id="@+id/textView49"
                     android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
                     android:layout_height="wrap_content"
                     android:text="Вы заметили, что от вашей странички в соцсети были совершены действия, которые вы не делали, то скорее всего вас 1) .... . Далее следует обратиться в 2) ....  для получения помощи. Вы в это время можете проверить компьютер на наличие компьютерных 3) .... "
                     android:textColor="#3D0250" />
@@ -116,6 +117,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
+                        android:layout_marginLeft="5dp"
                         android:text="1)"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
@@ -126,6 +128,7 @@
                         android:layout_height="40dp"
                         android:layout_marginTop="10dp"
                         android:autofillHints=""
+
                         android:backgroundTint="#1794E0"
                         android:ems="10"
                         android:hint="Введите ответ"
@@ -143,6 +146,7 @@
                     <TextView
                         android:id="@+id/textView52"
                         android:layout_width="wrap_content"
+                        android:layout_marginLeft="5dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:text="2)"
@@ -176,6 +180,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:text="3)"
+                        android:layout_marginLeft="5dp"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
 

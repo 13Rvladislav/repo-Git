@@ -170,6 +170,7 @@
         android:text="Определить тип графа по картинке."
         android:textColor="#3D0250"
         android:textSize="17sp"
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

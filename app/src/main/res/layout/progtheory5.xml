@@ -92,7 +92,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="239dp"
                 android:layout_marginLeft="5dp"
 
                 android:layout_marginTop="15dp"
@@ -102,7 +102,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="226dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:orientation="vertical">
@@ -124,7 +124,7 @@
                     <TextView
                         android:id="@+id/textView11"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="85dp"
                         android:text="2.	Многострочные. Комментарий, в котором необходимо использовать множество строк, начинается с /* и заканчивается */. Их можно использовать на одной строке, или же поместить между ними множество строк. "
                         android:textColor="#3D0250" />
 
@@ -144,9 +144,9 @@
                 <TextView
                     android:id="@+id/textsec6"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
                     android:text="Давай проверим справишься ли ты с заданием по этой теме."
                     android:textColor="#3D0250" />
             </LinearLayout>

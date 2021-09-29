@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="-2dp"
     android:background="@drawable/zadanie_krasnye__1_"
     tools:context=".THEORY_TASK.algorithm.ZadanieAlgorithm1">
 
@@ -68,13 +69,13 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView31"
+                    android:id="@+id/textView313"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="7dp"
 
-                    android:text="@string/hoho"
+                    android:text="сопеставить оператор с функцие,которую он выполняет "
                     android:textColor="#3D0250"
                     android:textSize="17sp" />
 

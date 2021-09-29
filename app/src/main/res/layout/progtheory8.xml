@@ -257,6 +257,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
                     android:text="Мы прошли с тобой цикл с параметром, предусловием, постусловием и сейчас проверим, как ты понял их. "
                     android:textColor="#3D0250" />
             </LinearLayout>

@@ -11,7 +11,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import com.example.itcity.R;
+import com.example.itcity.models.ProfileU;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.itcity.R;
 import com.example.itcity.THEORY_TASK.security.Security_HOME;
@@ -27,6 +37,12 @@ public class ZadInf8 extends AppCompatActivity {
     int mark;//пременная ,где будут храниться баллы и пердавться в следющее активити для просмтора результат и после записываться в firebase
     String all = "ложьистинаоперациялогика";
     EditText answered;
+    boolean testing=false;
+    FirebaseAuth auth;
+    FirebaseDatabase DB;
+    DatabaseReference users;
+    int str;
+    ProfileU me = new ProfileU();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +53,12 @@ public class ZadInf8 extends AppCompatActivity {
         answered = findViewById(R.id.answer);
         enterword = findViewById(R.id.enter_a_word);
         back= (Button) findViewById(R.id.bottomSecurityK);
+        auth = FirebaseAuth.getInstance();
+        FirebaseUser user1 = auth.getCurrentUser();
+        DB = FirebaseDatabase.getInstance();
+        users = DB.getReference("Users");
+        String UID = user1.getUid();
+        //
         View.OnClickListener onClickListener = new View.OnClickListener() {
 
             @Override
@@ -77,7 +99,25 @@ public class ZadInf8 extends AppCompatActivity {
                             markSTR = Integer.toString(mark);
                             result.setText(markSTR);
                             dialog.show();//показ окна
+                            users.child(UID).addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                    me = snapshot.getValue(ProfileU.class);
+                                    str = me.getMmr();
+                                    int a = me.getInformatic();
+                                    if ((a < 8)&&(testing==false)) {
+                                        mark += str;
+                                        users.child(UID).child("mmr").setValue(mark);
+                                        testing=true;
+                                        a+=1;
+                                        users.child(UID).child("informatic").setValue(a);
+                                    }
+                                }
 
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError error) {
+                                }
+                            });
                             Button back_to_houses= dialog.findViewById(R.id.button10);
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override

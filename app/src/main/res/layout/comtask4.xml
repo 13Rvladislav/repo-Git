@@ -82,7 +82,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="7dp"
                     android:text="Ответить на поставленные вопросы. (вписать название устройства о котором ведется речь)"
                     android:textColor="#3D0250" />
             </LinearLayout>
@@ -99,6 +99,7 @@
                 <TextView
                     android:id="@+id/textView49"
                     android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
                     android:layout_height="wrap_content"
                     android:text="1. Устройство, которое производит вычисления в графических приложениях и играх\n2. Хранилище данных в компьютере\n3. устройства, читающие и записывающие диски"
                     android:textColor="#3D0250" />
@@ -114,6 +115,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:text="1)"
+                        android:layout_marginLeft="10dp"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
 
@@ -143,6 +145,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:text="2)"
+                        android:layout_marginLeft="10dp"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
 
@@ -173,6 +176,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:text="3)"
+                        android:layout_marginLeft="10dp"
                         android:textColor="#3D0250"
                         android:textSize="18sp" />
 

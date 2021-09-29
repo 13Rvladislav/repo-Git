@@ -89,7 +89,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:text="\t\t\tПривет! Сейчас ты узнаешь как безопасно пользоваться компьютером и серфить в интернете."
+                    android:text="Привет! Сейчас ты узнаешь как безопасно пользоваться компьютером и серфить в интернете."
                     android:textColor="#3D0250" />
 
                 <TextView
@@ -98,13 +98,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:text="\t\t\tНачну с того, что, как и в реальной жизни, в интернете есть преступники. Они занимаются интернет-мошенничеством."
+                    android:text="Начну с того, что, как и в реальной жизни, в интернете есть преступники. Они занимаются интернет-мошенничеством."
                     android:textColor="#3D0250" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="230dp"
+                android:layout_height="176dp"
                 android:layout_marginLeft="5dp"
 
                 android:layout_marginTop="15dp"
@@ -130,7 +130,7 @@
                         android:id="@+id/textsec19"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="\t\t\tВидов интернет-мошенничества довольно много: мошенничество с благотворительностью, с билетами, с подарочными картами или выигрышем в лотерее, фишинг, проверка реквизитов, бесплатный фриланс, просьба о помощи."
+                        android:text="Видов интернет-мошенничества довольно много: мошенничество с благотворительностью, с билетами, с подарочными картами или выигрышем в лотерее, фишинг, проверка реквизитов, бесплатный фриланс, просьба о помощи."
                         android:textColor="#3D0250" />
 
                 </LinearLayout>

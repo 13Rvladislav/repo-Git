@@ -102,7 +102,7 @@
         <item>нет правильного ответа</item>
     </string-array>
     <string-array name="progchoice_items8">
-        <item>Цикл с параметром </item>
+        <item>Цикл с параметром</item>
         <item>Цикл с предусловием</item>
         <item>Цикл с постусловием </item>
     </string-array>
@@ -190,7 +190,7 @@
     <string name="cout_a"><![CDATA[Вывод cout <<a; выводит значение из переменной а;]]></string>
     <string name="cin_a"><![CDATA[Ввод cin>> a; кладем введенное значение в переменную а;]]></string>
     <string name="_2_cout_stdout">2.\tcout стандартный выходной поток (stdout в С)</string>
-    <string name="t_t_t">\t\t\tТеперь я хочу рассказать тебе про ввод и вывод в языке С++, а также о том, как можно осуществлять переход на новую строку.</string>
+    <string name="t_t_t">Теперь я хочу рассказать тебе про ввод и вывод в языке С++, а также о том, как можно осуществлять переход на новую строку.</string>
     <string name="xxxx">ПРОГАММИРОВАНИЕ</string>
     <string name="forfff">Ну что ж давай попробуем изучить циклы. Сейчас мы изучим цикл for с параметром.</string>
     <string name="do_while_do_while">Цикл do while используют, когда требуется выполнять много одинаковых или похожих действий. Этот цикл работает до тех пор пока верно некоторое условие. Поэтому часто его называют цикл до. Цикл do while можно составить так:</string>
@@ -233,7 +233,7 @@
     <string name="dod">ПРОДОЛЖИТЬ</string>
     <string name="fofo">АЛГОРИТМЫ</string>
     <string name="gogo">выбрать</string>
-    <string name="hoho">Сопоставить оператор и его роль</string>
+    <string name="hoho">Выбрать ответ в котором содержатся элементы оператора switch</string>
     <string name="jojo">Определи по блок-схемам, виды  циклов.</string>
     <string name="koko">ПРОДОЛЖИТЬ</string>
     <string name="lolo">ПРОГРАММИРОВАНИЕ</string>

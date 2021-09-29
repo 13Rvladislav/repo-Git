@@ -12,7 +12,16 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import com.example.itcity.R;
+import com.example.itcity.models.ProfileU;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
@@ -38,7 +47,12 @@ public class Zadp8 extends AppCompatActivity implements Progtask8SingleChoiceDia
     Boolean bt1 = false;
     Boolean bt2 = false;
     Boolean bt3 = false;
-
+    boolean testing=false;
+    FirebaseAuth auth;
+    FirebaseDatabase DB;
+    DatabaseReference users;
+    int str;
+    ProfileU me = new ProfileU();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +64,13 @@ public class Zadp8 extends AppCompatActivity implements Progtask8SingleChoiceDia
         button3 = (Button) findViewById(R.id.algTask2Button3);
         check = (Button) findViewById(R.id.algCheck);
         back = (Button) findViewById(R.id.button5);
+        //для записи  рейтинга и прогресса
+        auth = FirebaseAuth.getInstance();
+        FirebaseUser user1 = auth.getCurrentUser();
+        DB = FirebaseDatabase.getInstance();
+        users = DB.getReference("Users");
+        String UID = user1.getUid();
+        //
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -86,12 +107,12 @@ public class Zadp8 extends AppCompatActivity implements Progtask8SingleChoiceDia
                             return;
                         }
                         if (TextUtils.isEmpty(answer2)) {
-                            Toast toast = Toast.makeText(Zadp8.this, "вы не дали ответ в  поле 1", Toast.LENGTH_SHORT);
+                            Toast toast = Toast.makeText(Zadp8.this, "вы не дали ответ в  поле 2", Toast.LENGTH_SHORT);
                             toast.show();
                             return;
                         }
                         if (TextUtils.isEmpty(answer3)) {
-                            Toast toast = Toast.makeText(Zadp8.this, "вы не дали ответ в  поле 1", Toast.LENGTH_SHORT);
+                            Toast toast = Toast.makeText(Zadp8.this, "вы не дали ответ в  поле 3", Toast.LENGTH_SHORT);
                             toast.show();
                             return;
                         }
@@ -102,11 +123,11 @@ public class Zadp8 extends AppCompatActivity implements Progtask8SingleChoiceDia
                             //если ответ в поле 1 совпал с правильным ответом то делаем +20 баллов
                             mark += 33;
                         }
-                        if (answer2.equalsIgnoreCase("Цикл с постусловием ")) {
+                        if (answer2.equalsIgnoreCase("Цикл с постусловием")) {
                             //если ответ в поле 1 совпал с правильным ответом то делаем +20 баллов
                             mark += 33;
                         }
-                        if (answer3.equalsIgnoreCase("Цикл с параметром ")) {
+                        if (answer3.equalsIgnoreCase("Цикл с параметром")) {
                             //если ответ в поле 1 совпал с правильным ответом то делаем +20 баллов
                             mark += 33;
                         }
@@ -126,7 +147,25 @@ public class Zadp8 extends AppCompatActivity implements Progtask8SingleChoiceDia
                             markSTR = Integer.toString(mark);
                             result.setText(markSTR);
                             dialog.show();//показ окна
+                            users.child(UID).addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                    me = snapshot.getValue(ProfileU.class);
+                                    str = me.getMmr();
+                                    int a = me.getProgramming();
+                                    if ((a < 8)&&(testing==false)) {
+                                        mark += str;
+                                        users.child(UID).child("mmr").setValue(mark);
+                                        testing=true;
+                                        a+=1;
+                                        users.child(UID).child("programming").setValue(a);
+                                    }
+                                }
 
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError error) {
+                                }
+                            });
                             Button back_to_houses = dialog.findViewById(R.id.button10);
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override

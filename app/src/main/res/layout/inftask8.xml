@@ -86,7 +86,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:text="Найдите в таблице 5 слов по теме раздела."
+                    android:text="Найдите в таблице  слова по теме раздела(введите слвово в поле и нажмите ввод слова)."
                     android:textColor="#3D0250" />
             </LinearLayout>
 

@@ -119,8 +119,8 @@ public class Programming_Home extends AppCompatActivity {
                                 ButtonList.get(i).setImageResource(R.drawable.progoffhome2);
                                 break;
                             case 2:
-                                ButtonList.get(i - 2).setImageResource(R.drawable.infonhome1);
-                                ButtonList.get(i - 1).setImageResource(R.drawable.infonhome2);
+                                ButtonList.get(i - 2).setImageResource(R.drawable.progonhome1);
+                                ButtonList.get(i - 1).setImageResource(R.drawable.progonhome2);
                                 ButtonList.get(i).setImageResource(R.drawable.progoffhome3);
                                 break;
                             case 3:
