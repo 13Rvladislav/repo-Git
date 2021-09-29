@@ -38,6 +38,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
 
 public class ZadanieAlgorithm6 extends AppCompatActivity {
     ArrayList<PuzzlePiece> pieces;
@@ -47,7 +49,7 @@ public class ZadanieAlgorithm6 extends AppCompatActivity {
     Dialog dialog;
     Button Check;
 
-    boolean testing=false;
+    boolean testing = false;
     FirebaseAuth auth;
     FirebaseDatabase DB;
     DatabaseReference users;
@@ -69,12 +71,22 @@ public class ZadanieAlgorithm6 extends AppCompatActivity {
         String UID = user1.getUid();
         //
         final RelativeLayout layout = findViewById(R.id.Alayout);
-        pieces = splitImage();
-        TouchListener touchListener = new TouchListener();
-        for (PuzzlePiece piece : pieces) {
-            piece.setOnTouchListener(touchListener);
-            layout.addView(piece);
-        }
+        layout.post(new Runnable() {
+            @Override
+            public void run() {
+                pieces = splitImage();
+                TouchListener touchListener = new TouchListener();
+                Collections.shuffle(pieces);
+                for (PuzzlePiece piece : pieces) {
+                    piece.setOnTouchListener(touchListener);
+                    layout.addView(piece);
+                    RelativeLayout.LayoutParams lParams = (RelativeLayout.LayoutParams) piece.getLayoutParams();
+                    lParams.leftMargin = new Random().nextInt(layout.getWidth() - piece.pieceWidth);
+                    lParams.topMargin = new Random().nextInt(layout.getHeight() - piece.pieceHeight);
+                    piece.setLayoutParams(lParams);
+                }
+            }
+        });
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
@@ -144,9 +156,7 @@ public class ZadanieAlgorithm6 extends AppCompatActivity {
         int rows = 3;
         int cols = 3;
 
-        ImageView imageView = findViewById(R.id.imageView);
         ArrayList<PuzzlePiece> pieces = new ArrayList<>(piecesNumber);
-
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.algpuzzle7);
 
         int pieceWidth = bitmap.getWidth()/cols;
