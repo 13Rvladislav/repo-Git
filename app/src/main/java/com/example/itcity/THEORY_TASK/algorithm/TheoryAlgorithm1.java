@@ -25,7 +25,7 @@ public class TheoryAlgorithm1 extends AppCompatActivity {
     private TextView textView24;
     private TextView textView25;
     private TextView textView26;
-    Button button11111111;
+
     Button button8;
     TextView textView5;
     Button bottomTeoryK1;
@@ -71,6 +71,5 @@ public class TheoryAlgorithm1 extends AppCompatActivity {
         };
         button8.setOnClickListener(onClickListener);
         bottomTeoryK1.setOnClickListener(onClickListener);
-        button11111111.setOnClickListener(onClickListener);
     }
 }
