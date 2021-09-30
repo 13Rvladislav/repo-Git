@@ -70,7 +70,11 @@ public class ZadInf8 extends AppCompatActivity {
                         break;
                     case R.id.enter_a_word:
                         String ans = answered.getText().toString();
-                        ans= ans.toLowerCase();
+                        ans = ans.toLowerCase();
+                        if (ans.equals("")) {
+                            Toast toast = Toast.makeText(ZadInf8.this, "Неверное слово!", Toast.LENGTH_SHORT);
+                            toast.show();
+                        } else {
                         int indexM = all.indexOf(ans);
                         if (indexM != -1) {
                             mark += 25;
@@ -81,6 +85,7 @@ public class ZadInf8 extends AppCompatActivity {
                             Toast toast = Toast.makeText(ZadInf8.this, "Неверное слово!", Toast.LENGTH_SHORT);
                             toast.show();
                         }
+                }
                         answered.setText("");
                         break;
                     case R.id.continueSec:

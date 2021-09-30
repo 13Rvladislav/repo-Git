@@ -1,8 +1,5 @@
 package com.example.itcity.THEORY_TASK.security;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -16,7 +13,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.itcity.ActivityAuthor;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.itcity.R;
 import com.example.itcity.models.ProfileU;
 import com.google.firebase.auth.FirebaseAuth;
@@ -35,11 +34,13 @@ public class ZadSec7 extends AppCompatActivity {
     int mark;//пременная ,где будут храниться баллы и пердавться в следющее активити для просмтора результат и после записываться в firebase
     String all = "вирусчервьхакертроянпрограммахакер";
     EditText answered;
-    FirebaseAuth auth; boolean testing=false;
+    FirebaseAuth auth;
+    boolean testing = false;
     FirebaseDatabase DB;
     DatabaseReference users;
     int str;
     ProfileU me = new ProfileU();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +50,7 @@ public class ZadSec7 extends AppCompatActivity {
         check = findViewById(R.id.continueSec);
         answered = findViewById(R.id.answer);
         enterword = findViewById(R.id.enter_a_word);
-        back= (Button) findViewById(R.id.bottomSecurityK);
+        back = (Button) findViewById(R.id.bottomSecurityK);
         auth = FirebaseAuth.getInstance();
         FirebaseUser user1 = auth.getCurrentUser();
         DB = FirebaseDatabase.getInstance();
@@ -66,23 +67,29 @@ public class ZadSec7 extends AppCompatActivity {
                         break;
                     case R.id.enter_a_word:
                         String ans = answered.getText().toString();
-                        ans= ans.toLowerCase();
-                        int indexM = all.indexOf(ans);
-                        if (indexM != -1) {
-                            mark += 20;
-                            all = all.replace(ans, "");
-                            Toast toast = Toast.makeText(ZadSec7.this, "Поздравляем!!! одно из слов было найдено", Toast.LENGTH_SHORT);
-                            toast.show();
-                        } else {
+                        if (ans.equals("")) {
                             Toast toast = Toast.makeText(ZadSec7.this, "Неверное слово!", Toast.LENGTH_SHORT);
                             toast.show();
+                        } else {
+                            ans = ans.toLowerCase();
+                            int indexM = all.indexOf(ans);
+                            if (indexM != -1) {
+                                mark += 20;
+                                all = all.replace(ans, "");
+                                Toast toast = Toast.makeText(ZadSec7.this, "Поздравляем!!! одно из слов было найдено", Toast.LENGTH_SHORT);
+                                toast.show();
+                            } else {
+                                Toast toast = Toast.makeText(ZadSec7.this, "Неверное слово!", Toast.LENGTH_SHORT);
+                                toast.show();
+                            }
                         }
                         answered.setText("");
                         break;
+
                     case R.id.continueSec:
                         String markSTR;
                         //вызов диалогового окна с показом количества баллов
-                        if (mark>=20) {
+                        if (mark >= 20) {
                             dialog = new Dialog(ZadSec7.this);
                             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
                             dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
@@ -101,11 +108,11 @@ public class ZadSec7 extends AppCompatActivity {
                                     me = snapshot.getValue(ProfileU.class);
                                     str = me.getMmr();
                                     int a = me.getSecurity();
-                                    if ((a < 7)&&(testing==false)) {
+                                    if ((a < 7) && (testing == false)) {
                                         mark += str;
                                         users.child(UID).child("mmr").setValue(mark);
-                                        testing=true;
-                                        a+=1;
+                                        testing = true;
+                                        a += 1;
                                         users.child(UID).child("security").setValue(a);
                                     }
                                 }
@@ -114,7 +121,7 @@ public class ZadSec7 extends AppCompatActivity {
                                 public void onCancelled(@NonNull DatabaseError error) {
                                 }
                             });
-                            Button back_to_houses= dialog.findViewById(R.id.button10);
+                            Button back_to_houses = dialog.findViewById(R.id.button10);
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
@@ -125,7 +132,7 @@ public class ZadSec7 extends AppCompatActivity {
                             //ЕСЛИ БЫЛ ЗАПУЩЕН ЭТОТ БЛОК КОДА МЕНЯЕМ КОЛИЧЕСТВО БАЛЛОВ В FIREBASE  И В ПЕРЕМЕННУЮ В КОТОРОЙ НАШ УРОВЕНЬ ДЕЛАЕМ +1;
                             break;
                         }
-                        if (mark<20) {
+                        if (mark < 20) {
                             dialog = new Dialog(ZadSec7.this);
                             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
                             dialog.setContentView(R.layout.markbaddialogwindow);//путь к макету диалогового окна
@@ -138,7 +145,7 @@ public class ZadSec7 extends AppCompatActivity {
                             markSTR = Integer.toString(mark);
                             result.setText(markSTR);
                             dialog.show();//показ окна
-                            Button back_to_houses= dialog.findViewById(R.id.button10);
+                            Button back_to_houses = dialog.findViewById(R.id.button10);
                             back_to_houses.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
