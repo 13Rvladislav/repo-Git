@@ -37,6 +37,7 @@ public class Algorithm_HOME extends AppCompatActivity {
     ProfileU DB = new ProfileU();
     int access;
     ArrayList<ImageButton> ButtonList = new ArrayList<>(6);
+    Boolean go = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,54 +71,55 @@ public class Algorithm_HOME extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 DB = snapshot.getValue(ProfileU.class);
                 access = DB.getAlgorithm();
-                for (int j = 0; j <= access; j++) {
-                    int i = j - 1;
-                    if (j == 6) {
-                        ButtonList.get(i-5).setImageResource(R.drawable.algonhome1);
-                        ButtonList.get(i-4).setImageResource(R.drawable.algonhome2);
-                        ButtonList.get(i-3).setImageResource(R.drawable.algonhome3);
-                        ButtonList.get(i-2).setImageResource(R.drawable.algonhome4);
-                        ButtonList.get(i-1).setImageResource(R.drawable.algonhome5);
-                        ButtonList.get(i).setImageResource(R.drawable.algonhome6);
-                    }
-                    i = j;
-                    if (i > access) {
-                        ButtonList.get(i).setEnabled(false);
-                    }
-                    if (i == access) {
-                        switch (i) {
-                            case 1:
-                                ButtonList.get(i-1).setImageResource(R.drawable.algonhome1);
-                                ButtonList.get(i).setImageResource(R.drawable.algoffhome2);
-                                break;
-                            case 2:
-                                ButtonList.get(i-2).setImageResource(R.drawable.algonhome1);
-                                ButtonList.get(i-1).setImageResource(R.drawable.algonhome2);
-                                ButtonList.get(i).setImageResource(R.drawable.algoffhome3);
-                                break;
-                            case 3:
-                                ButtonList.get(i-3).setImageResource(R.drawable.algonhome1);
-                                ButtonList.get(i-2).setImageResource(R.drawable.algonhome2);
-                                ButtonList.get(i-1).setImageResource(R.drawable.algonhome3);
-                                ButtonList.get(i).setImageResource(R.drawable.algoffhome4);
-                                break;
-                            case 4:
-                                ButtonList.get(i-4).setImageResource(R.drawable.algonhome1);
-                                ButtonList.get(i-3).setImageResource(R.drawable.algonhome2);
-                                ButtonList.get(i-2).setImageResource(R.drawable.algonhome3);
-                                ButtonList.get(i-1).setImageResource(R.drawable.algonhome4);
-                                ButtonList.get(i).setImageResource(R.drawable.algoffhome5);
-                                break;
-                            case 5:
-                                ButtonList.get(i-5).setImageResource(R.drawable.algonhome1);
-                                ButtonList.get(i-4).setImageResource(R.drawable.algonhome2);
-                                ButtonList.get(i-3).setImageResource(R.drawable.algonhome3);
-                                ButtonList.get(i-2).setImageResource(R.drawable.algonhome4);
-                                ButtonList.get(i-1).setImageResource(R.drawable.algonhome5);
-                                ButtonList.get(i).setImageResource(R.drawable.algoffhome6);
-                                break;
-                            default:
-                                break;
+                if (6 == access) {
+                    ButtonList.get(0).setImageResource(R.drawable.algonhome1);
+                    ButtonList.get(1).setImageResource(R.drawable.algonhome2);
+                    ButtonList.get(2).setImageResource(R.drawable.algonhome3);
+                    ButtonList.get(3).setImageResource(R.drawable.algonhome4);
+                    ButtonList.get(4).setImageResource(R.drawable.algonhome5);
+                    ButtonList.get(5).setImageResource(R.drawable.algonhome6);
+                    go = false;
+                }
+                if (go) {
+                    for (int i = 0; i < ButtonList.size(); i++) {
+                        if (i > access) {
+                            ButtonList.get(i).setEnabled(false);
+                        }
+                        if (i == access) {
+                            switch (i) {
+                                case 1:
+                                    ButtonList.get(i - 1).setImageResource(R.drawable.algonhome1);
+                                    ButtonList.get(i).setImageResource(R.drawable.algoffhome2);
+                                    break;
+                                case 2:
+                                    ButtonList.get(i - 2).setImageResource(R.drawable.algonhome1);
+                                    ButtonList.get(i - 1).setImageResource(R.drawable.algonhome2);
+                                    ButtonList.get(i).setImageResource(R.drawable.algoffhome3);
+                                    break;
+                                case 3:
+                                    ButtonList.get(i - 3).setImageResource(R.drawable.algonhome1);
+                                    ButtonList.get(i - 2).setImageResource(R.drawable.algonhome2);
+                                    ButtonList.get(i - 1).setImageResource(R.drawable.algonhome3);
+                                    ButtonList.get(i).setImageResource(R.drawable.algoffhome4);
+                                    break;
+                                case 4:
+                                    ButtonList.get(i - 4).setImageResource(R.drawable.algonhome1);
+                                    ButtonList.get(i - 3).setImageResource(R.drawable.algonhome2);
+                                    ButtonList.get(i - 2).setImageResource(R.drawable.algonhome3);
+                                    ButtonList.get(i - 1).setImageResource(R.drawable.algonhome4);
+                                    ButtonList.get(i).setImageResource(R.drawable.algoffhome5);
+                                    break;
+                                case 5:
+                                    ButtonList.get(i - 5).setImageResource(R.drawable.algonhome1);
+                                    ButtonList.get(i - 4).setImageResource(R.drawable.algonhome2);
+                                    ButtonList.get(i - 3).setImageResource(R.drawable.algonhome3);
+                                    ButtonList.get(i - 2).setImageResource(R.drawable.algonhome4);
+                                    ButtonList.get(i - 1).setImageResource(R.drawable.algonhome5);
+                                    ButtonList.get(i).setImageResource(R.drawable.algoffhome6);
+                                    break;
+                                default:
+                                    break;
+                            }
                         }
                     }
                 }

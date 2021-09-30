@@ -2,7 +2,7 @@ package com.example.itcity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -10,7 +10,8 @@ import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
-
+import android.view.View;
+import android.widget.Button;
 import com.example.itcity.models.ProfileU;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -27,6 +28,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class rating_table extends AppCompatActivity {
+    Button back;
     FirebaseAuth auth;
     FirebaseDatabase db;
     DatabaseReference users;
@@ -43,13 +45,27 @@ public class rating_table extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//выключение поворота экрана
         getSupportActionBar().hide();
         TableLayout layout = findViewById(R.id.mmrtable);
-
+        back = findViewById(R.id.button5);
         auth = FirebaseAuth.getInstance();
         FirebaseUser user1 = auth.getCurrentUser();
         db = FirebaseDatabase.getInstance();
         users = db.getReference("Users");
         String UID = user1.getUid();
+        View.OnClickListener onClickListener = new View.OnClickListener() {
 
+            @Override
+            public void onClick(View view) {
+                switch (view.getId()) {
+                    case R.id.button5:
+                        //кнопка назад
+                        Intent intent1 = new Intent(rating_table.this, ActivityMap.class);
+                        startActivity(intent1);
+                        break;
+
+                }
+            }
+        };
+        back.setOnClickListener(onClickListener);
         users.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
