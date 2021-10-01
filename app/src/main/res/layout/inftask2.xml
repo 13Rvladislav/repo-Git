@@ -26,6 +26,7 @@
             android:id="@+id/textView88"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#3D0250"
             android:text="Найди какое количество страниц (в тыс.) будет найдено по запросу Испания и Индия?" />
 
 

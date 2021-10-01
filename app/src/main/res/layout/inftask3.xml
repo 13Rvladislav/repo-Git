@@ -24,6 +24,7 @@
         <TextView
             android:id="@+id/textView88"
             android:layout_width="match_parent"
+            android:textColor="#3D0250"
             android:layout_height="wrap_content"
             android:text="Переведи двоичное число 1011101 в десятичную систему счисления." />
 

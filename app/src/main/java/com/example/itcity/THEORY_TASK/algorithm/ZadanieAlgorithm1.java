@@ -152,51 +152,76 @@ public class ZadanieAlgorithm1 extends AppCompatActivity {
                             }
                         }
                         if (mark == 96) {mark += 4;}
-                        dialog = new Dialog(ZadanieAlgorithm1.this);
-                        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
-                        dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
-                        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
-                        dialog.setCancelable(false);//не закрывается кнопкой назад
-                        //кнопки начало
+                        if(mark>=50) {
+                            dialog = new Dialog(ZadanieAlgorithm1.this);
+                            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
+                            dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
+                            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
+                            dialog.setCancelable(false);//не закрывается кнопкой назад
+                            //кнопки начало
 
-                        //кнопки конец
-                        TextView result = dialog.findViewById(R.id.mark_for_the_lvl);
-                        markstr = Integer.toString(mark);
-                        result.setText(markstr);
-                        dialog.show();//показ окна
-                        users.child(UID).addValueEventListener(new ValueEventListener() {
-                            @Override
-                            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                me = snapshot.getValue(ProfileU.class);
-                                int a = me.getAlgorithm();
-                                if (a == 0) {
-                                    if ((a < 6) && (testing == false)) {
-                                        str = me.getMmr();
-                                        mark += str;
-                                        users.child(UID).child("mmr").setValue(mark);
-                                        testing = true;
-                                        a += 1;
-                                        users.child(UID).child("algorithm").setValue(a);
+                            //кнопки конец
+                            TextView result = dialog.findViewById(R.id.mark_for_the_lvl);
+                            markstr = Integer.toString(mark);
+                            result.setText(markstr);
+                            dialog.show();//показ окна
+                            users.child(UID).addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                    me = snapshot.getValue(ProfileU.class);
+                                    int a = me.getAlgorithm();
+                                    if (a == 0) {
+                                        if ((a < 6) && (testing == false)) {
+                                            str = me.getMmr();
+                                            mark += str;
+                                            users.child(UID).child("mmr").setValue(mark);
+                                            testing = true;
+                                            a += 1;
+                                            users.child(UID).child("algorithm").setValue(a);
+                                        }
                                     }
                                 }
-                            }
 
-                            @Override
-                            public void onCancelled(@NonNull DatabaseError error) {
-                            }
-                        });
-                        Button back_to_houses= dialog.findViewById(R.id.button10);
-                        back_to_houses.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                Intent intent = new Intent(ZadanieAlgorithm1.this, Algorithm_HOME.class);
-                                startActivity(intent);
-                            }
-                        });
-                        //ЕСЛИ БЫЛ ЗАПУЩЕН ЭТОТ БЛОК КОДА МЕНЯЕМ КОЛИЧЕСТВО БАЛЛОВ В FIREBASE  И В ПЕРЕМЕННУЮ В КОТОРОЙ НАШ УРОВЕНЬ ДЕЛАЕМ +1;
-                        break;
-                    default:
-                        break;
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError error) {
+                                }
+                            });
+                            Button back_to_houses = dialog.findViewById(R.id.button10);
+                            back_to_houses.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    Intent intent = new Intent(ZadanieAlgorithm1.this, Algorithm_HOME.class);
+                                    startActivity(intent);
+                                }
+                            });
+                            //ЕСЛИ БЫЛ ЗАПУЩЕН ЭТОТ БЛОК КОДА МЕНЯЕМ КОЛИЧЕСТВО БАЛЛОВ В FIREBASE  И В ПЕРЕМЕННУЮ В КОТОРОЙ НАШ УРОВЕНЬ ДЕЛАЕМ +1;
+                            break;
+                        }
+                        if(mark<50) {
+                            dialog = new Dialog(ZadanieAlgorithm1.this);
+                            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
+                            dialog.setContentView(R.layout.markbaddialogwindow);//путь к макету диалогового окна
+                            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
+                            dialog.setCancelable(false);//не закрывается кнопкой назад
+                            //кнопки начало
+
+                            //кнопки конец
+                            TextView result = dialog.findViewById(R.id.mark_for_the_lvl);
+                            markstr = Integer.toString(mark);
+                            result.setText(markstr);
+                            dialog.show();//показ окна
+
+                            Button back_to_houses = dialog.findViewById(R.id.button10);
+                            back_to_houses.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    Intent intent = new Intent(ZadanieAlgorithm1.this, Algorithm_HOME.class);
+                                    startActivity(intent);
+                                }
+                            });
+                            //ЕСЛИ БЫЛ ЗАПУЩЕН ЭТОТ БЛОК КОДА МЕНЯЕМ КОЛИЧЕСТВО БАЛЛОВ В FIREBASE  И В ПЕРЕМЕННУЮ В КОТОРОЙ НАШ УРОВЕНЬ ДЕЛАЕМ +1;
+                            break;
+                        }
                 }
             }
         };

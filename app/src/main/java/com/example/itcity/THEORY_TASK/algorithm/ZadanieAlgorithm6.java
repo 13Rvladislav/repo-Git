@@ -38,6 +38,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
 
 public class ZadanieAlgorithm6 extends AppCompatActivity {
     ArrayList<PuzzlePiece> pieces;
@@ -47,7 +49,7 @@ public class ZadanieAlgorithm6 extends AppCompatActivity {
     Dialog dialog;
     Button Check;
 
-    boolean testing=false;
+    boolean testing = false;
     FirebaseAuth auth;
     FirebaseDatabase DB;
     DatabaseReference users;
@@ -69,12 +71,22 @@ public class ZadanieAlgorithm6 extends AppCompatActivity {
         String UID = user1.getUid();
         //
         final RelativeLayout layout = findViewById(R.id.Alayout);
-        pieces = splitImage();
-        TouchListener touchListener = new TouchListener();
-        for (PuzzlePiece piece : pieces) {
-            piece.setOnTouchListener(touchListener);
-            layout.addView(piece);
-        }
+        layout.post(new Runnable() {
+            @Override
+            public void run() {
+                pieces = splitImage();
+                TouchListener touchListener = new TouchListener();
+                Collections.shuffle(pieces);
+                for (PuzzlePiece piece : pieces) {
+                    piece.setOnTouchListener(touchListener);
+                    layout.addView(piece);
+                    RelativeLayout.LayoutParams lParams = (RelativeLayout.LayoutParams) piece.getLayoutParams();
+                    lParams.leftMargin = new Random().nextInt(layout.getWidth() - piece.pieceWidth);
+                    lParams.topMargin = new Random().nextInt(layout.getHeight() - piece.pieceHeight);
+                    piece.setLayoutParams(lParams);
+                }
+            }
+        });
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
@@ -91,75 +103,46 @@ public class ZadanieAlgorithm6 extends AppCompatActivity {
                             }
                         }
                         if (mark == 99) {mark += 1;}
-                        String markSTR;
-                        //вызов диалогового окна с показом количества баллов
-                        if (mark > 50) {
-                            dialog = new Dialog(ZadanieAlgorithm6.this);
-                            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
-                            dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
-                            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
-                            dialog.setCancelable(false);//не закрывается кнопкой назад
-                            //кнопки начало
+                        dialog = new Dialog(ZadanieAlgorithm6.this);
+                        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
+                        dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
+                        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
+                        dialog.setCancelable(false);//не закрывается кнопкой назад
+                        //кнопки начало
 
-                            //кнопки конец
-                            TextView result = dialog.findViewById(R.id.mark_for_the_lvl);
-                            markSTR = Integer.toString(mark);
-                            result.setText(markSTR);
-                            dialog.show();//показ окна
-                            users.child(UID).addValueEventListener(new ValueEventListener() {
-                                @Override
-                                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                    me = snapshot.getValue(ProfileU.class);
-                                    str = me.getMmr();
-                                    int a = me.getAlgorithm();
-                                    if ((a < 6)&&(testing==false)) {
-                                        mark += str;
-                                        users.child(UID).child("mmr").setValue(mark);
-                                        testing=true;
-                                        a+=1;
-                                        users.child(UID).child("algorithm").setValue(a);
-                                    }
+                        //кнопки конец
+                        TextView result = dialog.findViewById(R.id.mark_for_the_lvl);
+                        strres = Integer.toString(mark);
+                        result.setText(strres);
+                        dialog.show();//показ окна
+                        users.child(UID).addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                me = snapshot.getValue(ProfileU.class);
+                                str = me.getMmr();
+                                int a = me.getAlgorithm();
+                                if ((a < 6)&&(testing==false)) {
+                                    mark += str;
+                                    users.child(UID).child("mmr").setValue(mark);
+                                    testing=true;
+                                    a+=1;
+                                    users.child(UID).child("algorithm").setValue(a);
                                 }
+                            }
 
-                                @Override
-                                public void onCancelled(@NonNull DatabaseError error) {
-                                }
-                            });
-                            Button back_to_houses = dialog.findViewById(R.id.button10);
-                            back_to_houses.setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    Intent intent = new Intent(ZadanieAlgorithm6.this, Algorithm_HOME.class);
-                                    startActivity(intent);
-                                }
-                            });
-                            //ЕСЛИ БЫЛ ЗАПУЩЕН ЭТОТ БЛОК КОДА МЕНЯЕМ КОЛИЧЕСТВО БАЛЛОВ В FIREBASE  И В ПЕРЕМЕННУЮ В КОТОРОЙ НАШ УРОВЕНЬ ДЕЛАЕМ +1;
-                            break;
-                        }
-                        if (mark < 50) {
-                            dialog = new Dialog(ZadanieAlgorithm6.this);
-                            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
-                            dialog.setContentView(R.layout.markbaddialogwindow);//путь к макету диалогового окна
-                            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
-                            dialog.setCancelable(false);//не закрывается кнопкой назад
-                            //кнопки начало
-
-                            //кнопки конец
-                            TextView result = dialog.findViewById(R.id.mark_for_the_lvl);
-                            markSTR = Integer.toString(mark);
-                            result.setText(markSTR);
-                            dialog.show();//показ окна
-                            Button back_to_houses = dialog.findViewById(R.id.button10);
-                            back_to_houses.setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    Intent intent = new Intent(ZadanieAlgorithm6.this, Algorithm_HOME.class);
-                                    startActivity(intent);
-                                }
-                            });
-                            break;
-                            //ЕСЛИ БЫЛ ЗАПУЩЕН ЭТОТ БЛОК КОДА НЕ МЕНЯЕМ КОЛИЧЕСТВО БАЛЛОВ В FIREBASE  И В ПЕРЕМЕННУЮ В КОТОРОЙ УРОВЕНЬ НЕ МЕНЯЕМ;
-                        }
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+                            }
+                        });
+                        Button back_to_houses= dialog.findViewById(R.id.button10);
+                        back_to_houses.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent intent = new Intent(ZadanieAlgorithm6.this, Algorithm_HOME.class);
+                                startActivity(intent);
+                            }
+                        });
+                        //ЕСЛИ БЫЛ ЗАПУЩЕН ЭТОТ БЛОК КОДА МЕНЯЕМ КОЛИЧЕСТВО БАЛЛОВ В FIREBASE  И В ПЕРЕМЕННУЮ В КОТОРОЙ НАШ УРОВЕНЬ ДЕЛАЕМ +1;
                         break;
                 }
             }
@@ -173,9 +156,7 @@ public class ZadanieAlgorithm6 extends AppCompatActivity {
         int rows = 3;
         int cols = 3;
 
-        ImageView imageView = findViewById(R.id.imageView);
         ArrayList<PuzzlePiece> pieces = new ArrayList<>(piecesNumber);
-
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.algpuzzle7);
 
         int pieceWidth = bitmap.getWidth()/cols;

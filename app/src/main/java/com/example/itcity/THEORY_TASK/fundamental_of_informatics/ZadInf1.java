@@ -1,7 +1,5 @@
 package com.example.itcity.THEORY_TASK.fundamental_of_informatics;
 
-import static java.lang.Math.abs;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -20,8 +18,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.itcity.R;
-import com.example.itcity.THEORY_TASK.algorithm.Algorithm_HOME;
-import com.example.itcity.THEORY_TASK.algorithm.ZadanieAlgorithm4;
 import com.example.itcity.models.ProfileU;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -33,6 +29,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.Random;
+
+import static java.lang.Math.abs;
 
 public class ZadInf1 extends AppCompatActivity {
     Button next;
@@ -112,7 +110,8 @@ public class ZadInf1 extends AppCompatActivity {
                         }
                     });
                     RelativeLayout.LayoutParams lParams = (RelativeLayout.LayoutParams) listtext.get(i).getLayoutParams();
-                    lParams.leftMargin = new Random().nextInt(layout.getWidth() - listtext.get(i).getWidth());;
+                    lParams.leftMargin = new Random().nextInt(layout.getWidth() - listtext.get(i).getWidth());
+                    ;
                     lParams.topMargin = new Random().nextInt(layout.getHeight() - listtext.get(i).getHeight());
                     listtext.get(i).setLayoutParams(lParams);
                 }
@@ -137,49 +136,76 @@ public class ZadInf1 extends AppCompatActivity {
                         if (mark == 99) {
                             mark += 1;
                         }
-                        dialog = new Dialog(ZadInf1.this);
-                        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
-                        dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
-                        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
-                        dialog.setCancelable(false);//не закрывается кнопкой назад
-                        //кнопки начало
+                        if (mark >= 50) {
+                            dialog = new Dialog(ZadInf1.this);
+                            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
+                            dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
+                            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
+                            dialog.setCancelable(false);//не закрывается кнопкой назад
+                            //кнопки начало
 
-                        //кнопки конец
-                        TextView result = dialog.findViewById(R.id.mark_for_the_lvl);
-                        markstr = Integer.toString(mark);
-                        result.setText(markstr);
-                        dialog.show();//показ окна
-                        users.child(UID).addValueEventListener(new ValueEventListener() {
-                            @Override
-                            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                me = snapshot.getValue(ProfileU.class);
-                                int a = me.getInformatic();
-                                if (a == 0) {
-                                    if ((a < 6) && (testing == false)) {
-                                        str = me.getMmr();
-                                        mark += str;
-                                        users.child(UID).child("mmr").setValue(mark);
-                                        testing = true;
-                                        a += 1;
-                                        users.child(UID).child("informatic").setValue(a);
+                            //кнопки конец
+                            TextView result = dialog.findViewById(R.id.mark_for_the_lvl);
+                            markstr = Integer.toString(mark);
+                            result.setText(markstr);
+                            dialog.show();//показ окна
+                            users.child(UID).addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                    me = snapshot.getValue(ProfileU.class);
+                                    int a = me.getInformatic();
+                                    if (a == 0) {
+                                        if ((a < 6) && (testing == false)) {
+                                            str = me.getMmr();
+                                            mark += str;
+                                            users.child(UID).child("mmr").setValue(mark);
+                                            testing = true;
+                                            a += 1;
+                                            users.child(UID).child("informatic").setValue(a);
+                                        }
                                     }
                                 }
-                            }
 
-                            @Override
-                            public void onCancelled(@NonNull DatabaseError error) {
-                            }
-                        });
-                        Button back_to_houses = dialog.findViewById(R.id.button10);
-                        back_to_houses.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                Intent intent = new Intent(ZadInf1.this, Informatica_HOME.class);
-                                startActivity(intent);
-                            }
-                        });
-                        //ЕСЛИ БЫЛ ЗАПУЩЕН ЭТОТ БЛОК КОДА МЕНЯЕМ КОЛИЧЕСТВО БАЛЛОВ В FIREBASE  И В ПЕРЕМЕННУЮ В КОТОРОЙ НАШ УРОВЕНЬ ДЕЛАЕМ +1;
-                        break;
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError error) {
+                                }
+                            });
+                            Button back_to_houses = dialog.findViewById(R.id.button10);
+                            back_to_houses.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    Intent intent = new Intent(ZadInf1.this, Informatica_HOME.class);
+                                    startActivity(intent);
+                                }
+                            });
+                            //ЕСЛИ БЫЛ ЗАПУЩЕН ЭТОТ БЛОК КОДА МЕНЯЕМ КОЛИЧЕСТВО БАЛЛОВ В FIREBASE  И В ПЕРЕМЕННУЮ В КОТОРОЙ НАШ УРОВЕНЬ ДЕЛАЕМ +1;
+                            break;
+                        }
+                        if (mark < 50) {
+                            dialog = new Dialog(ZadInf1.this);
+                            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
+                            dialog.setContentView(R.layout.markbaddialogwindow);//путь к макету диалогового окна
+                            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозрачный фон
+                            dialog.setCancelable(false);//не закрывается кнопкой назад
+                            //кнопки начало
+
+                            //кнопки конец
+                            TextView result = dialog.findViewById(R.id.mark_for_the_lvl);
+                            markstr = Integer.toString(mark);
+                            result.setText(markstr);
+                            dialog.show();//показ окна
+
+                            Button back_to_houses = dialog.findViewById(R.id.button10);
+                            back_to_houses.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    Intent intent = new Intent(ZadInf1.this, Informatica_HOME.class);
+                                    startActivity(intent);
+                                }
+                            });
+                            //ЕСЛИ БЫЛ ЗАПУЩЕН ЭТОТ БЛОК КОДА МЕНЯЕМ КОЛИЧЕСТВО БАЛЛОВ В FIREBASE  И В ПЕРЕМЕННУЮ В КОТОРОЙ НАШ УРОВЕНЬ ДЕЛАЕМ +1;
+                            break;
+                        }
                     case R.id.bottomTeoryK1:
                         Intent intent = new Intent(ZadInf1.this, ThInf1.class);
                         startActivity(intent);

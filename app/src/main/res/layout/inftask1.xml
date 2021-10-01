@@ -71,6 +71,7 @@
             android:layout_height="45dp"
             android:background="@drawable/podkltaskpole"
             android:text="пересечение"
+            android:textColor="#3D0250"
             android:textSize="26sp" />
 
         <TextView
@@ -79,12 +80,14 @@
             android:layout_height="45dp"
             android:background="@drawable/podkltaskpole"
             android:text="соподчинение"
+            android:textColor="#3D0250"
             android:textSize="26sp" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="160dp"
             android:layout_height="45dp"
+            android:textColor="#3D0250"
             android:background="@drawable/podkltaskpole"
             android:text="подчинение "
             android:textSize="26sp" />
