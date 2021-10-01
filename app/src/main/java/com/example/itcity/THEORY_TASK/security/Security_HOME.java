@@ -66,7 +66,7 @@ public class Security_HOME extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 securityDB = snapshot.getValue(ProfileU.class);
                 access = securityDB.getSecurity();
-                if (6 == access) {
+                if (access == 8) {
                     ButtonList.get(0).setImageResource(R.drawable.algonhome1);
                     ButtonList.get(1).setImageResource(R.drawable.algonhome2);
                     ButtonList.get(2).setImageResource(R.drawable.algonhome3);
