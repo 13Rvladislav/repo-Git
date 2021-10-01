@@ -25,6 +25,7 @@
             android:id="@+id/textView88"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#3D0250"
             android:text="Переведи десятичное число 89 в двоичную систему счисления." />
 
 

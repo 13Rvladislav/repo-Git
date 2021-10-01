@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/algoritm_fon"
     tools:context=".THEORY_TASK.algorithm.TheoryAlgorithm1"
-    android:paddingTop="-11dp"
-    android:layout_marginTop="-2dp"
+    android:layout_marginTop="-4dp"
     >
 
     <Button

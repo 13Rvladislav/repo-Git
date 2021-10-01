@@ -43,6 +43,7 @@ public class Programming_Home extends AppCompatActivity {
     ProfileU DB = new ProfileU();
     int access;
     ArrayList<ImageButton> ButtonList = new ArrayList<>(13);
+    Boolean go = true;
 
     Button BACK;
 
@@ -91,145 +92,146 @@ public class Programming_Home extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 DB = snapshot.getValue(ProfileU.class);
                 access = DB.getProgramming();
-                for (int j = 0; j <= access; j++) {
-                    int i = j - 1;
-                    if (j == 13) {
-                        ButtonList.get(i - 12).setImageResource(R.drawable.progonhome1);
-                        ButtonList.get(i - 11).setImageResource(R.drawable.progonhome2);
-                        ButtonList.get(i - 10).setImageResource(R.drawable.progonhome3);
-                        ButtonList.get(i - 9).setImageResource(R.drawable.progonhome4);
-                        ButtonList.get(i - 8).setImageResource(R.drawable.progonhome5);
-                        ButtonList.get(i - 7).setImageResource(R.drawable.progonhome6);
-                        ButtonList.get(i - 6).setImageResource(R.drawable.progonhome7);
-                        ButtonList.get(i - 5).setImageResource(R.drawable.progonhome8);
-                        ButtonList.get(i - 4).setImageResource(R.drawable.progonhome9);
-                        ButtonList.get(i - 3).setImageResource(R.drawable.progonhome10);
-                        ButtonList.get(i - 2).setImageResource(R.drawable.progonhome11);
-                        ButtonList.get(i - 1).setImageResource(R.drawable.progonhome12);
-                        ButtonList.get(i).setImageResource(R.drawable.progonhome13);
-                    }
-                    i = j;
-                    if (i > access) {
-                        ButtonList.get(i).setEnabled(false);
-                    }
-                    if (i == access) {
-                        switch (i) {
-                            case 1:
-                                ButtonList.get(i - 1).setImageResource(R.drawable.progonhome1);
-                                ButtonList.get(i).setImageResource(R.drawable.progoffhome2);
-                                break;
-                            case 2:
-                                ButtonList.get(i - 2).setImageResource(R.drawable.progonhome1);
-                                ButtonList.get(i - 1).setImageResource(R.drawable.progonhome2);
-                                ButtonList.get(i).setImageResource(R.drawable.progoffhome3);
-                                break;
-                            case 3:
-                                ButtonList.get(i - 3).setImageResource(R.drawable.progonhome1);
-                                ButtonList.get(i - 2).setImageResource(R.drawable.progonhome2);
-                                ButtonList.get(i - 1).setImageResource(R.drawable.progonhome3);
-                                ButtonList.get(i).setImageResource(R.drawable.progoffhome4);
-                                break;
-                            case 4:
-                                ButtonList.get(i - 4).setImageResource(R.drawable.progonhome1);
-                                ButtonList.get(i - 3).setImageResource(R.drawable.progonhome2);
-                                ButtonList.get(i - 2).setImageResource(R.drawable.progonhome3);
-                                ButtonList.get(i - 1).setImageResource(R.drawable.progonhome4);
-                                ButtonList.get(i).setImageResource(R.drawable.progoffhome5);
-                                break;
-                            case 5:
-                                ButtonList.get(i - 5).setImageResource(R.drawable.progonhome1);
-                                ButtonList.get(i - 4).setImageResource(R.drawable.progonhome2);
-                                ButtonList.get(i - 3).setImageResource(R.drawable.progonhome3);
-                                ButtonList.get(i - 2).setImageResource(R.drawable.progonhome4);
-                                ButtonList.get(i - 1).setImageResource(R.drawable.progonhome5);
-                                ButtonList.get(i).setImageResource(R.drawable.progoffhome6);
-                                break;
-                            case 6:
-                                ButtonList.get(i - 6).setImageResource(R.drawable.progonhome1);
-                                ButtonList.get(i - 5).setImageResource(R.drawable.progonhome2);
-                                ButtonList.get(i - 4).setImageResource(R.drawable.progonhome3);
-                                ButtonList.get(i - 3).setImageResource(R.drawable.progonhome4);
-                                ButtonList.get(i - 2).setImageResource(R.drawable.progonhome5);
-                                ButtonList.get(i - 1).setImageResource(R.drawable.progonhome6);
-                                ButtonList.get(i).setImageResource(R.drawable.progoffhome7);
-                                break;
-                            case 7:
-                                ButtonList.get(i - 7).setImageResource(R.drawable.progonhome1);
-                                ButtonList.get(i - 6).setImageResource(R.drawable.progonhome2);
-                                ButtonList.get(i - 5).setImageResource(R.drawable.progonhome3);
-                                ButtonList.get(i - 4).setImageResource(R.drawable.progonhome4);
-                                ButtonList.get(i - 3).setImageResource(R.drawable.progonhome5);
-                                ButtonList.get(i - 2).setImageResource(R.drawable.progonhome6);
-                                ButtonList.get(i - 1).setImageResource(R.drawable.progonhome7);
-                                ButtonList.get(i).setImageResource(R.drawable.progoffhome8);
-                                break;
-                            case 8:
-                                ButtonList.get(i - 8).setImageResource(R.drawable.progonhome1);
-                                ButtonList.get(i - 7).setImageResource(R.drawable.progonhome2);
-                                ButtonList.get(i - 6).setImageResource(R.drawable.progonhome3);
-                                ButtonList.get(i - 5).setImageResource(R.drawable.progonhome4);
-                                ButtonList.get(i - 4).setImageResource(R.drawable.progonhome5);
-                                ButtonList.get(i - 3).setImageResource(R.drawable.progonhome6);
-                                ButtonList.get(i - 2).setImageResource(R.drawable.progonhome7);
-                                ButtonList.get(i - 1).setImageResource(R.drawable.progonhome8);
-                                ButtonList.get(i).setImageResource(R.drawable.progoffhome9);
-                                break;
-                            case 9:
-                                ButtonList.get(i - 9).setImageResource(R.drawable.progonhome1);
-                                ButtonList.get(i - 8).setImageResource(R.drawable.progonhome2);
-                                ButtonList.get(i - 7).setImageResource(R.drawable.progonhome3);
-                                ButtonList.get(i - 6).setImageResource(R.drawable.progonhome4);
-                                ButtonList.get(i - 5).setImageResource(R.drawable.progonhome5);
-                                ButtonList.get(i - 4).setImageResource(R.drawable.progonhome6);
-                                ButtonList.get(i - 3).setImageResource(R.drawable.progonhome7);
-                                ButtonList.get(i - 2).setImageResource(R.drawable.progonhome8);
-                                ButtonList.get(i - 1).setImageResource(R.drawable.progonhome9);
-                                ButtonList.get(i).setImageResource(R.drawable.progoffhome10);
-                                break;
-                            case 10:
-                                ButtonList.get(i - 10).setImageResource(R.drawable.progonhome1);
-                                ButtonList.get(i - 9).setImageResource(R.drawable.progonhome2);
-                                ButtonList.get(i - 8).setImageResource(R.drawable.progonhome3);
-                                ButtonList.get(i - 7).setImageResource(R.drawable.progonhome4);
-                                ButtonList.get(i - 6).setImageResource(R.drawable.progonhome5);
-                                ButtonList.get(i - 5).setImageResource(R.drawable.progonhome6);
-                                ButtonList.get(i - 4).setImageResource(R.drawable.progonhome7);
-                                ButtonList.get(i - 3).setImageResource(R.drawable.progonhome8);
-                                ButtonList.get(i - 2).setImageResource(R.drawable.progonhome9);
-                                ButtonList.get(i - 1).setImageResource(R.drawable.progonhome10);
-                                ButtonList.get(i).setImageResource(R.drawable.progoffhome11);
-                                break;
-                            case 11:
-                                ButtonList.get(i - 11).setImageResource(R.drawable.progonhome1);
-                                ButtonList.get(i - 10).setImageResource(R.drawable.progonhome2);
-                                ButtonList.get(i - 9).setImageResource(R.drawable.progonhome3);
-                                ButtonList.get(i - 8).setImageResource(R.drawable.progonhome4);
-                                ButtonList.get(i - 7).setImageResource(R.drawable.progonhome5);
-                                ButtonList.get(i - 6).setImageResource(R.drawable.progonhome6);
-                                ButtonList.get(i - 5).setImageResource(R.drawable.progonhome7);
-                                ButtonList.get(i - 4).setImageResource(R.drawable.progonhome8);
-                                ButtonList.get(i - 3).setImageResource(R.drawable.progonhome9);
-                                ButtonList.get(i - 2).setImageResource(R.drawable.progonhome10);
-                                ButtonList.get(i - 1).setImageResource(R.drawable.progonhome11);
-                                ButtonList.get(i).setImageResource(R.drawable.progoffhome12);
-                                break;
-                            case 12:
-                                ButtonList.get(i - 12).setImageResource(R.drawable.progonhome1);
-                                ButtonList.get(i - 11).setImageResource(R.drawable.progonhome2);
-                                ButtonList.get(i - 10).setImageResource(R.drawable.progonhome3);
-                                ButtonList.get(i - 9).setImageResource(R.drawable.progonhome4);
-                                ButtonList.get(i - 8).setImageResource(R.drawable.progonhome5);
-                                ButtonList.get(i - 7).setImageResource(R.drawable.progonhome6);
-                                ButtonList.get(i - 6).setImageResource(R.drawable.progonhome7);
-                                ButtonList.get(i - 5).setImageResource(R.drawable.progonhome8);
-                                ButtonList.get(i - 4).setImageResource(R.drawable.progonhome9);
-                                ButtonList.get(i - 3).setImageResource(R.drawable.progonhome10);
-                                ButtonList.get(i - 2).setImageResource(R.drawable.progonhome11);
-                                ButtonList.get(i - 1).setImageResource(R.drawable.progonhome12);
-                                ButtonList.get(i).setImageResource(R.drawable.progoffhome13);
-                                break;
-                            default:
-                                break;
+                if (access == 13) {
+                    ButtonList.get(0).setImageResource(R.drawable.progonhome1);
+                    ButtonList.get(1).setImageResource(R.drawable.progonhome2);
+                    ButtonList.get(2).setImageResource(R.drawable.progonhome3);
+                    ButtonList.get(3).setImageResource(R.drawable.progonhome4);
+                    ButtonList.get(4).setImageResource(R.drawable.progonhome5);
+                    ButtonList.get(5).setImageResource(R.drawable.progonhome6);
+                    ButtonList.get(6).setImageResource(R.drawable.progonhome7);
+                    ButtonList.get(7).setImageResource(R.drawable.progonhome8);
+                    ButtonList.get(8).setImageResource(R.drawable.progonhome9);
+                    ButtonList.get(9).setImageResource(R.drawable.progonhome10);
+                    ButtonList.get(10).setImageResource(R.drawable.progonhome11);
+                    ButtonList.get(11).setImageResource(R.drawable.progonhome12);
+                    ButtonList.get(12).setImageResource(R.drawable.progonhome13);
+                    go = false;
+                }
+                if (go) {
+                    for (int i = 0; i < ButtonList.size(); i++) {
+                        if (i > access) {
+                            ButtonList.get(i).setEnabled(false);
+                        }
+                        if (i == access) {
+                            switch (i) {
+                                case 1:
+                                    ButtonList.get(i - 1).setImageResource(R.drawable.progonhome1);
+                                    ButtonList.get(i).setImageResource(R.drawable.progoffhome2);
+                                    break;
+                                case 2:
+                                    ButtonList.get(i - 2).setImageResource(R.drawable.infonhome1);
+                                    ButtonList.get(i - 1).setImageResource(R.drawable.infonhome2);
+                                    ButtonList.get(i).setImageResource(R.drawable.progoffhome3);
+                                    break;
+                                case 3:
+                                    ButtonList.get(i - 3).setImageResource(R.drawable.progonhome1);
+                                    ButtonList.get(i - 2).setImageResource(R.drawable.progonhome2);
+                                    ButtonList.get(i - 1).setImageResource(R.drawable.progonhome3);
+                                    ButtonList.get(i).setImageResource(R.drawable.progoffhome4);
+                                    break;
+                                case 4:
+                                    ButtonList.get(i - 4).setImageResource(R.drawable.progonhome1);
+                                    ButtonList.get(i - 3).setImageResource(R.drawable.progonhome2);
+                                    ButtonList.get(i - 2).setImageResource(R.drawable.progonhome3);
+                                    ButtonList.get(i - 1).setImageResource(R.drawable.progonhome4);
+                                    ButtonList.get(i).setImageResource(R.drawable.progoffhome5);
+                                    break;
+                                case 5:
+                                    ButtonList.get(i - 5).setImageResource(R.drawable.progonhome1);
+                                    ButtonList.get(i - 4).setImageResource(R.drawable.progonhome2);
+                                    ButtonList.get(i - 3).setImageResource(R.drawable.progonhome3);
+                                    ButtonList.get(i - 2).setImageResource(R.drawable.progonhome4);
+                                    ButtonList.get(i - 1).setImageResource(R.drawable.progonhome5);
+                                    ButtonList.get(i).setImageResource(R.drawable.progoffhome6);
+                                    break;
+                                case 6:
+                                    ButtonList.get(i - 6).setImageResource(R.drawable.progonhome1);
+                                    ButtonList.get(i - 5).setImageResource(R.drawable.progonhome2);
+                                    ButtonList.get(i - 4).setImageResource(R.drawable.progonhome3);
+                                    ButtonList.get(i - 3).setImageResource(R.drawable.progonhome4);
+                                    ButtonList.get(i - 2).setImageResource(R.drawable.progonhome5);
+                                    ButtonList.get(i - 1).setImageResource(R.drawable.progonhome6);
+                                    ButtonList.get(i).setImageResource(R.drawable.progoffhome7);
+                                    break;
+                                case 7:
+                                    ButtonList.get(i - 7).setImageResource(R.drawable.progonhome1);
+                                    ButtonList.get(i - 6).setImageResource(R.drawable.progonhome2);
+                                    ButtonList.get(i - 5).setImageResource(R.drawable.progonhome3);
+                                    ButtonList.get(i - 4).setImageResource(R.drawable.progonhome4);
+                                    ButtonList.get(i - 3).setImageResource(R.drawable.progonhome5);
+                                    ButtonList.get(i - 2).setImageResource(R.drawable.progonhome6);
+                                    ButtonList.get(i - 1).setImageResource(R.drawable.progonhome7);
+                                    ButtonList.get(i).setImageResource(R.drawable.progoffhome8);
+                                    break;
+                                case 8:
+                                    ButtonList.get(i - 8).setImageResource(R.drawable.progonhome1);
+                                    ButtonList.get(i - 7).setImageResource(R.drawable.progonhome2);
+                                    ButtonList.get(i - 6).setImageResource(R.drawable.progonhome3);
+                                    ButtonList.get(i - 5).setImageResource(R.drawable.progonhome4);
+                                    ButtonList.get(i - 4).setImageResource(R.drawable.progonhome5);
+                                    ButtonList.get(i - 3).setImageResource(R.drawable.progonhome6);
+                                    ButtonList.get(i - 2).setImageResource(R.drawable.progonhome7);
+                                    ButtonList.get(i - 1).setImageResource(R.drawable.progonhome8);
+                                    ButtonList.get(i).setImageResource(R.drawable.progoffhome9);
+                                    break;
+                                case 9:
+                                    ButtonList.get(i - 9).setImageResource(R.drawable.progonhome1);
+                                    ButtonList.get(i - 8).setImageResource(R.drawable.progonhome2);
+                                    ButtonList.get(i - 7).setImageResource(R.drawable.progonhome3);
+                                    ButtonList.get(i - 6).setImageResource(R.drawable.progonhome4);
+                                    ButtonList.get(i - 5).setImageResource(R.drawable.progonhome5);
+                                    ButtonList.get(i - 4).setImageResource(R.drawable.progonhome6);
+                                    ButtonList.get(i - 3).setImageResource(R.drawable.progonhome7);
+                                    ButtonList.get(i - 2).setImageResource(R.drawable.progonhome8);
+                                    ButtonList.get(i - 1).setImageResource(R.drawable.progonhome9);
+                                    ButtonList.get(i).setImageResource(R.drawable.progoffhome10);
+                                    break;
+                                case 10:
+                                    ButtonList.get(i - 10).setImageResource(R.drawable.progonhome1);
+                                    ButtonList.get(i - 9).setImageResource(R.drawable.progonhome2);
+                                    ButtonList.get(i - 8).setImageResource(R.drawable.progonhome3);
+                                    ButtonList.get(i - 7).setImageResource(R.drawable.progonhome4);
+                                    ButtonList.get(i - 6).setImageResource(R.drawable.progonhome5);
+                                    ButtonList.get(i - 5).setImageResource(R.drawable.progonhome6);
+                                    ButtonList.get(i - 4).setImageResource(R.drawable.progonhome7);
+                                    ButtonList.get(i - 3).setImageResource(R.drawable.progonhome8);
+                                    ButtonList.get(i - 2).setImageResource(R.drawable.progonhome9);
+                                    ButtonList.get(i - 1).setImageResource(R.drawable.progonhome10);
+                                    ButtonList.get(i).setImageResource(R.drawable.progoffhome11);
+                                    break;
+                                case 11:
+                                    ButtonList.get(i - 11).setImageResource(R.drawable.progonhome1);
+                                    ButtonList.get(i - 10).setImageResource(R.drawable.progonhome2);
+                                    ButtonList.get(i - 9).setImageResource(R.drawable.progonhome3);
+                                    ButtonList.get(i - 8).setImageResource(R.drawable.progonhome4);
+                                    ButtonList.get(i - 7).setImageResource(R.drawable.progonhome5);
+                                    ButtonList.get(i - 6).setImageResource(R.drawable.progonhome6);
+                                    ButtonList.get(i - 5).setImageResource(R.drawable.progonhome7);
+                                    ButtonList.get(i - 4).setImageResource(R.drawable.progonhome8);
+                                    ButtonList.get(i - 3).setImageResource(R.drawable.progonhome9);
+                                    ButtonList.get(i - 2).setImageResource(R.drawable.progonhome10);
+                                    ButtonList.get(i - 1).setImageResource(R.drawable.progonhome11);
+                                    ButtonList.get(i).setImageResource(R.drawable.progoffhome12);
+                                    break;
+                                case 12:
+                                    ButtonList.get(i - 12).setImageResource(R.drawable.progonhome1);
+                                    ButtonList.get(i - 11).setImageResource(R.drawable.progonhome2);
+                                    ButtonList.get(i - 10).setImageResource(R.drawable.progonhome3);
+                                    ButtonList.get(i - 9).setImageResource(R.drawable.progonhome4);
+                                    ButtonList.get(i - 8).setImageResource(R.drawable.progonhome5);
+                                    ButtonList.get(i - 7).setImageResource(R.drawable.progonhome6);
+                                    ButtonList.get(i - 6).setImageResource(R.drawable.progonhome7);
+                                    ButtonList.get(i - 5).setImageResource(R.drawable.progonhome8);
+                                    ButtonList.get(i - 4).setImageResource(R.drawable.progonhome9);
+                                    ButtonList.get(i - 3).setImageResource(R.drawable.progonhome10);
+                                    ButtonList.get(i - 2).setImageResource(R.drawable.progonhome11);
+                                    ButtonList.get(i - 1).setImageResource(R.drawable.progonhome12);
+                                    ButtonList.get(i).setImageResource(R.drawable.progoffhome13);
+                                    break;
+                                default:
+                                    break;
+                            }
                         }
                     }
                 }
