@@ -67,12 +67,14 @@ public class Security_HOME extends AppCompatActivity {
                 securityDB = snapshot.getValue(ProfileU.class);
                 access = securityDB.getSecurity();
                 if (access == 8) {
-                    ButtonList.get(0).setImageResource(R.drawable.algonhome1);
-                    ButtonList.get(1).setImageResource(R.drawable.algonhome2);
-                    ButtonList.get(2).setImageResource(R.drawable.algonhome3);
-                    ButtonList.get(3).setImageResource(R.drawable.algonhome4);
-                    ButtonList.get(4).setImageResource(R.drawable.algonhome5);
-                    ButtonList.get(5).setImageResource(R.drawable.algonhome6);
+                    ButtonList.get(0).setImageResource(R.drawable.seconhome1);
+                    ButtonList.get(1).setImageResource(R.drawable.seconhome2);
+                    ButtonList.get(2).setImageResource(R.drawable.seconhome3);
+                    ButtonList.get(3).setImageResource(R.drawable.seconhome4);
+                    ButtonList.get(4).setImageResource(R.drawable.seconhome5);
+                    ButtonList.get(5).setImageResource(R.drawable.seconhome6);
+                    ButtonList.get(6).setImageResource(R.drawable.seconhome7);
+                    ButtonList.get(7).setImageResource(R.drawable.seconhome8);
                     go = false;
                 }
                 if (go) {

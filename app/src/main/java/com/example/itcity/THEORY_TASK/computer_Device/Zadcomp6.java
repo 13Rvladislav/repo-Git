@@ -1,33 +1,33 @@
 package com.example.itcity.THEORY_TASK.computer_Device;
 
-import static java.lang.Math.abs;
-import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+import static java.lang.Math.pow;
+import static java.lang.Math.abs;
 
 import android.app.Dialog;
 import android.content.Context;
+
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.itcity.R;
-import com.example.itcity.THEORY_TASK.security.Security_HOME;
-import com.example.itcity.THEORY_TASK.security.TheorySecurity8;
 import com.example.itcity.models.ProfileU;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -38,6 +38,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
 
 public class Zadcomp6 extends AppCompatActivity {
     ArrayList<PuzzlePiece> pieces;
@@ -46,11 +48,14 @@ public class Zadcomp6 extends AppCompatActivity {
     String strres;
     Dialog dialog;
     Button Check;
-    FirebaseAuth auth; boolean testing=false;
+
+    boolean testing = false;
+    FirebaseAuth auth;
     FirebaseDatabase DB;
     DatabaseReference users;
     int str;
     ProfileU me = new ProfileU();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,7 +64,6 @@ public class Zadcomp6 extends AppCompatActivity {
         button5 = findViewById(R.id.bottomCompDevK1);
         Check = findViewById(R.id.continieCompDev);
         //для записи  рейтинга и прогресса
-
         auth = FirebaseAuth.getInstance();
         FirebaseUser user1 = auth.getCurrentUser();
         DB = FirebaseDatabase.getInstance();
@@ -67,12 +71,22 @@ public class Zadcomp6 extends AppCompatActivity {
         String UID = user1.getUid();
         //
         final RelativeLayout layout = findViewById(R.id.Clayout);
-        pieces = splitImage();
-        TouchListener touchListener = new TouchListener();
-        for (PuzzlePiece piece : pieces) {
-            piece.setOnTouchListener(touchListener);
-            layout.addView(piece);
-        }
+        layout.post(new Runnable() {
+            @Override
+            public void run() {
+                pieces = splitImage();
+                TouchListener touchListener = new TouchListener();
+                Collections.shuffle(pieces);
+                for (PuzzlePiece piece : pieces) {
+                    piece.setOnTouchListener(touchListener);
+                    layout.addView(piece);
+                    RelativeLayout.LayoutParams lParams = (RelativeLayout.LayoutParams) piece.getLayoutParams();
+                    lParams.leftMargin = new Random().nextInt(layout.getWidth() - piece.pieceWidth);
+                    lParams.topMargin = new Random().nextInt(layout.getHeight() - piece.pieceHeight);
+                    piece.setLayoutParams(lParams);
+                }
+            }
+        });
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
@@ -142,9 +156,7 @@ public class Zadcomp6 extends AppCompatActivity {
         int rows = 3;
         int cols = 3;
 
-        ImageView imageView = findViewById(R.id.imageView);
         ArrayList<PuzzlePiece> pieces = new ArrayList<>(piecesNumber);
-
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.pkpuzzle1);
 
         int pieceWidth = bitmap.getWidth()/cols;

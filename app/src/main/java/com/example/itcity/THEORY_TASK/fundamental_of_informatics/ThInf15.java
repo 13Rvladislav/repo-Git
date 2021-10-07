@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.itcity.R;
 
+
 public class ThInf15 extends AppCompatActivity {
     Button button8;
     Button back;
@@ -31,7 +32,7 @@ public class ThInf15 extends AppCompatActivity {
                         startActivity(intent1);
                         break;
                     case R.id.button8:
-                        Intent intent2 = new Intent(ThInf15.this,ZadInf15.class);
+                        Intent intent2 = new Intent(ThInf15.this, ZadInf15.class);
                         startActivity(intent2);
                         break;
                 }

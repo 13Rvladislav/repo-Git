@@ -1,40 +1,60 @@
 package com.example.itcity.THEORY_TASK.fundamental_of_informatics;
-import static java.lang.Math.abs;
-import static java.lang.Math.pow;
+
 import static java.lang.Math.sqrt;
+import static java.lang.Math.pow;
+import static java.lang.Math.abs;
 
 import android.app.Dialog;
 import android.content.Context;
+
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.itcity.R;
-import com.example.itcity.THEORY_TASK.security.Security_HOME;
-import com.example.itcity.THEORY_TASK.security.TheorySecurity8;
+import com.example.itcity.models.ProfileU;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
 
 public class ZadInf15 extends AppCompatActivity {
     ArrayList<PuzzlePiece> pieces;
-    int res;
+    int mark;
     Button button5;
     String strres;
     Dialog dialog;
     Button Check;
+
+    boolean testing = false;
+    FirebaseAuth auth;
+    FirebaseDatabase DB;
+    DatabaseReference users;
+    int str;
+    ProfileU me = new ProfileU();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,13 +63,30 @@ public class ZadInf15 extends AppCompatActivity {
         getSupportActionBar().hide();
         button5 = findViewById(R.id.backinfpuzzle);
         Check = findViewById(R.id.infpuzzlecheck);
+        //для записи  рейтинга и прогресса
+        auth = FirebaseAuth.getInstance();
+        FirebaseUser user1 = auth.getCurrentUser();
+        DB = FirebaseDatabase.getInstance();
+        users = DB.getReference("Users");
+        String UID = user1.getUid();
+        //
         final RelativeLayout layout = findViewById(R.id.Inflayout);
-        pieces = splitImage();
-        TouchListener touchListener = new TouchListener();
-        for (PuzzlePiece piece : pieces) {
-            piece.setOnTouchListener(touchListener);
-            layout.addView(piece);
-        }
+        layout.post(new Runnable() {
+            @Override
+            public void run() {
+                pieces = splitImage();
+                TouchListener touchListener = new TouchListener();
+                Collections.shuffle(pieces);
+                for (PuzzlePiece piece : pieces) {
+                    piece.setOnTouchListener(touchListener);
+                    layout.addView(piece);
+                    RelativeLayout.LayoutParams lParams = (RelativeLayout.LayoutParams) piece.getLayoutParams();
+                    lParams.leftMargin = new Random().nextInt(layout.getWidth() - piece.pieceWidth);
+                    lParams.topMargin = new Random().nextInt(layout.getHeight() - piece.pieceHeight);
+                    piece.setLayoutParams(lParams);
+                }
+            }
+        });
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
@@ -62,10 +99,10 @@ public class ZadInf15 extends AppCompatActivity {
                     case R.id.infpuzzlecheck:
                         for (int i = 0; i < pieces.size(); i++) {
                             if (pieces.get(i).canMove == false ) {
-                                res += 11;
+                                mark += 11;
                             }
                         }
-                        if (res == 99) {res += 1;}
+                        if (mark == 99) {mark += 1;}
                         dialog = new Dialog(ZadInf15.this);
                         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрыть заголовок
                         dialog.setContentView(R.layout.markgooddialogwindow);//путь к макету диалогового окна
@@ -75,10 +112,28 @@ public class ZadInf15 extends AppCompatActivity {
 
                         //кнопки конец
                         TextView result = dialog.findViewById(R.id.mark_for_the_lvl);
-                        strres = Integer.toString(res);
+                        strres = Integer.toString(mark);
                         result.setText(strres);
                         dialog.show();//показ окна
+                        users.child(UID).addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                me = snapshot.getValue(ProfileU.class);
+                                str = me.getMmr();
+                                int a = me.getInformatic();
+                                if ((a < 15)&&(testing==false)) {
+                                    mark += str;
+                                    users.child(UID).child("mmr").setValue(mark);
+                                    testing=true;
+                                    a+=1;
+                                    users.child(UID).child("informatic").setValue(a);
+                                }
+                            }
 
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+                            }
+                        });
                         Button back_to_houses= dialog.findViewById(R.id.button10);
                         back_to_houses.setOnClickListener(new View.OnClickListener() {
                             @Override
@@ -101,9 +156,7 @@ public class ZadInf15 extends AppCompatActivity {
         int rows = 3;
         int cols = 3;
 
-        ImageView imageView = findViewById(R.id.imageView);
         ArrayList<PuzzlePiece> pieces = new ArrayList<>(piecesNumber);
-
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.infpuzzle1);
 
         int pieceWidth = bitmap.getWidth()/cols;
